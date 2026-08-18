@@ -1,0 +1,12 @@
+{
+ "n": 19,
+ "d": 10,
+ "w": 8,
+ "M": 12,
+ "min_dist": 10,
+ "date": "2026-08-18 12:08:20",
+ "method": "seeded GPU tabu (longshots)",
+ "prev_lb": 11,
+ "round": 0,
+ "seed": 533935086661628047
+}

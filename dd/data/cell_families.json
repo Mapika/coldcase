@@ -1,0 +1,761 @@
+{
+ "3,2": {
+  "delta": 3,
+  "D": 2,
+  "N": 10,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=10; Moore graph Bibliography: Any book on Graph Theory, e.g. F. Comellas, J. F\u00e0brega, A. S\u00e1nchez, O. Serra. Matem\u00e1tica Discreta. Edicions UPC, Universitat Polit\u00e9cnica de Catalunya, 1994, 374 +ix pages, ISBN 84-7653-413-2 (Catalan); 2001, 344 pages. ISBN-13 978-8483014561 (Spanish) K3*C"
+ },
+ "4,2": {
+  "delta": 4,
+  "D": 2,
+  "N": 15,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=17; optimal . See J.-C. Bermond, C. Delorme and G. Fahri. Large graphs with given degree and diameter II. J. Comb. Theory, Ser. B 36 (1984) 32-48. doi:10.1016/0095-8956(84)90012-1 Download the raw adjacency list or/and the NX adjacency list This SageMath script computes several propert"
+ },
+ "5,2": {
+  "delta": 5,
+  "D": 2,
+  "N": 24,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=26; optimal . --> See J.-C. Bermond, C. Delorme and G. Fahri. Large graphs with given degree and diameter III. Proc. Coll. Cambridge. 1981; Ann. Discrete Math. 13 (1982), 23-32. doi:10.1016/S0304-0208(08)73544-8 Download the implicit adjacency list or/and the NX adjacency list This Sag"
+ },
+ "6,2": {
+  "delta": 6,
+  "D": 2,
+  "N": 32,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=37; optimal . K4*X8 was found by J.-C. Bermond, C. Delorme and G. Fahri. Large graphs with given degree and diameter III. Proc. Coll. Cambridge. 1981; Ann. Discrete Math. 13 (1982), 23-32. doi:10.1016/S0304-0208(08)73544-8 C. Delorme noticed the existence of another graph with 32 verti"
+ },
+ "7,2": {
+  "delta": 7,
+  "D": 2,
+  "N": 50,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=50; Moore graph Vertex set : \\(V=(\\alpha,i,j)\\); \\(\\alpha \\in \\mathbb{Z}_2\\); \\(i,j \\in \\mathbb{Z}_5\\). Adjacencies : \\((\\alpha,i,j) \\rightarrow (\\alpha,i, j \\pm (1+\\alpha))\\) and \\((\\bar{\\alpha},l, j + (-1)^\\alpha i l )\\), \\( ( l=0\\ldots 4\\); \\(\\bar{0}=1\\), \\(\\bar{1}=0\\).) Details fro"
+ },
+ "8,2": {
+  "delta": 8,
+  "D": 2,
+  "N": 57,
+  "families": [
+   "GQ/PG-polarity"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=65 Quotient of the incidence graph of a of projective plane by a polarity. C. Delorme and G. Farhi. Large graphs with given degree and diameter I. IEEE Trans. Comput, C-33:857\u2013860, 1984. DOI: 10.1109/TC.1984.1676504 W.H. Haemers. Eigenvalue techniques in design and graph theory. Mathem"
+ },
+ "9,2": {
+  "delta": 9,
+  "D": 2,
+  "N": 74,
+  "families": [
+   "GQ/PG-polarity"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=82 Quotient of the incidence graph of a of projective plane by a polarity with duplication of some vertices. C. Delorme and G. Farhi. Large graphs with given degree and diameter I. IEEE Trans. Comput, C-33:857\u2013860, 1984. DOI: 10.1109/TC.1984.1676504 W.H. Haemers. Eigenvalue techniques"
+ },
+ "10,2": {
+  "delta": 10,
+  "D": 2,
+  "N": 91,
+  "families": [
+   "GQ/PG-polarity"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=99 Quotient of the incidence graph of a of projective plane by a polarity. C. Delorme and G. Farhi. Large graphs with given degree and diameter I. IEEE Trans. Comput, C-33:857\u2013860, 1984. DOI: 10.1109/TC.1984.1676504 W.H. Haemers. Eigenvalue techniques in design and graph theory. Mathem"
+ },
+ "11,2": {
+  "delta": 11,
+  "D": 2,
+  "N": 104,
+  "families": [
+   "GQ/PG-polarity"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=122. Communicated by G. Exoo (May 13, 2006). G.E. data Download the implicit adjacency list of the graph. Download the NX adjacency list of the graph. This SageMath script computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This i"
+ },
+ "12,2": {
+  "delta": 12,
+  "D": 2,
+  "N": 133,
+  "families": [
+   "GQ/PG-polarity"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=145. Quotient of the incidence graph of a of projective plane by a polarity. C. Delorme and G. Farhi. Large graphs with given degree and diameter I. IEEE Trans. Comput, C-33:857\u2013860, 1984. DOI: 10.1109/TC.1984.1676504 W.H. Haemers. Eigenvalue techniques in design and graph theory. Math"
+ },
+ "13,2": {
+  "delta": 13,
+  "D": 2,
+  "N": 162,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=170. B.D. McKay, M. Miller, J. Siran; A note on large graphs of diameter two and given maximum degree. J. Comb. Theory Ser. B, 74 (1998) 110-118 -------------------- Download the raw adjacency list of the graph (thanks to B. McKay) and the NX adjlist -------------------- This SageMath"
+ },
+ "14,2": {
+  "delta": 14,
+  "D": 2,
+  "N": 183,
+  "families": [
+   "GQ/PG-polarity"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=197. Quotient of the incidence graph of a projective plane by a polarity. C. Delorme and G. Farhi. Large graphs with given degree and diameter I. IEEE Trans. Comput, C-33:857\u2013860, 1984. DOI: 10.1109/TC.1984.1676504 W.H. Haemers. Eigenvalue techniques in design and graph theory. Mathema"
+ },
+ "15,2": {
+  "delta": 15,
+  "D": 2,
+  "N": 188,
+  "families": [
+   "GQ/PG-polarity",
+   "vertex-addition",
+   "AI-assisted"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 226. Graph constructed with the help of AI tools by Petrit Isufi (isufi.petrit@proton.me). One new vertex is added to the 187-vertex graph P\u2032 13 d (below) which remains unchanged. Download the edge list of the graph. Former result P\u2032 13 d, quotient of the incidence graph of a projecti"
+ },
+ "16,2": {
+  "delta": 16,
+  "D": 2,
+  "N": 200,
+  "families": [
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=257; See \"Large Networks of Diameter Two Based on Cayley Graphs\" CSOC 2017: Cybernetics and Mathematics Applications in Intelligent Systems pp 225\u2013233 DOI 10.1007/978-3-319-57264-2 Download a implicit adjacency list . Download the adjacency list (NetworkX format) . This SageMath script"
+ },
+ "4,3": {
+  "delta": 4,
+  "D": 3,
+  "N": 41,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=53; -------------- -------------- Graph 1(a) -------------- -------------- -------------- Graph 2(a) -------------- -------------- --> Graphs found by James Allwright (School of Computer Science, University of Westminster) by using a heuristic algorithm. 13 non isomorphic graphs with 4"
+ },
+ "5,3": {
+  "delta": 5,
+  "D": 3,
+  "N": 72,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=106; Communicated by G. Exoo (May 22, 1998). G.E. data Download the implicit adjacency list of the graph. Download the adjacency list NX of the graph. Geoffrey Exoo. A family of graphs and the degree/diameter problem. J. Graph Theory 37 (2001), 118-124. This SageMath script computes se"
+ },
+ "6,3": {
+  "delta": 6,
+  "D": 3,
+  "N": 111,
+  "families": [
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=187; Communicated by G. Exoo (May 19, 2010). G.E. data Download the implicit adjacency list and the NX adjacency list of the graph. Note that this graph is vertex-symmetric and edge-symmetric but not Cayley. This SageMath script computes several properties of the graphs including symme"
+ },
+ "7,3": {
+  "delta": 7,
+  "D": 3,
+  "N": 168,
+  "families": [
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=302; Communicated by G. Exoo (November 1, 2005). G.E. data Download the implicit adjacency list and the NX adjacency list of the Exoo graph. M. Conder found (2011) an optimal Cayley graph (7,3)=168 (non isomorphic with the Exoo graph, which is not Cayley). Clik here for more details an"
+ },
+ "8,3": {
+  "delta": 8,
+  "D": 3,
+  "N": 253,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=457. Obtained (08/1994) by F. Comellas, M. Mitjana as a Cayley graph for a semidirect product. Z_11*(9)Z_23 -- [7,2] [4,11]; [10,4] [1,10]; [1,16] [10,11]; [9,17] [2,3] Dist. Distrib. 1,8,52,192, avg. dist.: 2.730159 (implicit adjacency list ) --- adjlist NX Other instances found (F.Co"
+ },
+ "9,3": {
+  "delta": 9,
+  "D": 3,
+  "N": 585,
+  "families": [
+   "GQ/PG-polarity",
+   "GQ"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 658; Quotient of the incidence graph of a regular generalized quadrangle by a polarity. C. Delorme. Grands graphes de degr\u00e9 et diam\u00e8tre donn\u00e9s. Eur. J. Comb. 6 (1985), pp. 291-302. link to the paper Thanks to V. Pelekhaty, you can download the implicit adjacency list and the adjlist N"
+ },
+ "10,3": {
+  "delta": 10,
+  "D": 3,
+  "N": 650,
+  "families": [
+   "GQ/PG-polarity",
+   "GQ"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 911; Quotient of the incidence graph of a regular generalized quadrangle by a polarity with duplication of some vertices. C. Delorme. Grands graphes de degr\u00e9 et diam\u00e8tre donn\u00e9s. Eur. J. Comb. 6 (1985), pp. 291-302. link to the paper Thanks to V. Pelekhaty, you can download the implici"
+ },
+ "11,3": {
+  "delta": 11,
+  "D": 3,
+  "N": 715,
+  "families": [
+   "GQ/PG-polarity",
+   "GQ"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 1222; Quotient of the incidence graph of a regular generalized quadrangle by a polarity with duplication of some vertices. C. Delorme. Grands graphes de degr\u00e9 et diam\u00e8tre donn\u00e9s. Eur. J. Comb. 6 (1985), pp. 291-302. link to the paper Thanks to V. Pelekhaty, you can download the implic"
+ },
+ "12,3": {
+  "delta": 12,
+  "D": 3,
+  "N": 790,
+  "families": [
+   "vertex-addition",
+   "LLM-assisted"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 1597; Dharunish Yugeswardeenoo (dharyugi@gmail.com; August 17,2026). Addition of vertices to the graph below. Results obtained by using a hybrid discovery framework in development: LLM-guided search over classical algebraic constructions, combined with local search and exact completio"
+ },
+ "13,3": {
+  "delta": 13,
+  "D": 3,
+  "N": 856,
+  "families": [
+   "vertex-addition"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=2042; Obtained by Vladimir Pelekhaty (vpelekhaty at aol.com) \"I started with Jose Gomez's Q\u2032 8 d+ graph (13,3)=851 --see link -- , and added a few (odd number of) nodes before regularizing it by connecting the dangling degrees\". Communicated August 6, 2021. Download the implicit adjace"
+ },
+ "14,3": {
+  "delta": 14,
+  "D": 3,
+  "N": 979,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound= 2563; Obtained by Rishabh Rajiv (rishabh.rajiv@alumni.ubc.ca -communicated July 4, 2026) as a Cayley graph for the semidirect product Z 11 (\u22ca 45 ) Z 89 with generators [0,44 ] [0,45 ]:[1,43 ] [10,3 ]:[1,52 ] [10,74 ]:[1,80 ] [10,18 ]:[2,8 ] [9,57 ]:[4,14 ] [7,43 ]:[4,50 ] [7,1 ] avg."
+ },
+ "15,3": {
+  "delta": 15,
+  "D": 3,
+  "N": 1224,
+  "families": [
+   "GQ/PG-polarity",
+   "vertex-addition",
+   "AI-assisted"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 3166; Graph constructed with the help of AI tools by Petrit Isufi (isufi.petrit@proton.me). Nine new vertices are added to the 1215-vertex (\u2297 Q 2,4 )\u2032 Delorme-Farhi graph which remains unchanged. Download the edge list of the graph. Former result (\u2297 Q 2,4 )\u2032 with 1215 vertices. Compon"
+ },
+ "16,3": {
+  "delta": 16,
+  "D": 3,
+  "N": 1610,
+  "families": [
+   "LLM-assisted"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 3857; Dharunish Yugeswardeenoo (dharyugi@gmail.com; August 17,2026). Spread-block completion of a product of generalized-quadrangle graphs (see below). Results obtained by using a hybrid discovery framework in development: LLM-guided search over classical algebraic constructions, comb"
+ },
+ "3,4": {
+  "delta": 3,
+  "D": 4,
+  "N": 38,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=46; optimal Alegre, Fiol, Yebra, von Conta graph ------- Doty graph Described independently in: [Do82] K.W. Doty; Large regular interconnection networks; Proc. 3rd. Int. Conf. on Distributed Computing Systems, IEEE Press, Miami , October 1982, pp. 312-317. link to the paper (local) [vC"
+ },
+ "4,4": {
+  "delta": 4,
+  "D": 4,
+  "N": 98,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=161; Communicated by G. Exoo (May 19, 2010). G.E. data Download the implicit adjacency list of the graph. adjlist NX format This SageMath script computes several properties of the graphs including symmetry group sizes and the number of k-cycles (k=3..). This is the online version Exoo-"
+ },
+ "5,4": {
+  "delta": 5,
+  "D": 4,
+  "N": 212,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=426; Communicated by G. Exoo (May 21, 2010). G.E. data Download the implicit adjacency list of the graph. adjlist NX format This SageMath script computes several properties of the graph, including symmetry group sizes and the number of k-cycles (k=3..). This is the online version Obtai"
+ },
+ "6,4": {
+  "delta": 6,
+  "D": 4,
+  "N": 390,
+  "families": [
+   "metacyclic-Cayley",
+   "voltage-lift"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=937 Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006) Voltage graph Z_15 x(3) Z_13, D(2,2), voltages [(2,8) (14,4),(0,0) (13,6),(9,4) (7,7)], avg. dist.: 3.444730 Z_m x(a) Z_n represents a semidirect product of cyclic groups [x,y][u,v]= [x + u mod m, y*a^u +"
+ },
+ "7,4": {
+  "delta": 7,
+  "D": 4,
+  "N": 672,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=1814 Obtained as a Cayley graph for semidirect product of Zm with Zn Z_6*(39)Z_112 [2,73] [4,23], [5,54] [1,22], [5,71] [1,31], [3,42] avg.dist 3.496274 M. Sampels. Large networks with small diameter. . In: Rolf H. Mohring (Ed.): 23rd International Workshop on Graph-Theoretic Concepts"
+ },
+ "8,4": {
+  "delta": 8,
+  "D": 4,
+  "N": 1100,
+  "families": [
+   "metacyclic-Cayley",
+   "voltage-lift"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=3201 Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006) Voltage graph Z_20 x(2) Z_55, B(0,4), voltages [(4, 27)(12, 11)(9,9)(19, 11)], avg. dist.: 3.547771 Z_m x(a) Z_n represents a semidirect product of cyclic groups [x,y][u,v]= [x + u mod m, y*a^u + v mod n]"
+ },
+ "9,4": {
+  "delta": 9,
+  "D": 4,
+  "N": 1640,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=5266. Cayley graph. Found as a semidirect product, 1640 nodes and 7380 (F.Comellas 2024): Z_40 x(22) Z_41, generators [23,14] [17,33]:[25,18] [15,13]:[27,35] [13,33]:[2,23] [38,8]:[20,3] [20,3]. Avg. dist.: 3.571080 (1,9,72,532,1026) transmission: 5853. adjlist NX Z_40 x(24) Z_41, gene"
+ },
+ "10,4": {
+  "delta": 10,
+  "D": 4,
+  "N": 2485,
+  "families": [
+   "Cayley",
+   "LLM-assisted"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=8201. Dharunish Yugeswardeenoo (dharyugi@gmail.com; August 17,2026). Results obtained by using a hybrid discovery framework in development: LLM-guided search over classical algebraic constructions, combined with local search and exact completion. The specific LLMs used were OpenAI's So"
+ },
+ "11,4": {
+  "delta": 11,
+  "D": 4,
+  "N": 3220,
+  "families": [
+   "vertex-addition",
+   "AI-assisted"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=12222 ; Graph constructed with the help of AI tools by Petrit Isufi (isufi.petrit@proton.me; August 17, 2026). After constructing Q 7 (T 4 ) based on the published details (see below), as the graph is regular, no new vertices can be added without increasing the degrees. Edges are delet"
+ },
+ "12,4": {
+  "delta": 12,
+  "D": 4,
+  "N": 4705,
+  "families": [
+   "GQ/PG-polarity",
+   "vertex-addition",
+   "AI-assisted"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 17569; Graph constructed with the help of AI tools by Petrit Isufi (isufi.petrit@proton.me; August 17, 2026). After constructing Q\u2032 8 *X 8 based on the published details (Delorme's q = 8 polarity quotient, star-multiplied with the X8 factor of Bermond-Delorme-Farhi) a graph with 4680"
+ },
+ "13,4": {
+  "delta": 13,
+  "D": 4,
+  "N": 6587,
+  "families": [
+   "vertex-addition",
+   "AI-assisted"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 24506; Graph constructed with the help of AI tools by Petrit Isufi (isufi.petrit@proton.me; August 17, 2026). After constructing Q 9 (T 4 ) based on the published details (see below), as the graph is regular, no new vertices can be added without increasing the degrees. Edges are delet"
+ },
+ "14,4": {
+  "delta": 14,
+  "D": 4,
+  "N": 8255,
+  "families": [
+   "vertex-addition",
+   "AI-assisted"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 33321; Graph constructed with the help of AI tools by Petrit Isufi (isufi.petrit@proton.me; August 17, 2026). After constructing Q 9 (T 5 ) based on the published details (see below), as the graph is regular, no new vertices can be added without increasing the degrees. Edges are delet"
+ },
+ "15,4": {
+  "delta": 15,
+  "D": 4,
+  "N": 11712,
+  "families": [
+   "compound"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound = 44326 ; J. Gomez, M.A. Fiol. Dense Compound Graphs. Ars Combinatoria , 20-A (1985), pp. 211-237. link to the paper Q 11 (T 5 ) Delta= 16 , Diam= 4 ; N= 14640 ; Moore bound=57857 ; J. Gomez, M.A. Fiol. Dense Compound Graphs. Ars Combinatoria , 20-A (1985), pp. 211-237. link to the pap"
+ },
+ "16,4": {
+  "delta": 16,
+  "D": 4,
+  "N": 14640,
+  "families": [
+   "compound"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=57857 ; J. Gomez, M.A. Fiol. Dense Compound Graphs. Ars Combinatoria , 20-A (1985), pp. 211-237. link to the paper"
+ },
+ "3,5": {
+  "delta": 3,
+  "D": 5,
+  "N": 70,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=94; Graph obtained by connecting seven clusters like the one shown in the figure with edges as \\(\\large A_{i,j } \\leftrightsquigarrow B_{i \\pm 2^j, j \\pm 1}, \\;\\; i = 0..6 \\;\\; and \\;\\; j = 0..2 \\) [vCo83] C. von Conta. Torus and other networks as communication networks with up to some"
+ },
+ "4,5": {
+  "delta": 4,
+  "D": 5,
+  "N": 364,
+  "families": [
+   "GQ/PG-polarity"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=485; Quotient by a polarity of the incidence graph of the regular bipartite generalized hexagon H 3 \u2032. Obtained by C. Delorme (1981) - see pag.11 of J-C. Bermond, B. Bollobas. The Diameter of Graphs: a survey. Congr. Numer. 32 (1981) pp. 3-27, Boca Raton, US. C. Delorme, G. Farhi. Larg"
+ },
+ "5,5": {
+  "delta": 5,
+  "D": 5,
+  "N": 648,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=1706; Communicated by Marston Conder ( m.conder@auckland.ac.nz ) on January 18, 2026 (paper in preparation). Download a SageMath script to generate this graph. This is the online version . Download the raw adjacency list of the graph. Download the adjacency list (NetworkX) of the graph"
+ },
+ "6,5": {
+  "delta": 6,
+  "D": 5,
+  "N": 1404,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=4687 Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006) Download the raw adjacency list of the graph. Link to Eyal Loz's data E. Loz, J. \u0160ir\u00e1\u0148. New record graphs in the degree-diameter problem. Australas. J. Combin. 41 (2008), 63\u201380. -------------- This SageMa"
+ },
+ "7,5": {
+  "delta": 7,
+  "D": 5,
+  "N": 2756,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=10886. Obtained as a Cayley graph for semidirect product of Zm with Zn Z_52 x(2)Z_53 with generators [25,45] [27,37] (order 52); [30,23] [22,18] (order 26); [40,39] [12,51] (order 13); [26,0] (order 2) . Avg.dist.: 4.332123 transm.: 11935 adjlist NX Dinneen,M.J. & Hafner,P.; New result"
+ },
+ "12,5": {
+  "delta": 12,
+  "D": 5,
+  "N": 34992,
+  "families": [
+   "LLM-assisted"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound = 193260. Ord.: 34992 / Size: 209952 / Avg.dist: 4.71111 / Degree histogram: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 34992] / Girth: 4 Aut.group.ord.: 18 / Cayley ? False --- vtx.trans. ? False -- edge.trans. ? False Construction discovered through interaction with ChatGPT via its standar"
+ },
+ "14,5": {
+  "delta": 14,
+  "D": 5,
+  "N": 60390,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound = 433174. Obtained by Sami Hani Badaoui and Sarah Ellen Mary Vaughan ( Sydney, New South Wales, Australia ) through an interactive computer-assisted search conducted with GPT-5.6 Sol from OpenAI via the standard ChatGPT web interface,with final candidates checked by exact Python and C+"
+ },
+ "16,5": {
+  "delta": 16,
+  "D": 5,
+  "N": 147456,
+  "families": [
+   "LLM-assisted"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 867857; Ord.: 147456 / Size: 1179648 / Avg.dist: 4.79109 / Degree histogram: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 147456] / Girth: 4 Aut.group.ord.: 36 / Cayley ? False --- vtx.trans. ? False -- edge.trans. ? False Construction discovered through interaction with ChatGPT v"
+ },
+ "3,6": {
+  "delta": 3,
+  "D": 6,
+  "N": 132,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=190; Ord.: 132 / Size: 198 / 3-reg. / Diam.: 6 / Girth: 6 / Avg.dist: 4.72149 / Alg.conn. 0.437172 / Domin. number: 35 / Aut.group.ord.: 2 / k-cycles for k= 3 up to 14: (0, 0, 0, 1, 2, 0, 4, 12, 16, 676, 396, 676) Details of this construction at: Geoffrey Exoo. A family of graphs and t"
+ },
+ "4,6": {
+  "delta": 4,
+  "D": 6,
+  "N": 745,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=1457; Jitendra Prajapati (Indian Institute of Technology Madras, 23f1001521@ds.study.iitm.ac.in) obtained this graph with AI coding tools from H 3 (K 3 ) -- see below-- by three rounds of local modification (degree-preserving vertex insertions plus 2-switches), so the intermediate grap"
+ },
+ "5,6": {
+  "delta": 5,
+  "D": 6,
+  "N": 2772,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=6826; Graph obtained from the generalized hexagon H 4 by replacement of some of its vertices by complete graphs K 3 using the same technique than in reference (4,6) G. Pineda-Villavicencio, J. G\u00f3mez, M. Miller, H. P\u00e9rez-Ros\u00e9s. New largest known graphs of diameter 6. Networks 53 (2009)"
+ },
+ "6,6": {
+  "delta": 6,
+  "D": 6,
+  "N": 7917,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=23437; Graph obtained from the generalized hexagon H 5 by replacement of some of its vertices by complete graphs K 4 using the same technique than in reference (4,6) G. Pineda-Villavicencio, J. G\u00f3mez, M. Miller, H. P\u00e9rez-Ros\u00e9s. New largest known graphs of diameter 6. Networks 53 (2009)"
+ },
+ "7,6": {
+  "delta": 7,
+  "D": 6,
+  "N": 12264,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=65318. Cayley graph. Found as a semidirect product, 12264 nodes and 42924 edges (F.Comellas 2024): Z_24 x(90) Z_511, generators [13,77] [11,245]:[6,157] [18,214]:[15,50] [9,281]:[12,7] [12,7]. Avg. dist.: 5.197423 (1,7,42,252,1463,5957,4542) transmission: 63736. adjlist NX Z_24 x(125)"
+ },
+ "8,6": {
+  "delta": 8,
+  "D": 6,
+  "N": 39672,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=156865; Graph obtained from the generalized hexagon H 7 by replacement of some of its vertices by complete graphs K 5 using the same technique than in reference (4,6) J. G\u00f3mez. On large ( D ,6)-graphs. Networks 46 (2005), pp. 82-87. doi:10.1002/net.20075 . H 8 (K 6 ) Delta= 9 , Diam= 6"
+ },
+ "9,6": {
+  "delta": 9,
+  "D": 6,
+  "N": 75893,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=337042; Graph obtained from the generalized hexagon H 8 by replacement of some of its vertices by complete graphs K 6 using the same technique than in reference (4,6) G. Pineda-Villavicencio, J. G\u00f3mez, M. Miller, H. P\u00e9rez-Ros\u00e9s. New largest known graphs of diameter 6. Networks 53 (2009"
+ },
+ "10,6": {
+  "delta": 10,
+  "D": 6,
+  "N": 134690,
+  "families": [
+   "compound"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=664301; Graph obtained from the generalized hexagon H 9 by replacement of some of its vertices by complete graphs K 6 using the same technique than in reference (4,6) J. G\u00f3mez. On large ( D ,6)-graphs. Networks 46 (2005), pp. 82-87. doi:10.1002/net.20075 . H 7 (T 4 ) Delta= 11 , Diam="
+ },
+ "11,6": {
+  "delta": 11,
+  "D": 6,
+  "N": 156864,
+  "families": [
+   "compound"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 1222222 ; H_7(T 4). J. Gomez, M.A. Fiol. Dense Compound Graphs. Ars Combinatoria , 20-A (1985), pp. 211-237. link to the paper H 11 (K 8 ) Delta= 12 , Diam= 6 ; N= 359 772 ; Moore bound=2125873; Graph obtained from the generalized hexagon H 11 by replacement of some of its vertices by"
+ },
+ "12,6": {
+  "delta": 12,
+  "D": 6,
+  "N": 359772,
+  "families": [
+   "compound"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=2125873; Graph obtained from the generalized hexagon H 11 by replacement of some of its vertices by complete graphs K 8 using the same technique than in reference (4,6) G. Pineda-Villavicencio, J. G\u00f3mez, M. Miller, H. P\u00e9rez-Ros\u00e9s. New largest known graphs of diameter 6. Networks 53 (20"
+ },
+ "13,6": {
+  "delta": 13,
+  "D": 6,
+  "N": 531440,
+  "families": [
+   "compound"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 3528890; J. Gomez, M.A. Fiol. Dense Compound Graphs. Ars Combinatoria , 20-A (1985), pp. 211-237. link to the paper H 13 (K 10 ) Delta= 14 , Diam= 6 ; N= 816 294 ; Moore bound=5631277; Graph obtained from the generalized hexagon H 13 by replacement of some of its vertices by complete"
+ },
+ "14,6": {
+  "delta": 14,
+  "D": 6,
+  "N": 816294,
+  "families": [
+   "compound"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=5631277; Graph obtained from the generalized hexagon H 13 by replacement of some of its vertices by complete graphs K 10 using the same technique than in reference (4,6) G. Pineda-Villavicencio, J. G\u00f3mez, M. Miller, H. P\u00e9rez-Ros\u00e9s. New largest known graphs of diameter 6. Networks 53 (2"
+ },
+ "15,6": {
+  "delta": 15,
+  "D": 6,
+  "N": 1417248,
+  "families": [
+   "compound"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=8687926 ; J. Gomez, M.A. Fiol. Dense Compound Graphs. Ars Combinatoria , 20-A (1985), pp. 211-237. link to the paper H 11 (T 5 ) Delta= 16 , Diam= 6 ; N= 1771560 ; Moore bound= 13017857; J. Gomez, M.A. Fiol. Dense Compound Graphs. Ars Combinatoria , 20-A (1985), pp. 211-237. link to th"
+ },
+ "16,6": {
+  "delta": 16,
+  "D": 6,
+  "N": 1771560,
+  "families": [
+   "compound"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 13017857; J. Gomez, M.A. Fiol. Dense Compound Graphs. Ars Combinatoria , 20-A (1985), pp. 211-237. link to the paper"
+ },
+ "3,7": {
+  "delta": 3,
+  "D": 7,
+  "N": 196,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=382; Download the implicit adjacency list of the graph. This SageMath script computes several properties of the graphs including symmetry group sizes and the number of k-cycles (k=3..). This is the online version Loz_1320 Degree= 4 , Diameter = 7 ; Order = 1320 ; Moore bound=4373. Down"
+ },
+ "4,7": {
+  "delta": 4,
+  "D": 7,
+  "N": 1320,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=4373. Download the raw adjacency list of the graph. This SageMath script computes several properties of the graphs including symmetry group sizes and the number of k-cycles (k=3..). This is the online version Loz_5516 Degree= 5 , Diameter = 7 ; Order = 5 516 ; Moore bound=27 306. Commu"
+ },
+ "5,7": {
+  "delta": 5,
+  "D": 7,
+  "N": 5516,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=27 306. Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006) Download the raw adjacency list of the graph. Link to Eyal Loz's data . (eloz002 @ math .auckland. ac. nz ) Communicated July 2006. Obtained as a Cayley graph for semidirect product of Zm with Zn 5500"
+ },
+ "6,7": {
+  "delta": 6,
+  "D": 7,
+  "N": 20319,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound= 117186 Cayley graph. Found as a semidirect product, 20319 nodes and 60957 edges (F.Comellas 2026): Z_13 x(805) Z_1563, generators [5,451] [8,1232]: [10,746] [3,118]: [6,537] [7,90]: . Avg. dist.:5.996850 (1, 6, 30, 150, 742, 3440, 10490, 5460) transm.: 121844 adjlist NX Z_39 x(101) Z_"
+ },
+ "7,7": {
+  "delta": 7,
+  "D": 7,
+  "N": 53020,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound= 391909 Cayley graph. Found as a semidirect product, 53020 nodes and 185570 edges (F.Comellas 2024): Z_20 x(729) Z_2651, generators [6,894 ] [14,1583 ]:[17,2271 ] [3,140 ]:[18,2411 ] [2,928 ]:[10,1210 ] [10,1210 ]. Avg. dist.: 6.033799 (1,7,42,252,1500,8326,28815,14077) transm.: 319906"
+ },
+ "14,7": {
+  "delta": 14,
+  "D": 7,
+  "N": 6200460,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound= 73206603 ; J. G\u00f3mez, M.A. Fiol and O. Serra, On large (\u0394, D) graphs, Discrete Mathematics , 114 (1993), pp. 235. link to the paper K 1 \u03a3 8 H 13 Delta= 16 , Diam= 7 ; N= 14882658 ; Moore bound= 195267857 ; J. G\u00f3mez, M.A. Fiol and O. Serra, On large (\u0394, D) graphs, Discrete Mathematics ,"
+ },
+ "16,7": {
+  "delta": 16,
+  "D": 7,
+  "N": 14882658,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound= 195267857 ; J. G\u00f3mez, M.A. Fiol and O. Serra, On large (\u0394, D) graphs, Discrete Mathematics , 114 (1993), pp. 235. link to the paper Loz_19282 Degree= 6 , Diameter = 7 ; Order = 19 279 ; Moore bound=117187 Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006) Dow"
+ },
+ "3,8": {
+  "delta": 3,
+  "D": 8,
+  "N": 360,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=766; Graph found by Jianxiang Chen (2018-10-16) The graph is derived from the symmetric graph on 144 vertices with diameter 7 and girth 8 by a complete pairing of its edges that has a large symmetric group. Let G be the symmetric graph and ~ the pairing relation on its edges. The graph"
+ },
+ "4,8": {
+  "delta": 4,
+  "D": 8,
+  "N": 3243,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=13121. Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006) Download the raw adjacency list of the graph. Link to Eyal Loz's data . (eloz002 @ math .auckland. ac. nz ) Communicated July 2006. Download the adjacency list of th e graph.^M formerly Obtained as an a"
+ },
+ "9,8": {
+  "delta": 9,
+  "D": 8,
+  "N": 1697688,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=2 929 686 Grafo con grado 9, orden 1 697 688 y diametro 8. En este caso el grupo fue: m = 23579, n = 72, r = 1413. El grafo cociente es B(1, 4) los voltajes fueron: (5 958, 8), (6 086, 27), (22 093, 37), (22 621, 33) y (2 717, 36) como valor involutivo. A. Rodr\u00edguez de los Santos, (201"
+ },
+ "3,9": {
+  "delta": 3,
+  "D": 9,
+  "N": 600,
+  "families": [
+   "voltage-lift"
+  ],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=1534. Voltage graph. Download the implicit adjacency list of the graph. This SageMath script computes several properties of the graphs including symmetry group sizes and the number of k-cycles (k=3..). This is the online version Quisquater_590 Degree= 3 , Diameter = 9 ; Order = 590 ; M"
+ },
+ "4,9": {
+  "delta": 4,
+  "D": 9,
+  "N": 7575,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound=39365. Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006) Download the raw adjacency list of the graph. Link to Eyal Loz's data . (eloz002 @ math .auckland. ac. nz ) Communicated July 2006. Loz_57840 Degree= 5 , Diameter = 9 ; Order = 57840 ; Moore bound= 4369"
+ },
+ "5,9": {
+  "delta": 5,
+  "D": 9,
+  "N": 57840,
+  "families": [
+   "metacyclic-Cayley",
+   "Cayley"
+  ],
+  "reachable_by_this_engine": true,
+  "note": "; Moore bound= 436904. Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006) Obtained as a Cayley graph for the semidirect product Z 48 (\u22ca 22 ) Z 1205 with generators [(24,1165)|(41,491)(15,849)] Link to Eyal Loz's data . (eloz002 @ math .auckland. ac. nz ) Communicated July 2"
+ },
+ "6,9": {
+  "delta": 6,
+  "D": 9,
+  "N": 331387,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=2 929 686 nodes: 331387 edges: 994161 min deg: 6 max deg: 6 diameter: 9 avg. dist: 7.758922 Communicated by Alexis Rodriguez-Eduardo Canale. Instituto de Matematica y Estadistica / Facultad de Ingenieria - UDeLaR / Universidad de la Republica / Uruguay (August 20 2012) El grafo con 331"
+ },
+ "3,10": {
+  "delta": 3,
+  "D": 10,
+  "N": 1250,
+  "families": [],
+  "reachable_by_this_engine": false,
+  "note": "; Moore bound=3070; Communicated by Marston Conder ( m.conder@auckland.ac.nz ) on August 17, 2006. http://www.math.auckland.ac.nz/~conder/symmcubic2048list.txt Marston Conder, Jicheng Ma. Arc-transitive abelian regular covers of cubic graphs. J. Algebra, 387 (2013) 215-242. Download the raw adjacenc"
+ }
+}

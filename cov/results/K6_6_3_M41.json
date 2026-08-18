@@ -1,0 +1,22 @@
+{
+ "q": 6,
+ "n": 6,
+ "R": 3,
+ "M": 41,
+ "date": "2026-08-18",
+ "method": "covsearch tabu/greedy local search, 900s x 60 workers",
+ "code_file": "K6_6_3_M41.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 24,
+  "ub": 41,
+  "lb_key": "m",
+  "ub_key": "q"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true
+}

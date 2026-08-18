@@ -1,0 +1,28 @@
+{
+ "model": "metacyclic",
+ "delta": 14,
+ "D": 5,
+ "N": 60452,
+ "m": 2159,
+ "n": 28,
+ "a": 123,
+ "S": [
+  11028,
+  51099,
+  24916,
+  37985,
+  28002,
+  34949,
+  49535,
+  13937,
+  18574,
+  43680,
+  14882,
+  48168,
+  5191,
+  57024
+ ],
+ "edges": 423164,
+ "group": "Z_2159 rtimes_123 Z_28",
+ "construction": "Cayley graph of metacyclic group, connection set S"
+}

@@ -1,0 +1,28 @@
+{
+ "model": "metacyclic",
+ "delta": 14,
+ "D": 5,
+ "N": 60450,
+ "m": 2015,
+ "n": 30,
+ "a": 751,
+ "S": [
+  3359,
+  60196,
+  53204,
+  8816,
+  30671,
+  30554,
+  56446,
+  5174,
+  51255,
+  10325,
+  3542,
+  58983,
+  46782,
+  15013
+ ],
+ "edges": 423150,
+ "group": "Z_2015 rtimes_751 Z_30",
+ "construction": "Cayley graph of metacyclic group, connection set S"
+}

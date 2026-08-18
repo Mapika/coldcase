@@ -1,0 +1,22 @@
+{
+ "q": 6,
+ "n": 8,
+ "R": 3,
+ "M": 1049,
+ "date": "2026-08-18",
+ "method": "covsearch tabu/greedy local search, 600s x 60 workers",
+ "code_file": "K6_8_3_M1049.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 246,
+  "ub": 1080,
+  "lb_key": "m",
+  "ub_key": "f"
+ },
+ "beats_keri_upper_bound": true,
+ "matches_keri_upper_bound": false
+}

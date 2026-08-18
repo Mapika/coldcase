@@ -1,0 +1,28 @@
+{
+ "model": "metacyclic",
+ "delta": 14,
+ "D": 3,
+ "N": 1032,
+ "m": 344,
+ "n": 3,
+ "a": 337,
+ "S": [
+  564,
+  916,
+  563,
+  965,
+  449,
+  703,
+  533,
+  715,
+  431,
+  897,
+  387,
+  989,
+  536,
+  912
+ ],
+ "edges": 7224,
+ "group": "Z_344 rtimes_337 Z_3",
+ "construction": "Cayley graph of metacyclic group, connection set S"
+}

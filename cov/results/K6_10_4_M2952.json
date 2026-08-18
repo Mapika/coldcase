@@ -1,0 +1,30 @@
+{
+ "q": 6,
+ "n": 10,
+ "R": 4,
+ "M": 2952,
+ "date": "2026-08-18",
+ "method": "direct sum of searched K6(4,1)=72 and K6(6,3)=41 codes",
+ "code_file": "K6_10_4_M2952.txt",
+ "verified": {
+  "distinct_codewords": 2952,
+  "duplicate_lines": 0,
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "verify_cov_seconds": 73.3,
+  "verify_independent_method": "dilate",
+  "verify_independent_exit": 0,
+  "verify_independent_seconds": 8.1,
+  "verify_independent_result": "VERIFIED  -- every one of the 60466176 words of Z_6^10 is within distance 4 of the code"
+ },
+ "keri_2011": {
+  "lb": 417,
+  "ub": 2952,
+  "lb_key": "s",
+  "ub_key": "f"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true,
+ "construction": "direct_sum(K6_4_1_M72, K6_6_3_M41)",
+ "all_verifiers_agree": true
+}

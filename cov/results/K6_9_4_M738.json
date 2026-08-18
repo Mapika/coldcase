@@ -1,0 +1,30 @@
+{
+ "q": 6,
+ "n": 9,
+ "R": 4,
+ "M": 738,
+ "date": "2026-08-18",
+ "method": "direct sum of searched K6(3,1)=18 and K6(6,3)=41 codes",
+ "code_file": "K6_9_4_M738.txt",
+ "verified": {
+  "distinct_codewords": 738,
+  "duplicate_lines": 0,
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "verify_cov_seconds": 11.5,
+  "verify_independent_method": "dilate",
+  "verify_independent_exit": 0,
+  "verify_independent_seconds": 1.0,
+  "verify_independent_result": "VERIFIED  -- every one of the 10077696 words of Z_6^9 is within distance 4 of the code"
+ },
+ "keri_2011": {
+  "lb": 136,
+  "ub": 738,
+  "lb_key": "m",
+  "ub_key": "f"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true,
+ "construction": "direct_sum(K6_3_1_M18, K6_6_3_M41)",
+ "all_verifiers_agree": true
+}

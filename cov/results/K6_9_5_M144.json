@@ -1,0 +1,30 @@
+{
+ "q": 6,
+ "n": 9,
+ "R": 5,
+ "M": 144,
+ "date": "2026-08-18",
+ "method": "covsearch tabu/greedy local search, 150s x 6 workers",
+ "code_file": "K6_9_5_M144.txt",
+ "verified": {
+  "distinct_codewords": 144,
+  "duplicate_lines": 0,
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "verify_cov_seconds": 16.7,
+  "verify_independent_method": "both",
+  "verify_independent_exit": 0,
+  "verify_independent_seconds": 13.0,
+  "covering_radius_exact": 5,
+  "verify_independent_result": "VERIFIED  -- every one of the 10077696 words of Z_6^9 is within distance 5 of the code"
+ },
+ "keri_2011": {
+  "lb": 32,
+  "ub": 144,
+  "lb_key": "m",
+  "ub_key": "j"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true,
+ "all_verifiers_agree": true
+}

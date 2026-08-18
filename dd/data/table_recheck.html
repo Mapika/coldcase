@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<HTML><HEAD><TITLE>Degree-Diameter Table for Graphs</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">  
+<!-- <base href="https://web.mat.upc.edu/francesc.comellas/old-files/delta-d/"> --> 
+</HEAD>
+<BODY>
+<font size="4" >
+<HR SIZE=3>
+<H2>The (Degree, Diameter) Problem for Graphs</H2>
+<BR>
+
+    <HR SIZE=6>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- A shortcut URL for this web page  is:  <A href="http://comellas.eu" > http://comellas.eu</A>.-->
+ My home page at UPC (Universitat Polit&egrave;cnica de Catalunya) is <A 
+  href="https://web.mat.upc.edu/francesc.comellas/" target="_blank">
+Francesc Comellas</A>
+<BR>
+     You can download the full contents of this page (including subdirectories, descriptions and adjacency list of the graphs, figures, etc. aprox. 120 MB ) from   "Table of Large Degree/Diameter Graphs", Mendeley Data (2026),<A 
+  href="https://data.mendeley.com/datasets/d75dzbjd4k/" target="_blank" > doi: 10.17632/d75dzbjd4k. </A>. 
+  See also "Table of large graphs with given degree and diameter". <A 
+  href="https://doi.org/10.48550/arXiv.2406.18994" target="_blank">  doi: 10.48550/arXiv.2406.18994v2</A> [Co26].
+  
+<BR>
+    This web page, along with all associated pages and files, is AI-free (except for some SageMath scripts that were created with the help of ChatGPT).
+<HR SIZE=6>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<P>A graph, <I>G=(V,E)</I>, consists of a non empty finite set <I>V</I> of 
+elements called <I>vertices</I> and a set <I>E</I> of pairs of elements of 
+
+<I>V</I> called <I>edges</I>. The number of vertices <I>N=|G|=|V| </I>is the 
+<I>order</I> of the graph. If <I>(x,y)</I> is an edge of <I>E</I>, we say that 
+<I>x</I> and <I>y</I> (or <I>y</I> and <I>x</I>) are <I>adjacent</I> and this is 
+usually written <I>x --&gt; y</I>. It is also said that <I>x</I> and <I>y</I> 
+
+are the <I>endvertices</I> of the edge <I>(x,y)</I>. The <I>degree</I> of a 
+vertex &delta;<I>(x)</I> is the number of vertices adjacent to <I>x</I>. The 
+<I>degree</I> of <I>G</I> is &Delta;=<I>max</I>_{x &isin; V} 
+&delta;<I>(x)</I>. A graph is regular of degree &Delta;  or 
+&Delta; <I>- regular</I> if the degree of all vertices equal &Delta;. 
+The <I>distance</I> between two vertices <I>x</I> 
+
+and <I>y</I>, <I>d(x,y)</I> , is the number of edges of a shortest path between 
+<I>x</I> and <I>y</I> , and its maximum value over all pair of vertices, 
+<I>D=max_{x, y &isin; V}d(x,y)</I> , is the <I>diameter</I> of the graph. A 
+
+(&Delta;,<I>D</I>) graph</I> is a graph with 
+maximum degree &Delta;  and diameter at most <I>D</I>. 
+The order of a graph with degree &Delta;, 
+&Delta;  &gt; 2), of diameter <I>D</I> is easily seen to 
+be bounded by </P>
+
+<!-- <P><IMG height=40 src=moore.gif width=416> </P>  -->
+
+<P> 1 +  &Delta; + &Delta; (&Delta;-1) + ...+ &Delta; (&Delta;-1) <sup>D-1 </sup>  =
+<sup>(&Delta; (&Delta;-1)<sup>D</sup>  -2) </sup> / <sub>(&Delta;-2)</sub> = N(&Delta;, D)
+</P>
+
+<P>Hoffman and Singleton introduced the concept of Moore graphs, after Edward Forrest Moore, 
+as graphs attaining this value, known as <I>Moore bound</I>.
+They also showed that, for <I>D</I> 
+&ge; <I>2</I> and &Delta; &ge; <I> 3</I>, Moore graphs exist 
+for  <I>D=2</I> and &Delta; <I>=3,7</I> , and 
+(perhaps) 57, see [HoSi60]. In this context, it is of great interest to find graphs 
+which for a given maximum diameter and maximum degree have a number of vertices as close 
+as possible to the Moore bound. </P>
+
+<P>The following table give the <I>state of the art</I> regarding the 
+<I>LARGEST KNOWN (</I>&Delta;<I> ,D)-GRAPHS.</I> Entries in <b>boldface</b> are optimal. </p>
+
+<p> Click a position to view more information about that entry, such as graph construction details, the Moore bound, author, references, and more. Entries with a border include a SageMath script to compute their relevant properties. Adjacency lists are available for download for most graphs with small order (fewer than 20,000).
+</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+<HR SIZE=2>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<FONT size=+2> 
+<CENTER>LARGEST KNOWN (&Delta;,D)-GRAPHS  
+<p>( <span style="color: #FFA500; font-size: 24px; font-weight: bold;">&#9888; Warning:</span> &#128736; Website updates through August 2026)
+</FONT>
+
+
+<FONT size=+1> 
+<CENTER> Click on the value to get information about the graph (author, reference, adjacency list, etc.)
+</CENTER></FONT>
+
+<FONT size=-1> 
+<CENTER> Latest Updates: August 2026 (11,4),(13,4),(14,4),(4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),</CENTER><CENTER>(16,9),(16,10), (14,5), (12,4), (15,2), (15,3),   (4,6),  (15,5) ;July  2026  (12,5), (16,5), (14,3);  April 2026 (6,7); January 2026 (5,5). 
+</CENTER></FONT>
+
+<br>
+
+
+
+
+<CENTER>
+
+  <FONT size="4" face="Lucida Bright">
+<TABLE border=0> 
+<style>
+  td a {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+
+  <TBODY>
+
+  <TR align=right>
+    <TH align=left>&Delta; &nbsp; \ D&nbsp;</TH>
+    <TH>2</TH>
+    <TH>3</TH>
+    <TH>4</TH>
+    <TH>5</TH>
+
+    <TH>6</TH>
+    <TH>7</TH>
+    <TH>8</TH>
+    <TH>9</TH>
+    <TH>10</TH>
+</TR>
+
+  <TR align=right>
+     <TH align=left>3</TH>
+    <TD bgColor="#FADBD8 "><B><A href="desc_g/desc_g2.html#32" target="_blank">10</A> </B></TD>
+    <TD style="border: 1px solid black;" bgColor="#FADBD8"> <B><A href="desc_g/desc_g3.html#33" target="_blank">20</A> </B></TD>
+    <TD style="border: 1px solid black;" bgColor="#D7BDE2"> <B><A href="desc_g/desc_g4.html#34" target="_blank">38</A> </B></TD>
+    <TD style="border: 1px solid black;" bgColor="#D7BDE2"><A href="desc_g/desc_g5.html#35" target="_blank">70</A> </TD>
+    <TD style="border: 1px solid black;" bgColor="#FFFF8F"><A href="desc_g/desc_g6.html#36" target="_blank">132</A> </TD>
+    <TD style="border: 1px solid black;" bgColor="#FFFF8F"><A href="desc_g/desc_g7.html#37" target="_blank">196</A> </TD>
+    <TD style="border: 1px solid black;" bgColor="#CEFF00"><A href="desc_g/desc_g8.html#38" target="_blank">360</A> </TD> 
+    <TD style="border: 1px solid black;" bgColor= "#FFFF8F"><A href="desc_g/desc_g9.html#39" target="_blank">600</A> </TD>
+    <TD style="border: 1px solid black;" bgColor= "#FF8899"><A href="desc_g/desc_g10.html#310" target="_blank">1 250</A></TD>
+  </TR>
+
+
+ <tr align=right>
+    <th align=left>4</th>
+    <td style="border: 1px solid black;" bgColor="#FADBD8"> <a href="desc_g/desc_g2.html#42" target="_blank"> <B>15</B> </a> </td>
+    <td style="border: 1px solid black;" bgColor="#D4AC0D"> <a href="desc_g/desc_g3.html#43" target="_blank"> 41</a></td>
+    <td style="border: 1px solid black;" bgColor="#FFFF8F"> <a href="desc_g/desc_g4.html#44" target="_blank"> 98</a></td>
+    <td style="border: 1px solid black;" ><a href="desc_g/desc_g5.html#45" target="_blank">364</a></td>
+     <td style="border: 1px solid black;"  bgColor="#DDE7F4"><a href="desc_g/desc_g6.html#46" target="_blank">745</a></td>
+    <td style="border: 1px solid black;" bgColor="#FFCC80"><a href="desc_g/desc_g7.html#47" target="_blank">1 320</a></td>
+    <td bgColor="#FFCC80"><a href="desc_g/desc_g8.html#48" target="_blank">3 243</a></td>
+    <td bgColor="#FFCC80"><a href="desc_g/desc_g9.html#49" target="_blank">7 575</a></td>
+     <TD  bgColor=#99EF99><a href="desc_g/desc_g10.html#410" target="_blank">18 369</a></td>
+</tr>
+
+  <TR align=right>
+    <TH align=left>5</TH>
+    <TD style="border: 1px solid black;" bgColor=#FADBD8><B><A href="desc_g/desc_g2.html#52" target="_blank">24</A> </B></TD>
+    <TD style="border: 1px solid black;" bgColor=#FFFF8F><A href="desc_g/desc_g3.html#53" target="_blank">72</A> </TD>
+    <TD style="border: 1px solid black;" bgColor=#FFFF8F><A href="desc_g/desc_g4.html#54" target="_blank">212</A> </TD>
+     <TD style="border: 1px solid black;" bgColor= #FF8899><A href="desc_g/desc_g5.html#55" target="_blank">648</A> </TD>
+    <TD bgColor=#00CC99><A href="desc_g/desc_g6.html#56" target="_blank">2 772</A> </TD>
+    <TD bgColor=#FFCC80><A href="desc_g/desc_g7.html#57" target="_blank">5 516</A> </TD>
+    <TD  bgColor=#99EF99><A href="desc_g/desc_g8.html#58" target="_blank">17602</A> </TD>
+    <TD bgColor=#FFCC80><A href="desc_g/desc_g9.html#59" target="_blank">57 840</A> </TD>
+    <TD bgColor=#FFCC80><A href="desc_g/desc_g10.html#510" target="_blank">187 056</A> </TD>
+</TR>
+
+  <TR align=right>
+    <TH align=left>6</TH>
+    <TD style="border: 1px solid black;" ><A href="desc_g/desc_g2.html#62" target="_blank"><B>32</b></A> </TD>
+    <TD style="border: 1px solid black;" bgColor=#FFFF8F><A href="desc_g/desc_g3.html#63" target="_blank">111</A> </TD>
+    <TD style="border: 1px solid black;" bgColor=#FFCC80><A href="desc_g/desc_g4.html#64" target="_blank">390</A> </TD>
+     <TD style="border: 1px solid black;" bgColor=#FFCC80><A href="desc_g/desc_g5.html#65" target="_blank">1 404</A> </TD>
+    <TD bgCoLOR=#00CC99><A href="desc_g/desc_g6.html#66" target="_blank">7 917</A> </TD>
+    <TD bgColor=#00FFFF><A href="desc_g/desc_g7.html#77" target="_blank">20 319</A>  </TD>
+    <TD   bgColor=#99EF99><A href="desc_g/desc_g8.html#68" target="_blank">77 257</A> </TD>
+     <TD style="border: 1px solid black;" bgColor=#F0C0FD><A href="desc_g/desc_g9.html#69" target="_blank">331 387</A> </TD>
+    <TD bgColor=#FFCC80><A href="desc_g/desc_g10.html#610" target="_blank">1 253 615</A> </TD>
+</TR>
+
+  <TR align=right>
+    <TH align=left>7</TH>
+    <TD  style="border: 1px solid black;" bgColor=#FADBD8 ><B><A href="desc_g/desc_g2.html#72" target="_blank">50</A></B></TD>
+    <TD style="border: 1px solid black;" bgColor=#FFFF8F><A href="desc_g/desc_g3.html#73" target="_blank">168</A> </TD>
+    <TD style="border: 1px solid black;" bgColor=#89CFF0><A href="desc_g/desc_g4.html#74" target="_blank">672</A> </TD>
+     <TD style="border: 1px solid black;" bgColor=#95B0EC><A href="desc_g/desc_g5.html#75" target="_blank">2 756</A></TD>
+    <TD bgColor=#00FFFF><A href="desc_g/desc_g6.html#76" target="_blank">12 264</A> </TD>
+    <TD bgColor=#00FFFF><A href="desc_g/desc_g7.html#77" target="_blank">53 020</A>  </TD>
+    <TD bgColor=#FFCC80><A href="desc_g/desc_g8.html#78" target="_blank">249 660</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g9.html#79" target="_blank">1 223 050</A>  </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g10.html#710" target="_blank">6 007 230</A> </TD>
+</TR>
+
+  <TR align=right>
+    <TH align=left>8</TH>
+    <TD style="border: 1px solid black;"><A href="desc_g/desc_g2.html#82" target="_blank">57</A>  </TD> 
+    <TD style="border: 1px solid black;" bgColor="#C0ECFD"  ><A href="desc_g/desc_g3.html#83" target="_blank">253</A> </TD>    
+    <TD style="border: 1px solid black;" bgColor=#FFCC80 ><A  href="desc_g/desc_g4.html#84" target="_blank">1 100</A>  </TD>
+      <TD style="border: 1px solid black;" bgColor=#99EF99><A  href="desc_g/desc_g5.html#85" target="_blank">5 253</A> </TD>
+    <TD bgColor=#40E0D0><A  href="desc_g/desc_g6.html#86" target="_blank">39 672</A> </TD>
+     <TD   bgColor=#99EF99><A  href="desc_g/desc_g7.html#87" target="_blank">133 446</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g8.html#88" target="_blank">734 820</A>  </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g9.html#89" target="_blank">4 243 100</A> </TD>
+    <TD   bgColor=#99EF99><A  href="desc_g/desc_g10.html#810" target="_blank">24 914 017</A> </TD>
+</TR>
+
+  <TR align=right>
+    <TH align=left>9</TH>
+     <TD style="border: 1px solid black;" ><A  href="desc_g/desc_g2.html#92" target="_blank">74</A> </TD>
+      <TD style="border: 1px solid black;" ><A  href="desc_g/desc_g3.html#93" target="_blank">585</A> </TD>
+    <TD style="border: 1px solid black;"  bgColor="#00FFFF"><A  href="desc_g/desc_g4.html#94" target="_blank" target="_blank">1 640</A> </TD>
+    <TD style="border: 1px solid black;" bgColor=#99EF99><A  href="desc_g/desc_g5.html#95" target="_blank">8 760</A>   </TD>
+    <TD bgColor=#00CC99><A  href="desc_g/desc_g6.html#96" target="_blank">75 893</A>  </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g7.html#97" target="_blank">279 616</A> </TD>
+    <TD style="border: 1px solid black;"  bgColor="#F0C0FD"><A  href="desc_g/desc_g8.html#98" target="_blank">1 697 688</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g9.html#99" target="_blank">12 123 288</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g10.html#910" target="_blank">65 866 350</A> </TD>
+</TR>
+
+  <TR align=right>
+    <TH align=left>10</TH>
+     <TD  style="border: 1px solid black;"> <A  href="desc_g/desc_g2.html#102" target="_blank">91</A> </TD>
+     <TD style="border: 1px solid black;"> <A  href="desc_g/desc_g3.html#103" target="_blank">650</A> </TD>
+    <TD style="border: 1px solid black;" bgColor=#99EF99><A  href="desc_g/desc_g4.html#104" target="_blank" target="_blank">2 485</A> </TD>
+    <TD style="border: 1px solid black;" bgColor=#99EF99><A  href="desc_g/desc_g5.html#105" target="_blank">13 734</A> </TD>
+    <TD bgColor=#40E0D0><A  href="desc_g/desc_g6.html#106" target="_blank">134 690</A>  </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g7.html#107" target="_blank">583 083</A>  </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g8.html#108" target="_blank">4 293 452</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g9.html#109" target="_blank">27 997 191</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g10.html#1010" target="_blank">201 038 922</A> </TD>
+</TR>
+
+  <TR align=right>
+    <TH align=left>11</TH>
+    <TD style="border: 1px solid black;" bgColor=#FFFF8F><A  href="desc_g/desc_g2.html#112" target="_blank">104</A> </TD>
+    <TD style="border: 1px solid black;"><A  href="desc_g/desc_g3.html#113" target="_blank">715</A> </TD>
+     <TD style="border: 1px solid black;" bgColor=#CDCDCD><A  href="desc_g/desc_g4.html#114" target="_blank">3 220</A> </TD>
+     <TD   bgColor=#99EF99><A  href="desc_g/desc_g5.html#115" target="_blank">20 646</A> </TD> 
+    <TD  bgColor=#D4EFDF ><A href="desc_g/desc_g6.html#116" target="_blank">156 864</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g7.html#117" target="_blank">1 001 268</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g8.html#118" target="_blank">7 442 328</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g10.html#119" target="_blank">72 933 102</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g11.html#1110" target="_blank">600 380 000</A> 
+    </TD>
+ </TR>
+
+  <TR align=right>
+    <TH align=left>12</TH>
+     <TD style="border: 1px solid black;" ><A  href="desc_g/desc_g2.html#122" target="_blank">133</A> </TD>
+    <TD style="border: 1px solid black;" bgColor=#99EF99><A  href="desc_g/desc_g3.html#123" target="_blank">790</A> </TD>   
+    <TD style="border: 1px solid black;" bgColor=#CDCDCD><A  href="desc_g/desc_g4.html#124" target="_blank">4 705</A> </TD>
+    <TD bgColor=#9FC3BD><A  href="desc_g/desc_g5.html#125" target="_blank">34 992</A> </TD>
+    <TD bgColor=#00CC99><A  href="desc_g/desc_g6.html#126" target="_blank">359 772</A> </TD>
+     <TD  bgColor=#99EF99><A  href="desc_g/desc_g7.html#127" target="_blank">2 005 819</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g8.html#128" target="_blank">15 924 326</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g9.html#129" target="_blank">158 158 875</A> </TD>
+    <TD   bgColor=#99EF99><A  href="desc_g/desc_g10.html#1210" target="_blank">1 506 256 891</A> </TD>
+</TR>
+
+  <TR align=right>
+    <TH align=left>13</TH>
+    <TD style="border: 1px solid black;"  bgColor="#ff99ff"><A  href="desc_g/desc_g2.html#132" target="_blank">162</A> </TD>
+    <TD style="border: 1px solid black;"  bgColor= #CFDFEF><A  href="desc_g/desc_g3.html#133" target="_blank">856</A> </TD>
+   <TD style="border: 1px solid black;" bgColor=#CDCDCD><A href="desc_g/desc_g4.html#134" target="_blank">6 587</A> </TD>
+     <TD   bgColor=#99EF99><A  href="desc_g/desc_g5.html#135" target="_blank">42 680</A> </TD>
+    <TD  bgColor=#D4EFDF ><A  href="desc_g/desc_g6.html#136" target="_blank">531 440</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g7.html#137" target="_blank">3 322 080</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g8.html#138" target="_blank">29 927 790</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g9.html#139" target="_blank">249 155 760</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g10.html#1310" target="_blank">3 077 200 700</A></TD></TR>
+
+  <TR align=right>
+    <TH align=left>14</TH>
+    <TD style="border: 1px solid black;" ><A  href="desc_g/desc_g2.html#142" target="_blank">183</A> </TD>
+     <TD style="border: 1px solid black;" bgColor= #FF9933><A  href="desc_g/desc_g3.html#143" target="_blank">979</A> </TD>
+     <TD style="border: 1px solid black;" bgColor=#CDCDCD><A  href="desc_g/desc_g4.html#144" target="_blank">8 255</A> </TD>
+     <TD bgColor=#9FB2D0><A  href="desc_g/desc_g5.html#145" target="_blank">60 390</A> </TD>
+     <TD bgColor=#00CC99><A  href="desc_g/desc_g6.html#146" target="_blank">816 294</A> </TD>
+     <TD bgColor=#A3E4D7><A  href="desc_g/desc_g7.html#147" target="_blank">6 200 460</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g8.html#148" target="_blank">55 913 932</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g9.html#149" target="_blank">600 123 780</A>  </TD>
+    <TD  bgColor=#99EF99><A  href="desc_g/desc_g10.html#1410" target="_blank">7 041 746 199</A> 
+    </TD>
+</TR>
+
+  <TR align=right>
+    <TH align=left>15</TH>
+    <TD style="border: 1px solid black;" bgColor= #CDCDCD ><A  href="desc_g/desc_g2.html#152" target="_blank">188</A>  </TD>
+    <TD style="border: 1px solid black;" bgColor= #CDCDCD ><A  href="desc_g/desc_g3.html#153" target="_blank">1 224</A> </TD>   
+     <TD  bgColor=#D4EFDF ><A  href="desc_g/desc_g4.html#154" target="_blank">11 712</A>  </TD>
+      <TD bgColor=#C0CCFD><A  href="desc_g/desc_g5.html#155" target="_blank">79 152</A> </TD>
+    <TD  bgColor=#D4EFDF ><A href="desc_g/desc_g6.html#156" target="_blank">1 417 248</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g7.html#157" target="_blank">8 599 986</A></TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g8.html#158" target="_blank">90 001 236</A> </TD>
+   <TD bgColor=#FFCC80><A  href="desc_g/desc_g9.html#159" target="_blank">1 171 998 164</A> </TD>
+    <TD bgColor=#FFCC80><A  href="desc_g/desc_g10.html#1510" target="_blank">10 012 349 898</A></TD>
+</TR>
+
+
+  <TR align=right>
+    <TH align=left>16</TH>
+    <TD style="border: 1px solid black;" bgColor=#D0C792><A     href="desc_g/desc_g2.html#162" target="_blank">200</A>  </TD>
+    <TD style="border: 1px solid black;" bgColor=#99EF99><A  href="desc_g/desc_g3.html#163" target="_blank">1 610</A>  </TD>
+    <TD  bgColor=#D4EFDF ><A href="desc_g/desc_g4.html#164" target="_blank">14 640</A> </TD>
+    <TD bgColor=#9FC3BD><A  href="desc_g/desc_g5.html#165" target="_blank">147 456</A>  </TD>
+    <TD  bgColor=#D4EFDF ><A href="desc_g/desc_g6.html#166" target="_blank">1 771 560</A>  </TD>
+    <TD bgColor=#A3E4D7 ><A  href="desc_g/desc_g7.html#167" target="_blank">14 882 658</A> </TD> 
+   <TD bgColor=#FFCC80><A  href="desc_g/desc_g8.html#168" target="_blank">140 559 416</A>  </TD>
+   <TD   bgColor=#99EF99><A  href="desc_g/desc_g9.html#169" target="_blank">2 025 135 681</A> </TD>
+     <TD   bgColor=#99EF99><A  href="desc_g/desc_g10.html#1610" target="_blank">12 951 452 377</A>
+    </TD></TR>   </TBODY></TABLE> </FONT>  </CENTER></CENTER>
+
+<br>
+<HR SIZE=4>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+
+
+<!-- Z  is  &Zopf;  -->
+<style>
+    /* Remove default list styling */
+    ul {
+      list-style-type: none;
+      margin: 20px;
+      padding: 0;
+    }
+
+    /* Optional: Add some styling to the list items */
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+
+
+Updates after 1980.    
+    
+<!--  https://htmlcolorcodes.com/  
+    https://www.toptal.com/designers/htmlarrows/symbols/  -->
+<UL>  
+
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #CDCDCD; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+      Petrit Isufi, light grey:  August 17, 2026 (11,4), (13,4), (14,4); August 13, 2026 (12,4), (15,2), (15,3). 
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #99EF99; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+      Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #9FB2D0; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+      Sami Badaoui, dusty blue: August 16, 2026 (14,5). 
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color:  #E7ECEC; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+  Jitendra Prajapati, light cloud: August 9, 2026 (4,6).
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color:  #C0CCFD; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+  Niklas Wupperfeld, lilac blue: August 6, 2026 (11,5), (13,5), (14,5),(15,5)
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color:  #9FC3BD; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+  Ryosuke Mizuno, sage teal: July 25, 2026 (12,5), (16,5). [Mi26]
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color:  #FF9933; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+  Rishabh Rajiv, saffron: July 4, 2026 (14,3).
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color:  #ff8899; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+   Marston Conder, salmon: January 18, 2026 (5,5).
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #00FFFF ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span> 
+      Francesc Comellas,  cyan:  April 2026, (6,7);  Jan-June 2024,  (3,5), (6,8), (7,6), (7,7), (8,5), (9,4), (10,4), (10,5), (11,5), (12,5), (13,5), (14,5), (15,5). See [Co25, Co26, Co26b]. By clicking on entry (8,3) = 253, you can find a zip file containing the programs used to obtain these results. The C program is the same as the one that found this particular entry in 1994, with minor output modifications. 
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #CFDFEF; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span> 
+      Vlad Pelekhaty, cloud: August 6, 2021 (13,3). Modification of the entry described in [Go06] by adding new vertices.
+      
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #CEFF00; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span> 
+      Jianxiang Chen, chartreuse, 2018-10-16 (3,8).
+      
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #D0C792; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+      Marcel Abas, silver gold: 2017 (16,2). Cayley graph. See [Ab17].
+     
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #CDCDCD; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+      Eduardo Canale, light grey: August 22, 2012 (15,2). 
+     
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #F0C0FD; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+      Alexis Rodriguez/Eduardo Canale, soft orchid: June 30, 2012 (9,5); August 20, 2012 (6,9); November 16, 2012 (9,8). See [Ro13].
+
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #FFFF8F ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>    
+ Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3);  <A href="https://isu.indstate.edu/~gexoo/DD/index.html"> G.E. link </A> [Ex01]
+
+
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #00FF00; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span> 
+   Jos&eacute; G&oacute;mez, lime: September 10, 2006; (12,3),(14,3) [Go06]
+  
+  
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #40E0D0; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span> 
+   Jos&eacute; G&oacute;mez, turquoise: June 2005; (8,6),(10,6) [Go05]
+
+  
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color:  #ff8899; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+   Marston Conder, salmon: August 17, 2006 (3,10) [Co06,CoMa13].
+  
+   <LI>  <span style="display: inline-block; width: 20px; height: 20px; background-color: #FFCC80; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+     Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10. 
+See [Lo06, LoSi08].
+
+ 
+  <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #00CC99; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+  Guillermo Pineda-Villavicencio, Jos&eacute; G&oacute;mez, Mirka Miller, Hebert P&eacute;rez-Ros&eacute;s, green:  
+  July 27, 2006 (5,6), (6,6),  (9,6),  (12,6), (14,6) [PiGoMiPe09].
+ 
+  <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #FFFF8F ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>    
+  Geoffrey Exoo, canary yellow:   May 22, 1998 (5,3) [Ex01].
+
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #ff99ff   ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span> 
+ Brendan D. McKay, Mirka Miller, J. &Scaron;ir&aacute;&ncaron;; pink: Mar 12, 1997 (13,2)   [McMiSi98]. 
+
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color:  #89CFF0   ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+ Michael Sampels;  light blue:  July 29, 1997   (7,4), (8,3) [Sa97,Sa98].
+
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #C0ECFD  ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+    Francesc Comellas, Margarida Mitjana:  celeste 1994 (8,3).
+
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color:  #95B0EC   ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>  
+    Michael J. Dinneen, Paul R. Hafner; dark cyan:  (7,5), see [DiHa94].
+    
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #7FFFD4 ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+    Francesc Comellas, Jos&eacute; G&oacute;mez;  aquamarine 1992 (4,6) [CoGo92].
+
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #D4AC0D; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+    James Allwright;  gold 1992 (4,6) [Al92].
+    
+<LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #A3E4D7; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+    Jos&eacute; G&oacute;mez,  Miquel &Agrave;ngel Fiol and Oriol Serra;  olive medium 1989  (14,7), (16,7) [GoFiSe93].   
+ 
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #D4EFDF ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+    Jos&eacute; G&oacute;mez,  Miquel &Agrave;ngel  Fiol;  olive light 1985  (11,4), (13,4), (14,4), (15,4), (16,4) [GoFi85].
+
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #FFFFFF ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+    Charles Delorme, G. Farhi; white 1982,  1984  (8,2), (9,2), (9.3), (10,2), (10,3), (11,3), (12,2), (12,4), (14,2), 
+    (14,2), (15,3), (16,3), (16,5)  [DeFa84, De85].
+
+ <LI> <span style="display: inline-block; width: 20px; height: 20px; background-color: #D7BDE2  ; margin: 0 5px;">&nbsp;&#9900;&nbsp;</span>
+    Christoph von Conta, Ignacio Alegre,  Miquel &Agrave;ngel Fiol, Jos&eacute; Lu&iacute;s Andr&eacute;s Yebra; light plum, 1982-1986  (3,4), (3,5) published [vonCo83, AlFiYe86].
+
+ </UL>
+
+<BR>
+<DT>Please, send new results to: 
+<FONT size=+1><TT>francesc.comellas@upc.edu</TT> </FONT>(<A 
+  href="https://web.mat.upc.edu/francesc.comellas/">
+     Francesc Comellas</A>, who maintains this WWW  table). <BR>
+<DT>See also the <A 
+href=" http://combinatoricswiki.org/wiki/The_Degree_Diameter_Problem_for_General_Graphs" target="_blank">Combinatorics 
+Wiki web site </A> 
+
+
+
+
+
+<HR SIZE=4>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- https://www.siam.org/Portals/0/Journal%20PDFs/serials.pdf  -->
+
+<P><B><FONT size=+1>&emsp;  References </FONT></B> </P>
+<UL>
+
+
+  <LI><b>[Ab17]</b> M. Abas. 
+  Large networks of diameter two based on Cayley graphs.  
+  CSOC 2017: Cybernetics and Mathematics Applications in Intelligent Systems pp 225–233.
+  <a href="https://link.springer.com/chapter/10.1007/978-3-319-57264-2_23" target="_blank"> DOI 10.1007/978-3-319-57264-2 </a> 
+
+ <LI> <b>[AlFiYe86]</b> I. Alegre, M.A. Fiol and , J.L.A Yebra.  
+  Some large graphs with given degree and diameter.
+    <A href="https://doi.org/10.1002/jgt.3190100211" target="_blank"><i>J. Graph Theory</I>,<B>10</B> (1986), pp.219-224.</A> 
+
+   <LI> <b>[Al82]</b> J. Allwright.  
+    New (&Delta;, D) graphs discovered by heuristic search.
+    <A href="https://www.sciencedirect.com/science/article/pii/0166218X9290120Y?via%3Dihub" target="_blank"><I> Discrete Appl. Math. </I>, <B> 37/38</b> (1992), pp. 3-8.</A>
+  
+  <LI> <b>[BeDeQu92]</b> J.-C. Bermond, C. Delorme and J.J. Quisquater. 
+  Table of large  (&Delta;,D)-graphs. 
+  <A 
+  href="https://www.sciencedirect.com/science/article/pii/0166218X9290160C" target="_blank"><I> Discrete Appl. Math.</I>, 
+  <B>37/38</B> (1992), 575-577. </A>
+ 
+  <LI> <b>[Bi74]</b> N. Biggs; 
+  <I>Algebraic Graph Theory</I>, Cambridge Math. Library ISBN 
+  0-521-45897-8 pbk, (1974, 1993 2nd edition). 
+ 
+   <LI> <b>[Co25]</b> F. Comellas.  New results on the degree-diameter problem for undirected graphs. 	Electron. J. Graph Theory Appl. </em> <b>13 (1)</b> (2025), 211-215. <A href="https://doi.org/10.5614/ejgta.2025.13.1.14">  doi:10.5614/ejgta.2025.13.1.14</a>.
+
+<LI> <b>[Co26]</b> F. Comellas.  Table of large graphs with given degree and diameter. arXiv:2406.18994 [math.CO]. <A 
+  href="https://doi.org/10.48550/arXiv.2406.18994" target="_blank">  doi: 10.48550/arXiv.2406.18994v2</A>
+
+  <LI> <b>[Co26b]</b> F. Comellas.  Table of Large Degree/Diameter Graphs, Mendeley Data, V11 (2026), <A 
+  href="https://data.mendeley.com/datasets/d75dzbjd4k/" target="_blank">  doi: 10.17632/d75dzbjd4k</A>
+ 
+    <LI> <b>[CoGo92]</b> F. Comellas, J. G&oacute;mez, New large graphs 
+  with given degree and diameter.  <I>Graph Theory, Combinatorics and 
+  Algorithms, vol 1</I>, Yousef Alavi and Allen Schwenk (Eds.), John Wiley &amp; 
+  Sons, Inc.; New York (1995) pp. 221-233. ISBN 0-471-30437-9. Proc. of the 
+  Seventh Quadrennial International Conference on the Theory and Applications of 
+  Graphs, Kalamazoo, MI, USA, June 1992<A 
+  href="https://mat-web.upc.edu/people/francesc.comellas/old-files//nlarge/CoGo95-7Kal.pdf" target="_blank"> (link to the offprint)</A>. <A 
+  href="https://doi.org/10.48550/arXiv.math/9411218" target="_blank"> DOI:10.48550/arXiv.math/9411218</A>. 
+ 
+ 
+  <LI> <b>[Co06]</b> Marston Conder   <m.conder@auckland.ac.nz>  
+   <A 
+  href="http://www.math.auckland.ac.nz/~conder/symmcubic2048list.txt" target="_blank"> Cubic symmetric graphs on up to 2048 vertices </A>
+
+ <LI> <b>[Co19]</b> Marston Conder   <m.conder@auckland.ac.nz>  
+  <A  href=" http://combinatoricswiki.org/wiki/Description_of_optimal_Cayley_graphs_found_by_Marston_Conder#Diameter_3_.28Moore_bound_.3D_302.29" target="_blank"> Optimal Cayley graphs found by Marston Conder</A>
+
+ <LI> <b>[CoMa13]</b> M. Conder, J. Ma. Arc-transitive abelian regular covers of cubic graphs. <A 
+  href="http://dx.doi.org/10.1016/j.jalgebra.2013.02.035" target="_blank"> <i> J. Algebra, </i> 387 (2013) 215-242.</A>
+  
+  <LI> <b>[vonCo83]</b> C. von Conta.  Torus and other networks as communication  networks with up to some hundred points. <A 
+  href=" https://ieeexplore.ieee.org/document/1676297" target="_blank">
+   <i>IEEE Trans Comp</I>,<B>c-32</B> (1983), pp. 657-666.</A> 
+ 
+  <LI> <b>[De85]</b> C. Delorme. 
+    Grands graphes de degr&eacute; et diam&egrave;tre donn&eacute;s.
+    <A 
+  href="https://www.sciencedirect.com/science/article/pii/S0195669885800433" target="_blank"><em>European J. Combin.</em> <b>6</b> (1985), pp. 291-302. </A>
+  
+  <DT> <b>[De85b]</b> C. Delorme.  
+  Large bipartite graphs with given degree and diameter. 
+  <A 
+  href="https://doi.org/10.1002/jgt.3190090304" target="_blank"><i> J. Graph Theory,</i> 9 (1985) 325–334. </A>
+  
+  <LI> <b>[DeFa84]</b> C. Delorme, G. Farhi. Large graphs with given degree and diameter.   <A 
+  href="https://ieeexplore.ieee.org/document/1676504" target="_blank"> <em>IEEE Trans, Comput.</em> <b>c-33</b> (1984), pp. 857-860.</A>
+
+
+  <LI> <b>[DiHa94]</b> M.J. Dinneen &amp; P. Hafner. New results for the 
+  degree/diameter problem.<A 
+  href="https://doi.org/10.1002/net.3230240702" target="_blank"> <I>Networks</I>, <B>24</B> (1994) 359-367. </A>     <A 
+  href="https://arxiv.org/pdf/math/9504214.pdf" target="_blank"> (arXiv preprint) </A>
+
+ <LI> <b>[Ex01]</b> Geoffrey Exoo. A family of 
+  graphs and the degree/diameter problem.&nbsp; <A href="https://doi.org/10.1002/jgt.1007" target="_blank">   <I>J. Graph Theory</I><B> 37</B> 
+  (2001), 118-124.</A>  <A href="https://isu.indstate.edu/~gexoo/DD/index.html" target="_blank"> Link to graph data </A>
+  <!-- Communicated May, 19-22,&nbsp; July, 1 1998 -->
+   
+  <LI> <b>[GoFi85]</b> J. G&oacute;mez, M.A. Fiol. Dense compound graphs,
+  <A 
+  href="https://web.mat.upc.edu/francesc.comellas/old-files/delta-d/papers/GoFi85-Ars_Comb_20A_211-237.pdf" target="_blank"> <em>Ars Combinatoria</em>, <b> 20-A </b> (1985), pp. 211-237. </A>
+  
+ <LI> <b>[GoFiSe93]</b> J. G&oacute;mez, M.A. Fiol and O. Serra, 
+     On large  (&Delta;, D) graphs,
+   <A 
+  href="https://doi.org/10.1016/0012-365X(93)90368-4" target="_blank"><em>Discrete Mathematics</em>, <b>114</b> (1993), pp. 235. </A>
+    
+    <LI><b>[Go05]</b> J. G&oacute;mez. 
+    On large (&Delta;,6)-graphs. <A 
+  href="https://doi.org/10.1002/net.20075" target="_blank"> <em>Networks</em> <b>46</b> (2005), pp. 82-87.</A>
+   
+  
+    <LI> <b>[Go06]</b> J. G&oacute;mez. 
+    Some new large (&Delta;,3) graphs.
+    <A 
+  href="https://doi.org/10.1002/net.20254" target="_blank"> <em>Networks</em> <b>53</b> (2009), pp. 1-5.</A>
+ 
+   <!--
+   <LI> <b>[Gu00]</b>    X. Guarch (supervisor: F. Comellas), Contruction of dense interconnection 
+  networks and cages using simulated annealing, <A 
+  href="https://mat-web.upc.edu/people/francesc.comellas/old-files/algevol-pdf/XGuarch-PFC.pdf" target="_blank">PFC </A>(equiv. 
+  Master Thesis), ETSETB, Universitat Politecnica de Catalunya, January 12, 2000 
+  (in Catalan). -->
+ <!-- Jean-Jacques Quisquater.  Communicated the same value February 27, 1998, but no details were given). -->
+ 
+  <LI> <b>[Ha94]</b> <A href="http://www.math.auckland.ac.nz/~hafner/" target="_blank">P.R. Hafner</A> (<A 
+  href="mailto:hafner@math.auckland.ac.nz" target="_blank">hafner@math.auckland.ac.nz</A> ); <A 
+  href="http://www.cs.auckland.ac.nz/CDMTCS/researchreports/004cayley.pdf" target="_blank">Large 
+  Cayley graphs and digraphs with small degree and diameter. </A>Report 
+  CDMTCS-005, June 1995. Wieb Bosma and Alf van der Poorten (eds) Computational 
+  Algebra and Number Theory Mathematics and Its Applications 325; Kluwer 
+  Academic Publishers Dordrecht/Boston/London (1995), pp. 291--302; ISBN 
+  0-7923-3501-5 
+  
+    <LI> <b>[HoSi60]</b> 
+    A. J. Hoffman, R. R. Singleton. On Moore graphs with diameters two and three.
+     <A 
+  href="https://people.orie.cornell.edu/dpw/orie6334/HoffmanS60.pdf" target="_blank"><em>I.B.M. Jour.</em> <b>4</b> (1960), pp. 497-504.</A>
+
+  <LI> <b>[Lo06]</b> Eyal Loz <a href="http://hdl.handle.net/2292/52008" target="_blank">PhD Thesis</a>. Communicated July & August 2006. See  <a href="https://web.archive.org/web/20091014041644/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem" target="_blank"> http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem </a> More details in <b>[LoSi08]</b>.
+   
+ <LI> <b>[LoSi08]</b> E. Loz, J. &Scaron;ir&aacute;&ncaron;.   
+  New record graphs in the degree-diameter problem.
+  <a href="https://ajc.maths.uq.edu.au/pdf/41/ajc_v41_p063.pdf" target="_blank"><em>Australas. J. Combin. 41 (2008), 63–80.</em></a>
+
+  <LI><b>[McMiSi98]</b> B.D. McKay, M. Miller, J. &Scaron;ir&aacute;&ncaron;.
+  <!-- href="https://web.archive.org/web/20141025101647/http://cs.anu.edu.au/people/bdm/papers/siran.dvi -->
+  A note on large graphs of diameter two and given maximum degree. 
+  <A 
+  href="https://www.sciencedirect.com/science/article/pii/S0095895698918287/pdfft?isDTMRedir=true&download=true" target="_blank"><I> J. Combin. Theory Ser. B </I><B>74</B> (1998) 
+  110-118.</A>
+ 
+ <LI> <b>[MiSi13]</b> M. Miller, J. &Scaron;ir&aacute;&ncaron;. 
+     Moore graphs and beyond: A survey of the degree/diameter problem. 
+   <a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS14/pdf" target="_blank"><em> Electron. J. Combin.</em> DS14 (2nd. edition. May 2013) 92 pp. </a> 
+ 
+<LI> <b>[Mi26]</b> R. Mizuno, New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM
+ 	arXiv:2606.15860 [math.GM]. <A 
+  href="https://doi.org/10.48550/arXiv.2606.15860" target="_blank">  doi: 10.48550/arXiv.2606.15860v1</A>
+
+
+<LI> <b>[Mo06]</b> S. G. Molodtsov. 
+    Largest graphs of diameter 2 and maximum degree 6. 
+    <A 
+  href="https://link.springer.com/chapter/10.1007/11889342_54" target="_blank"><em>LNCS 4123 (2006) 853-857. </em></A>
+
+<LI> <b>[PiGoMiPe09]</b> G. Pineda-Villavicencio, J. G&oacute;mez, M. Miller, H. P&eacute;rez-Ros&eacute;s. 
+ New largest known graphs of diameter 6. 
+  <A HREF= "https://onlinelibrary.wiley.com/doi/abs/10.1002/net.20269" target="_blank"><i>Networks</i> 53 (2009) 315-328.</A>
+ 
+ <LI><b>[Ro13]</b> Alexis Rodr&iacute;guez de los Santos (2013.). 
+    <a href="https://www.colibri.udelar.edu.uy/jspui/bitstream/20.500.12008/24170/1/Rod13.pdf" target="_blank"> B&uacute;squedas masivas de grafos de gran orden con grado y di&aacute;metro acotados.</a> Tesis de maestría. Universidad de la Rep&uacute;blica (Uruguay). Facultad de Ingeniería.</DT>
+  
+  <LI><b>[Sa97]</b> M. Sampels. 
+  Large networks with small diameter. 
+  Proceedings of the 
+  23rd International Workshop on Graph-Theoretic Concepts in Computer Science 
+  (WG '97), 
+  <A 
+  href="https://link.springer.com/content/pdf/10.1007/BFb0024505?pdf=chapter%20toc" target="_blank"> <em>LNCS 1335, pp. 288-302. Springer-Verlag, 1997</em>.</A>  
+  
+  <!--
+  <LI><b>[Sa98 ]</b> Michael Sampels. 
+  Algebraische Konstruktion effizienter Verbindungsnetzwerke. PhD thesis at the University of Oldenburg. Logos-Verlag 
+  Berlin, 1998. ISBN 3-89722-051-2. 
+  -->
+  <!-- 
+ <LI><b>[Wo96]</b> O. Wohlmuth. <A href="http://www.ti6.tu-harburg.de/~ti6ow/paper1.html" target="_blank">A 
+  New Dense Group Graph Discoverd by an Evolutionary Approach</A> . Paralleles 
+  und Verteiltes Rechnen Beitraege zum 4. Workshop ueber Wissenschaftlichen 
+  Rechnen, p. 21-27, Shaker Verlag 1996. ISBN 3-8265-1826-8. 
+  <A 
+  href="https://web.archive.org/web/19970707131529/ftp://ftp.ti6.tu-harburg.de/pub/paper/diambrend.ps.gz" target="_blank"> link to the paper (at archive.org) </A>
+  -->
+  
+   </UL>
+  
+  <P> </p>
+  
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
+
+  <HR align=center SIZE=6>
+  <I>Created: January, 1995 in collaboration with Charles Delorme. Last changed: August 18, 2026.  </I><BR>Go 
+back in time 
+  and have a <A 
+  href="http://web.archive.org/web/*/http://maite71.upc.es/grup_de_grafs/table_g.html" target="_blank">snapshot 
+  of this table</A> at different moments after 1995 thanks to <A 
+  href="http://web.archive.org/" target="_blank">the internet archive project.</A> 
+</LI></OL></DT></BODY></HTML>

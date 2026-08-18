@@ -1,0 +1,11 @@
+145 cells queued
+Traceback (most recent call last):
+  File "/lambda/nfs/new-fs/longshots/scripts/spray_cwc.py", line 75, in <module>
+    main()
+  File "/lambda/nfs/new-fs/longshots/scripts/spray_cwc.py", line 60, in main
+    res = hunt_cell(n, d, w, lb, max_rounds=args.rounds, nchains=args.chains,
+  File "/lambda/nfs/new-fs/longshots/scripts/hunt_cwc.py", line 108, in hunt_cell
+    pool.append(("incumbent", load_code_file(inc[1], n)))
+  File "/lambda/nfs/new-fs/longshots/scripts/hunt_cwc.py", line 37, in load_code_file
+    words.append(int(line, 0))
+ValueError: invalid literal for int() with base 0: '$BASE=16'

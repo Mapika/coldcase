@@ -1,0 +1,7 @@
+*.so
+__pycache__/
+*.pyc
+cov/search/covsearch
+cov/results/**/*.tmp
+cov/search/covsearch_cuda
+cov/search/.nfs*

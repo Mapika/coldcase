@@ -1,0 +1,527 @@
+260 cells queued
+  [42,14,14] M=821 round 0: found=0 best_cost=2116
+  [42,14,14] M=821 round 1: found=0 best_cost=1979
+  [42,14,14] M=821 round 2: found=0 best_cost=-640486400
+  [42,14,14] M=821 round 3: found=0 best_cost=-1055263982
+  [42,14,14] M=821 round 4: found=0 best_cost=-1071720263
+  [42,14,14] M=821 round 5: found=0 best_cost=-1063124570
+  [42,14,14] M=821 round 6: found=0 best_cost=-1069297906
+  [42,14,14] M=821 round 7: found=0 best_cost=-1059226804
+  [41,14,14] M=616 round 0: found=0 best_cost=-1069290794
+  [41,14,14] M=616 round 1: found=0 best_cost=-1073506905
+  [41,14,14] M=616 round 2: found=0 best_cost=-1073417525
+  [41,14,14] M=616 round 3: found=0 best_cost=-1070297702
+  [41,14,14] M=616 round 4: found=0 best_cost=-1061277912
+  [41,14,14] M=616 round 5: found=0 best_cost=-1058127715
+  [41,14,14] M=616 round 6: found=0 best_cost=-1073270042
+  [41,14,14] M=616 round 7: found=0 best_cost=-1059161668
+  [40,14,14] M=493 round 0: found=0 best_cost=-1033004594
+  [40,14,14] M=493 round 1: found=0 best_cost=-1069136680
+  [40,14,14] M=493 round 2: found=0 best_cost=-1073227206
+  [40,14,14] M=493 round 3: found=0 best_cost=-1071109316
+  [40,14,14] M=493 round 4: found=0 best_cost=-1069813102
+  [40,14,14] M=493 round 5: found=0 best_cost=-1073456214
+  [40,14,14] M=493 round 6: found=0 best_cost=-1070238204
+  [40,14,14] M=493 round 7: found=0 best_cost=-1071813298
+  [39,14,14] M=458 round 0: found=0 best_cost=-1065586255
+  [39,14,14] M=458 round 1: found=0 best_cost=-1070171877
+  [39,14,14] M=458 round 2: found=0 best_cost=-1069176540
+  [39,14,14] M=458 round 3: found=0 best_cost=-1065158152
+  [39,14,14] M=458 round 4: found=0 best_cost=-1066303251
+  [39,14,14] M=458 round 5: found=0 best_cost=-1059069439
+  [39,14,14] M=458 round 6: found=0 best_cost=-1070541046
+  [39,14,14] M=458 round 7: found=0 best_cost=-1071237097
+  [38,14,14] M=344 round 0: found=0 best_cost=-1067810275
+  [38,14,14] M=344 round 1: found=0 best_cost=-1066419171
+  [38,14,14] M=344 round 2: found=0 best_cost=-1052014529
+  [38,14,14] M=344 round 3: found=0 best_cost=-1072506046
+  [38,14,14] M=344 round 4: found=0 best_cost=-1072314207
+  [38,14,14] M=344 round 5: found=0 best_cost=-1062376193
+  [38,14,14] M=344 round 6: found=0 best_cost=-1072724758
+  [38,14,14] M=344 round 7: found=0 best_cost=-1064198442
+  [37,14,14] M=272 round 0: found=0 best_cost=6
+  [37,14,14] M=272 round 1: found=0 best_cost=9
+  [37,14,14] M=272 round 2: found=0 best_cost=14
+  [37,14,14] M=272 round 3: found=0 best_cost=11
+  [37,14,14] M=272 round 4: found=0 best_cost=10
+  [37,14,14] M=272 round 5: found=0 best_cost=10
+  [37,14,14] M=272 round 6: found=0 best_cost=6
+  [37,14,14] M=272 round 7: found=0 best_cost=10
+  [36,14,14] M=219 round 0: found=0 best_cost=9
+  [36,14,14] M=219 round 1: found=0 best_cost=4
+  [36,14,14] M=219 round 2: found=0 best_cost=4
+  [36,14,14] M=219 round 3: found=0 best_cost=8
+  [36,14,14] M=219 round 4: found=0 best_cost=8
+  [36,14,14] M=219 round 5: found=0 best_cost=12
+  [36,14,14] M=219: time budget exhausted
+  [35,14,14] M=164 round 0: found=0 best_cost=7
+  [35,14,14] M=164 round 1: found=0 best_cost=8
+  [35,14,14] M=164 round 2: found=0 best_cost=6
+  [35,14,14] M=164 round 3: found=0 best_cost=6
+  [35,14,14] M=164 round 4: found=0 best_cost=6
+  [35,14,14] M=164 round 5: found=0 best_cost=3
+  [35,14,14] M=164: time budget exhausted
+  [30,10,12] M=769 round 0: found=0 best_cost=1
+  [30,10,12] M=769 round 1: found=0 best_cost=4
+  [30,10,12] M=769 round 2: found=0 best_cost=3
+  [30,10,12] M=769 round 3: found=0 best_cost=4
+  [30,10,12] M=769: time budget exhausted
+  [31,10,11] M=652 round 0: found=0 best_cost=869
+  [31,10,11] M=652 round 1: found=0 best_cost=869
+  [31,10,11] M=652 round 2: found=0 best_cost=865
+  [31,10,11] M=652 round 3: found=0 best_cost=849
+  [31,10,11] M=652: time budget exhausted
+  [30,10,11] M=513 round 0: found=0 best_cost=3
+  [30,10,11] M=513 round 1: found=0 best_cost=4
+  [30,10,11] M=513 round 2: found=0 best_cost=1
+  [30,10,11] M=513 round 3: found=0 best_cost=1
+  [30,10,11] M=513: time budget exhausted
+  [29,10,12] M=544 round 0: found=0 best_cost=8
+  [29,10,12] M=544 round 1: found=0 best_cost=10
+  [29,10,12] M=544 round 2: found=0 best_cost=10
+  [29,10,12] M=544 round 3: found=0 best_cost=4
+  [29,10,12] M=544: time budget exhausted
+  [29,10,13] M=757 round 0: found=0 best_cost=-3375
+  [29,10,13] M=757 round 1: found=0 best_cost=15
+  [29,10,13] M=757 round 2: found=0 best_cost=11
+  [29,10,13] M=757 round 3: found=0 best_cost=13
+  [29,10,13] M=757: time budget exhausted
+  [34,14,14] M=133 round 0: found=0 best_cost=6
+  [34,14,14] M=133 round 1: found=0 best_cost=8
+  [34,14,14] M=133 round 2: found=0 best_cost=6
+  [34,14,14] M=133: time budget exhausted
+  [32,10,10] M=501 round 0: found=0 best_cost=1
+  [32,10,10] M=501 round 1: found=0 best_cost=1
+  [32,10,10] M=501 round 2: found=0 best_cost=1
+  [32,10,10] M=501 round 3: found=0 best_cost=2
+  [32,10,10] M=501: time budget exhausted
+  [36,12,12] M=837 round 0: found=0 best_cost=7
+  [36,12,12] M=837 round 1: found=0 best_cost=7
+  [36,12,12] M=837 round 2: found=0 best_cost=6
+  [36,12,12] M=837 round 3: found=0 best_cost=6
+  [36,12,12] M=837: time budget exhausted
+  [28,10,12] M=391 round 0: found=0 best_cost=468
+  [28,10,12] M=391 round 1: found=0 best_cost=475
+  [28,10,12] M=391 round 2: found=0 best_cost=470
+  [28,10,12] M=391: time budget exhausted
+  [29,10,11] M=407 round 0: found=0 best_cost=179
+  [29,10,11] M=407 round 1: found=0 best_cost=169
+  [29,10,11] M=407 round 2: found=0 best_cost=184
+  [29,10,11] M=407: time budget exhausted
+  [35,12,12] M=665 round 0: found=0 best_cost=11
+  [35,12,12] M=665 round 1: found=0 best_cost=13
+  [35,12,12] M=665 round 2: found=0 best_cost=12
+  [35,12,12] M=665 round 3: found=0 best_cost=9
+  [35,12,12] M=665: time budget exhausted
+  [30,10,10] M=323 round 0: found=0 best_cost=311
+  [30,10,10] M=323 round 1: found=0 best_cost=325
+  [30,10,10] M=323 round 2: found=0 best_cost=325
+  [30,10,10] M=323: time budget exhausted
+  [34,12,12] M=553 round 0: found=0 best_cost=4
+  [34,12,12] M=553 round 1: found=0 best_cost=7
+  [34,12,12] M=553 round 2: found=0 best_cost=5
+  [34,12,12] M=553: time budget exhausted
+  [28,10,11] M=309 round 0: found=0 best_cost=334
+  [28,10,11] M=309 round 1: found=0 best_cost=341
+  [28,10,11] M=309 round 2: found=0 best_cost=344
+  [28,10,11] M=309: time budget exhausted
+  [31,10,10] M=466 round 0: found=0 best_cost=263
+  [31,10,10] M=466 round 1: found=0 best_cost=288
+  [31,10,10] M=466 round 2: found=0 best_cost=265
+  [31,10,10] M=466 round 3: found=0 best_cost=278
+  [31,10,10] M=466: time budget exhausted
+  [32,12,15] M=630 round 0: found=0 best_cost=5
+  [32,12,15] M=630 round 1: found=0 best_cost=3
+  [32,12,15] M=630 round 2: found=0 best_cost=4
+  [32,12,15] M=630 round 3: found=0 best_cost=5
+  [32,12,15] M=630: time budget exhausted
+  [29,10,10] M=267 round 0: found=0 best_cost=265
+  [29,10,10] M=267 round 1: found=0 best_cost=266
+  [29,10,10] M=267 round 2: found=0 best_cost=258
+  [29,10,10] M=267: time budget exhausted
+  [33,14,14] M=113 round 0: found=0 best_cost=97
+  [33,14,14] M=113 round 1: found=0 best_cost=53
+  [33,14,14] M=113 round 2: found=0 best_cost=70
+  [33,14,14] M=113: time budget exhausted
+  [32,10,9] M=306 round 0: found=0 best_cost=3
+  [32,10,9] M=306 round 1: found=0 best_cost=3
+  [32,10,9] M=306 round 2: found=0 best_cost=3
+  [32,10,9] M=306: time budget exhausted
+  [38,10,8] M=286 round 0: found=0 best_cost=232
+  [38,10,8] M=286 round 1: found=0 best_cost=231
+  [38,10,8] M=286 round 2: found=0 best_cost=233
+  [38,10,8] M=286 round 3: found=0 best_cost=231
+  [38,10,8] M=286: time budget exhausted
+  [39,10,8] M=313 round 0: found=0 best_cost=250
+  [39,10,8] M=313 round 1: found=0 best_cost=250
+  [39,10,8] M=313 round 2: found=0 best_cost=247
+  [39,10,8] M=313 round 3: found=0 best_cost=243
+  [39,10,8] M=313: time budget exhausted
+  [43,10,8] M=471 round 0: found=0 best_cost=1
+  [43,10,8] M=471 round 1: found=0 best_cost=2
+  [43,10,8] M=471 round 2: found=0 best_cost=1
+  [43,10,8] M=471 round 3: found=0 best_cost=3
+  [43,10,8] M=471: time budget exhausted
+  [28,10,10] M=220 round 0: found=0 best_cost=215
+  [28,10,10] M=220 round 1: found=0 best_cost=210
+  [28,10,10] M=220 round 2: found=0 best_cost=183
+  [28,10,10] M=220: time budget exhausted
+  [27,10,11] M=244 round 0: found=0 best_cost=259
+  [27,10,11] M=244 round 1: found=0 best_cost=210
+  [27,10,11] M=244 round 2: found=0 best_cost=211
+  [27,10,11] M=244: time budget exhausted
+  [31,10,9] M=233 round 0: found=0 best_cost=54
+  [31,10,9] M=233 round 1: found=0 best_cost=50
+  [31,10,9] M=233 round 2: found=0 best_cost=47
+  [31,10,9] M=233: time budget exhausted
+  [34,10,8] M=182 round 0: found=0 best_cost=135
+  [34,10,8] M=182 round 1: found=0 best_cost=131
+  [34,10,8] M=182 round 2: found=0 best_cost=128
+  [34,10,8] M=182: time budget exhausted
+  [33,10,8] M=166 round 0: found=0 best_cost=128
+  [33,10,8] M=166 round 1: found=0 best_cost=129
+  [33,10,8] M=166 round 2: found=0 best_cost=128
+  [33,10,8] M=166: time budget exhausted
+  [41,10,8] M=381 round 0: found=0 best_cost=314
+  [41,10,8] M=381 round 1: found=0 best_cost=287
+  [41,10,8] M=381 round 2: found=0 best_cost=281
+  [41,10,8] M=381: time budget exhausted
+  [32,12,13] M=435 round 0: found=0 best_cost=4
+  [32,12,13] M=435 round 1: found=0 best_cost=4
+  [32,12,13] M=435 round 2: found=0 best_cost=5
+  [32,12,13] M=435 round 3: found=0 best_cost=4
+  [32,12,13] M=435: time budget exhausted
+  [44,10,8] M=551 round 0: found=0 best_cost=555
+  [44,10,8] M=551 round 1: found=0 best_cost=569
+  [44,10,8] M=551 round 2: found=0 best_cost=563
+  [44,10,8] M=551 round 3: found=0 best_cost=555
+  [44,10,8] M=551: time budget exhausted
+  [27,10,10] M=163 round 0: found=0 best_cost=130
+  [27,10,10] M=163 round 1: found=0 best_cost=126
+  [27,10,10] M=163 round 2: found=0 best_cost=128
+  [27,10,10] M=163: time budget exhausted
+  [40,10,8] M=361 round 0: found=0 best_cost=322
+  [40,10,8] M=361 round 1: found=0 best_cost=321
+  [40,10,8] M=361 round 2: found=0 best_cost=316
+  [40,10,8] M=361 round 3: found=0 best_cost=309
+  [40,10,8] M=361: time budget exhausted
+  [27,10,12] M=352 round 0: found=0 best_cost=502
+  [27,10,12] M=352 round 1: found=0 best_cost=486
+  [27,10,12] M=352 round 2: found=0 best_cost=485
+  [27,10,12] M=352: time budget exhausted
+  [26,10,11] M=169 round 0: found=0 best_cost=146
+  [26,10,11] M=169 round 1: found=0 best_cost=144
+  [26,10,11] M=169 round 2: found=0 best_cost=144
+  [26,10,11] M=169: time budget exhausted
+  [35,10,8] M=211 round 0: found=0 best_cost=161
+  [35,10,8] M=211 round 1: found=0 best_cost=169
+  [35,10,8] M=211 round 2: found=0 best_cost=168
+  [35,10,8] M=211 round 3: found=0 best_cost=173
+  [35,10,8] M=211: time budget exhausted
+  [26,10,12] M=209 round 0: found=0 best_cost=211
+  [26,10,12] M=209 round 1: found=0 best_cost=215
+  [26,10,12] M=209 round 2: found=0 best_cost=213
+  [26,10,12] M=209: time budget exhausted
+  [27,10,13] M=426 round 0: found=0 best_cost=1
+  [27,10,13] M=426 round 1: found=0 best_cost=5
+  [27,10,13] M=426 round 2: found=0 best_cost=1
+  [27,10,13] M=426: time budget exhausted
+  [30,10,9] M=204 round 0: found=0 best_cost=1
+  [30,10,9] M=204 round 1: found=0 best_cost=1
+  [30,10,9] M=204 round 2: found=0 best_cost=2
+  [30,10,9] M=204: time budget exhausted
+  [28,10,14] M=815 round 0: found=0 best_cost=1
+  [28,10,14] M=815 round 1: found=0 best_cost=1
+  [28,10,14] M=815: time budget exhausted
+  [28,10,13] M=757 round 0: found=0 best_cost=1498
+  [28,10,13] M=757 round 1: found=0 best_cost=1439
+  [28,10,13] M=757: time budget exhausted
+  [26,10,13] M=235 round 0: found=0 best_cost=3
+  [26,10,13] M=235 round 1: found=0 best_cost=5
+  [26,10,13] M=235: time budget exhausted
+  [37,10,8] M=260 round 0: found=0 best_cost=213
+  [37,10,8] M=260 round 1: found=0 best_cost=212
+  [37,10,8] M=260 round 2: found=0 best_cost=209
+  [37,10,8] M=260: time budget exhausted
+  [45,10,8] M=628 round 0: found=0 best_cost=702
+  [45,10,8] M=628 round 1: found=0 best_cost=692
+  [45,10,8] M=628 round 2: found=0 best_cost=691
+  [45,10,8] M=628: time budget exhausted
+  [42,10,8] M=442 round 0: found=0 best_cost=62
+  [42,10,8] M=442 round 1: found=0 best_cost=64
+  [42,10,8] M=442: time budget exhausted
+  [33,12,12] M=497 round 0: found=0 best_cost=2
+  [33,12,12] M=497 round 1: found=0 best_cost=10
+  [33,12,12] M=497 round 2: found=0 best_cost=10
+  [33,12,12] M=497: time budget exhausted
+  [36,10,8] M=246 round 0: found=0 best_cost=217
+  [36,10,8] M=246 round 1: found=0 best_cost=209
+  [36,10,8] M=246 round 2: found=0 best_cost=186
+  [36,10,8] M=246: time budget exhausted
+  [29,10,9] M=169 round 0: found=0 best_cost=141
+  [29,10,9] M=169 round 1: found=0 best_cost=140
+  [29,10,9] M=169: time budget exhausted
+  [32,12,11] M=187 round 0: found=0 best_cost=221
+  [32,12,11] M=187 round 1: found=0 best_cost=167
+  [32,12,11] M=187 round 2: found=0 best_cost=137
+  [32,12,11] M=187: time budget exhausted
+  [25,10,12] M=142 round 0: found=0 best_cost=1
+  [25,10,12] M=142 round 1: found=0 best_cost=1
+  [25,10,12] M=142 round 2: found=0 best_cost=1
+  [25,10,12] M=142: time budget exhausted
+  [26,10,10] M=131 round 0: found=0 best_cost=100
+  [26,10,10] M=131 round 1: found=0 best_cost=98
+  [26,10,10] M=131 round 2: found=0 best_cost=100
+  [26,10,10] M=131: time budget exhausted
+  [25,10,11] M=126 round 0: found=0 best_cost=97
+  [25,10,11] M=126 round 1: found=0 best_cost=62
+  [25,10,11] M=126 round 2: found=0 best_cost=57
+  [25,10,11] M=126: time budget exhausted
+  [30,12,15] M=303 round 0: found=0 best_cost=5
+  [30,12,15] M=303 round 1: found=0 best_cost=8
+  [30,12,15] M=303 round 2: found=0 best_cost=6
+  [30,12,15] M=303: time budget exhausted
+  [47,10,8] M=796 round 0: found=0 best_cost=6
+  [47,10,8] M=796 round 1: found=0 best_cost=5
+  [47,10,8] M=796 round 2: found=0 best_cost=6
+  [47,10,8] M=796: time budget exhausted
+  [32,14,15] M=97 round 0: found=0 best_cost=89
+  [32,14,15] M=97 round 1: found=0 best_cost=38
+  [32,14,15] M=97 round 2: found=0 best_cost=61
+  [32,14,15] M=97: time budget exhausted
+  [29,12,13] M=154 round 0: found=0 best_cost=8
+  [29,12,13] M=154 round 1: found=0 best_cost=10
+  [29,12,13] M=154: time budget exhausted
+  [29,12,14] M=175 round 0: found=0 best_cost=5
+  [29,12,14] M=175 round 1: found=0 best_cost=6
+  [29,12,14] M=175: time budget exhausted
+  [46,10,8] M=760 round 0: found=0 best_cost=13
+  [46,10,8] M=760 round 1: found=0 best_cost=13
+  [46,10,8] M=760 round 2: found=0 best_cost=13
+  [46,10,8] M=760 round 3: found=0 best_cost=14
+  [46,10,8] M=760: time budget exhausted
+  [32,10,8] M=146 round 0: found=0 best_cost=1
+  [32,10,8] M=146 round 1: found=0 best_cost=1
+  [32,10,8] M=146 round 2: found=0 best_cost=1
+  [32,10,8] M=146: time budget exhausted
+  [30,12,14] M=290 round 0: found=0 best_cost=10
+  [30,12,14] M=290 round 1: found=0 best_cost=9
+  [30,12,14] M=290 round 2: found=0 best_cost=8
+  [30,12,14] M=290 round 3: found=0 best_cost=8
+  [30,12,14] M=290: time budget exhausted
+  [30,12,13] M=240 round 0: found=0 best_cost=8
+  [30,12,13] M=240 round 1: found=0 best_cost=5
+  [30,12,13] M=240 round 2: found=0 best_cost=14
+  [30,12,13] M=240 round 3: found=0 best_cost=12
+  [30,12,13] M=240: time budget exhausted
+  [28,10,9] M=141 round 0: found=0 best_cost=114
+  [28,10,9] M=141 round 1: found=0 best_cost=113
+  [28,10,9] M=141 round 2: found=0 best_cost=114
+  [28,10,9] M=141: time budget exhausted
+  [25,10,10] M=101 round 0: found=0 best_cost=69
+  [25,10,10] M=101 round 1: found=0 best_cost=55
+  [25,10,10] M=101 round 2: found=0 best_cost=55
+  [25,10,10] M=101 round 3: found=0 best_cost=51
+  [25,10,10] M=101 round 4: found=0 best_cost=31
+  [25,10,10] M=101: time budget exhausted
+  [32,14,13] M=71 round 0: found=0 best_cost=52
+  [32,14,13] M=71 round 1: found=0 best_cost=30
+  [32,14,13] M=71 round 2: found=0 best_cost=27
+  [32,14,13] M=71 round 3: found=0 best_cost=33
+  [32,14,13] M=71 round 4: found=0 best_cost=28
+  [32,14,13] M=71: time budget exhausted
+  [31,10,8] M=125 round 0: found=0 best_cost=26
+  [31,10,8] M=125 round 1: found=0 best_cost=41
+  [31,10,8] M=125 round 2: found=0 best_cost=55
+  [31,10,8] M=125 round 3: found=0 best_cost=33
+  [31,10,8] M=125: time budget exhausted
+  [30,12,12] M=191 round 0: found=0 best_cost=251
+  [30,12,12] M=191 round 1: found=0 best_cost=239
+  [30,12,12] M=191 round 2: found=0 best_cost=251
+  [30,12,12] M=191: time budget exhausted
+  [31,14,15] M=73 round 0: found=0 best_cost=58
+  [31,14,15] M=73 round 1: found=0 best_cost=37
+  [31,14,15] M=73 round 2: found=0 best_cost=37
+  [31,14,15] M=73 round 3: found=0 best_cost=37
+  [31,14,15] M=73 round 4: found=0 best_cost=35
+  [31,14,15] M=73: time budget exhausted
+  [31,14,14] M=67 round 0: found=0 best_cost=50
+  [31,14,14] M=67 round 1: found=0 best_cost=31
+  [31,14,14] M=67 round 2: found=0 best_cost=48
+  [31,14,14] M=67 round 3: found=0 best_cost=27
+  [31,14,14] M=67 round 4: found=0 best_cost=30
+  [31,14,14] M=67: time budget exhausted
+  [31,12,15] M=573 round 0: found=0 best_cost=9
+  [31,12,15] M=573 round 1: found=0 best_cost=12
+  [31,12,15] M=573 round 2: found=0 best_cost=11
+  [31,12,15] M=573 round 3: found=0 best_cost=11
+  [31,12,15] M=573: time budget exhausted
+  [29,12,12] M=120 round 0: found=0 best_cost=118
+  [29,12,12] M=120 round 1: found=0 best_cost=96
+  [29,12,12] M=120 round 2: found=0 best_cost=43
+  [29,12,12] M=120 round 3: found=0 best_cost=71
+  [29,12,12] M=120: time budget exhausted
+  [27,10,9] M=119 round 0: found=0 best_cost=1
+  [27,10,9] M=119 round 1: found=0 best_cost=1
+  [27,10,9] M=119 round 2: found=0 best_cost=3
+  [27,10,9] M=119 round 3: found=0 best_cost=1
+  [27,10,9] M=119: time budget exhausted
+  [32,12,10] M=123 round 0: found=0 best_cost=123
+  [32,12,10] M=123 round 1: found=0 best_cost=73
+  [32,12,10] M=123 round 2: found=0 best_cost=109
+  [32,12,10] M=123 round 3: found=0 best_cost=86
+  [32,12,10] M=123: time budget exhausted
+  [31,12,14] M=511 round 0: found=0 best_cost=8
+  [31,12,14] M=511 round 1: found=0 best_cost=10
+  [31,12,14] M=511 round 2: found=0 best_cost=9
+  [31,12,14] M=511 round 3: found=0 best_cost=7
+  [31,12,14] M=511: time budget exhausted
+  [32,14,14] M=97 round 0: found=0 best_cost=95
+  [32,14,14] M=97 round 1: found=0 best_cost=57
+  [32,14,14] M=97 round 2: found=0 best_cost=33
+  [32,14,14] M=97 round 3: found=0 best_cost=34
+  [32,14,14] M=97: time budget exhausted
+  [32,14,16] M=123 round 0: found=0 best_cost=135
+  [32,14,16] M=123 round 1: found=0 best_cost=86
+  [32,14,16] M=123 round 2: found=0 best_cost=80
+  [32,14,16] M=123 round 3: found=0 best_cost=76
+  [32,14,16] M=123: time budget exhausted
+  [31,12,13] M=401 round 0: found=0 best_cost=15
+  [31,12,13] M=401 round 1: found=0 best_cost=14
+  [31,12,13] M=401 round 2: found=0 best_cost=8
+  [31,12,13] M=401 round 3: found=0 best_cost=17
+  [31,12,13] M=401: time budget exhausted
+  [32,12,14] M=901 round 0: found=0 best_cost=9
+  [32,12,14] M=901 round 1: found=0 best_cost=9
+  [32,12,14] M=901 round 2: found=0 best_cost=16
+  [32,12,14] M=901 round 3: found=0 best_cost=26
+  [32,12,14] M=901: time budget exhausted
+  [24,10,10] M=73 round 0: found=0 best_cost=35
+  [24,10,10] M=73 round 1: found=0 best_cost=21
+  [24,10,10] M=73 round 2: found=0 best_cost=20
+  [24,10,10] M=73 round 3: found=0 best_cost=22
+  [24,10,10] M=73 round 4: found=0 best_cost=19
+  [24,10,10] M=73 round 5: found=0 best_cost=24
+  [24,10,10] M=73: time budget exhausted
+  [26,10,9] M=92 round 0: found=0 best_cost=42
+  [26,10,9] M=92 round 1: found=0 best_cost=19
+  [26,10,9] M=92 round 2: found=0 best_cost=16
+  [26,10,9] M=92 round 3: found=0 best_cost=18
+  [26,10,9] M=92 round 4: found=0 best_cost=29
+  [26,10,9] M=92 round 5: found=0 best_cost=15
+  [26,10,9] M=92 round 6: found=0 best_cost=13
+  [26,10,9] M=92 round 7: found=0 best_cost=19
+  [24,10,11] M=96 round 0: found=0 best_cost=1
+  [24,10,11] M=96 round 1: found=0 best_cost=1
+  [24,10,11] M=96 round 2: found=0 best_cost=1
+  [24,10,11] M=96 round 3: found=0 best_cost=1
+  [24,10,11] M=96 round 4: found=0 best_cost=1
+  [24,10,11] M=96 round 5: found=0 best_cost=2
+  [24,10,11] M=96 round 6: found=0 best_cost=-1073607962
+  [24,10,11] M=96 round 7: found=0 best_cost=-1073503310
+  [30,10,8] M=109 round 0: found=0 best_cost=-1073430114
+  [30,10,8] M=109 round 1: found=0 best_cost=-1073633103
+  [30,10,8] M=109 round 2: found=0 best_cost=-1073438565
+  [30,10,8] M=109 round 3: found=0 best_cost=-1073482443
+  [30,10,8] M=109 round 4: found=0 best_cost=-1073741204
+  [30,10,8] M=109 round 5: found=0 best_cost=-1073713977
+  [30,10,8] M=109 round 6: found=0 best_cost=-1073507745
+  [30,10,8] M=109 round 7: found=0 best_cost=-1073508834
+  [29,12,11] M=88 round 0: found=0 best_cost=-1073707319
+  [29,12,11] M=88 round 1: found=0 best_cost=-1073444112
+  [29,12,11] M=88 round 2: found=0 best_cost=-1073538707
+  [29,12,11] M=88 round 3: found=0 best_cost=-1073489329
+  [29,12,11] M=88 round 4: found=0 best_cost=-1073489583
+  [29,12,11] M=88 round 5: found=0 best_cost=-1073492831
+  [29,12,11] M=88 round 6: found=0 best_cost=-1073444694
+  [29,12,11] M=88 round 7: found=0 best_cost=-1073405415
+  [28,12,11] M=66 round 0: found=0 best_cost=44
+  [28,12,11] M=66 round 1: found=0 best_cost=-23220
+  [28,12,11] M=66 round 2: found=0 best_cost=-1073474497
+  [28,12,11] M=66 round 3: found=0 best_cost=-1073541380
+  [28,12,11] M=66 round 4: found=0 best_cost=-1073384597
+  [28,12,11] M=66 round 5: found=0 best_cost=-1073468123
+  [28,12,11] M=66 round 6: found=0 best_cost=40
+  [28,12,11] M=66 round 7: found=0 best_cost=42
+  [30,12,11] M=121 round 0: found=0 best_cost=122
+  [30,12,11] M=121 round 1: found=0 best_cost=121
+  [30,12,11] M=121 round 2: found=0 best_cost=121
+  [30,12,11] M=121 round 3: found=0 best_cost=122
+  [30,12,11] M=121 round 4: found=0 best_cost=121
+  [30,12,11] M=121 round 5: found=0 best_cost=-1073703743
+  [30,12,11] M=121 round 6: found=0 best_cost=-1073712199
+  [30,12,11] M=121: time budget exhausted
+  [31,12,11] M=187 round 0: found=0 best_cost=133
+  [31,12,11] M=187 round 1: found=0 best_cost=130
+  [31,12,11] M=187 round 2: found=0 best_cost=125
+  [31,12,11] M=187 round 3: found=0 best_cost=115
+  [31,12,11] M=187 round 4: found=0 best_cost=107
+  [31,12,11] M=187 round 5: found=0 best_cost=100
+  [31,12,11] M=187 round 6: found=0 best_cost=98
+  [31,12,11] M=187: time budget exhausted
+  [31,12,12] M=311 round 0: found=0 best_cost=-1070570646
+  [31,12,12] M=311 round 1: found=0 best_cost=-1055367860
+  [31,12,12] M=311 round 2: found=0 best_cost=-1066710165
+  [31,12,12] M=311 round 3: found=0 best_cost=-1071673218
+  [31,12,12] M=311 round 4: found=0 best_cost=-1073368749
+  [31,12,12] M=311 round 5: found=0 best_cost=-1070219779
+  [31,12,12] M=311 round 6: found=0 best_cost=-1070103946
+  [31,12,12] M=311: time budget exhausted
+  [25,10,9] M=73 round 0: found=0 best_cost=41
+  [25,10,9] M=73 round 1: found=0 best_cost=41
+  [25,10,9] M=73 round 2: found=0 best_cost=41
+  [25,10,9] M=73 round 3: found=0 best_cost=41
+  [25,10,9] M=73 round 4: found=0 best_cost=41
+  [25,10,9] M=73 round 5: found=0 best_cost=41
+  [25,10,9] M=73 round 6: found=0 best_cost=39
+  [25,10,9] M=73 round 7: found=0 best_cost=41
+  [28,12,13] M=113 round 0: found=0 best_cost=115
+  [28,12,13] M=113 round 1: found=0 best_cost=115
+  [28,12,13] M=113 round 2: found=0 best_cost=112
+  [28,12,13] M=113 round 3: found=0 best_cost=106
+  [28,12,13] M=113 round 4: found=0 best_cost=106
+  [28,12,13] M=113 round 5: found=0 best_cost=-1073711249
+  [28,12,13] M=113 round 6: found=0 best_cost=-1073714829
+  [28,12,13] M=113 round 7: found=0 best_cost=-1073645958
+  [32,10,7] M=65 round 0: found=0 best_cost=-1073741500
+  [32,10,7] M=65 round 1: found=0 best_cost=32
+  [32,10,7] M=65 round 2: found=0 best_cost=-1073618609
+  [32,10,7] M=65 round 3: found=0 best_cost=33
+  [32,10,7] M=65 round 4: found=0 best_cost=32
+  [32,10,7] M=65 round 5: found=0 best_cost=-1073623008
+  [32,10,7] M=65 round 6: found=0 best_cost=32
+  [32,10,7] M=65 round 7: found=0 best_cost=32
+  [31,14,13] M=61 round 0: found=0 best_cost=46
+  [31,14,13] M=61 round 1: found=0 best_cost=47
+  [31,14,13] M=61 round 2: found=0 best_cost=47
+  [31,14,13] M=61 round 3: found=0 best_cost=46
+  [31,14,13] M=61 round 4: found=0 best_cost=46
+  [31,14,13] M=61 round 5: found=0 best_cost=46
+  [31,14,13] M=61 round 6: found=0 best_cost=43
+  [31,14,13] M=61 round 7: found=0 best_cost=46
+  [23,10,10] M=55 round 0: found=0 best_cost=1
+  [23,10,10] M=55 round 1: found=0 best_cost=1
+  [23,10,10] M=55 round 2: found=0 best_cost=1
+  [23,10,10] M=55 round 3: found=0 best_cost=1
+  [23,10,10] M=55 round 4: found=0 best_cost=2
+  [23,10,10] M=55 round 5: found=0 best_cost=1
+  [23,10,10] M=55 round 6: found=0 best_cost=1
+  [23,10,10] M=55 round 7: found=0 best_cost=1
+  [32,14,12] M=56 round 0: found=0 best_cost=35
+  [32,14,12] M=56 round 1: found=0 best_cost=36
+  [32,14,12] M=56 round 2: found=0 best_cost=35
+  [32,14,12] M=56 round 3: found=0 best_cost=37
+  [32,14,12] M=56 round 4: found=0 best_cost=35
+  [32,14,12] M=56 round 5: found=0 best_cost=36
+  [32,14,12] M=56 round 6: found=0 best_cost=36
+  [32,14,12] M=56 round 7: found=0 best_cost=-1073594847
+  [31,12,10] M=109 round 0: found=0 best_cost=-1073622964
+  [31,12,10] M=109 round 1: found=0 best_cost=-1073704516
+  [31,12,10] M=109 round 2: found=0 best_cost=-1073664118
+  [31,12,10] M=109 round 3: found=0 best_cost=-1073530382
+  [31,12,10] M=109 round 4: found=0 best_cost=-1073700109
+  [31,12,10] M=109 round 5: found=0 best_cost=-1073565993
+  [31,12,10] M=109 round 6: found=0 best_cost=-1073440784
+  [31,12,10] M=109 round 7: found=0 best_cost=1
+  [29,10,8] M=97 round 0: found=0 best_cost=1
+  [29,10,8] M=97 round 1: found=0 best_cost=1

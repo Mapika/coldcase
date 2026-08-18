@@ -1,0 +1,30 @@
+{
+ "q": 6,
+ "n": 3,
+ "R": 1,
+ "M": 18,
+ "date": "2026-08-18",
+ "method": "covsearch tabu/greedy local search, 30s x 3 workers",
+ "code_file": "K6_3_1_M18.txt",
+ "verified": {
+  "distinct_codewords": 18,
+  "duplicate_lines": 0,
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "verify_cov_seconds": 0.1,
+  "verify_independent_method": "both",
+  "verify_independent_exit": 0,
+  "verify_independent_seconds": 0.2,
+  "covering_radius_exact": 1,
+  "verify_independent_result": "VERIFIED  -- every one of the 216 words of Z_6^3 is within distance 1 of the code"
+ },
+ "keri_2011": {
+  "lb": 18,
+  "ub": 18,
+  "lb_key": "g",
+  "ub_key": "g"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true,
+ "all_verifiers_agree": true
+}

@@ -1,0 +1,28 @@
+{
+ "delta": 14,
+ "D": 3,
+ "N": 1026,
+ "m": 342,
+ "n": 3,
+ "a": 49,
+ "S": [
+  386,
+  718,
+  405,
+  927,
+  676,
+  740,
+  655,
+  887,
+  490,
+  1016,
+  548,
+  952,
+  351,
+  963
+ ],
+ "edges": 7182,
+ "group": "Z_342 rtimes_49 Z_3",
+ "construction": "Cayley graph of metacyclic group, connection set S",
+ "verified_diameter": 3
+}

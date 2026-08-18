@@ -1,0 +1,25 @@
+{
+ "model": "metacyclic",
+ "delta": 11,
+ "D": 5,
+ "N": 20952,
+ "m": 873,
+ "n": 24,
+ "a": 785,
+ "S": [
+  17925,
+  4053,
+  17295,
+  4479,
+  11902,
+  9880,
+  16477,
+  5825,
+  42,
+  831,
+  11115
+ ],
+ "edges": 115236,
+ "group": "Z_873 rtimes_785 Z_24",
+ "construction": "Cayley graph of metacyclic group, connection set S"
+}

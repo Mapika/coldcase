@@ -1,0 +1,310 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+
+\newtheorem{lemma}{Lemma}
+\newtheorem{remark}{Remark}
+\newcommand{\Kq}[3]{K_{#1}(#2,#3)}
+\newcommand{\Zq}{\mathbb{Z}_q}
+
+\title{New upper bounds on covering codes $K_q(n,R)$\\ for alphabets of size six and seven}
+\author{Mark Marosi\thanks{email: mark.marosi@egroup.hu. \textbf{[AUTHORSHIP/AFFILIATION TO BE CONFIRMED BY THE AUTHOR BEFORE SUBMISSION.]} The search, verification, and manuscript preparation were carried out autonomously by Claude (Anthropic) on a single NVIDIA GH200 node; see Section~\ref{sec:method}.}}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present improved upper bounds for eight entries of the standard tables of
+bounds on $K_q(n,R)$, the minimum cardinality of a $q$-ary code of length $n$
+with covering radius $R$, for $q\in\{6,7\}$:
+$\Kq{6}{7}{3}\le 235$, $\Kq{6}{8}{3}\le 1054$, $\Kq{6}{8}{4}\le 169$,
+$\Kq{6}{9}{4}\le 719$, $\Kq{6}{9}{5}\le 126$, $\Kq{6}{10}{4}\le 2951$,
+$\Kq{6}{10}{5}\le 610$, and $\Kq{7}{8}{4}\le 333$.
+The previous best bounds, recorded in K\'eri's tables (last updated 2011),
+all arose from general constructions (direct sums and related product rules)
+rather than from explicit search; to our knowledge these are the first
+improvements to any upper bound on $K_q(n,R)$ with $q\ge 5$ since 2011.
+The new bounds were found by focused local search seeded with the
+construction-based incumbents. All eight codes are given explicitly in the
+ancillary files, together with a standalone verifier; each code was checked
+by four independent exhaustive verification methods.
+\end{abstract}
+
+\section{Introduction}
+
+Let $\Zq^n$ denote the Hamming space of $q$-ary words of length $n$. A code
+$C\subseteq \Zq^n$ has \emph{covering radius} $R$ if every word of $\Zq^n$ is
+within Hamming distance $R$ of some codeword. The function
+\[
+K_q(n,R) \;=\; \min\{\,|C| : C\subseteq \Zq^n \text{ has covering radius} \le R\,\}
+\]
+is a central quantity of covering-code theory~\cite{CHLL}; the binary case
+$K_2(n,1)$ includes the domination number of the hypercube, and the ternary
+case $K_3(n,1)$ is the classical football pool problem.
+
+Upper bounds on $K_q(n,R)$ are established by explicit constructions, and the
+state of the art is recorded in the tables of K\'eri~\cite{Keri}, which
+subsume and extend the earlier tables of Cohen, Honkala, Litsyn and
+Lobstein~\cite{CHLL}. The last update to K\'eri's tables was made in November
+2011. Recent activity on $K_q(n,R)$ has concentrated on \emph{lower} bounds:
+Wu and Chen~\cite{WuChen} improved binary lower bounds via congruence
+arguments, and Gijswijt and Polak~\cite{GijswijtPolak} obtained many new
+lower bounds for $q\le 5$ from semidefinite programming. On the upper-bound
+side, for alphabets $q\ge 5$ we are not aware of any published improvement
+since the 2011 freeze; a systematic search of the literature (arXiv, DBLP,
+OpenAlex, Lobstein's covering-code bibliography, and the publication lists of
+the authors active in this area) found none.
+
+The reason the entries treated here were improvable is visible in K\'eri's
+own source annotations. For moderate $q$ and $R\ge 3$ nearly all tabulated
+upper bounds carry keys denoting \emph{general constructions}: the direct sum
+\begin{equation}\label{eq:directsum}
+K_q(n_1+n_2,\,R_1+R_2)\;\le\;K_q(n_1,R_1)\cdot K_q(n_2,R_2),
+\end{equation}
+the special case $K_q(n+1,R)\le q\,K_q(n,R)$, the monotonicity
+$K_q(n+1,R+1)\le K_q(n,R)$, and product rules over alphabet factorizations.
+These are inherited arithmetic: no search was ever run in those cells. The
+present note shows that plain local search, seeded with the construction that
+produced the incumbent, beats all eight such bounds that we attacked in the
+range $q\in\{6,7\}$, $n\le 10$ --- in one case by $22\%$.
+
+\section{Results}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccccl}
+\toprule
+cell & previous bounds & new UB & $\Delta$ & code file & previous UB from \\
+\midrule
+$\Kq{6}{7}{3}$  & 70--246   & \textbf{235}  & $-11$ & \texttt{K6\_7\_3\_M235.txt}   & $6\cdot \Kq{6}{6}{3}$ \\
+$\Kq{6}{8}{3}$  & 246--1080 & \textbf{1054} & $-26$ & \texttt{K6\_8\_3\_M1054.txt}  & $\Kq{6}{4}{1}\cdot \Kq{6}{4}{2}$ \\
+$\Kq{6}{8}{4}$  & 46--216   & \textbf{169}  & $-47$ & \texttt{K6\_8\_4\_M169.txt}   & $6\cdot \Kq{6}{7}{4}$ \\
+$\Kq{6}{9}{4}$  & 136--738  & \textbf{719}  & $-19$ & \texttt{K6\_9\_4\_M719.txt}   & $\Kq{6}{3}{1}\cdot \Kq{6}{6}{3}$ \\
+$\Kq{6}{9}{5}$  & 32--144   & \textbf{126}  & $-18$ & \texttt{K6\_9\_5\_M126.txt}   & alphabet product rule \\
+$\Kq{6}{10}{4}$ & 417--2952 & \textbf{2951} & $-1$  & \texttt{K6\_10\_4\_M2951.txt} & $\Kq{6}{4}{1}\cdot \Kq{6}{6}{3}$ \\
+$\Kq{6}{10}{5}$ & 83--615   & \textbf{610}  & $-5$  & \texttt{K6\_10\_5\_M610.txt}  & $\Kq{6}{6}{3}\cdot \Kq{6}{4}{2}$ \\
+$\Kq{7}{8}{4}$  & 76--343   & \textbf{333}  & $-10$ & \texttt{K7\_8\_4\_M333.txt}   & $\Kq{7}{7}{3}$ (monotonicity) \\
+\bottomrule
+\end{tabular}
+\caption{New upper bounds. ``Previous bounds'' are the lower--upper bound
+pairs of K\'eri's tables~\cite{Keri}; lower bounds are unaffected by this
+work. The last column gives the construction from which the previous upper
+bound was inherited, per the source keys of~\cite{Keri}.}
+\label{tab:results}
+\end{table}
+
+The eight codes are supplied as ancillary files (one codeword per line,
+digits over $\{0,\dots,q-1\}$). None of the searches had converged when
+stopped, so we expect several of these bounds to be improvable further by the
+same method with more computation.
+
+\begin{remark}\label{rem:keri17}
+An audit of the tables of~\cite{Keri} against their own derivation rules
+found one internal gap: the tabulated $\Kq{17}{7}{2}\le 252735$ is weaker
+than $\Kq{17}{7}{2}\le 17\cdot \Kq{17}{6}{2} = 17\cdot 14424 = 245208$, which
+follows from the tabulated $\Kq{17}{6}{2}\le 14424$ and the standard rule
+$K_q(n{+}1,R)\le q\,K_q(n,R)$. We record this as an observation; it involves
+no new construction.
+\end{remark}
+
+\section{Method}\label{sec:method}
+
+\subsection{Search}
+
+We search for a code of prescribed size $M$ minimizing the number of
+uncovered words. The state is a multiset of $M$ codewords together with the
+coverage count $\mathrm{cnt}(w)$ of every $w\in\Zq^n$; a move changes one
+coordinate of one codeword. The move update is cheap because of the
+following observation.
+
+\begin{lemma}\label{lem:move}
+Let $c'$ be obtained from $c$ by setting coordinate $p$ to $v\ne c_p$. Then
+the set of words leaving the radius-$R$ ball of $c$ and the set of words
+entering the ball of $c'$ are both indexed by the words at distance exactly
+$R$ from $c$ in the coordinates other than $p$; consequently a move updates
+exactly $2S$ coverage counters with
+$S=\binom{n-1}{R}(q-1)^R$, the two sets are disjoint, and distinct counter
+updates address distinct words.
+\end{lemma}
+
+\begin{proof}
+Since $d(w,c') = d(w,c) + [\,w_p=c_p\,] - [\,w_p=v\,]$, a word can leave the
+ball of $c$ only if $d(w,c)=R$ and $w_p=c_p$, and can enter the ball of $c'$
+only if $d(w,c')=R$ and $w_p=v$; writing such a word as its restriction to
+the coordinates $\ne p$ (at distance exactly $R$ from the restriction of $c$)
+plus its value at $p$ gives the stated bijections, disjointness
+($w_p=c_p$ versus $w_p=v$), and injectivity.
+\end{proof}
+
+The search itself is a focused local search in the WalkSAT lineage, close in
+spirit to the tabu searches that produced much of the original
+tables~\cite{Ostergard,vanLaarhoven}: pick a random uncovered word $u$;
+collect as candidate moves every codeword at distance exactly $R+1$ from $u$
+nudged one coordinate towards $u$ (if no codeword is that close, the
+codewords at minimum distance from $u$ are used); evaluate all candidates
+exactly and in parallel; commit a best candidate, ties broken uniformly at
+random. On stagnation a codeword is teleported onto an uncovered word.
+Parameter studies on $\Kq{6}{6}{3}$ showed that \emph{candidate breadth
+dominates}: evaluating all candidate moves exactly outperformed sampling 24
+or 64 of them (final uncovered counts $0$ versus $82$ and $18$), while tabu
+tenures and WalkSAT-style noise were harmful on these instances. Simulated
+annealing sustained a $33\times$ higher move rate and still lost to the
+focused search --- move quality beats move count here.
+
+\subsection{Seeding and descent}
+
+For each cell we first rebuilt a code of the incumbent size from the same
+construction that produced the incumbent bound (e.g., for $\Kq{6}{10}{4}$ the
+direct sum \eqref{eq:directsum} of an optimal $\Kq{6}{4}{1}$ code of size 72
+and a $\Kq{6}{6}{3}$ code of size 41, both found by direct search and
+verified). Descent then proceeds by remove-and-repair: delete the codeword
+whose private coverage (words covered by no other codeword) is smallest, and
+repair the deficit by local search; on success, repeat at $M-1$. Searching
+the small factors and re-composing (a ``factor attack'') was decisive for
+seeding; the improvements themselves come from the descent breaking out of
+the product structure.
+
+\subsection{Hardware and effort}
+
+All record searches ran on the 64-core Grace CPU of a single NVIDIA GH200
+node (a CUDA port was implemented and verified but was latency-bound and
+slower than the CPU at these instance sizes). Per-cell effort ranged from
+seconds ($\Kq{6}{8}{4}$, $\Kq{6}{9}{5}$) to under two hours of wall clock;
+none of the descents had converged when stopped. Move throughput ranged from
+$\sim$1.3k moves/s per worker on the largest cells to $\sim$400k on the
+smallest.
+
+\section{Verification}\label{sec:verify}
+
+False records are worse than no records, so verification is exhaustive,
+exact, and redundant. Every claimed code was checked by four methods, two of
+which share no code with the other two:
+\begin{enumerate}
+\item ball marking: mark all words within distance $R$ of each codeword in a
+$q^n$ bitmap and confirm the bitmap is full;
+\item meet-in-the-middle bitset covering over a coordinate split;
+\item a min-distance scan: enumerate all $q^n$ words and compute each word's
+distance to the nearest codeword (this also reports the exact covering
+radius);
+\item Hamming-graph dilation: $R$-fold neighborhood dilation of the code's
+indicator vector, computing no distances at all, with cost independent of
+$M$.
+\end{enumerate}
+In addition, a fifth, independently written dilation verifier (produced
+without access to the other implementations) re-confirmed all eight codes
+from the published files. The largest check ($q^n = 6^{10} = 60{,}466{,}176$
+words) completes in seconds.
+
+The ancillary files include \texttt{verify\_cov.py}, a standalone
+dependency-free Python verifier: \texttt{python3 verify\_cov.py CODEFILE q n R}
+exhaustively re-checks any of the claimed bounds in at most a few minutes.
+
+\section{Discussion}
+
+The pattern in our experiments is clean: local search consistently beat
+bounds that were inherited from general constructions (relative slack
+between the previous upper bound and the sphere-covering lower bound of
+$4\times$--$10\times$), and consistently failed to improve cells that had
+already been the object of dedicated search or algebraic construction (slack
+$\le 3\times$), such as $\Kq{3}{11}{4}\le 81$ or $\Kq{6}{6}{3}\le 41$.
+K\'eri's tables contain many further cells of the first kind, for
+$q\in\{6,\dots,21\}$ and $R\ge 3$; we expect them to fall to the same
+method, and a systematic sweep is in progress. Since the tables have had no
+maintainer since 2011, we also intend to publish a merged, machine-readable
+bounds table (K\'eri 2011 plus the post-2011 lower-bound literature plus the
+present improvements) alongside the code.
+
+\subsection*{Data availability}
+The eight codes, the verifier, and a README are ancillary files of this
+arXiv submission. The full search and verification source code is available
+at \textbf{[REPOSITORY URL TO BE ADDED]}.
+
+\subsection*{Acknowledgments}
+The search software, the verification protocol, and this note were produced
+autonomously by Claude (Anthropic), running on a dedicated NVIDIA GH200
+node. \textbf{[TO BE REVIEWED BY THE AUTHOR.]}
+
+\begin{thebibliography}{9}
+\bibitem{CHLL} G.~Cohen, I.~Honkala, S.~Litsyn, A.~Lobstein,
+\emph{Covering Codes}, North-Holland, Amsterdam, 1997.
+\bibitem{Keri} G.~K\'eri, Tables for bounds on covering codes,
+\url{https://old.sztaki.hu/~keri/codes/} (last updated November 2011).
+\bibitem{GijswijtPolak} D.~Gijswijt, S.~Polak, Semidefinite lower bounds
+for covering codes, arXiv:2504.01932, 2025.
+\bibitem{WuChen} Y.~Wu, C.~Chen, Improved lower bounds on the domination
+number of hypercubes and binary codes with covering radius one,
+Discrete Mathematics 347 (2024) 113752.
+\bibitem{vanLaarhoven} P.~J.~M.~van Laarhoven, E.~H.~L.~Aarts,
+J.~H.~van Lint, L.~T.~Wille, New upper bounds for the football pool problem
+for 6, 7 and 8 matches, J.~Combin.\ Theory Ser.~A 52 (1989) 304--312.
+\bibitem{Ostergard} P.~R.~J.~\"Osterg\aa rd, Constructing covering codes by
+tabu search, J.~Combin.\ Des.\ 5 (1997) 71--80.
+\bibitem{KeriOstergard} G.~K\'eri, P.~R.~J.~\"Osterg\aa rd, Further results
+on the covering radius of small codes, Discrete Mathematics 307 (2007)
+69--77.
+\bibitem{Florath} A.~Florath, A Lean 4 formalization of $q$-ary covering
+codes with a proof-carrying database of certified bounds, arXiv:2606.09600,
+2026.
+\end{thebibliography}
+
+
+\appendix
+\section{The code proving $\Kq{6}{8}{4}\le 169$}\label{app:code}
+For self-containedness we print the largest single improvement
+($216\to169$, $-22\%$). Each row lists codewords of $\mathbb{Z}_6^8$;
+the machine-readable version is the ancillary file
+\texttt{K6\_8\_4\_M169.txt}.
+
+{\scriptsize
+\begin{verbatim}
+13413135  53400455  13125414  32253533
+12551004  52454202  05521440  33342502
+44555514  41031103  53240312  04212401
+00435123  02202350  52021112  12504245
+11000212  02305532  25241223  23003413
+10223022  50525033  34305303  43010554
+20021234  35112313  01520005  55010150
+34524104  40344155  24515055  50215100
+01144002  33011251  53435304  13555222
+24052113  50114555  40504340  14444315
+54353423  10330254  22205053  22532152
+24311332  21432553  43352224  45225545
+42315325  11354522  31303134  21100125
+45114110  54155011  10142111  20501500
+42231421  23422142  42123454  14350320
+31135242  34133540  40013302  35223200
+30052351  31541413  50532514  43535310
+30004423  35445522  24420251  00301511
+21105430  32210044  51513442  51320111
+05334013  30550145  51412420  21123311
+21204204  20453540  53333231  00431214
+04024022  20345400  32211102  02541334
+43041530  04203451  50050043  01451451
+02412541  32433415  01033525  22343044
+40420300  52034330  44101542  03023020
+03153105  41443143  22415214  41224331
+14035140  25014324  15303352  35424050
+55553210  54243154  03122335  25320502
+34321545  10402034  35054444  12122225
+05402120  41252412  53444041  01250344
+13214510  23550000  44332024  34314011
+44530022  03312243  22524521  45542205
+14042405  42411413  12040511  01351250
+44504231  15545434  32100114  13322503
+43401052  31530353  31220030  03154453
+05045554  04240553  55101324  12055451
+23234445  11512050  45250501  31425531
+20131035  55002001  15131341  33501125
+10421303  45450133  25052035  23505141
+55351335  44205215  51045345  52130203
+15330401  15113023  34140230
+50222243  00110432  00543221
+05234132  11211533  22142150
+\end{verbatim}
+}
+
+\end{document}

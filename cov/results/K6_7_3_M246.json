@@ -1,0 +1,30 @@
+{
+ "q": 6,
+ "n": 7,
+ "R": 3,
+ "M": 246,
+ "date": "2026-08-18",
+ "method": "covsearch tabu/greedy local search, 120s x 8 workers",
+ "code_file": "K6_7_3_M246.txt",
+ "verified": {
+  "distinct_codewords": 246,
+  "duplicate_lines": 0,
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "verify_cov_seconds": 0.4,
+  "verify_independent_method": "both",
+  "verify_independent_exit": 0,
+  "verify_independent_seconds": 0.9,
+  "covering_radius_exact": 3,
+  "verify_independent_result": "VERIFIED  -- every one of the 279936 words of Z_6^7 is within distance 3 of the code"
+ },
+ "keri_2011": {
+  "lb": 70,
+  "ub": 246,
+  "lb_key": "m",
+  "ub_key": "e"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true,
+ "all_verifiers_agree": true
+}

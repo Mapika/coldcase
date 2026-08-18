@@ -1,0 +1,30 @@
+{
+ "q": 6,
+ "n": 10,
+ "R": 5,
+ "M": 615,
+ "date": "2026-08-18",
+ "method": "direct sum of searched K6(6,3)=41 and K6(4,2)=15 codes",
+ "code_file": "K6_10_5_M615.txt",
+ "verified": {
+  "distinct_codewords": 615,
+  "duplicate_lines": 0,
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "verify_cov_seconds": 100.0,
+  "verify_independent_method": "dilate",
+  "verify_independent_exit": 0,
+  "verify_independent_seconds": 5.1,
+  "verify_independent_result": "VERIFIED  -- every one of the 60466176 words of Z_6^10 is within distance 5 of the code"
+ },
+ "keri_2011": {
+  "lb": 83,
+  "ub": 615,
+  "lb_key": "m",
+  "ub_key": "f"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true,
+ "construction": "direct_sum(K6_6_3_M41, K6_4_2_M15)",
+ "all_verifiers_agree": true
+}

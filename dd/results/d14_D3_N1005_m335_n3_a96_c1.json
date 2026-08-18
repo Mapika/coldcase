@@ -1,0 +1,28 @@
+{
+ "delta": 14,
+ "D": 3,
+ "N": 1005,
+ "m": 335,
+ "n": 3,
+ "a": 96,
+ "S": [
+  617,
+  688,
+  422,
+  868,
+  343,
+  977,
+  450,
+  770,
+  524,
+  846,
+  530,
+  825,
+  531,
+  989
+ ],
+ "edges": 7035,
+ "group": "Z_335 rtimes_96 Z_3",
+ "construction": "Cayley graph of metacyclic group, connection set S",
+ "verified_diameter": 3
+}

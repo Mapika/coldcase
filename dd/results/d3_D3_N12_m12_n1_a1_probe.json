@@ -1,0 +1,16 @@
+{
+ "delta": 3,
+ "D": 3,
+ "N": 12,
+ "m": 12,
+ "n": 1,
+ "a": 1,
+ "S": [
+  1,
+  11,
+  6
+ ],
+ "edges": 18,
+ "group": "Z_12 rtimes_1 Z_1",
+ "construction": "Cayley graph of metacyclic group, connection set S"
+}

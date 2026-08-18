@@ -1,0 +1,3217 @@
+{
+ "source_url": "https://web.mat.upc.edu/francesc.comellas/delta-d/table_degree_diameter.html",
+ "fetched_utc": "2026-08-18T12:09:09.302423+00:00",
+ "parsed_utc": "2026-08-18T12:09:58.522834+00:00",
+ "note": "N = largest known order of a graph with max degree Delta and diameter D (lower bound on the true optimum). Provenance inferred from cell background colour matched against the page legend.",
+ "legend": {
+  "#cdcdcd": [
+   {
+    "author": "Petrit Isufi",
+    "text": "Petrit Isufi, light grey: August 17, 2026 (11,4), (13,4), (14,4); August 13, 2026 (12,4), (15,2), (15,3).",
+    "cells": [
+     [
+      11,
+      4
+     ],
+     [
+      13,
+      4
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      12,
+      4
+     ],
+     [
+      15,
+      2
+     ],
+     [
+      15,
+      3
+     ]
+    ],
+    "dates": [
+     "August 17, 2026",
+     "August 13, 2026"
+    ]
+   },
+   {
+    "author": "Eduardo Canale",
+    "text": "Eduardo Canale, light grey: August 22, 2012 (15,2).",
+    "cells": [
+     [
+      15,
+      2
+     ]
+    ],
+    "dates": [
+     "August 22, 2012"
+    ]
+   }
+  ],
+  "#99ef99": [
+   {
+    "author": "Dharunish Yugeswardeenoo",
+    "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)",
+    "cells": [
+     [
+      4,
+      10
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      6,
+      8
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      9,
+      5
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      11,
+      4
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      12,
+      3
+     ],
+     [
+      12,
+      7
+     ],
+     [
+      12,
+      10
+     ],
+     [
+      13,
+      5
+     ],
+     [
+      14,
+      10
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      16,
+      9
+     ],
+     [
+      16,
+      10
+     ]
+    ],
+    "dates": [
+     "2026"
+    ]
+   }
+  ],
+  "#9fb2d0": [
+   {
+    "author": "Sami Badaoui",
+    "text": "Sami Badaoui, dusty blue: August 16, 2026 (14,5).",
+    "cells": [
+     [
+      14,
+      5
+     ]
+    ],
+    "dates": [
+     "August 16, 2026"
+    ]
+   }
+  ],
+  "#e7ecec": [
+   {
+    "author": "Jitendra Prajapati",
+    "text": "Jitendra Prajapati, light cloud: August 9, 2026 (4,6).",
+    "cells": [
+     [
+      4,
+      6
+     ]
+    ],
+    "dates": [
+     "August 9, 2026"
+    ]
+   }
+  ],
+  "#c0ccfd": [
+   {
+    "author": "Niklas Wupperfeld",
+    "text": "Niklas Wupperfeld, lilac blue: August 6, 2026 (11,5), (13,5), (14,5),(15,5)",
+    "cells": [
+     [
+      11,
+      5
+     ],
+     [
+      13,
+      5
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      15,
+      5
+     ]
+    ],
+    "dates": [
+     "August 6, 2026"
+    ]
+   }
+  ],
+  "#9fc3bd": [
+   {
+    "author": "Ryosuke Mizuno",
+    "text": "Ryosuke Mizuno, sage teal: July 25, 2026 (12,5), (16,5). [Mi26]",
+    "cells": [
+     [
+      12,
+      5
+     ],
+     [
+      16,
+      5
+     ]
+    ],
+    "dates": [
+     "July 25, 2026"
+    ]
+   }
+  ],
+  "#ff9933": [
+   {
+    "author": "Rishabh Rajiv",
+    "text": "Rishabh Rajiv, saffron: July 4, 2026 (14,3).",
+    "cells": [
+     [
+      14,
+      3
+     ]
+    ],
+    "dates": [
+     "July 4, 2026"
+    ]
+   }
+  ],
+  "#ff8899": [
+   {
+    "author": "Marston Conder",
+    "text": "Marston Conder, salmon: January 18, 2026 (5,5).",
+    "cells": [
+     [
+      5,
+      5
+     ]
+    ],
+    "dates": [
+     "January 18, 2026"
+    ]
+   },
+   {
+    "author": "Marston Conder",
+    "text": "Marston Conder, salmon: August 17, 2006 (3,10) [Co06,CoMa13].",
+    "cells": [
+     [
+      3,
+      10
+     ]
+    ],
+    "dates": [
+     "August 17, 2006"
+    ]
+   }
+  ],
+  "#00ffff": [
+   {
+    "author": "Francesc Comellas",
+    "text": "Francesc Comellas, cyan: April 2026, (6,7); Jan-June 2024, (3,5), (6,8), (7,6), (7,7), (8,5), (9,4), (10,4), (10,5), (11,5), (12,5), (13,5), (14,5), (15,5).",
+    "cells": [
+     [
+      6,
+      7
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      6,
+      8
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      7,
+      7
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      9,
+      4
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      10,
+      5
+     ],
+     [
+      11,
+      5
+     ],
+     [
+      12,
+      5
+     ],
+     [
+      13,
+      5
+     ],
+     [
+      14,
+      5
+     ],
+     [
+      15,
+      5
+     ]
+    ],
+    "dates": [
+     "April 2026",
+     "June 2024"
+    ]
+   }
+  ],
+  "#cfdfef": [
+   {
+    "author": "Vlad Pelekhaty",
+    "text": "Vlad Pelekhaty, cloud: August 6, 2021 (13,3). Modification of the entry described in [Go06] by adding new vertices.",
+    "cells": [
+     [
+      13,
+      3
+     ]
+    ],
+    "dates": [
+     "August 6, 2021"
+    ]
+   }
+  ],
+  "#ceff00": [
+   {
+    "author": "Jianxiang Chen",
+    "text": "Jianxiang Chen, chartreuse, 2018-10-16 (3,8).",
+    "cells": [
+     [
+      3,
+      8
+     ]
+    ],
+    "dates": [
+     "2018"
+    ]
+   }
+  ],
+  "#d0c792": [
+   {
+    "author": "Marcel Abas",
+    "text": "Marcel Abas, silver gold: 2017 (16,2). Cayley graph.",
+    "cells": [
+     [
+      16,
+      2
+     ]
+    ],
+    "dates": [
+     "2017"
+    ]
+   }
+  ],
+  "#f0c0fd": [
+   {
+    "author": "Alexis Rodriguez/Eduardo Canale",
+    "text": "Alexis Rodriguez/Eduardo Canale, soft orchid: June 30, 2012 (9,5); August 20, 2012 (6,9); November 16, 2012 (9,8).",
+    "cells": [
+     [
+      9,
+      5
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      9,
+      8
+     ]
+    ],
+    "dates": [
+     "June 30, 2012",
+     "August 20, 2012",
+     "November 16, 2012"
+    ]
+   }
+  ],
+  "#ffff8f": [
+   {
+    "author": "Geoffrey Exoo",
+    "text": "Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3); G.E. link [Ex01]",
+    "cells": [
+     [
+      5,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      11,
+      2
+     ],
+     [
+      7,
+      3
+     ]
+    ],
+    "dates": [
+     "May 21, 2010",
+     "May 19, 2010",
+     "January 28, 2008",
+     "May 13, 2006",
+     "November 1, 2005"
+    ]
+   },
+   {
+    "author": "Geoffrey Exoo",
+    "text": "Geoffrey Exoo, canary yellow: May 22, 1998 (5,3) [Ex01].",
+    "cells": [
+     [
+      5,
+      3
+     ]
+    ],
+    "dates": [
+     "May 22, 1998"
+    ]
+   }
+  ],
+  "#00ff00": [
+   {
+    "author": "Jose Gomez",
+    "text": "Jose Gomez, lime: September 10, 2006; (12,3),(14,3) [Go06]",
+    "cells": [
+     [
+      12,
+      3
+     ],
+     [
+      14,
+      3
+     ]
+    ],
+    "dates": [
+     "September 10, 2006"
+    ]
+   }
+  ],
+  "#40e0d0": [
+   {
+    "author": "Jose Gomez",
+    "text": "Jose Gomez, turquoise: June 2005; (8,6),(10,6) [Go05]",
+    "cells": [
+     [
+      8,
+      6
+     ],
+     [
+      10,
+      6
+     ]
+    ],
+    "dates": [
+     "June 2005"
+    ]
+   }
+  ],
+  "#ffcc80": [
+   {
+    "author": "Eyal Loz",
+    "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10.",
+    "cells": [
+     [
+      5,
+      5
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      8,
+      4
+     ]
+    ],
+    "dates": [
+     "November 2006"
+    ]
+   }
+  ],
+  "#00cc99": [
+   {
+    "author": "Guillermo Pineda-Villavicencio",
+    "text": "Guillermo Pineda-Villavicencio, Jose Gomez, Mirka Miller, Hebert Perez-Roses, green: July 27, 2006 (5,6), (6,6), (9,6), (12,6), (14,6) [PiGoMiPe09].",
+    "cells": [
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      6
+     ],
+     [
+      9,
+      6
+     ],
+     [
+      12,
+      6
+     ],
+     [
+      14,
+      6
+     ]
+    ],
+    "dates": [
+     "July 27, 2006"
+    ]
+   }
+  ],
+  "#ff99ff": [
+   {
+    "author": "Brendan D. McKay",
+    "text": "Brendan D. McKay, Mirka Miller, J. Siran; pink: Mar 12, 1997 (13,2) [McMiSi98].",
+    "cells": [
+     [
+      13,
+      2
+     ]
+    ],
+    "dates": [
+     "1997"
+    ]
+   }
+  ],
+  "#89cff0": [
+   {
+    "author": "Michael Sampels; light blue: July 29",
+    "text": "Michael Sampels; light blue: July 29, 1997 (7,4), (8,3) [Sa97,Sa98].",
+    "cells": [
+     [
+      7,
+      4
+     ],
+     [
+      8,
+      3
+     ]
+    ],
+    "dates": [
+     "July 29, 1997"
+    ]
+   }
+  ],
+  "#c0ecfd": [
+   {
+    "author": "Francesc Comellas",
+    "text": "Francesc Comellas, Margarida Mitjana: celeste 1994 (8,3).",
+    "cells": [
+     [
+      8,
+      3
+     ]
+    ],
+    "dates": [
+     "1994"
+    ]
+   }
+  ],
+  "#95b0ec": [
+   {
+    "author": "Michael J. Dinneen",
+    "text": "Michael J. Dinneen, Paul R. Hafner; dark cyan: (7,5), see [DiHa94].",
+    "cells": [
+     [
+      7,
+      5
+     ]
+    ],
+    "dates": []
+   }
+  ],
+  "#7fffd4": [
+   {
+    "author": "Francesc Comellas",
+    "text": "Francesc Comellas, Jose Gomez; aquamarine 1992 (4,6) [CoGo92].",
+    "cells": [
+     [
+      4,
+      6
+     ]
+    ],
+    "dates": [
+     "1992"
+    ]
+   }
+  ],
+  "#d4ac0d": [
+   {
+    "author": "James Allwright; gold 1992 (4",
+    "text": "James Allwright; gold 1992 (4,6) [Al92].",
+    "cells": [
+     [
+      4,
+      6
+     ]
+    ],
+    "dates": [
+     "1992"
+    ]
+   }
+  ],
+  "#a3e4d7": [
+   {
+    "author": "Jose Gomez",
+    "text": "Jose Gomez, Miquel Angel Fiol and Oriol Serra; olive medium 1989 (14,7), (16,7) [GoFiSe93].",
+    "cells": [
+     [
+      14,
+      7
+     ],
+     [
+      16,
+      7
+     ]
+    ],
+    "dates": [
+     "1989"
+    ]
+   }
+  ],
+  "#d4efdf": [
+   {
+    "author": "Jose Gomez",
+    "text": "Jose Gomez, Miquel Angel Fiol; olive light 1985 (11,4), (13,4), (14,4), (15,4), (16,4) [GoFi85].",
+    "cells": [
+     [
+      11,
+      4
+     ],
+     [
+      13,
+      4
+     ],
+     [
+      14,
+      4
+     ],
+     [
+      15,
+      4
+     ],
+     [
+      16,
+      4
+     ]
+    ],
+    "dates": [
+     "1985"
+    ]
+   }
+  ],
+  "#ffffff": [
+   {
+    "author": "Charles Delorme",
+    "text": "Charles Delorme, G. Farhi; white 1982, 1984 (8,2), (9,2), (9.3), (10,2), (10,3), (11,3), (12,2), (12,4), (14,2), (14,2), (15,3), (16,3), (16,5) [DeFa84, De85].",
+    "cells": [
+     [
+      8,
+      2
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      10,
+      2
+     ],
+     [
+      10,
+      3
+     ],
+     [
+      11,
+      3
+     ],
+     [
+      12,
+      2
+     ],
+     [
+      12,
+      4
+     ],
+     [
+      14,
+      2
+     ],
+     [
+      14,
+      2
+     ],
+     [
+      15,
+      3
+     ],
+     [
+      16,
+      3
+     ],
+     [
+      16,
+      5
+     ]
+    ],
+    "dates": [
+     "1982",
+     "1984"
+    ]
+   }
+  ],
+  "#d7bde2": [
+   {
+    "author": "Christoph von Conta",
+    "text": "Christoph von Conta, Ignacio Alegre, Miquel Angel Fiol, Jose Luis Andres Yebra; light plum, 1982-1986 (3,4), (3,5) published [vonCo83, AlFiYe86].",
+    "cells": [
+     [
+      3,
+      4
+     ],
+     [
+      3,
+      5
+     ]
+    ],
+    "dates": [
+     "1982",
+     "1986"
+    ]
+   }
+  ]
+ },
+ "cells": {
+  "3,2": {
+   "delta": 3,
+   "D": 2,
+   "N": 10,
+   "moore_bound": 10,
+   "ratio_to_moore": 1.0,
+   "colour": "#fadbd8",
+   "href": "desc_g/desc_g2.html#32",
+   "provenance": []
+  },
+  "3,3": {
+   "delta": 3,
+   "D": 3,
+   "N": 20,
+   "moore_bound": 22,
+   "ratio_to_moore": 0.9091,
+   "colour": "#fadbd8",
+   "href": "desc_g/desc_g3.html#33",
+   "provenance": []
+  },
+  "3,4": {
+   "delta": 3,
+   "D": 4,
+   "N": 38,
+   "moore_bound": 46,
+   "ratio_to_moore": 0.8261,
+   "colour": "#d7bde2",
+   "href": "desc_g/desc_g4.html#34",
+   "provenance": [
+    {
+     "author": "Christoph von Conta",
+     "dates": [
+      "1982",
+      "1986"
+     ],
+     "explicit_cell": true,
+     "text": "Christoph von Conta, Ignacio Alegre, Miquel Angel Fiol, Jose Luis Andres Yebra; light plum, 1982-1986 (3,4), (3,5) published [vonCo83, AlFiYe86]."
+    }
+   ]
+  },
+  "3,5": {
+   "delta": 3,
+   "D": 5,
+   "N": 70,
+   "moore_bound": 94,
+   "ratio_to_moore": 0.7447,
+   "colour": "#d7bde2",
+   "href": "desc_g/desc_g5.html#35",
+   "provenance": [
+    {
+     "author": "Christoph von Conta",
+     "dates": [
+      "1982",
+      "1986"
+     ],
+     "explicit_cell": true,
+     "text": "Christoph von Conta, Ignacio Alegre, Miquel Angel Fiol, Jose Luis Andres Yebra; light plum, 1982-1986 (3,4), (3,5) published [vonCo83, AlFiYe86]."
+    }
+   ]
+  },
+  "3,6": {
+   "delta": 3,
+   "D": 6,
+   "N": 132,
+   "moore_bound": 190,
+   "ratio_to_moore": 0.6947,
+   "colour": "#ffff8f",
+   "href": "desc_g/desc_g6.html#36",
+   "provenance": [
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 21, 2010",
+      "May 19, 2010",
+      "January 28, 2008",
+      "May 13, 2006",
+      "November 1, 2005"
+     ],
+     "explicit_cell": false,
+     "text": "Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3); G.E. link [Ex01]"
+    },
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 22, 1998"
+     ],
+     "explicit_cell": false,
+     "text": "Geoffrey Exoo, canary yellow: May 22, 1998 (5,3) [Ex01]."
+    }
+   ]
+  },
+  "3,7": {
+   "delta": 3,
+   "D": 7,
+   "N": 196,
+   "moore_bound": 382,
+   "ratio_to_moore": 0.5131,
+   "colour": "#ffff8f",
+   "href": "desc_g/desc_g7.html#37",
+   "provenance": [
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 21, 2010",
+      "May 19, 2010",
+      "January 28, 2008",
+      "May 13, 2006",
+      "November 1, 2005"
+     ],
+     "explicit_cell": true,
+     "text": "Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3); G.E. link [Ex01]"
+    },
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 22, 1998"
+     ],
+     "explicit_cell": false,
+     "text": "Geoffrey Exoo, canary yellow: May 22, 1998 (5,3) [Ex01]."
+    }
+   ]
+  },
+  "3,8": {
+   "delta": 3,
+   "D": 8,
+   "N": 360,
+   "moore_bound": 766,
+   "ratio_to_moore": 0.47,
+   "colour": "#ceff00",
+   "href": "desc_g/desc_g8.html#38",
+   "provenance": [
+    {
+     "author": "Jianxiang Chen",
+     "dates": [
+      "2018"
+     ],
+     "explicit_cell": true,
+     "text": "Jianxiang Chen, chartreuse, 2018-10-16 (3,8)."
+    }
+   ]
+  },
+  "3,9": {
+   "delta": 3,
+   "D": 9,
+   "N": 600,
+   "moore_bound": 1534,
+   "ratio_to_moore": 0.3911,
+   "colour": "#ffff8f",
+   "href": "desc_g/desc_g9.html#39",
+   "provenance": [
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 21, 2010",
+      "May 19, 2010",
+      "January 28, 2008",
+      "May 13, 2006",
+      "November 1, 2005"
+     ],
+     "explicit_cell": true,
+     "text": "Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3); G.E. link [Ex01]"
+    },
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 22, 1998"
+     ],
+     "explicit_cell": false,
+     "text": "Geoffrey Exoo, canary yellow: May 22, 1998 (5,3) [Ex01]."
+    }
+   ]
+  },
+  "3,10": {
+   "delta": 3,
+   "D": 10,
+   "N": 1250,
+   "moore_bound": 3070,
+   "ratio_to_moore": 0.4072,
+   "colour": "#ff8899",
+   "href": "desc_g/desc_g10.html#310",
+   "provenance": [
+    {
+     "author": "Marston Conder",
+     "dates": [
+      "August 17, 2006"
+     ],
+     "explicit_cell": true,
+     "text": "Marston Conder, salmon: August 17, 2006 (3,10) [Co06,CoMa13]."
+    },
+    {
+     "author": "Marston Conder",
+     "dates": [
+      "January 18, 2026"
+     ],
+     "explicit_cell": false,
+     "text": "Marston Conder, salmon: January 18, 2026 (5,5)."
+    }
+   ]
+  },
+  "4,2": {
+   "delta": 4,
+   "D": 2,
+   "N": 15,
+   "moore_bound": 17,
+   "ratio_to_moore": 0.8824,
+   "colour": "#fadbd8",
+   "href": "desc_g/desc_g2.html#42",
+   "provenance": []
+  },
+  "4,3": {
+   "delta": 4,
+   "D": 3,
+   "N": 41,
+   "moore_bound": 53,
+   "ratio_to_moore": 0.7736,
+   "colour": "#d4ac0d",
+   "href": "desc_g/desc_g3.html#43",
+   "provenance": [
+    {
+     "author": "James Allwright; gold 1992 (4",
+     "dates": [
+      "1992"
+     ],
+     "explicit_cell": false,
+     "text": "James Allwright; gold 1992 (4,6) [Al92]."
+    }
+   ]
+  },
+  "4,4": {
+   "delta": 4,
+   "D": 4,
+   "N": 98,
+   "moore_bound": 161,
+   "ratio_to_moore": 0.6087,
+   "colour": "#ffff8f",
+   "href": "desc_g/desc_g4.html#44",
+   "provenance": [
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 21, 2010",
+      "May 19, 2010",
+      "January 28, 2008",
+      "May 13, 2006",
+      "November 1, 2005"
+     ],
+     "explicit_cell": true,
+     "text": "Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3); G.E. link [Ex01]"
+    },
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 22, 1998"
+     ],
+     "explicit_cell": false,
+     "text": "Geoffrey Exoo, canary yellow: May 22, 1998 (5,3) [Ex01]."
+    }
+   ]
+  },
+  "4,5": {
+   "delta": 4,
+   "D": 5,
+   "N": 364,
+   "moore_bound": 485,
+   "ratio_to_moore": 0.7505,
+   "colour": null,
+   "href": "desc_g/desc_g5.html#45",
+   "provenance": []
+  },
+  "4,6": {
+   "delta": 4,
+   "D": 6,
+   "N": 745,
+   "moore_bound": 1457,
+   "ratio_to_moore": 0.5113,
+   "colour": "#dde7f4",
+   "href": "desc_g/desc_g6.html#46",
+   "provenance": []
+  },
+  "4,7": {
+   "delta": 4,
+   "D": 7,
+   "N": 1320,
+   "moore_bound": 4373,
+   "ratio_to_moore": 0.3019,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g7.html#47",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "4,8": {
+   "delta": 4,
+   "D": 8,
+   "N": 3243,
+   "moore_bound": 13121,
+   "ratio_to_moore": 0.2472,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g8.html#48",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "4,9": {
+   "delta": 4,
+   "D": 9,
+   "N": 7575,
+   "moore_bound": 39365,
+   "ratio_to_moore": 0.1924,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g9.html#49",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "4,10": {
+   "delta": 4,
+   "D": 10,
+   "N": 18369,
+   "moore_bound": 118097,
+   "ratio_to_moore": 0.1555,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g10.html#410",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "5,2": {
+   "delta": 5,
+   "D": 2,
+   "N": 24,
+   "moore_bound": 26,
+   "ratio_to_moore": 0.9231,
+   "colour": "#fadbd8",
+   "href": "desc_g/desc_g2.html#52",
+   "provenance": []
+  },
+  "5,3": {
+   "delta": 5,
+   "D": 3,
+   "N": 72,
+   "moore_bound": 106,
+   "ratio_to_moore": 0.6792,
+   "colour": "#ffff8f",
+   "href": "desc_g/desc_g3.html#53",
+   "provenance": [
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 22, 1998"
+     ],
+     "explicit_cell": true,
+     "text": "Geoffrey Exoo, canary yellow: May 22, 1998 (5,3) [Ex01]."
+    },
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 21, 2010",
+      "May 19, 2010",
+      "January 28, 2008",
+      "May 13, 2006",
+      "November 1, 2005"
+     ],
+     "explicit_cell": false,
+     "text": "Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3); G.E. link [Ex01]"
+    }
+   ]
+  },
+  "5,4": {
+   "delta": 5,
+   "D": 4,
+   "N": 212,
+   "moore_bound": 426,
+   "ratio_to_moore": 0.4977,
+   "colour": "#ffff8f",
+   "href": "desc_g/desc_g4.html#54",
+   "provenance": [
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 21, 2010",
+      "May 19, 2010",
+      "January 28, 2008",
+      "May 13, 2006",
+      "November 1, 2005"
+     ],
+     "explicit_cell": true,
+     "text": "Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3); G.E. link [Ex01]"
+    },
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 22, 1998"
+     ],
+     "explicit_cell": false,
+     "text": "Geoffrey Exoo, canary yellow: May 22, 1998 (5,3) [Ex01]."
+    }
+   ]
+  },
+  "5,5": {
+   "delta": 5,
+   "D": 5,
+   "N": 648,
+   "moore_bound": 1706,
+   "ratio_to_moore": 0.3798,
+   "colour": "#ff8899",
+   "href": "desc_g/desc_g5.html#55",
+   "provenance": [
+    {
+     "author": "Marston Conder",
+     "dates": [
+      "January 18, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Marston Conder, salmon: January 18, 2026 (5,5)."
+    },
+    {
+     "author": "Marston Conder",
+     "dates": [
+      "August 17, 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Marston Conder, salmon: August 17, 2006 (3,10) [Co06,CoMa13]."
+    }
+   ]
+  },
+  "5,6": {
+   "delta": 5,
+   "D": 6,
+   "N": 2772,
+   "moore_bound": 6826,
+   "ratio_to_moore": 0.4061,
+   "colour": "#00cc99",
+   "href": "desc_g/desc_g6.html#56",
+   "provenance": [
+    {
+     "author": "Guillermo Pineda-Villavicencio",
+     "dates": [
+      "July 27, 2006"
+     ],
+     "explicit_cell": true,
+     "text": "Guillermo Pineda-Villavicencio, Jose Gomez, Mirka Miller, Hebert Perez-Roses, green: July 27, 2006 (5,6), (6,6), (9,6), (12,6), (14,6) [PiGoMiPe09]."
+    }
+   ]
+  },
+  "5,7": {
+   "delta": 5,
+   "D": 7,
+   "N": 5516,
+   "moore_bound": 27306,
+   "ratio_to_moore": 0.202,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g7.html#57",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "5,8": {
+   "delta": 5,
+   "D": 8,
+   "N": 17602,
+   "moore_bound": 109226,
+   "ratio_to_moore": 0.1612,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g8.html#58",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "5,9": {
+   "delta": 5,
+   "D": 9,
+   "N": 57840,
+   "moore_bound": 436906,
+   "ratio_to_moore": 0.1324,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g9.html#59",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "5,10": {
+   "delta": 5,
+   "D": 10,
+   "N": 187056,
+   "moore_bound": 1747626,
+   "ratio_to_moore": 0.107,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g10.html#510",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "6,2": {
+   "delta": 6,
+   "D": 2,
+   "N": 32,
+   "moore_bound": 37,
+   "ratio_to_moore": 0.8649,
+   "colour": null,
+   "href": "desc_g/desc_g2.html#62",
+   "provenance": []
+  },
+  "6,3": {
+   "delta": 6,
+   "D": 3,
+   "N": 111,
+   "moore_bound": 187,
+   "ratio_to_moore": 0.5936,
+   "colour": "#ffff8f",
+   "href": "desc_g/desc_g3.html#63",
+   "provenance": [
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 21, 2010",
+      "May 19, 2010",
+      "January 28, 2008",
+      "May 13, 2006",
+      "November 1, 2005"
+     ],
+     "explicit_cell": true,
+     "text": "Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3); G.E. link [Ex01]"
+    },
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 22, 1998"
+     ],
+     "explicit_cell": false,
+     "text": "Geoffrey Exoo, canary yellow: May 22, 1998 (5,3) [Ex01]."
+    }
+   ]
+  },
+  "6,4": {
+   "delta": 6,
+   "D": 4,
+   "N": 390,
+   "moore_bound": 937,
+   "ratio_to_moore": 0.4162,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g4.html#64",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": true,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "6,5": {
+   "delta": 6,
+   "D": 5,
+   "N": 1404,
+   "moore_bound": 4687,
+   "ratio_to_moore": 0.2996,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g5.html#65",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": true,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "6,6": {
+   "delta": 6,
+   "D": 6,
+   "N": 7917,
+   "moore_bound": 23437,
+   "ratio_to_moore": 0.3378,
+   "colour": "#00cc99",
+   "href": "desc_g/desc_g6.html#66",
+   "provenance": [
+    {
+     "author": "Guillermo Pineda-Villavicencio",
+     "dates": [
+      "July 27, 2006"
+     ],
+     "explicit_cell": true,
+     "text": "Guillermo Pineda-Villavicencio, Jose Gomez, Mirka Miller, Hebert Perez-Roses, green: July 27, 2006 (5,6), (6,6), (9,6), (12,6), (14,6) [PiGoMiPe09]."
+    }
+   ]
+  },
+  "6,7": {
+   "delta": 6,
+   "D": 7,
+   "N": 20319,
+   "moore_bound": 117187,
+   "ratio_to_moore": 0.1734,
+   "colour": "#00ffff",
+   "href": "desc_g/desc_g7.html#77",
+   "provenance": [
+    {
+     "author": "Francesc Comellas",
+     "dates": [
+      "April 2026",
+      "June 2024"
+     ],
+     "explicit_cell": true,
+     "text": "Francesc Comellas, cyan: April 2026, (6,7); Jan-June 2024, (3,5), (6,8), (7,6), (7,7), (8,5), (9,4), (10,4), (10,5), (11,5), (12,5), (13,5), (14,5), (15,5)."
+    }
+   ]
+  },
+  "6,8": {
+   "delta": 6,
+   "D": 8,
+   "N": 77257,
+   "moore_bound": 585937,
+   "ratio_to_moore": 0.1319,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g8.html#68",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "6,9": {
+   "delta": 6,
+   "D": 9,
+   "N": 331387,
+   "moore_bound": 2929687,
+   "ratio_to_moore": 0.1131,
+   "colour": "#f0c0fd",
+   "href": "desc_g/desc_g9.html#69",
+   "provenance": [
+    {
+     "author": "Alexis Rodriguez/Eduardo Canale",
+     "dates": [
+      "June 30, 2012",
+      "August 20, 2012",
+      "November 16, 2012"
+     ],
+     "explicit_cell": true,
+     "text": "Alexis Rodriguez/Eduardo Canale, soft orchid: June 30, 2012 (9,5); August 20, 2012 (6,9); November 16, 2012 (9,8)."
+    }
+   ]
+  },
+  "6,10": {
+   "delta": 6,
+   "D": 10,
+   "N": 1253615,
+   "moore_bound": 14648437,
+   "ratio_to_moore": 0.0856,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g10.html#610",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "7,2": {
+   "delta": 7,
+   "D": 2,
+   "N": 50,
+   "moore_bound": 50,
+   "ratio_to_moore": 1.0,
+   "colour": "#fadbd8",
+   "href": "desc_g/desc_g2.html#72",
+   "provenance": []
+  },
+  "7,3": {
+   "delta": 7,
+   "D": 3,
+   "N": 168,
+   "moore_bound": 302,
+   "ratio_to_moore": 0.5563,
+   "colour": "#ffff8f",
+   "href": "desc_g/desc_g3.html#73",
+   "provenance": [
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 21, 2010",
+      "May 19, 2010",
+      "January 28, 2008",
+      "May 13, 2006",
+      "November 1, 2005"
+     ],
+     "explicit_cell": true,
+     "text": "Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3); G.E. link [Ex01]"
+    },
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 22, 1998"
+     ],
+     "explicit_cell": false,
+     "text": "Geoffrey Exoo, canary yellow: May 22, 1998 (5,3) [Ex01]."
+    }
+   ]
+  },
+  "7,4": {
+   "delta": 7,
+   "D": 4,
+   "N": 672,
+   "moore_bound": 1814,
+   "ratio_to_moore": 0.3705,
+   "colour": "#89cff0",
+   "href": "desc_g/desc_g4.html#74",
+   "provenance": [
+    {
+     "author": "Michael Sampels; light blue: July 29",
+     "dates": [
+      "July 29, 1997"
+     ],
+     "explicit_cell": true,
+     "text": "Michael Sampels; light blue: July 29, 1997 (7,4), (8,3) [Sa97,Sa98]."
+    }
+   ]
+  },
+  "7,5": {
+   "delta": 7,
+   "D": 5,
+   "N": 2756,
+   "moore_bound": 10886,
+   "ratio_to_moore": 0.2532,
+   "colour": "#95b0ec",
+   "href": "desc_g/desc_g5.html#75",
+   "provenance": [
+    {
+     "author": "Michael J. Dinneen",
+     "dates": [],
+     "explicit_cell": true,
+     "text": "Michael J. Dinneen, Paul R. Hafner; dark cyan: (7,5), see [DiHa94]."
+    }
+   ]
+  },
+  "7,6": {
+   "delta": 7,
+   "D": 6,
+   "N": 12264,
+   "moore_bound": 65318,
+   "ratio_to_moore": 0.1878,
+   "colour": "#00ffff",
+   "href": "desc_g/desc_g6.html#76",
+   "provenance": [
+    {
+     "author": "Francesc Comellas",
+     "dates": [
+      "April 2026",
+      "June 2024"
+     ],
+     "explicit_cell": true,
+     "text": "Francesc Comellas, cyan: April 2026, (6,7); Jan-June 2024, (3,5), (6,8), (7,6), (7,7), (8,5), (9,4), (10,4), (10,5), (11,5), (12,5), (13,5), (14,5), (15,5)."
+    }
+   ]
+  },
+  "7,7": {
+   "delta": 7,
+   "D": 7,
+   "N": 53020,
+   "moore_bound": 391910,
+   "ratio_to_moore": 0.1353,
+   "colour": "#00ffff",
+   "href": "desc_g/desc_g7.html#77",
+   "provenance": [
+    {
+     "author": "Francesc Comellas",
+     "dates": [
+      "April 2026",
+      "June 2024"
+     ],
+     "explicit_cell": true,
+     "text": "Francesc Comellas, cyan: April 2026, (6,7); Jan-June 2024, (3,5), (6,8), (7,6), (7,7), (8,5), (9,4), (10,4), (10,5), (11,5), (12,5), (13,5), (14,5), (15,5)."
+    }
+   ]
+  },
+  "7,8": {
+   "delta": 7,
+   "D": 8,
+   "N": 249660,
+   "moore_bound": 2351462,
+   "ratio_to_moore": 0.1062,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g8.html#78",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "7,9": {
+   "delta": 7,
+   "D": 9,
+   "N": 1223050,
+   "moore_bound": 14108774,
+   "ratio_to_moore": 0.0867,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g9.html#79",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "7,10": {
+   "delta": 7,
+   "D": 10,
+   "N": 6007230,
+   "moore_bound": 84652646,
+   "ratio_to_moore": 0.071,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g10.html#710",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "8,2": {
+   "delta": 8,
+   "D": 2,
+   "N": 57,
+   "moore_bound": 65,
+   "ratio_to_moore": 0.8769,
+   "colour": null,
+   "href": "desc_g/desc_g2.html#82",
+   "provenance": []
+  },
+  "8,3": {
+   "delta": 8,
+   "D": 3,
+   "N": 253,
+   "moore_bound": 457,
+   "ratio_to_moore": 0.5536,
+   "colour": "#c0ecfd",
+   "href": "desc_g/desc_g3.html#83",
+   "provenance": [
+    {
+     "author": "Francesc Comellas",
+     "dates": [
+      "1994"
+     ],
+     "explicit_cell": true,
+     "text": "Francesc Comellas, Margarida Mitjana: celeste 1994 (8,3)."
+    }
+   ]
+  },
+  "8,4": {
+   "delta": 8,
+   "D": 4,
+   "N": 1100,
+   "moore_bound": 3201,
+   "ratio_to_moore": 0.3436,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g4.html#84",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": true,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "8,5": {
+   "delta": 8,
+   "D": 5,
+   "N": 5253,
+   "moore_bound": 22409,
+   "ratio_to_moore": 0.2344,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g5.html#85",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "8,6": {
+   "delta": 8,
+   "D": 6,
+   "N": 39672,
+   "moore_bound": 156865,
+   "ratio_to_moore": 0.2529,
+   "colour": "#40e0d0",
+   "href": "desc_g/desc_g6.html#86",
+   "provenance": [
+    {
+     "author": "Jose Gomez",
+     "dates": [
+      "June 2005"
+     ],
+     "explicit_cell": true,
+     "text": "Jose Gomez, turquoise: June 2005; (8,6),(10,6) [Go05]"
+    }
+   ]
+  },
+  "8,7": {
+   "delta": 8,
+   "D": 7,
+   "N": 133446,
+   "moore_bound": 1098057,
+   "ratio_to_moore": 0.1215,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g7.html#87",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "8,8": {
+   "delta": 8,
+   "D": 8,
+   "N": 734820,
+   "moore_bound": 7686401,
+   "ratio_to_moore": 0.0956,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g8.html#88",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "8,9": {
+   "delta": 8,
+   "D": 9,
+   "N": 4243100,
+   "moore_bound": 53804809,
+   "ratio_to_moore": 0.0789,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g9.html#89",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "8,10": {
+   "delta": 8,
+   "D": 10,
+   "N": 24914017,
+   "moore_bound": 376633665,
+   "ratio_to_moore": 0.0661,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g10.html#810",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "9,2": {
+   "delta": 9,
+   "D": 2,
+   "N": 74,
+   "moore_bound": 82,
+   "ratio_to_moore": 0.9024,
+   "colour": null,
+   "href": "desc_g/desc_g2.html#92",
+   "provenance": []
+  },
+  "9,3": {
+   "delta": 9,
+   "D": 3,
+   "N": 585,
+   "moore_bound": 658,
+   "ratio_to_moore": 0.8891,
+   "colour": null,
+   "href": "desc_g/desc_g3.html#93",
+   "provenance": []
+  },
+  "9,4": {
+   "delta": 9,
+   "D": 4,
+   "N": 1640,
+   "moore_bound": 5266,
+   "ratio_to_moore": 0.3114,
+   "colour": "#00ffff",
+   "href": "desc_g/desc_g4.html#94",
+   "provenance": [
+    {
+     "author": "Francesc Comellas",
+     "dates": [
+      "April 2026",
+      "June 2024"
+     ],
+     "explicit_cell": true,
+     "text": "Francesc Comellas, cyan: April 2026, (6,7); Jan-June 2024, (3,5), (6,8), (7,6), (7,7), (8,5), (9,4), (10,4), (10,5), (11,5), (12,5), (13,5), (14,5), (15,5)."
+    }
+   ]
+  },
+  "9,5": {
+   "delta": 9,
+   "D": 5,
+   "N": 8760,
+   "moore_bound": 42130,
+   "ratio_to_moore": 0.2079,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g5.html#95",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "9,6": {
+   "delta": 9,
+   "D": 6,
+   "N": 75893,
+   "moore_bound": 337042,
+   "ratio_to_moore": 0.2252,
+   "colour": "#00cc99",
+   "href": "desc_g/desc_g6.html#96",
+   "provenance": [
+    {
+     "author": "Guillermo Pineda-Villavicencio",
+     "dates": [
+      "July 27, 2006"
+     ],
+     "explicit_cell": true,
+     "text": "Guillermo Pineda-Villavicencio, Jose Gomez, Mirka Miller, Hebert Perez-Roses, green: July 27, 2006 (5,6), (6,6), (9,6), (12,6), (14,6) [PiGoMiPe09]."
+    }
+   ]
+  },
+  "9,7": {
+   "delta": 9,
+   "D": 7,
+   "N": 279616,
+   "moore_bound": 2696338,
+   "ratio_to_moore": 0.1037,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g7.html#97",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "9,8": {
+   "delta": 9,
+   "D": 8,
+   "N": 1697688,
+   "moore_bound": 21570706,
+   "ratio_to_moore": 0.0787,
+   "colour": "#f0c0fd",
+   "href": "desc_g/desc_g8.html#98",
+   "provenance": [
+    {
+     "author": "Alexis Rodriguez/Eduardo Canale",
+     "dates": [
+      "June 30, 2012",
+      "August 20, 2012",
+      "November 16, 2012"
+     ],
+     "explicit_cell": true,
+     "text": "Alexis Rodriguez/Eduardo Canale, soft orchid: June 30, 2012 (9,5); August 20, 2012 (6,9); November 16, 2012 (9,8)."
+    }
+   ]
+  },
+  "9,9": {
+   "delta": 9,
+   "D": 9,
+   "N": 12123288,
+   "moore_bound": 172565650,
+   "ratio_to_moore": 0.0703,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g9.html#99",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "9,10": {
+   "delta": 9,
+   "D": 10,
+   "N": 65866350,
+   "moore_bound": 1380525202,
+   "ratio_to_moore": 0.0477,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g10.html#910",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "10,2": {
+   "delta": 10,
+   "D": 2,
+   "N": 91,
+   "moore_bound": 101,
+   "ratio_to_moore": 0.901,
+   "colour": null,
+   "href": "desc_g/desc_g2.html#102",
+   "provenance": []
+  },
+  "10,3": {
+   "delta": 10,
+   "D": 3,
+   "N": 650,
+   "moore_bound": 911,
+   "ratio_to_moore": 0.7135,
+   "colour": null,
+   "href": "desc_g/desc_g3.html#103",
+   "provenance": []
+  },
+  "10,4": {
+   "delta": 10,
+   "D": 4,
+   "N": 2485,
+   "moore_bound": 8201,
+   "ratio_to_moore": 0.303,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g4.html#104",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "10,5": {
+   "delta": 10,
+   "D": 5,
+   "N": 13734,
+   "moore_bound": 73811,
+   "ratio_to_moore": 0.1861,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g5.html#105",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "10,6": {
+   "delta": 10,
+   "D": 6,
+   "N": 134690,
+   "moore_bound": 664301,
+   "ratio_to_moore": 0.2028,
+   "colour": "#40e0d0",
+   "href": "desc_g/desc_g6.html#106",
+   "provenance": [
+    {
+     "author": "Jose Gomez",
+     "dates": [
+      "June 2005"
+     ],
+     "explicit_cell": true,
+     "text": "Jose Gomez, turquoise: June 2005; (8,6),(10,6) [Go05]"
+    }
+   ]
+  },
+  "10,7": {
+   "delta": 10,
+   "D": 7,
+   "N": 583083,
+   "moore_bound": 5978711,
+   "ratio_to_moore": 0.0975,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g7.html#107",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "10,8": {
+   "delta": 10,
+   "D": 8,
+   "N": 4293452,
+   "moore_bound": 53808401,
+   "ratio_to_moore": 0.0798,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g8.html#108",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "10,9": {
+   "delta": 10,
+   "D": 9,
+   "N": 27997191,
+   "moore_bound": 484275611,
+   "ratio_to_moore": 0.0578,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g9.html#109",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "10,10": {
+   "delta": 10,
+   "D": 10,
+   "N": 201038922,
+   "moore_bound": 4358480501,
+   "ratio_to_moore": 0.0461,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g10.html#1010",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "11,2": {
+   "delta": 11,
+   "D": 2,
+   "N": 104,
+   "moore_bound": 122,
+   "ratio_to_moore": 0.8525,
+   "colour": "#ffff8f",
+   "href": "desc_g/desc_g2.html#112",
+   "provenance": [
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 21, 2010",
+      "May 19, 2010",
+      "January 28, 2008",
+      "May 13, 2006",
+      "November 1, 2005"
+     ],
+     "explicit_cell": true,
+     "text": "Geoffrey Exoo, canary yellow: May 21, 2010 (5,4); May 19, 2010 (4,4),(6,3); January 28, 2008 (3,7), (3,9); May 13, 2006 (11,2); November 1, 2005 (7,3); G.E. link [Ex01]"
+    },
+    {
+     "author": "Geoffrey Exoo",
+     "dates": [
+      "May 22, 1998"
+     ],
+     "explicit_cell": false,
+     "text": "Geoffrey Exoo, canary yellow: May 22, 1998 (5,3) [Ex01]."
+    }
+   ]
+  },
+  "11,3": {
+   "delta": 11,
+   "D": 3,
+   "N": 715,
+   "moore_bound": 1222,
+   "ratio_to_moore": 0.5851,
+   "colour": null,
+   "href": "desc_g/desc_g3.html#113",
+   "provenance": []
+  },
+  "11,4": {
+   "delta": 11,
+   "D": 4,
+   "N": 3220,
+   "moore_bound": 12222,
+   "ratio_to_moore": 0.2635,
+   "colour": "#cdcdcd",
+   "href": "desc_g/desc_g4.html#114",
+   "provenance": [
+    {
+     "author": "Petrit Isufi",
+     "dates": [
+      "August 17, 2026",
+      "August 13, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Petrit Isufi, light grey: August 17, 2026 (11,4), (13,4), (14,4); August 13, 2026 (12,4), (15,2), (15,3)."
+    },
+    {
+     "author": "Eduardo Canale",
+     "dates": [
+      "August 22, 2012"
+     ],
+     "explicit_cell": false,
+     "text": "Eduardo Canale, light grey: August 22, 2012 (15,2)."
+    }
+   ]
+  },
+  "11,5": {
+   "delta": 11,
+   "D": 5,
+   "N": 20646,
+   "moore_bound": 122222,
+   "ratio_to_moore": 0.1689,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g5.html#115",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "11,6": {
+   "delta": 11,
+   "D": 6,
+   "N": 156864,
+   "moore_bound": 1222222,
+   "ratio_to_moore": 0.1283,
+   "colour": "#d4efdf",
+   "href": "desc_g/desc_g6.html#116",
+   "provenance": [
+    {
+     "author": "Jose Gomez",
+     "dates": [
+      "1985"
+     ],
+     "explicit_cell": false,
+     "text": "Jose Gomez, Miquel Angel Fiol; olive light 1985 (11,4), (13,4), (14,4), (15,4), (16,4) [GoFi85]."
+    }
+   ]
+  },
+  "11,7": {
+   "delta": 11,
+   "D": 7,
+   "N": 1001268,
+   "moore_bound": 12222222,
+   "ratio_to_moore": 0.0819,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g7.html#117",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "11,8": {
+   "delta": 11,
+   "D": 8,
+   "N": 7442328,
+   "moore_bound": 122222222,
+   "ratio_to_moore": 0.0609,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g8.html#118",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "11,9": {
+   "delta": 11,
+   "D": 9,
+   "N": 72933102,
+   "moore_bound": 1222222222,
+   "ratio_to_moore": 0.0597,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g10.html#119",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "11,10": {
+   "delta": 11,
+   "D": 10,
+   "N": 600380000,
+   "moore_bound": 12222222222,
+   "ratio_to_moore": 0.0491,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g11.html#1110",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "12,2": {
+   "delta": 12,
+   "D": 2,
+   "N": 133,
+   "moore_bound": 145,
+   "ratio_to_moore": 0.9172,
+   "colour": null,
+   "href": "desc_g/desc_g2.html#122",
+   "provenance": []
+  },
+  "12,3": {
+   "delta": 12,
+   "D": 3,
+   "N": 790,
+   "moore_bound": 1597,
+   "ratio_to_moore": 0.4947,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g3.html#123",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "12,4": {
+   "delta": 12,
+   "D": 4,
+   "N": 4705,
+   "moore_bound": 17569,
+   "ratio_to_moore": 0.2678,
+   "colour": "#cdcdcd",
+   "href": "desc_g/desc_g4.html#124",
+   "provenance": [
+    {
+     "author": "Petrit Isufi",
+     "dates": [
+      "August 17, 2026",
+      "August 13, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Petrit Isufi, light grey: August 17, 2026 (11,4), (13,4), (14,4); August 13, 2026 (12,4), (15,2), (15,3)."
+    },
+    {
+     "author": "Eduardo Canale",
+     "dates": [
+      "August 22, 2012"
+     ],
+     "explicit_cell": false,
+     "text": "Eduardo Canale, light grey: August 22, 2012 (15,2)."
+    }
+   ]
+  },
+  "12,5": {
+   "delta": 12,
+   "D": 5,
+   "N": 34992,
+   "moore_bound": 193261,
+   "ratio_to_moore": 0.1811,
+   "colour": "#9fc3bd",
+   "href": "desc_g/desc_g5.html#125",
+   "provenance": [
+    {
+     "author": "Ryosuke Mizuno",
+     "dates": [
+      "July 25, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Ryosuke Mizuno, sage teal: July 25, 2026 (12,5), (16,5). [Mi26]"
+    }
+   ]
+  },
+  "12,6": {
+   "delta": 12,
+   "D": 6,
+   "N": 359772,
+   "moore_bound": 2125873,
+   "ratio_to_moore": 0.1692,
+   "colour": "#00cc99",
+   "href": "desc_g/desc_g6.html#126",
+   "provenance": [
+    {
+     "author": "Guillermo Pineda-Villavicencio",
+     "dates": [
+      "July 27, 2006"
+     ],
+     "explicit_cell": true,
+     "text": "Guillermo Pineda-Villavicencio, Jose Gomez, Mirka Miller, Hebert Perez-Roses, green: July 27, 2006 (5,6), (6,6), (9,6), (12,6), (14,6) [PiGoMiPe09]."
+    }
+   ]
+  },
+  "12,7": {
+   "delta": 12,
+   "D": 7,
+   "N": 2005819,
+   "moore_bound": 23384605,
+   "ratio_to_moore": 0.0858,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g7.html#127",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "12,8": {
+   "delta": 12,
+   "D": 8,
+   "N": 15924326,
+   "moore_bound": 257230657,
+   "ratio_to_moore": 0.0619,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g8.html#128",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "12,9": {
+   "delta": 12,
+   "D": 9,
+   "N": 158158875,
+   "moore_bound": 2829537229,
+   "ratio_to_moore": 0.0559,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g9.html#129",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "12,10": {
+   "delta": 12,
+   "D": 10,
+   "N": 1506256891,
+   "moore_bound": 31124909521,
+   "ratio_to_moore": 0.0484,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g10.html#1210",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "13,2": {
+   "delta": 13,
+   "D": 2,
+   "N": 162,
+   "moore_bound": 170,
+   "ratio_to_moore": 0.9529,
+   "colour": "#ff99ff",
+   "href": "desc_g/desc_g2.html#132",
+   "provenance": [
+    {
+     "author": "Brendan D. McKay",
+     "dates": [
+      "1997"
+     ],
+     "explicit_cell": true,
+     "text": "Brendan D. McKay, Mirka Miller, J. Siran; pink: Mar 12, 1997 (13,2) [McMiSi98]."
+    }
+   ]
+  },
+  "13,3": {
+   "delta": 13,
+   "D": 3,
+   "N": 856,
+   "moore_bound": 2042,
+   "ratio_to_moore": 0.4192,
+   "colour": "#cfdfef",
+   "href": "desc_g/desc_g3.html#133",
+   "provenance": [
+    {
+     "author": "Vlad Pelekhaty",
+     "dates": [
+      "August 6, 2021"
+     ],
+     "explicit_cell": true,
+     "text": "Vlad Pelekhaty, cloud: August 6, 2021 (13,3). Modification of the entry described in [Go06] by adding new vertices."
+    }
+   ]
+  },
+  "13,4": {
+   "delta": 13,
+   "D": 4,
+   "N": 6587,
+   "moore_bound": 24506,
+   "ratio_to_moore": 0.2688,
+   "colour": "#cdcdcd",
+   "href": "desc_g/desc_g4.html#134",
+   "provenance": [
+    {
+     "author": "Petrit Isufi",
+     "dates": [
+      "August 17, 2026",
+      "August 13, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Petrit Isufi, light grey: August 17, 2026 (11,4), (13,4), (14,4); August 13, 2026 (12,4), (15,2), (15,3)."
+    },
+    {
+     "author": "Eduardo Canale",
+     "dates": [
+      "August 22, 2012"
+     ],
+     "explicit_cell": false,
+     "text": "Eduardo Canale, light grey: August 22, 2012 (15,2)."
+    }
+   ]
+  },
+  "13,5": {
+   "delta": 13,
+   "D": 5,
+   "N": 42680,
+   "moore_bound": 294074,
+   "ratio_to_moore": 0.1451,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g5.html#135",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "13,6": {
+   "delta": 13,
+   "D": 6,
+   "N": 531440,
+   "moore_bound": 3528890,
+   "ratio_to_moore": 0.1506,
+   "colour": "#d4efdf",
+   "href": "desc_g/desc_g6.html#136",
+   "provenance": [
+    {
+     "author": "Jose Gomez",
+     "dates": [
+      "1985"
+     ],
+     "explicit_cell": false,
+     "text": "Jose Gomez, Miquel Angel Fiol; olive light 1985 (11,4), (13,4), (14,4), (15,4), (16,4) [GoFi85]."
+    }
+   ]
+  },
+  "13,7": {
+   "delta": 13,
+   "D": 7,
+   "N": 3322080,
+   "moore_bound": 42346682,
+   "ratio_to_moore": 0.0784,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g7.html#137",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "13,8": {
+   "delta": 13,
+   "D": 8,
+   "N": 29927790,
+   "moore_bound": 508160186,
+   "ratio_to_moore": 0.0589,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g8.html#138",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "13,9": {
+   "delta": 13,
+   "D": 9,
+   "N": 249155760,
+   "moore_bound": 6097922234,
+   "ratio_to_moore": 0.0409,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g9.html#139",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "13,10": {
+   "delta": 13,
+   "D": 10,
+   "N": 3077200700,
+   "moore_bound": 73175066810,
+   "ratio_to_moore": 0.0421,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g10.html#1310",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "14,2": {
+   "delta": 14,
+   "D": 2,
+   "N": 183,
+   "moore_bound": 197,
+   "ratio_to_moore": 0.9289,
+   "colour": null,
+   "href": "desc_g/desc_g2.html#142",
+   "provenance": []
+  },
+  "14,3": {
+   "delta": 14,
+   "D": 3,
+   "N": 979,
+   "moore_bound": 2563,
+   "ratio_to_moore": 0.382,
+   "colour": "#ff9933",
+   "href": "desc_g/desc_g3.html#143",
+   "provenance": [
+    {
+     "author": "Rishabh Rajiv",
+     "dates": [
+      "July 4, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Rishabh Rajiv, saffron: July 4, 2026 (14,3)."
+    }
+   ]
+  },
+  "14,4": {
+   "delta": 14,
+   "D": 4,
+   "N": 8255,
+   "moore_bound": 33321,
+   "ratio_to_moore": 0.2477,
+   "colour": "#cdcdcd",
+   "href": "desc_g/desc_g4.html#144",
+   "provenance": [
+    {
+     "author": "Petrit Isufi",
+     "dates": [
+      "August 17, 2026",
+      "August 13, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Petrit Isufi, light grey: August 17, 2026 (11,4), (13,4), (14,4); August 13, 2026 (12,4), (15,2), (15,3)."
+    },
+    {
+     "author": "Eduardo Canale",
+     "dates": [
+      "August 22, 2012"
+     ],
+     "explicit_cell": false,
+     "text": "Eduardo Canale, light grey: August 22, 2012 (15,2)."
+    }
+   ]
+  },
+  "14,5": {
+   "delta": 14,
+   "D": 5,
+   "N": 60390,
+   "moore_bound": 433175,
+   "ratio_to_moore": 0.1394,
+   "colour": "#9fb2d0",
+   "href": "desc_g/desc_g5.html#145",
+   "provenance": [
+    {
+     "author": "Sami Badaoui",
+     "dates": [
+      "August 16, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Sami Badaoui, dusty blue: August 16, 2026 (14,5)."
+    }
+   ]
+  },
+  "14,6": {
+   "delta": 14,
+   "D": 6,
+   "N": 816294,
+   "moore_bound": 5631277,
+   "ratio_to_moore": 0.145,
+   "colour": "#00cc99",
+   "href": "desc_g/desc_g6.html#146",
+   "provenance": [
+    {
+     "author": "Guillermo Pineda-Villavicencio",
+     "dates": [
+      "July 27, 2006"
+     ],
+     "explicit_cell": true,
+     "text": "Guillermo Pineda-Villavicencio, Jose Gomez, Mirka Miller, Hebert Perez-Roses, green: July 27, 2006 (5,6), (6,6), (9,6), (12,6), (14,6) [PiGoMiPe09]."
+    }
+   ]
+  },
+  "14,7": {
+   "delta": 14,
+   "D": 7,
+   "N": 6200460,
+   "moore_bound": 73206603,
+   "ratio_to_moore": 0.0847,
+   "colour": "#a3e4d7",
+   "href": "desc_g/desc_g7.html#147",
+   "provenance": [
+    {
+     "author": "Jose Gomez",
+     "dates": [
+      "1989"
+     ],
+     "explicit_cell": true,
+     "text": "Jose Gomez, Miquel Angel Fiol and Oriol Serra; olive medium 1989 (14,7), (16,7) [GoFiSe93]."
+    }
+   ]
+  },
+  "14,8": {
+   "delta": 14,
+   "D": 8,
+   "N": 55913932,
+   "moore_bound": 951685841,
+   "ratio_to_moore": 0.0588,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g8.html#148",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "14,9": {
+   "delta": 14,
+   "D": 9,
+   "N": 600123780,
+   "moore_bound": 12371915935,
+   "ratio_to_moore": 0.0485,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g9.html#149",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "14,10": {
+   "delta": 14,
+   "D": 10,
+   "N": 7041746199,
+   "moore_bound": 160834907157,
+   "ratio_to_moore": 0.0438,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g10.html#1410",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "15,2": {
+   "delta": 15,
+   "D": 2,
+   "N": 188,
+   "moore_bound": 226,
+   "ratio_to_moore": 0.8319,
+   "colour": "#cdcdcd",
+   "href": "desc_g/desc_g2.html#152",
+   "provenance": [
+    {
+     "author": "Petrit Isufi",
+     "dates": [
+      "August 17, 2026",
+      "August 13, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Petrit Isufi, light grey: August 17, 2026 (11,4), (13,4), (14,4); August 13, 2026 (12,4), (15,2), (15,3)."
+    },
+    {
+     "author": "Eduardo Canale",
+     "dates": [
+      "August 22, 2012"
+     ],
+     "explicit_cell": true,
+     "text": "Eduardo Canale, light grey: August 22, 2012 (15,2)."
+    }
+   ]
+  },
+  "15,3": {
+   "delta": 15,
+   "D": 3,
+   "N": 1224,
+   "moore_bound": 3166,
+   "ratio_to_moore": 0.3866,
+   "colour": "#cdcdcd",
+   "href": "desc_g/desc_g3.html#153",
+   "provenance": [
+    {
+     "author": "Petrit Isufi",
+     "dates": [
+      "August 17, 2026",
+      "August 13, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Petrit Isufi, light grey: August 17, 2026 (11,4), (13,4), (14,4); August 13, 2026 (12,4), (15,2), (15,3)."
+    },
+    {
+     "author": "Eduardo Canale",
+     "dates": [
+      "August 22, 2012"
+     ],
+     "explicit_cell": false,
+     "text": "Eduardo Canale, light grey: August 22, 2012 (15,2)."
+    }
+   ]
+  },
+  "15,4": {
+   "delta": 15,
+   "D": 4,
+   "N": 11712,
+   "moore_bound": 44326,
+   "ratio_to_moore": 0.2642,
+   "colour": "#d4efdf",
+   "href": "desc_g/desc_g4.html#154",
+   "provenance": [
+    {
+     "author": "Jose Gomez",
+     "dates": [
+      "1985"
+     ],
+     "explicit_cell": true,
+     "text": "Jose Gomez, Miquel Angel Fiol; olive light 1985 (11,4), (13,4), (14,4), (15,4), (16,4) [GoFi85]."
+    }
+   ]
+  },
+  "15,5": {
+   "delta": 15,
+   "D": 5,
+   "N": 79152,
+   "moore_bound": 620566,
+   "ratio_to_moore": 0.1275,
+   "colour": "#c0ccfd",
+   "href": "desc_g/desc_g5.html#155",
+   "provenance": [
+    {
+     "author": "Niklas Wupperfeld",
+     "dates": [
+      "August 6, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Niklas Wupperfeld, lilac blue: August 6, 2026 (11,5), (13,5), (14,5),(15,5)"
+    }
+   ]
+  },
+  "15,6": {
+   "delta": 15,
+   "D": 6,
+   "N": 1417248,
+   "moore_bound": 8687926,
+   "ratio_to_moore": 0.1631,
+   "colour": "#d4efdf",
+   "href": "desc_g/desc_g6.html#156",
+   "provenance": [
+    {
+     "author": "Jose Gomez",
+     "dates": [
+      "1985"
+     ],
+     "explicit_cell": false,
+     "text": "Jose Gomez, Miquel Angel Fiol; olive light 1985 (11,4), (13,4), (14,4), (15,4), (16,4) [GoFi85]."
+    }
+   ]
+  },
+  "15,7": {
+   "delta": 15,
+   "D": 7,
+   "N": 8599986,
+   "moore_bound": 121630966,
+   "ratio_to_moore": 0.0707,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g7.html#157",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "15,8": {
+   "delta": 15,
+   "D": 8,
+   "N": 90001236,
+   "moore_bound": 1702833526,
+   "ratio_to_moore": 0.0529,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g8.html#158",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "15,9": {
+   "delta": 15,
+   "D": 9,
+   "N": 1171998164,
+   "moore_bound": 23839669366,
+   "ratio_to_moore": 0.0492,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g9.html#159",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "15,10": {
+   "delta": 15,
+   "D": 10,
+   "N": 10012349898,
+   "moore_bound": 333755371126,
+   "ratio_to_moore": 0.03,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g10.html#1510",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "16,2": {
+   "delta": 16,
+   "D": 2,
+   "N": 200,
+   "moore_bound": 257,
+   "ratio_to_moore": 0.7782,
+   "colour": "#d0c792",
+   "href": "desc_g/desc_g2.html#162",
+   "provenance": [
+    {
+     "author": "Marcel Abas",
+     "dates": [
+      "2017"
+     ],
+     "explicit_cell": true,
+     "text": "Marcel Abas, silver gold: 2017 (16,2). Cayley graph."
+    }
+   ]
+  },
+  "16,3": {
+   "delta": 16,
+   "D": 3,
+   "N": 1610,
+   "moore_bound": 3857,
+   "ratio_to_moore": 0.4174,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g3.html#163",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "16,4": {
+   "delta": 16,
+   "D": 4,
+   "N": 14640,
+   "moore_bound": 57857,
+   "ratio_to_moore": 0.253,
+   "colour": "#d4efdf",
+   "href": "desc_g/desc_g4.html#164",
+   "provenance": [
+    {
+     "author": "Jose Gomez",
+     "dates": [
+      "1985"
+     ],
+     "explicit_cell": true,
+     "text": "Jose Gomez, Miquel Angel Fiol; olive light 1985 (11,4), (13,4), (14,4), (15,4), (16,4) [GoFi85]."
+    }
+   ]
+  },
+  "16,5": {
+   "delta": 16,
+   "D": 5,
+   "N": 147456,
+   "moore_bound": 867857,
+   "ratio_to_moore": 0.1699,
+   "colour": "#9fc3bd",
+   "href": "desc_g/desc_g5.html#165",
+   "provenance": [
+    {
+     "author": "Ryosuke Mizuno",
+     "dates": [
+      "July 25, 2026"
+     ],
+     "explicit_cell": true,
+     "text": "Ryosuke Mizuno, sage teal: July 25, 2026 (12,5), (16,5). [Mi26]"
+    }
+   ]
+  },
+  "16,6": {
+   "delta": 16,
+   "D": 6,
+   "N": 1771560,
+   "moore_bound": 13017857,
+   "ratio_to_moore": 0.1361,
+   "colour": "#d4efdf",
+   "href": "desc_g/desc_g6.html#166",
+   "provenance": [
+    {
+     "author": "Jose Gomez",
+     "dates": [
+      "1985"
+     ],
+     "explicit_cell": false,
+     "text": "Jose Gomez, Miquel Angel Fiol; olive light 1985 (11,4), (13,4), (14,4), (15,4), (16,4) [GoFi85]."
+    }
+   ]
+  },
+  "16,7": {
+   "delta": 16,
+   "D": 7,
+   "N": 14882658,
+   "moore_bound": 195267857,
+   "ratio_to_moore": 0.0762,
+   "colour": "#a3e4d7",
+   "href": "desc_g/desc_g7.html#167",
+   "provenance": [
+    {
+     "author": "Jose Gomez",
+     "dates": [
+      "1989"
+     ],
+     "explicit_cell": true,
+     "text": "Jose Gomez, Miquel Angel Fiol and Oriol Serra; olive medium 1989 (14,7), (16,7) [GoFiSe93]."
+    }
+   ]
+  },
+  "16,8": {
+   "delta": 16,
+   "D": 8,
+   "N": 140559416,
+   "moore_bound": 2929017857,
+   "ratio_to_moore": 0.048,
+   "colour": "#ffcc80",
+   "href": "desc_g/desc_g8.html#168",
+   "provenance": [
+    {
+     "author": "Eyal Loz",
+     "dates": [
+      "November 2006"
+     ],
+     "explicit_cell": false,
+     "text": "Eyal Loz, orange: August and November 2006: (5,5), (6,4), (6,5), (8,4) and most values for degrees 4-16 and diameters 7-10."
+    }
+   ]
+  },
+  "16,9": {
+   "delta": 16,
+   "D": 9,
+   "N": 2025135681,
+   "moore_bound": 43935267857,
+   "ratio_to_moore": 0.0461,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g9.html#169",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  },
+  "16,10": {
+   "delta": 16,
+   "D": 10,
+   "N": 12951452377,
+   "moore_bound": 659029017857,
+   "ratio_to_moore": 0.0197,
+   "colour": "#99ef99",
+   "href": "desc_g/desc_g10.html#1610",
+   "provenance": [
+    {
+     "author": "Dharunish Yugeswardeenoo",
+     "dates": [
+      "2026"
+     ],
+     "explicit_cell": true,
+     "text": "Dharunish Yugeswardeenoo, soft mint: August 15-17, 2026 (4,10), (5,8), (6,8), (8,5),(8,7),(8,10),(9,5),(10,4),(10,5),(11,4),(11,5),(12,3),(12,7),(12,10),(13,5),(14,10),(16,3),(16,9),(16,10)"
+    }
+   ]
+  }
+ }
+}

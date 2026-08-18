@@ -1,0 +1,27 @@
+{
+ "model": "metacyclic",
+ "delta": 13,
+ "D": 5,
+ "N": 42744,
+ "m": 1781,
+ "n": 24,
+ "a": 969,
+ "S": [
+  4333,
+  39699,
+  34936,
+  8915,
+  24972,
+  17983,
+  24223,
+  20246,
+  33887,
+  9248,
+  42306,
+  2325,
+  22919
+ ],
+ "edges": 277836,
+ "group": "Z_1781 rtimes_969 Z_24",
+ "construction": "Cayley graph of metacyclic group, connection set S"
+}

@@ -1,0 +1,21 @@
+Degree/diameter graph
+=====================
+
+Delta (max degree) : 14
+D (diameter)       : 3
+N (order)          : 1032
+edges              : 7224
+group              : Z_344 rtimes_337 Z_3
+construction       : Cayley graph of metacyclic group, connection set S
+connection set S   : [564, 916, 563, 965, 449, 703, 533, 715, 431, 897, 387, 989, 536, 912]
+
+Element (i,j) of Z_344 rtimes_337 Z_3 is stored at index j*344 + i, and
+  (i1,j1)*(i2,j2) = (i1 + 337^{j1} i2 mod 344,  j1+j2 mod 3).
+The graph is Cay(G,S): vertex x is joined to x*s for every s in S.
+S = S^{-1} and e not in S, so the graph is simple, undirected and
+14-regular; it is vertex-transitive, hence its diameter equals the
+eccentricity of the identity.
+
+Files: .edges (edge list, 0-based), .adjlist (neighbour lists),
+       .json (machine-readable construction data)
+Verify with:  python3 verify_dd.py d14_D3_N1032_m344_n3_a337_nm.edges

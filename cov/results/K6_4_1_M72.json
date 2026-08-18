@@ -1,0 +1,30 @@
+{
+ "q": 6,
+ "n": 4,
+ "R": 1,
+ "M": 72,
+ "date": "2026-08-18",
+ "method": "covsearch tabu/greedy local search, 60s x 6 workers",
+ "code_file": "K6_4_1_M72.txt",
+ "verified": {
+  "distinct_codewords": 72,
+  "duplicate_lines": 0,
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "verify_cov_seconds": 0.0,
+  "verify_independent_method": "both",
+  "verify_independent_exit": 0,
+  "verify_independent_seconds": 0.2,
+  "covering_radius_exact": 1,
+  "verify_independent_result": "VERIFIED  -- every one of the 1296 words of Z_6^4 is within distance 1 of the code"
+ },
+ "keri_2011": {
+  "lb": 72,
+  "ub": 72,
+  "lb_key": "i",
+  "ub_key": "i"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true,
+ "all_verifiers_agree": true
+}

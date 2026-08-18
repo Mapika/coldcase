@@ -1,0 +1,281 @@
+<HTML>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<HEAD>
+   <TITLE> Largest Known (Degree, Diameter)-Graphs (Description)</TITLE>
+</HEAD>
+<BODY>
+<HR SIZE=6></P>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<H2>Largest Known (Degree, Diameter)-Graphs</H2>
+<h3>Diameter 2 </h3>
+Last modification June 22, 2025.
+ <address> https://web.mat.upc.edu/francesc.comellas/old-files/delta-d/desc_g/desc_g2.html </address>
+<DT><B>raw adjacency list </B> format: the first vertex of each row is adjacent to all the other vertices in that row.</DT>
+ <DT><B>implicit adjacency list </B> format:  each row corresponds to a vertex (row 1, vertex 0;  row 2, vertex 1; and so on) and contains all vertices adjacent to it.</DT>
+ <DT><B>adjacency list NX</B> NetworkX format.  <a href="https://networkx.org/documentation/stable/reference/readwrite/adjlist.html" target="_blank"> NetworkX format. </a></DT>
+  
+<!-- %%%%%%%%%   DEGREE = 3    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=32></A>
+<DT><B>The Petersen Graph</B>
+<DT> Degree= <B>3</B>, Diameter = <B>2</B>; Order =<B>10</B>; Moore bound=10; 
+<b> Moore graph </b>
+<DT><iMG ALIGN=top SRC="gif/petersen.png"  height="120"> 
+
+<DT> Bibliography: Any book on Graph Theory, 
+e.g. F. Comellas, J. F&agrave;brega,  A. S&aacute;nchez, O. Serra. 
+Matem&aacute;tica Discreta. </A> 
+Edicions UPC, Universitat 
+Polit&eacute;cnica de Catalunya, 1994, 374 +ix pages,
+ISBN 84-7653-413-2 (Catalan); 2001, 344 pages. ISBN-13 978-8483014561 (Spanish)
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 4    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=42></A>
+<dt><B>K3*C5</B>
+<DT> Delta= <B>4</B>, Diam= <B>2</B>; N=<B>15</B>; Moore bound=17;   
+<b>optimal</b>.
+<dt><iMG ALIGN=top SRC="gif/K3xC5.png" height="150"> 
+
+<DT> See J.-C. Bermond, C. Delorme and G. Fahri. Large graphs with given degree and diameter II.  J. Comb. Theory, Ser. B 36  (1984) 32-48. <a href = "https://doi.org/10.1016/0095-8956(84)90012-1"> doi:10.1016/0095-8956(84)90012-1</a></DT>
+<DT> Download the <a href="adjacencies/adjD2/K3xC5_raw.txt" target="_blank"> raw adjacency list </a> or/and 
+the <a href="adjacencies/adjD2/K3xC5_adjlist.txt" target="_blank"> NX adjacency list </a>
+<DT>This <a href="adjacencies/adjD2/K3xC5_SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of K3xC5 including symmetry group size and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=lvifhk" target="_blank"> online version </a>.
+<DT>
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 5    DIAM = 2    %%%%%%%%%%%% -->
+
+<A NAME=52></A>
+<B>K3*X8</B>
+<DT> Delta= <B>5</B>, Diam= <B>2</B>; N=<B>24</B>; Moore bound=26;   <b>optimal</b>.
+<!-- <dt><iMG ALIGN=top SRC="gif/K3xX8.gif"> -->
+<dt><iMG ALIGN=top SRC="gif/K3xX8.png" height="300" >
+    
+<DT> See J.-C. Bermond, C. Delorme and G. Fahri. Large graphs with given degree and diameter III. Proc. Coll. Cambridge. 1981; Ann. Discrete Math. 13 (1982), 23-32. <a href = "https://doi.org/10.1016/S0304-0208(08)73544-8"  target="_blank"> doi:10.1016/S0304-0208(08)73544-8</a></DT>
+<DT> Download the <a href="adjacencies/adjD2/K3xX8.adj" target="_blank"> implicit adjacency list </a> or/and 
+the <a href="adjacencies/adjD2/K3xX8_Zadjlist.txt" target="_blank"> NX adjacency list </a>
+<DT>This <a href="adjacencies/adjD2/24_K3xX8_SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of K3xX8 including symmetry group size and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=xlwugy" target="_blank"> online version </a>.
+<DT>This <a href="adjacencies/adjD2/K3xX8_draw.py"  target="_blank"> Python program </a> makes the figure and computes several properties of K3xX8.  This is the <a href="https://sagecell.sagemath.org/?q=yxlege" target="_blank"> online version </a>.
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 6    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=62></A>
+<B>K4*X8</B>
+<DT> Delta= <B>6</B>, Diam= <B>2</B>; N=<B>32</B>; Moore bound=37;  <b>optimal</b>.
+<dt><iMG ALIGN=top SRC="gif/K4xX8.png" height="300" > 
+
+<DT> <b>K4*X8</b> was found by J.-C. Bermond, C. Delorme and G. Fahri. Large graphs with given degree and diameter III. Proc. Coll. Cambridge. 1981; Ann. Discrete Math. 13 (1982), 23-32. <a href = "https://doi.org/10.1016/S0304-0208(08)73544-8"  target="_blank"> doi:10.1016/S0304-0208(08)73544-8</a></DT>
+<DT> C. Delorme noticed the existence of another graph  with 32 vertices, degree 6 and diameter 2: the <b>Wegner</b> graph.  Here are his <a href="adjacencies/adjD2/wegner62.txt" target="_blank">comments and the incidence list</a> (1992). 
+<DT> Paul Hafner pointed out (July 1998) that the Wegner graph
+is isomorphic (with automorphism group of order 1920) to the graph described in:
+<DT> Lutz Twele, Effiziente Implementierung des Todd-Coxeter Algorithmus im 
+Hinblick auf Grad/Durchmesser-Optimierung von knotentransitiven Graphen, Diplomarbeit Universit"at Oldenburg, 1997 (the graph is also listed in Sampels' PhD thesis).
+Hafner provided a  'prettier' representation for this group and graph,
+all generators being involutions,  < f > is the centre:
+<dt> 
+< a,b,c,d,e,f | a^2, b^2, c^2, d^2, e^2, f^2, (af)^2, (bf)^2, (cf)^2, (df)^2, (ef)^2, ababf, cbade, dbaec, ebacd, acacf, ecadb >
+<dt> For some more info refer to:
+<a href="http://www.cs.auckland.ac.nz/CDMTCS/researchreports/082nznews.pdf" target="_blank">
+M.J.Dinneen, Group-Theoretic Methods for Designing Networks </a>
+(http://www.cs.auckland.ac.nz/CDMTCS/researchreports/082nznews.pdf).
+<dt>
+<br>
+
+Guillermo Pineda commented (May 8, 2008) on the existence of a paper in LNCS v.4123 pp. 853-857 (2006)  by Sergey G. Molodsov ("Largest Graphs of Diameter 2 and Maximum Degree 6" available at  
+<a href="https://link.springer.com/chapter/10.1007/11889342_54" target="_blank">
+    doi:10.1007/11889342_54</a> ) reporting his computer search which has generated all largest diameter 2 degree 6 graphs, resulting in 6 non isomorphic graphs with order 32 (one of them is K3xX8 and another the Wegner graph), and thus these graphs are optimal.
+<dt>
+The following links go to the NetworkX adjacency lists and implicit adjacency lists of these graphs (extracted from the paper).
+<br>
+<br>
+G1 (automorphism group of order 6)  <a href="adjacencies/adjD2/32g1.txt" target="_blank"> NX adj. list </a>   and  <a href="adjacencies/adjD2/32g1.adj" target="_blank"> impl. adj. list </a><br>
+G2 (automorphism group of order 2)  <a href="adjacencies/adjD2/32g2.txt" target="_blank"> NX adj. list </a>   and  <a href="adjacencies/adjD2/32g2.adj" target="_blank"> impl. adj. list </a><br>
+G3 (automorphism group of order 144)  <a href="adjacencies/adjD2/32g3.txt" target="_blank"> NX adj. list </a>   and  <a href="adjacencies/adjD2/32g3.adj" target="_blank"> impl. adj. list </a> (K4*X8) <br>
+G4 (automorphism group of order 64)  <a href="adjacencies/adjD2/32g4.txt" target="_blank"> NX adj. list </a>   and  <a href="adjacencies/adjD2/32g4.adj" target="_blank"> impl. adj. list </a><br>
+G5 (automorphism group of order 48)  <a href="adjacencies/adjD2/32g5.txt" target="_blank"> NX adj. list </a>   and  <a href="adjacencies/adjD2/32g5.adj" target="_blank"> impl. adj. list </a><br>
+G6 (automorphism group of order 1920)  <a href="adjacencies/adjD2/32g6.txt" target="_blank"> NX adj. list </a>   and  <a href="adjacencies/adjD2/32g6.adj" target="_blank"> impl. adj. list </a> (Wegner)<br>
+<br>
+<DT> Note that the Wegner graph (G6) is a Cayley graph but is not edge-transitive. This <a href="adjacencies/adjD2/32all-SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of the six graphs including symmetry group sizes and the number of k-cycles (k=3..). This is the <b><a href="https://sagecell.sagemath.org/?q=wcwldb" target="_blank"> online version </a>.</b>
+
+ 
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 7    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=72>
+<B>Hoffman-Singleton</B> </DT>
+<DT>Degree= <B>7</B>, Diameter = <B>2</B>; Order =<B>50</B>; Moore bound=50; 
+<B> Moore graph  </B></DT>
+
+<BR>
+   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+ <DT>Vertex set :  \(V=(\alpha,i,j)\); \(\alpha \in \mathbb{Z}_2\); \(i,j \in \mathbb{Z}_5\).</DT>
+  <DT>Adjacencies :
+ \((\alpha,i,j) \rightarrow (\alpha,i, j \pm (1+\alpha))\)  and 
+          \((\bar{\alpha},l, j + (-1)^\alpha i l )\), \( ( l=0\ldots 4\); \(\bar{0}=1\), \(\bar{1}=0\).)</DT>
+<BR>
+
+<DT> <a href="https://mathworld.wolfram.com/Hoffman-SingletonGraph.html" target="_blank"> Details from Mathworld </a> </DT>
+<DT> <a href="https://en.wikipedia.org/wiki/Hoffman%E2%80%93Singleton_graph" target="_blank"> Wikipedia entry </a> </DT>
+<BR>
+<!--
+<IMG SRC="gif/h-s.jpg"  ALIGN=TOP ALT=" V={(a,i,j); a in Z2 ; i,j in Z5} 
+ (a,i,j)  -> {(a,i,j + (1+a)), (a,i,j - (1+a)),(a~, l, j + (-1)^a *i*l)  l=0...4
+and 0~=1, 1~=0}">
+-->
+<DT>
+<DT> <a href="adjacencies/adjD2/h-s.grf" target="_blank"> Download the implicit adjacency list </a> 
+<DT> <a href="adjacencies/adjD2/HS_adjlist.txt" target="_blank"> Download the NX adjacency list </a> 
+<DT>This <a href="adjacencies/adjD2/50_HS_SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=mffatv" target="_blank"> online version </a>.
+<!-- <DT>(we thank Bill Mann -  <i>wmann@avici.com</i> - for correcting the 
+equation and providing the implicit adjacency list) -->
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 8    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=82></A>
+<b>P&prime;<sub>7</sub></b>
+<DT> Degree= <B>8</B>, Diameter = <B>2</B>; Order =<B>57</B>;
+ Moore bound=65  
+<DT>  Quotient of the incidence graph of a of projective plane by a polarity.
+<DT> C. Delorme and G. Farhi. Large graphs with given degree and diameter I.  IEEE Trans. Comput, C-33:857–860, 1984. <a href= "https://doi.org/10.1109/TC.1984.1676504" target="_blank"> DOI: 10.1109/TC.1984.1676504 </a>
+<DT> W.H. Haemers. <a href="https://pure.tue.nl/ws/files/1721530/41103.pdf" target="_blank"></a> Eigenvalue techniques in design and graph theory.</a> Mathematical Centre Tracts 121, Mathematisch Zentrum, Amsterdam, 1980. 
+
+<DT>  8 vertices have degree 7 and 49 degree 8
+<DT> Download the <a href="adjacencies/adjD2/G8_2.adj" target="_blank"> implicit adjacency list </a>  of the graph (thanks to E. Canale).
+<DT>This <a href="adjacencies/adjD2/57_P7_SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=fejnfl" target="_blank"> online version </a>.
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 9    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=92></A>
+<b>P&prime;<sub>8</sub>d</b>
+<DT> Degree= <B>9</B>, Diameter = <B>2</B>; Order =<B>74</B>;
+ Moore bound=82  
+<DT>  Quotient of the incidence graph of a of projective plane by a polarity with duplication of some vertices.
+<DT> C. Delorme and G. Farhi. Large graphs with given degree and diameter I.  IEEE Trans. Comput, C-33:857–860, 1984. <a href= "https://doi.org/10.1109/TC.1984.1676504" target="_blank"> DOI: 10.1109/TC.1984.1676504 </a>
+<DT> W.H. Haemers. <a href="https://pure.tue.nl/ws/files/1721530/41103.pdf" target="_blank"> Eigenvalue techniques in design and graph theory.</a> Mathematical Centre Tracts 121, Mathematisch Zentrum, Amsterdam, 1980.              
+<DT>  Graph with 74 vertices and 333 edges  Degree Distribution: [0, 0, 0, 0, 0, 0, 0, 0, 74]
+<DT> Download the <a href="adjacencies/adjD2/G9-2.grf" target="_blank"> implicit adjacency list </a>  of the graph (thanks to E. Canale).
+<DT>This <a href="adjacencies/adjD2/74_P8d_SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=uidbxs" target="_blank"> online version </a>.
+
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 10    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=102></A>
+<b>P&prime;<sub>9</sub></b>
+<DT> Degree= <B>10</B>, Diameter = <B>2</B>; Order =<B>91</B>;
+ Moore bound=99 
+<DT> Quotient of the incidence graph of a of projective plane by a polarity.
+<DT> C. Delorme and G. Farhi. Large graphs with given degree and diameter I.  IEEE Trans. Comput, C-33:857–860, 1984. <a href= "https://doi.org/10.1109/TC.1984.1676504" target="_blank"> DOI: 10.1109/TC.1984.1676504 </a>
+<DT> W.H. Haemers. <a href="https://pure.tue.nl/ws/files/1721530/41103.pdf" target="_blank">  Eigenvalue techniques in design and graph theory.</a> Mathematical Centre Tracts 121, Mathematisch Zentrum, Amsterdam, 1980. 
+<DT> 450 edges,  10 vertices have degree 9 and 81 degree 10.
+<DT> Download the <a href="adjacencies/adjD2/G10_2.nxadj" target="_blank"> NX adjlist (NetworkX format) </a>  of the graph (thanks to E. Canale).
+<DT>This <a href="adjacencies/adjD2/91_P9_SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=surgvd" target="_blank"> online version </a>.
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 11    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=112></A>
+<B>Exoo_104</B>
+<!-- <B>MKMS_98</B> -->
+<DT> Degree= <B>11</B>, Diameter = <B>2</B>; Order =<B>104</B>;
+ Moore bound=122.  
+<DT>             
+<DT> Communicated by G. Exoo (May 13, 2006). <A href="https://isu.indstate.edu/~gexoo/DD/index.html" target="_blank"> G.E. data </A>
+<DT> Download the <a href="adjacencies/adjD2/Exoo_104.txt" target="_blank">implicit adjacency list </a>  of the graph.
+<DT> Download the <a href="adjacencies/adjD2/Exoo_104_NXadjlist.txt" target="_blank"> NX adjacency list </a>  of the graph.
+<DT>This <a href="adjacencies/adjD2/104_Exoo_SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=blrxow" target="_blank"> online version </a>.
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 12    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=122></A>
+<b>P&prime;<sub>11</sub></b>
+<DT> Degree= <B>12</B>, Diameter = <B>2</B>; Order =<B>133</B>;
+ Moore bound=145.  
+<DT>  Quotient of the incidence graph of a of projective plane by a polarity.
+<DT> C. Delorme and G. Farhi. Large graphs with given degree and diameter I.  IEEE Trans. Comput, C-33:857–860, 1984. <a href= "https://doi.org/10.1109/TC.1984.1676504" target="_blank"> DOI: 10.1109/TC.1984.1676504 </a>
+<DT> W.H. Haemers. <a href="https://pure.tue.nl/ws/files/1721530/41103.pdf" target="_blank"> Eigenvalue techniques in design and graph theory.</a> Mathematical Centre Tracts 121, Mathematisch Zentrum, Amsterdam, 1980. 
+<DT> 792 edges,  12 vertices have degree 11 and 121 degree 12
+<DT> Download the <a href="adjacencies/adjD2/G12_2.adj" target="_blank">implicit adjacency list </a>  of the graph (thanks to E. Canale).
+<DT>This <a href="adjacencies/adjD2/133_P11_SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=hobyjo" target="_blank"> online version </a>.
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 13    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=132></A>
+<B>MKMS_162</B>
+<DT> Degree= <B>13</B>, Diameter = <B>2</B>; Order =<B>162</B>;
+ Moore bound=170.  
+<DT>             
+<DT>B.D. McKay, M. Miller, J. Siran;
+<a href="https://www.sciencedirect.com/science/article/pii/S0095895698918287" target="_blank"> 
+A note on large graphs of diameter two and given maximum degree. </a>
+J. Comb. Theory Ser. B, 74  (1998) 110-118
+<dt> --------------------
+<DT> Download the <a href="adjacencies/adjD2/162_rawMcKay.txt" target="_blank"> raw adjacency list </a>  of the graph (thanks to B. McKay) and the
+ <A href="adjacencies/adjD2/162_adjlist.txt" target="_blank">  NX adjlist </A>
+<dt> --------------------
+<DT> This <a href="adjacencies/adjD2/162_SageMath.txt"  target="_blank"> SageMath script </b></a> computes several properties of the graphs including symmetry group sizes and the number of k-cycles (k=3,4,5). This is the <a href="https://sagecell.sagemath.org/?q=aypopo" target="_blank">  online version </a>.
+<HR SIZE=3>
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 14    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=142></A>
+<b>P&prime;<sub>13</sub></b>
+<DT> Degree= <B>14</B>, Diameter = <B>2</B>; Order =<B>183</B>;
+ Moore bound=197.  
+<DT>  Quotient of the incidence graph of a  projective plane by a polarity.
+<DT> C. Delorme and G. Farhi. Large graphs with given degree and diameter I.  IEEE Trans. Comput, C-33:857–860, 1984. <a href= "https://doi.org/10.1109/TC.1984.1676504" target="_blank"> DOI: 10.1109/TC.1984.1676504 </a>
+<DT> W.H. Haemers. <a href="https://pure.tue.nl/ws/files/1721530/41103.pdf" target="_blank"> Eigenvalue techniques in design and graph theory.</a> Mathematical Centre Tracts 121, Mathematisch Zentrum, Amsterdam, 1980. 
+           
+<DT>  1274 edges, 14 vertices have degree 13 and 169 degree 14
+<DT> Download the <a href="adjacencies/adjD2/G14_2.adj" target="_blank"> implicit adjacency list </a>  of the graph (thanks to E. Canale).
+<DT>This <a href="adjacencies/adjD2/183_P13_SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=smugmm" target="_blank"> online version </a>.
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 15    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME=152></A>
+<b>P&prime;<sub>13</sub>d+</b>
+<DT> Degree= <B>15</B>, Diameter = <B>2</B>; Order =<B>188</B>;  Moore bound= 226.  
+<DT>Graph constructed with the help of AI tools by Petrit Isufi (isufi.petrit@proton.me).  One new vertex is added to the 187-vertex graph   P&prime;<sub>13</sub>d (below) which remains unchanged. 
+<DT> Download the <a href="adjacencies/adjD2/graph_n188_d15_k2.txt" target="_blank"> edge list </a>  of the graph.
+
+<BR> 
+<DT> Former result
+<DT>  P&prime;<sub>13</sub>d, quotient of the incidence graph of a projective plane by a polarity with some vertices added
+<DT>  Description: Canale added 4 vertices to the graph with  diameter 2 and max.  degree  14 in a non-computer-generated way.  
+The resulting graph has 1330 edges and  10 vertices have degree 13, 125 degree 14 and 52 degree 15 (average degree 14.224599).  The average distance is 1.923524. 
+<DT> C. Delorme and G. Farhi. Large graphs with given degree and diameter I.  IEEE Trans. Comput, C-33:857–860, 1984. <a href= "https://doi.org/10.1109/TC.1984.1676504" target="_blank"> DOI: 10.1109/TC.1984.1676504 </a>
+<DT> W.H. Haemers. <a href="https://pure.tue.nl/ws/files/1721530/41103.pdf" target="_blank"> Eigenvalue techniques in design and graph theory.</a> Mathematical Centre Tracts 121, Mathematisch Zentrum, Amsterdam, 1980. 
+<DT> Download the <a href="adjacencies/adjD2/15_2-187.adj" target="_blank"> implicit adjacency list </a>  of the graph.
+<DT> Download the <a href="adjacencies/adjD2/15_2-187_adjlist.txt" target="_blank"> adjacency list (NetworkX format)</a>.
+<DT>This <a href="adjacencies/adjD2/188_P13dp_SageMath.txt"  target="_blank"> SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=rhylsg" target="_blank"> online version </a>.
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 16    DIAM = 2    %%%%%%%%%%%% -->
+<A NAME="162"></A>
+<B>Abas_200</B>
+<DT> Delta= <B>16</B>, Diam= <B>2</B>; N=<B>200</B>; Moore bound=257;   
+<br> 
+See "Large Networks of Diameter Two Based on Cayley Graphs"
+ <a href="https://link.springer.com/chapter/10.1007/978-3-319-57264-2_23" target="_blank">CSOC 2017: Cybernetics and Mathematics Applications in Intelligent Systems pp 225–233 </a>  DOI 10.1007/978-3-319-57264-2   <br>
+<DT> Download a <a href="adjacencies/adjD2/abas200.grf" target="_blank"> implicit adjacency list </a>.
+<DT> Download the <a href="adjacencies/adjD2/abas200nx.adj" target="_blank"> adjacency list (NetworkX format)</a>.
+<DT>This <a href="adjacencies/adjD2/200_abas_SageMath.txt" > SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=btcrwd" target="_blank"q" target="_blank"> online version </a>.
+<DT>
+
+<HR SIZE=3>
+<HR SIZE=3>
+
+<!--
+<DT> Download the <a href="adjacencies/adjD2/Exoo_198.txt"> adjacency list </a>  of the graph.
+<HR SIZE=3>  -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+</BODY>
+</HTML>

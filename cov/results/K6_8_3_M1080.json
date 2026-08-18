@@ -1,0 +1,30 @@
+{
+ "q": 6,
+ "n": 8,
+ "R": 3,
+ "M": 1080,
+ "date": "2026-08-18",
+ "method": "covsearch tabu/greedy local search, 180s x 4 workers",
+ "code_file": "K6_8_3_M1080.txt",
+ "verified": {
+  "distinct_codewords": 1080,
+  "duplicate_lines": 0,
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "verify_cov_seconds": 2.8,
+  "verify_independent_method": "both",
+  "verify_independent_exit": 0,
+  "verify_independent_seconds": 11.0,
+  "covering_radius_exact": 3,
+  "verify_independent_result": "VERIFIED  -- every one of the 1679616 words of Z_6^8 is within distance 3 of the code"
+ },
+ "keri_2011": {
+  "lb": 246,
+  "ub": 1080,
+  "lb_key": "m",
+  "ub_key": "f"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true,
+ "all_verifiers_agree": true
+}

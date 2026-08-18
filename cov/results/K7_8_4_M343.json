@@ -1,0 +1,30 @@
+{
+ "q": 7,
+ "n": 8,
+ "R": 4,
+ "M": 343,
+ "date": "2026-08-18",
+ "method": "covsearch tabu/greedy local search, 180s x 6 workers",
+ "code_file": "K7_8_4_M343.txt",
+ "verified": {
+  "distinct_codewords": 343,
+  "duplicate_lines": 0,
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "verify_cov_seconds": 8.0,
+  "verify_independent_method": "both",
+  "verify_independent_exit": 0,
+  "verify_independent_seconds": 11.7,
+  "covering_radius_exact": 4,
+  "verify_independent_result": "VERIFIED  -- every one of the 5764801 words of Z_7^8 is within distance 4 of the code"
+ },
+ "keri_2011": {
+  "lb": 76,
+  "ub": 343,
+  "lb_key": "m",
+  "ub_key": "c"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true,
+ "all_verifiers_agree": true
+}

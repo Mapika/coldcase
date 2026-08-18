@@ -1,0 +1,707 @@
+<HTML>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<HEAD>
+   <TITLE> Largest Known (Degree, Diameter)-Graphs (Description)</TITLE>
+</HEAD>
+<BODY>
+<HR SIZE=6></P>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<H2>Largest Known (Degree, Diameter)-Graphs</H2>
+<h3>Diameter 5 </h3>
+Last modification: March 3, 2026.
+ <address> https://web.mat.upc.edu/francesc.comellas/old-files/delta-d/desc_g/desc_g5.html </address>
+ <DT><B>row adjacency list </B> format: the first vertex of each row is adjacent to all the other vertices in that row.</DT>
+ <DT><B>implicit adjacency list </B> format:  each row corresponds to a vertex (row 1, vertex 0;  row 2, vertex 1; and so on) and contains all vertices adjacent to it.</DT>
+ <DT><B>adjacency list NX</B> NetworkX format.  <a href="https://networkx.org/documentation/stable/reference/readwrite/adjlist.html" target="_blank"> NetworkX format. </a></DT>
+
+
+<HR SIZE=6>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 3    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=35></A>
+<B>vC, AFY</B>
+<DT> Delta=<B> 3</B>, Diam=<B> 5</B>; N=<B>70</B>; Moore bound=94;   
+<iMG ALIGN=top SRC="gif/70.gif"> 
+
+
+<DT>  Graph obtained by connecting seven clusters like the one shown
+in the figure with edges as 
+
+<BR>
+<BR>
+   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+ <DT>   \(\large A_{i,j }   \leftrightsquigarrow    B_{i \pm 2^j, j \pm 1}, \;\; i = 0..6 \;\; and \;\;  j = 0..2  \) </DT>
+<BR>
+
+<ul>
+<li> <b>[vCo83]</b> C. von Conta.
+Torus and other networks as communication networks with up to some hundred points.
+<A href="https://ieeexplore.ieee.org/document/1676297" target="_blank"> <i>IEEE Trans Comp</I>,<B>c-32</B> (1983), pp. 657-666.</A>
+
+<LI> <b>[AlFiYe86]</b> I. Alegre, M.A. Fiol and , J.L.A Yebra.  
+  Some large graphs with given degree and diameter.
+    <A href="https://doi.org/10.1002/jgt.3190100211" target="_blank"> <i>
+        J. Graph Theory</I>,<B>10</B> (1986), pp.219-224.</A> 
+</ul>
+
+<DT> Download the <a href="adjacencies/adjD5/AlFiYe70_adjlist.txt" target="_blank"> adjacency list </a> of the graph in NetworkX format (vertices notation as in AlFiYe86).
+<DT> Download the <a href="adjacencies/adjD5/AlFiYe70_Z_adjlist.txt" target="_blank"> adjacency list </a> of the graph in NetworkX format (vertices labeled 0,2,...69).
+
+<BR>
+ --------------
+ <BR>
+    The same graph can be constructed (Francesc Comellas, 2024) following the procedure from  Jianxiang Cheng for the (3,8)=360 graph:
+ <DT> The graph is derived, in this case, from the <b>Coxeter symmetric graph</b> on 28 vertices (diameter 4, girth 7)  by a complete pairing of its edges. 
+ <DT>Let Cox be the Coxeter graph and ~ the pairing relation on its edges  (0,1)->(19,20). 
+ <DT>The graph is constructed as follows: The vertex set of the new graph H is V(Cox)∪E(Cox). If v∈V(Cox), u∈V(Cox), then they are not connected in H. If v∈V(Cox), u∈E(Cox), then they are connected in H iff v∈u in G. If v∈E(Cox), u∈E(Cox), then they are connected in H iff v~u by the pairing relation. 
+ 
+ <DT> Download the <a href="adjacencies/adjD5/70fromCoxeter_adjlist.txt" target="_blank"> adjacency list </a> of the graph in NetworkX format (vertices labeled 0,2,...69).
+ <DT> Download a <a href="adjacencies/adjD5/70-FCversion-sagecellmath.txt" target="_blank"> SageMath program </a> to generate the graph in sparse6 format.  This <a href="https://sagecell.sagemath.org/?q=iwzbqb" target="_blank"> SGM program online </a>
+ <DT> Download a <a href="adjacencies/adjD5/70-from-Coxeter-sagemath.txt" target="_blank"> SageMath program </a> to generate multiple copies of the graph in sparse6 format.  This <a href="https://sagecell.sagemath.org/?q=koyupj" target="_blank"> SGM program online </a>
+
+ <DT> Download a <a href="adjacencies/adjD5/read70-comp-impl_g6_s6.py" target="_blank"> Python program </a> to check the graph. Can be easily adapted to check graphs in all other formats on this website. This <a href="https://sagecell.sagemath.org/?q=ndjmra" target="_blank"> Python program online </a></DT>
+ --------------
+ <BR>
+    The same graph can also be constructed (Francesc Comellas, 2026) with a similar procedure  from 
+    the  <b><a href="https://houseofgraphs.org/graphs/56266" target="_blank">Bos&aacute;k   graph </a> </b>(28 vertices, diameter 4, girth 3, but not vertex-symmetric nor edge-symettric).
+ 
+ <DT> Download a <a href="adjacencies/adjD5/70-from-Bosak-sagemath.txt" target="_blank"> SageMath program </a> to generate multiple copies of the graph in sparse6 format.  This <a href="https://sagecell.sagemath.org/?q=zejhgp" target="_blank"> SGM program online </a>
+
+
+ <BR>
+  --------------
+ <DT> This <a href="adjacencies/adjD5/70vC_AFY_SageMath.txt"> SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..10). This is the <a href="https://sagecell.sagemath.org/?q=amalxp" target="_blank"> online version </a>. More information at <a href="https://houseofgraphs.org/graphs/51324" target="_blank"> <i>  The House of Graphs.</i></a>
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 4    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=45></A>
+<b> H&prime;<sub>3</sub></b>
+<DT> Delta= <B>4</B>, Diam= <B>5</B>; N=<B>364</B>; Moore bound=485;   
+<DT> Quotient by a polarity of the incidence graph of the regular bipartite generalized hexagon  H<sub>3</sub>&prime;.</DT>
+<DT> Obtained by C. Delorme (1981) - see pag.11 of J-C. Bermond, B. Bollobas. The Diameter of Graphs: a survey. <a href="https://inria.hal.science/hal-02426939"  target="_blank"> <em>Congr. Numer.</em> <b>32 </b> (1981) pp. 3-27, Boca Raton, US. </A>
+<DT> C. Delorme, G. Farhi. Large graphs with given degree and diameter.   <A 
+  href="https://ieeexplore.ieee.org/document/1676504" target="_blank"> <em>IEEE Trans, Comput.</em> <b>c-33</b> (1984), pp. 857-860.</A>
+<DT>  C. Delorme. Grands graphes de degr&eacute; et diam&egrave;tre donn&eacute;s.
+    <A  href="https://www.sciencedirect.com/science/article/pii/S0195669885800433" target="_blank"><em>European J. Combin.</em> <b>6</b> (1985), pp. 291-302. </A>
+<DT> Download the <a href="adjacencies/adjD5/Del364deg4D5_adjlist.txt" target="_blank"> adjacency list </a> of the graph in NetworkX format (thanks to Vlad Pelekhaty).</DT>
+ --------------
+<DT>This <a href="adjacencies/adjD5/364deg4D5_SageMath.txt" target="_blank"> SageMath script</a>, computes several of its properties.  This is the <a href="https://sagecell.sagemath.org/?q=zuzsvr" target="_blank"> online version.   </a>.</DT>    
+<!-- <iMG ALIGN=top SRC="gif/Hp3.gif"> -->
+<DT>
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 5    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=55></A>
+<B>Conder_648</B>
+<DT> Delta= <B>5</B>, Diam= <B>5</B>; N=<B>648</B>; Moore bound=1706;   
+<DT> 
+<DT> Communicated by Marston Conder ( m.conder@auckland.ac.nz ) on January 18, 2026 (paper in preparation).
+<DT> Download a <a href="adjacencies/adjD5/648-Conder-SageMath.txt" target="_blank"> SageMath script </a> to generate this graph.    This is the <a href="https://sagecell.sagemath.org/?q=fhowdy" target="_blank"> online version</a>.
+
+<DT> Download the <a href="adjacencies/adjD5/Conder648_raw.txt" target="_blank"> raw adjacency list </a>  of the graph.
+<DT> Download the <a href="adjacencies/adjD5/Conder648_adjlist.txt" target="_blank"> adjacency list (NetworkX) </a>  of the graph.</DT>
+ --------------
+<DT>This <a href="adjacencies/adjD5/Conder648_SageMath.txt" > SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=ppwekq" target="_blank"> online version </a>.
+
+<!-- 
+Former result Loz 624
+<DT> Delta= <B>5</B>, Diam= <B>5</B>; N=<B>624</B>; Moore bound=1706;   
+<DT> Download the <a href="adjacencies/adjD5/Loz_624.txt" target="_blank">raw adjacency list </a>  of the graph.
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> <a href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem" target="_blank">
+     Link to Eyal Loz's data</a></DT>
+<DT> E. Loz, J. &Scaron;ir&aacute;&ncaron;.  New record graphs in the degree-diameter problem. <a href="https://ajc.maths.uq.edu.au/pdf/41/ajc_v41_p063.pdf" target="_blank"> <em> Australas. J. Combin.</em> <b>41 </b> (2008), 63–80. </a></DT>  
+
+former result   Exoo 620
+<DT>Constructed from 4 copies of  the nonabelian group of order 155. (Communicated March 18, 2005)</DT>
+-->
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 6    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=65></A>
+<B>Loz_1404</B> </DT>
+<DT>Degree= <B>6</B>, Diameter = <B>5</B>; Order =<B>1404</B>; Moore bound=4687</DT>
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> Download the <a href="adjacencies/adjD5/Loz_1404.txt" target="_blank"> raw adjacency list </a>  of the graph.
+<DT> <a href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem" target="_blank">
+     Link to Eyal Loz's data</a></DT>
+<DT> E. Loz, J. &Scaron;ir&aacute;&ncaron;.  New record graphs in the degree-diameter problem. <a href="https://ajc.maths.uq.edu.au/pdf/41/ajc_v41_p063.pdf" target="_blank"> <em> Australas. J. Combin.</em> <b>41 </b> (2008), 63–80. </a></DT> 
+ --------------
+<DT>This <a href="adjacencies/adjD5/1404_loz_SageMath.txt" > SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=bymyuo" target="_blank"> online version </a>.
+<br>
+<!-- Former result S_1395
+<DT>Obtained as a Cayley graph for semidirect product of Zm with Zn </DT>
+<DT>45*(9) 31 40,22 5,8 26,20 19,3 6,20 39,13 </DT>
+<DT>M. Sampels (Sampels@Informatik.Uni-Oldenburg.DE). Large networks with
+small diameter. (In preparation) 
+-->
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 7    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=75></A>
+<b>DH_2756</b>
+<DT> Degree= <B>7</B>, Diameter = <B>5</B>; Order =<B>2756</B>;
+ Moore bound=10886.  
+<DT> Obtained as a Cayley graph for semidirect product of Zm with Zn </DT>
+<DT> Z_52 x(2)Z_53 with generators [25,45]<>[27,37] (order 52); [30,23]<>[22,18] (order 26); [40,39]<>[12,51] (order 13); [26,0] (order 2) . Avg.dist.: 4.332123  transm.:  11935 <A href="adjacencies/adjD5/2756_52_53_2_DH94_adjlist.txt" target="_blank"> adjlist NX</A></DT>
+<DT>Dinneen,M.J. & Hafner,P.; New results for the degree/diameter problem.
+ <I>Networks</I>, <B>24</B> (1994) 359-367.
+ <br>
+<DT> Other instances (F.Comellas 2024): </DT>
+<DT>  Z_52 x(8)Z_53 with generators [25,45]<>[27,37];[30,23]<>[22,18]; [40,39]<>[12,51];[26,0]. Avg. dist. 4.332123  transm.:  11935 <A href="adjacencies/adjD5/2756_52_53_2_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<DT>  Z_52 x(8)Z_53 with generators [47,30]<>[5,4]; [42,51]<>[10,21]; [7,38]<>[45,50]; [26,8]. Avg. dist. 4.332123  transm.:  11935 <A href="adjacencies/adjD5/2756_52_53_8_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<DT>  Z_52 x(12)Z_53 with generators [36,26]<>[16,50]; [38,32]<>[14,19]; [45,22]<>[7,17]; [26,22]. Avg. dist. 4.341198  transm.:  11960 <A href="adjacencies/adjD5/2756_52_53_12_adjlist.txt" target="_blank"> adjlist NX</A></DT>
+<DT>  Z_52 x(18)Z_53 with generators  [23,8]<>[29,16]; [38,41]<>[19,39]; [16,39]<>[36,51]; [26,13]. Avg. dist.4.332123  transm.:  11935  <A href="adjacencies/adjD5/2756_52_53_18_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+ --------------
+<DT>This <a href="adjacencies/adjD5/2756_DH_SageMath.txt" > SageMath script </a> computes several properties of the graph including symmetry group sizes and the number of k-cycles (k=3..). This is the <a href="https://sagecell.sagemath.org/?q=zuicpa" target="_blank"> online version </a>.
+<br>
+<HR SIZE=3>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 8    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=85></A>
+<!-- <B>Loz_5060</B> 
+<DT> Degree= <B>8</B>, Diameter = <B>5</B>; Order =<B>5060</B>; Moore bound=22409.  -->
+<B>Com_5115</B>
+<DT> Degree= <B>8</B>, Diameter = <B>5</B>; Order =<B>5115</B>; Moore bound=22409
+<DT> Cayley graph. Found as a semidirect product, 5115 vertices, 20460 edges  (F.Comellas 2024): </DT>
+ <OL>
+<LI> <DT>   Z_15 x(20) Z_341, generators  [2,107]<>[13,108]:[12,80]<>[3,57]:[11,236]<>[4,294]:[5,13]<>[10,152]. Avg. dist.:4.393821 (1,8,56,384,2132,2534) transm.: 22470.  <A href="adjacencies/adjD5/5115_15_341_20_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(49) Z_341, generators [1,56]<>[14,145]:[4,220]<>[11,319]:[13,75]<>[2,134]:[8,17]<>[7,312]. Avg. dist.: 4.382088 (1,8,56,392,2176,2482) transmission: 22410.  <A href="adjacencies/adjD5/5115_15_341_49_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(69) Z_341, generators [7,100]<>[8,116]:[11,31]<>[4,217]:[14,182]<>[1,59]:[12,327]<>[3,59]. Avg. dist.: 4.380915 (1,8,56,390,2186,2474) ) transmission: 22404.  <A href="adjacencies/adjD5/5115_15_341_69_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(71) Z_341, generators  [41,113]<>[1,161]:[10,181]<>[5,94]:[11,57]<>[4,224]:[2,176]<>[13,242]. Avg. dist.: 4.383262 (1,8,56,386,2182,2482) transm.: 22416 .  <A href="adjacencies/adjD5/5115_15_341_71_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(113) Z_341, generators [4,218]<>[11,303]:[11,113]<>[4,285]:[8,321]<>[7,81]:[1,166]<>[14,249]. Avg. dist.:  4.380524 (1,8,56,392,2184,2474) transm.: 22402.  <A href="adjacencies/adjD5/5115_15_341_113_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(152) Z_341, generators [2,90]<>[13,269]:[4,162]<>[11,60]:[9,104]<>[6,10]:[8,102]<>[7,153]. Avg. dist.:  4.400469 (1,8,56,384,2098,2568) transm.: 22504 .  <A href="adjacencies/adjD5/5115_15_341_152_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(169) Z_341, generators [3,92]<>[12,2]:[4,40]<>[11,291]:[1,99]<>[14,66]:[8,102]<>[7,139] . Avg. dist.:   4.400469 (1,8,56,384,2098,3568) transmission: 22504.  <A href="adjacencies/adjD5/5115_15_341_169_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(196) Z_341, generators [7,2]<>[8,313]:[14,38]<>[1,54]:[5,202]<>[10,106]:[7,116]<>[8,81]. Avg. dist.:   4.382088 (1,8,56,392,2176,2482) transm.: 22410.  <A href="adjacencies/adjD5/5115_15_341_196_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(235) Z_341, generators  [2,239]<>[13,335]:[3,191]<>[12,332]:[5,42]<>[10,255]:[3,19]<>[12,158]. Avg. dist.: 4.380524 (1,8,56,388,2192,2470) transmission: 22402.  <A href="adjacencies/adjD5/5115_15_341_235_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(236) Z_341, generators   [9.154]<>[6,33]:[2,1371]<>[13,35]:[1,140]<>[14,115]:[7,80]<>[8,24]. Avg. dist.: 4.400469 (1,8,56,384,2098,2568) transm.: 22504.  <A href="adjacencies/adjD5/5115_15_341_236_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>  <b>  Z_15 x(267) Z_341, generators [13,277]<>[2,257]:[1,290]<>[14,50]:[4.21]<>[11,69]:[10,258]<>[5,105].</b> Avg. dist.: 4.378178  (1,8,56,392,2196,2462) transm.: 22390.  <A href="adjacencies/adjD5/5115_15_341_267_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(267) Z_341, generators [14,162]<>[1,53]:[6,175]<>[9,114]:[8,18]<>[7,91]:[9,340]<>[6,157]. Avg. dist.:4.390301  (1,8,56,388,2142,2520) transm.: 22452.  <A href="adjacencies/adjD5/5115_15_341_267b_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(289) Z_341, generators  [6,280]<>[9,46]:[1,18]<>[14,302]:[2,49]<>[13,272]:[5,340]<>[10,67]. Avg. dist.: 4.393821 (1,8,56,384,2132,2534) transm.: 22470.  <A href="adjacencies/adjD5/5115_15_341_289_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(317) Z_341, generators  [6,152]<>[9,241]:[5,136]<>[10,227]:[9,135]<>[6,204]:[11,33]<>[4,220]. Avg. dist.: 4.380524 (1,8,56,388,2192,2470) transmission: 22402.  <A href="adjacencies/adjD5/5115_15_341_317_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI><DT>   Z_15 x(324) Z_341, generators  [14,24]<>[1,67]:[8,7]<>[1,177]:[6,118]<>[9,148]:[13,168]<>[2,211]. Avg. dist.: 4.409855 (1,8,56,384,2050,2626) transmission: 22552.  <A href="adjacencies/adjD5/5115_15_341_324_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+</OL>
+
+<DT>Graphs 1 and 13, with transmission 22470, are isomorphic. Distance distribution: (8, 56, 384, 2132, 2534). Cycle distribution: (0, 0, 1023, 5115, 51150, 271095, ..)</DT>
+<DT>Graphs 2 and 8, boh with transmission 22410 and distance distribution (8, 56, 392, 2176, 2482)are <B>not</B> isomorphic and they have a different cycle distribution: (0, 0, 0, 0, 51150, 312015, ...) vs  (0, 0, 0, 0, 71610, 281325, ..).</DT>
+<DT>Graphs 6, 7 and 10  with transmission 22504, are isomorphic. Distance distributions,(1,8,56,384,2098,2568). Cycle distribution: (0, 0, 1023, 5115, 51150, 296670, ..)</DT>
+<DT>Graphs 5, 9, and 14, all have transmission 22402. Graphs 9 and 14 are isomorphic with distance distribution (8, 56, 388, 2192, 2470), but are <B>not</B>  isomorphic to Graph 5 wich has  distance distribution (8, 56, 392, 2184, 2474).</DT>
+ --------------
+<DT>This <a href="adjacencies/adjD5/5115_ComG11_SageMath.txt" target="_blank"> SageMath script</a>, computes several of its properties.  This is the <a href="https://sagecell.sagemath.org/?q=jquzbq" target="_blank"> online version.   </a>.</DT>  
+
+<!--
+
+G3n  distance distr. {8, 56, 390, 2186, 2474}  cycle distr. 0, 0, 1023, 0, 61380, 260865  girth 5
+G11n distance distr. {8, 56, 392, 2196, 2462}  cycle distr. 0, 0, 0, 0, 51150, 286440  gith 7
+G12n distance distr. {8, 56, 388, 2142, 2520}  cycle distr. 0, 0, 2046, 0, 51150, 296670  girth 5
+G15n distance distr. {8, 56, 384, 2050, 2616}  cycle distr. 0, 0, 1023, 5115, 46035, 378510  girth 5
+
+-->
+
+<BR>
+    <DT>Former result, Order = 5060. Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> Voltage graph Z_44 x(2) Z_115,  B(0,4),  voltages [(25,14)(2,21)(7,25)(32,29)],  avg. dist.: 4.377743   </DT>
+<DT> Z_m x(a) Z_n represents a semidirect product of cyclic groups [x,y][u,v]= [x + u mod m, y*a^u + v mod n].
+<DT> <A href="adjacencies/adjD5/5060_Loz.txt" target="_blank"> (raw adjacency list from Loz )</a> <A href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem" target="_blank"> :::  Link to Eyal Loz's original data</A>.  ---  <a href="adjacencies/adjD5/5060_Loz_volt_adjlist.txt" target="_blank">    adjlist NX version</A>.
+ </DT>
+<DT> E. Loz, J. &Scaron;ir&aacute;&ncaron;.  New record graphs in the degree-diameter problem. <a href="https://ajc.maths.uq.edu.au/pdf/41/ajc_v41_p063.pdf" target="_blank"> <em> Australas. J. Combin.</em> <b>41 </b> (2008), 63–80. </a></DT>
+<DT> Found also as a semidirect product, some instances have a lower average distance (F.Comellas 2024): </DT>
+<DT>  Z_44 x(2) Z_115 with generators [37,104]<>[7,28]:[2,95]<>[42,5]:[25,66]<>[19,32]:12,58]<>[32,17]. Avg.dist.: 4.377743   transm.: 22147 <A href="adjacencies/adjD5/5060_44_115_2_adjlist.txt" target="_blank"> adjlist NX</A></DT>
+<DT>  Z_44 x(32) Z_115 with generators [28,34]<>[16,96]:[25,10]<>[19,100]:[42,31]<>[2,111]:[27,51]<>[17,8]. Avg.dist.: 4.374580  transm.: 22131 <A href="adjacencies/adjD5/5060_44_115_32_adjlist.txt" target="_blank"> adjlist NX</A></DT>
+
+
+
+
+
+<!--
+Former result H_5050 by P.R.Hafner 
+<DT> Z_50 x(16) Z_101 with generators [44,16]<>[6,21]; [4,57]<>[46,51]; [13,40]<>[37,10]; [15,52]<>[35,57] </DT>
+-->
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 9    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=95></A>
+<B>Rod_8268</B> 
+<DT>Degree= <B>9</B>, Diameter = <B>5</B>; Order =<B>8268</B>; Moore bound=42130.
+</DT>
+<DT> Communicated by Alexis Rodriguez, Fac. Ing., Univ. Republica, Montevideo (June 2012)</DT> 
+<DT> "Graph with 8268 vertices, 37206 edges, diameter 5, avg. dist.4.415991  and maximum degree 9. Obtained with the group  Z_52 x(2) Z_159, quotient B(1,4), voltages: (14,41), (47,112), (37,82), (10,113), (26,147)"
+ <DT>   A. Rodríguez de los Santos (2013.). 
+    <a href="https://www.colibri.udelar.edu.uy/jspui/bitstream/20.500.12008/24170/1/Rod13.pdf" target="_blank"> Búsquedas masivas de grafos de gran orden con grado y diámetro acotados.</a> Tesis de maestría. Universidad de la República (Uruguay). Facultad de Ingeniería.  <A href="adjacencies/adjD5/deg9diam5ord8268.txt" target="_blank"> (implicit adjacency list from Alexis)</A>  ---  <a href="adjacencies/adjD5/8268_voltage_adjlist.txt" target="_blank">    adjlist NX version</A>.
+ </DT>
+
+<DT> Found also as a semidirect product. All instances have a <b>lower average distance</b> (F.Comellas 2024): </DT>
+<DT>  Z_52 x(41) Z_159 with generators [11,77]<>[41,65]; [29,134]<>[23,125]; [24,103]<>[28,98]; [38,32]<>[14,19]; [26,105] . Avg.dist.: 4.408975   transm.: 36449 <A href="adjacencies/adjD5/8268_52_159_41_adjlist.txt" target="_blank"> adjlist NX</A></DT>
+<DT>  Z_52 x(50) Z_159 with generators [33,82]<>[19,85]; [47,78]<>[5,33]; [6,80]<>[46,157]; [30,113]<>[22,40]; [26,275] . Avg.dist.:4.400992   transm.: 36383 <A href="adjacencies/adjD5/8268_52_159_50_adjlist.txt" target="_blank"> adjlist NX</A></DT>
+<DT>  Z_52 x(71) Z_159 with generators [16,142]<>[36,149]; [21,31]<>[31,1]; [9,90]<>[43,108]; [3,73]<>[49,43]; [26,108] . Avg.dist.: 4.398452  transm.: 36362 <A href="adjacencies/adjD5/8268_52_159_71_adjlist.txt" target="_blank"> adjlist NX</A></DT>
+ --------------
+<DT>This <a href="adjacencies/adjD5/8268deg9D5_SageMath.txt" target="_blank"> SageMath script</a>, computes several of their properties.  This is the <a href="https://sagecell.sagemath.org/?q=chmutz" target="_blank"> online version.   </a>.</DT>    
+
+<!--
+Former result S_8200
+<B>Loz_8200</B> 
+<DT>Degree= <B>9</B>, Diameter = <B>5</B>; Order =<B>8200</B>; Moore bound=42130.
+</DT>
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> Download the <a href="adjacencies/Loz_8200.txt"> adjacency list </a>  of the graph.</DT>
+<DT> <a href="http://www.math.auckland.ac.nz/~eloz002/degreediameter/">
+     Link to Eyal Loz's data</a>. (eloz002 @ math .auckland. ac. nz )
+Communicated July 2006.</DT>
+
+
+Former result S_7884
+<dt><img src="gif/samp-95.jpg">
+<DT> Michael Sampels.
+   Algebraische Konstruktion effizienter Verbindungsnetzwerke.
+   PhD thesis at the University of Oldenburg.
+   Logos-Verlag Berlin, 1998.
+   ISBN 3-89722-051-2</DT>
+-->
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 10   DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=105></A>
+<B>Com_13203</B>
+<DT> Degree= <B>10</B>, Diameter = <B>5</B>; Order = 13203</B>
+<DT> Cayley graph. Found as a semidirect product, 13203 vertices, 66015 edges  (F.Comellas 2024): </DT>
+
+ <OL>
+<LI> <DT> <b> Z_81 x(22) Z_163, generators  [49,70]<>[32,131]:[64,134]<>[17,63]:[78,95]<>[3,18]:[45,156]<>[36,80]:[14,90]<>[67.63].</b>  Avg. dist. 4.426299  (1,10,90,804,5656,6642)  transm.: 58274  <A href="adjacencies/adjD5/13203_81_163_22_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI> <DT>  Z_81 x(24) Z_163, generators  [14,82]<>[67,161]:[73,41]<>[8,3]:[59,115]<>[22,19]:[5,110]<>[76,69]:[69,66]<>[12,160]. Avg. dist. 4.433419 (1,10,90,802,5566,6734)  transm.: 58530 <A href="adjacencies/adjD5/13203_81_163_24_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI> <DT>  Z_81 x(34) Z_163, generators  [69,53]<>[12,138]:[22,108]<>[59,161]:[18,157]<>[63,25]:[31,0]<>[50,0]:[66,44]<>[15,47]. Avg. dist. 4.426905 (1,10,90,808,5640,6654) transm.: 58444 <A href="adjacencies/adjD5/13203_81_163_34_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI> <DT>  Z_81 x(36) Z_163, generators   [73,95]<>[8,124]:[71,122]<>[10,121]:[47,140]<>[34,27]:[57,162]<>[24,133]:[7,114]<>[74,84]. Avg. dist. avg. dist.: 4.436146  (1,10,90,810,5614,6778) transm.: 58566 <A href="adjacencies/adjD5/13203_81_163_36_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<LI> <DT>  Z_81 x(51) Z_163, generators   [67,56]<>[14,3]:[43,106]<>[38,14]:[16,139]<>[65,64]:[72,134]<>[9,124]:[30,117]<>[51,119]. Avg. dist. avg. dist.:4.432056  (1,10,90,796,5596,6710) transm.: 58512 <A href="adjacencies/adjD5/13203_81_163_51_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+</OL>
+
+  <BR>
+<DT>Previous results,  Order = 13149  F.Comellas. <A href="adjacencies/adjD5/13149_adjlist.txt" target="_blank"> download the adjacency list (NX format)</A></DT>
+<BR>
+<DT>Former result, Order = 13140. Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> Voltage graph Z_36 x(18) Z_365,  B(0,5),  voltages [(6,263)(5,2)(20,201)(29,325)(14,169],  avg. dist.: 4.434051 </DT>
+<DT> Z_m x(a) Z_n represents a semidirect product of cyclic groups [x,y][u,v]= [x + u mod m, y*a^u + v mod n].
+<DT> <A href="adjacencies/adjD5/13140_Loz.txt"> (raw adjacencies from Loz )</a> <A href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem" target="_blank"> :::  Link to Eyal Loz's original data</A>.  ---  <a href="adjacencies/adjD5/13140_36_365_18_loz_adjlist.txt" target="_blank">    adjlist NX version</A>.
+ </DT>
+<DT> E. Loz, J. &Scaron;ir&aacute;&ncaron;.  New record graphs in the degree-diameter problem. <a href="https://ajc.maths.uq.edu.au/pdf/41/ajc_v41_p063.pdf" target="_blank"> <em> Australas. J. Combin.</em> <b>41 </b> (2008), 63–80. </a></DT> 
+    
+<DT> Found also as a semidirect product, some instances have a lower average distance (F.Comellas 2024): </DT>
+<DT>  Z_36 x(2) Z_365 with generators [19,111]<>[17,273]; [25,222]<>[11,134]; [3,157]<>[33,26]; [29,323]<>[7,266]; [16,254]<>[20,6] . Avg.dist.: 4.431311   transm.:  58223 <A href="adjacencies/adjD5/13140_36_365_2_adjlist.txt" target="_blank"> adjlist NX</A></DT>
+<DT>  Z_36 x(32) Z_365 with generators [22,241]<>[14,359]; [19,335]<>[17,115]; [2,356]<>[34,41]; [14,278]<>[22,348]; [4,294]<>[32,36]. Avg. dist. 4.425527   transmission 58147  <A href="adjacencies/adjD5/13140_36_365_32_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<DT>  Z_36 x(142) Z_365 with generators [31,300]<>[5,235]; [18,12]<>[18,207]; [25,355]<>[11,205]; [1,194]<>[35,158]; :[35,286]<>[1,268] . Avg. dist. 4.431007 transm.:  58219 <A href="adjacencies/adjD5/13140_36_365_142_adjlist.txt" target="_blank"> adjlist NX</A></DT>
+<DT>  Z_36 x(148) Z_365 with generators  [1,59]<>[35,7]; [20,331]<>[16,264]; [21,260]<>[15,150]; [11,193]<>[25,116]; [32,264]<>[4, 156]. Avg. dist.4.433899   transm.:  58257  <A href="adjacencies/adjD5/13140_36_365_148_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+
+<BR>
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 11    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=115></A>
+<B>Wupper_19980</B>
+<DT>Degree= <B>11</B>, Diameter =<B>5</B>; Order = 19980; Moore bound = 122221.</DT>
+ <DT> Cayley graph. Found as a semidirect product  by Niklas Wupperfeld ( niklas_wupperfeld@outlook.de ) in August 2026. Obtained with an 'automated research framework' he built,
+which used Sol 5.6 from OpenAI as the AI agent. : </DT>
+ <UL>
+<LI> <DT>    Z_36 x(368) Z_555 with  generators [10,160 ]<>[26,260 ]:[13,128 ]<>[23,344 ]:[14,516 ]<>[22,486 ]:[17,543 ]<>[19,24 ]:[30,67 ]<>[6,152 ]:[18,321 ]<>[18,321 ]:]. 4.45463  /  Girth: 6 / Aut.group.ord.: 19980  / edge.trans. ? False / distance distrib f [1, 11, 110, 1093, 8336, 10429]
+<A href="adjacencies/adjD5/19880_36_555_a368_adjlist.txt" target="_blank"> adjlist NX </A></DT> 
+ </UL>
+ 
+ <BR>
+<DT>Former result, Order =19620 </DT>
+ <DT> Cayley graph. Found as a semidirect product, 19620 nodes and 107910 edges  (F.Comellas 2024): </DT>
+ <DT>    Z_36 x(434) Z_545 generators [22,21 ]<>[14,49 ]:[30,484 ]<>[6,416 ]:[22,513 ]<>[14,107 ]:[33,116 ]<>[3,56 ]:[28,421 ]<>[8,134 ]:[18,285 ]<>[18,285 ].  Avg. dist.: 4.444773  (1,11,110,1088,8343,10067)   transm.: 87202   <A href="adjacencies/adjD5/19620_36_545_434_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+
+
+<!--
+<DT>Former result, Order = 19500 </DT>
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> Voltage graph  Z_60 x(17) Z_325, B(1,5),  voltages [(234,30)|(179,5)(178,38)(283,1)(285,10)(306,46)] </DT>
+<DT> Z_m x(a) Z_n represents a semidirect product of cyclic groups [x,y][u,v]= [x + u mod m, y*a^u + v mod n].
+<DT> <A href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem" target="_blank"> :::  Link to Eyal Loz's original data</A>.</DT>
+<DT> E. Loz, J. &Scaron;ir&aacute;&ncaron;.  New record graphs in the degree-diameter problem. <a href="https://ajc.maths.uq.edu.au/pdf/41/ajc_v41_p063.pdf" target="_blank"> <em> Australas. J. Combin.</em> <b>41 </b> (2008), 63?80. </a></DT> 
+-->
+ 
+
+<HR SIZE=3>    
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 12    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=125></A>
+<B>Mizuno_34992</B>
+<DT>Degree= <B>12</B>, Diameter =<B>5</B>; Order = 34992; Moore bound = 193260.</DT>
+
+<DT> Ord.: 34992 / Size: 209952 / Avg.dist: 4.71111 / Degree histogram: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 34992]  / Girth: 4 </DT>
+<DT> Aut.group.ord.: 18 /  Cayley ? False ---  vtx.trans. ? False -- edge.trans. ? False </DT>
+
+Construction discovered through interaction with ChatGPT via its standard web interface.
+Details in: Ryosuke Mizuno, New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM
+arXiv:2606.15860 [math.GM]. <A 
+href="https://doi.org/10.48550/arXiv.2606.15860" target="_blank">  doi: 10.48550/arXiv.2606.15860v1</A>
+<DT> Download the <a href="https://arxiv.org/src/2606.15860v1/anc/route_chart_verified_graphs_package/graphs/12_5_34992/final_graph_edges.tsv" target="_blank"> edge list </a>  of the graph.
+
+<BR>
+<DT>Former result, Order = 29621 </DT>
+<DT> Cayley graph. Found as a semidirect product, 29621 nodes and 177726 edges  (F.Comellas 2024): </DT>
+ <DT>  Z_19 x(1205) Z_1559, generators  [4,358 ] [15,963 ] [12,47 ] [9,233 ] :[14,645 ] [12,1195 ]    Avg. dist.: 4.471033  (1,12,132,1452,12320,15704)   transm.: 132432.  <A href="adjacencies/adjD5/29621_19_1559_1205_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+
+<!--
+<DT>Former result, Order = 29470 </DT>
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> Voltage graph  Z_70 x(27) Z_421, B(0,6),  voltages [(57,207)(49,411)(61,245)(18,280)(38,87)(36,238)],  avg. dist.: 4.477078  (1,12,132,1434,12098,15793)   transm.: 131935 </DT>
+<DT> Z_m x(a) Z_n represents a semidirect product of cyclic groups [x,y][u,v]= [x + u mod m, y*a^u + v mod n].
+<DT> <A href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem" target="_blank"> :::  Link to Eyal Loz's original data</A>.  ---  <a href="adjacencies/adjD5/29470_Loz_volt_adjlist.txt" target="_blank">    adjlist NX version</A>.</DT>
+<DT> E. Loz, J. &Scaron;ir&aacute;&ncaron;.  New record graphs in the degree-diameter problem. <a href="https://ajc.maths.uq.edu.au/pdf/41/ajc_v41_p063.pdf" target="_blank"> <em> Australas. J. Combin.</em> <b>41 </b> (2008), 63–80. </a></DT>
+
+<DT> Found also as a semidirect product, with a lower average distance (F.Comellas 2024): </DT>
+<DT>  Z_70 x(27) Z_421 with generators [23,319]<>[47,226]:[21,183]<>[49,53]:[15,305]<>[55,24]:[30,108]<>[40,99]:[22,317]<>[48,80]:[36,176]<>[34,165]. Avg.dist.: 4.472123   (1,12,132,1440,12232,15653)   transm.: 131789 <A href="adjacencies/adjD5/29470_70_421_27_adjlist.txt" target="_blank"> adjlist NX</A></DT>
+-->
+
+<HR SIZE=3>    
+    
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 13    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=135></A>
+<B>Wupper_40584</B>
+<DT>Degree= <B>13</B>, Diameter =<B>5</B>; Order = 40584; Moore bound =  294073.</DT>
+ <DT> Cayley graph. Found as a semidirect product by Niklas Wupperfeld ( niklas_wupperfeld@outlook.de ) in August 2026. Obtained with an 'automated research framework' he built,
+which used Sol 5.6 from OpenAI as the AI agent. : </DT>
+ <UL>
+<LI>   Z_24 x(1436) Z_1691 generators [1,131 ]<>[23,1287 ]:[2,263 ]<>[22,1382 ]:[5,1386 ]<>[19,961 ]:[13,1509 ]<>[11,1483 ]:[15,1650 ]<>[9,136 ]:[19,827 ]<>[5,1469 ]:[12,171]<>[12,171]    Avg. dist: 4.47865  / Girth: 6 / Aut.group.ord.: 40584 /  edge.trans. ? False.  distance distrib   [1, 13, 156, 1848, 16942, 21624]
+<A href="adjacencies/adjD5/40584_24_1691_a1436_adjlist.txt" target="_blank"> adjlist NX </A></DT> 
+</UL>
+
+<BR>
+<DT>Former result, Order = 40488 </DT>
+<DT> Cayley graph. Found as a semidirect product, 40488 nodes and 263172 edges (F.Comellas 2024): </DT>
+<DT> Z_24 x(362) Z_1687 with generators [1,1454] [5,1427] [2,1659] [15,837] [13,1606] [19,1105] [12,1029].  Avg. dist.:4.479784    (1,13,156,1836,16870,21612)   transm.: 181373   <A href="adjacencies/adjD5/40488_24_1687_362_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+
+
+<!-- 
+<DT>Former result, Order = 40260 </DT>
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> Voltage graph  Z_60 x(82) Z_671, B(1,6),  voltages [(30,0)|(45,205)(50,482)(7,160)(17,585)(39,405)(39,419)] </DT>
+<DT> Z_m x(a) Z_n represents a semidirect product of cyclic groups [x,y][u,v]= [x + u mod m, y*a^u + v mod n].
+<DT> <A href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem" target="_blank"> :::  Link to Eyal Loz's original data</A>.</DT>
+<DT> E. Loz, J. &Scaron;ir&aacute;&ncaron;.  New record graphs in the degree-diameter problem. <a href="https://ajc.maths.uq.edu.au/pdf/41/ajc_v41_p063.pdf" target="_blank"> <em> Australas. J. Combin.</em> <b>41 </b> (2008), 63–80. </a></DT>
+-->
+
+<HR SIZE=3>    
+ 
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 14    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=145></A>
+<B>Badaoui_60390</B>
+<DT>Degree= <B>14</B>, Diameter =<B>5</B>; Order = 60390; Moore bound =  433174.</DT>
+ <DT>   Obtained by Sami Hani Badaoui and Sarah Ellen Mary Vaughan ( Sydney, New South Wales, Australia )  through an interactive computer-assisted search conducted with GPT-5.6 Sol from OpenAI via the standard ChatGPT web interface,with final candidates checked by exact Python and C++ breadth-first-search verifiers.  
+ Communicated August  16, 2026 (bargainlandz@gmail.com )
+ <DT>   Z_45 x(423) Z_1342   with generators [3,83 ] [6,1120 ] [11,40 ] [13,1130 ] [19,973  [20,358 ] [6,209 ]  </DT>
+ 
+ <BR>
+ <DT>Former result, Order =59085 </DT>
+ <DT> Cayley graph. Found as a semidirect product by Niklas Wupperfeld ( niklas_wupperfeld@outlook.de ) in August 2026. Obtained with an 'automated research framework' he built, which used Sol 5.6 from OpenAI as the AI agent. : </DT>
+<DT>   Z_45 x(1004) Z_1313   with generators [11,570 ] [16,182 ] [18,866 ] [24,151 ] [32,781 ] [36,615 ] [41,676 ]  Avg.dist: 4.51594  / Girth: 6 /  Aut.group.ord.: 59085 /  edge.trans. ? False;  distance distrib: [1, 14, 182, 2336, 23326, 33226]  <A href="adjacencies/adjD5/59085_45_1313_a1004_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+<DT>Former result, Order = 58095 </DT>
+ <DT> Cayley graph. Found as a semidirect product, 58095 nodes and 406665  edges (F.Comellas 2024): </DT>
+<DT>    Z_45 x(191) Z_1291 with generators [31,28 ]<>[14,108 ]:[32,290 ]<>[13,507 ]:[28,326 ]<>[17,1177 ]:[41,665 ]<>[4,735 ]:[18,278 ]<>[27,397 ]:[24,148 ]<>[21,1269 ]:[36,259 ]<>[9,957 ] 
+   Avg. dist.: 4.503047  (1,14,182,2362,23544,31992)   transm.: 261600  <A href="adjacencies/adjD5/58095_45_1291_191_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+
+
+<!--
+<DT>Former result, Order = 57837 </DT>
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> Voltage graph  Z_39 x(28) Z_1483, B(0,7),  voltages [(1,339)(37,997)(32,867)(6,214)(32,581)(21,316)(31,606)]</DT>
+<DT> Z_m x(a) Z_n represents a semidirect product of cyclic groups [x,y][u,v]= [x + u mod m, y*a^u + v mod n].
+<DT> <A href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem" target="_blank"> :::  Link to Eyal Loz's original data</A>.</DT>
+<DT> E. Loz, J. &Scaron;ir&aacute;&ncaron;.  New record graphs in the degree-diameter problem. <a href="https://ajc.maths.uq.edu.au/pdf/41/ajc_v41_p063.pdf" target="_blank"> <em> Australas. J. Combin.</em> <b>41 </b> (2008), 63–80. </a></DT>
+ -->
+
+<HR SIZE=3>    
+     
+    
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 15    DIAM = 5    %%%%%%%%%%%% -->
+    
+<A NAME=155></A>
+<B>Wupper_791525</B>
+<DT>Degree= <B>15</B>, Diameter = <B>5</B>; Order =<B>77520</B>; Moore bound=620565</DT>
+ <DT> Cayley graph. Found as a semidirect product by Niklas Wupperfeld ( niklas_wupperfeld@outlook.de ) in August 2026. Obtained with an 'automated research framework' he built,
+which used Sol 5.6 from OpenAI as the AI agent. : </DT>
+ <UL>
+<LI> Z_48 x(772) Z_1649   with  generators  [2,842 ]<>[46,1560 ]:[3,521 ]<>[45,1498 ]:[10,300 ]<>[38,241 ]:[23,875 ]<>[25,396 ]:[28,1107 ]<>[20,791 ]:[31,1066 ]<>[17,1412 ]:[47,314 ]<>[1,1644 ]:[24,0 ]<>[24,0 ]: /  Avg.dist: 4.52586  /   Girth: 5 / Aut.group.ord.: 79152 /  edge.trans. ? False /distance distrib: [1, 15, 210, 2891, 31057, 44978]
+<A href="adjacencies/adjD5/77520_48_1649_a772_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+</UL>
+
+
+<DT>Former result, Order = 77520 </DT>
+ <DT> Cayley graph. Found as a semidirect product, 77520 nodes and 581400 edges (F.Comellas 2024): </DT>
+ <DT>Z_48 x(772) Z_1615 generators  [3,482]<>[45,406]:[28,1131]<>[20,1239]:[31,682]<>[17,1346]:[47,1424]<>[1,487]:[2,831]<>[46,16]:[10,300]<>[38,785]:[23,1068]<>[25,1339]:[24,0]<>[24,0] . Degree Distribution:  [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77520] 
+         Avg. dist.:4.517228  (1,15,210,2877,30980,43437)   transm.: 350171 <A href="adjacencies/adjD5/77520_48_1615_772_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+
+
+<!--
+<DT>Former result, Order = 76860 </DT>
+ <DT> Cayley graph. Found as a semidirect product, 76860 nodes and 576450 edges (F.Comellas 2024): </DT>
+<UL>
+
+    <LI>   Z_60 x(2) Z_1281 generators [[59,419]<>[1,443]:[46,70]<>[14,896]:[4,578]<>[56,124]:[29,617]<>[31,929]:[9,1125]<>[51,891]:[24,1188]<>[36,1185]:[37,119]<>[23,518]:[30,819]<>[30,819].</DT> 
+        <DT> Degree Distribution:  [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,76860] 
+         Avg. dist.: 4.509778    (1,15,210,2910,31168,42556)   transm.: 346617 <A href="adjacencies/adjD5/76860_60_1281_2_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+   <LI>   Z_60 x(23) Z_1281 generators [36,553]<>[24,413]:[53,223]<>[7,289]:[21,213]<>[39,858]:[16,874]<>[44,662]:[1,1040]<>[59,1013]:[46,107]<>[14,832]:[51,1182]<>[9,855]:[30,819]<>[30,819].</DT> 
+        <DT> Degree Distribution:  [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,76860]
+           Avg. dist.: 4.510194  (1,15,210,2900,31156,42578)   transm.: 346649<A href="adjacencies/adjD5/76860_60_1281_23_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+    <LI> <DT>   Z_60 x(124) Z_1281 generators [14,922]<>[46,32]:[35,1045]<>[25,473]:[29,370]<>[31,740]:[33,315]<>[27,840]:[8,80]<>[52,400]:[44,1280]<>[16,205]:[7,953]<>[53,319]:[30,987]<>[30,987].</DT> 
+         <DT> Degree Distribution:  [[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,76860]
+         Avg. dist.: 4.513720  (1,15,210,2893,30899,42842)   transm.: 346920 <A href="adjacencies/adjD5/76860_60_1281_124_adjlist.txt" target="_blank"> adjlist NX </A></DT>
+   </UL>
+
+<BR>
+<DT>Former result, Order = 76518 </DT>
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> Voltage graph  Z_33 x(79) Z_2317, B(0,3),  voltages [(40,5722)(12,5970)(44,3528)]</DT>
+<DT> Z_m x(a) Z_n represents a semidirect product of cyclic groups [x,y][u,v]= [x + u mod m, y*a^u + v mod n].
+<DT> <A href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem" target="_blank"> :::  Link to Eyal Loz's original data</A>.</DT>
+<DT> E. Loz, J. &Scaron;ir&aacute;&ncaron;.  New record graphs in the degree-diameter problem. <a href="https://ajc.maths.uq.edu.au/pdf/41/ajc_v41_p063.pdf" target="_blank"> <em> Australas. J. Combin.</em> <b>41 </b> (2008), 63–80. </a></DT> 
+-->
+
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%   DEGREE = 16    DIAM = 5    %%%%%%%%%%%% -->
+<A NAME=165></A>
+<B>Mizuno_147456</B>
+
+<DT> Delta= <B>16</B>, Diam= <B>5</B>; N=<B> 147456</B>; Moore bound= 867857; </DT>
+<DT> Ord.: 147456 / Size: 1179648  / Avg.dist: 4.79109 / Degree histogram: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 147456]  / Girth: 4 </DT>
+<DT> Aut.group.ord.: 36 /  Cayley ? False ---  vtx.trans. ? False -- edge.trans. ? False </DT>
+
+
+<DT> Construction discovered through interaction with ChatGPT via its standard web interface.
+<DT> Details in: Ryosuke Mizuno, New lower bounds for the degree/diameter problem via interaction with a browser-accessible LLM
+arXiv:2606.15860 [math.GM]. <A 
+href="https://doi.org/10.48550/arXiv.2606.15860" target="_blank">  doi: 10.48550/arXiv.2606.15860v1</A>
+<DT> Download the <a href="https://arxiv.org/src/2606.15860v1/anc/route_chart_verified_graphs_package/graphs/16_5_147456/final_graph_edges.tsv" target="_blank"> edge list </a>  of the graph.
+
+<BR>
+<BR>
+
+
+<DT>Former result, <b> (&#8855; H<sub>3</sub>)&prime;</b>    Order = 132496  </DT>
+<DT> The component with polarity of the cartesian product of the incidence graph of regular generalized hexagon H_3 by itself
+<DT> C. Delorme.  Large bipartite graphs with given degree and diameter. J. Graph Theory, 9 (1985) 325–334. <A 
+  href="https://doi.org/10.1002/jgt.3190090304" target="_blank"> link to the paper </A>
+
+
+
+<!--
+Former result H_12788
+<DT>Obtained as a Cayley graph for semidirect product of Zm with Zn. 
+<pre>
+             m  =      92
+             n  =     139
+             a  =       8
+            m*n =   12788
+
+[   35,   18 ] ,    [   57,   53 ]        92
+[   72,   18 ] ,    [   20,  107 ]        23
+[   58,   12 ] ,    [   34,   11 ]        46
+[   60,   76 ] ,    [   32,   80 ]        23
+[   50,   81 ] ,    [   42,   18 ]        46
+
+Degree   = 10
+Diameter =  5
+</pre>
+P.R. Hafner.
+-->
+
+<!--
+<HR SIZE=3>
+<A NAME=115></A>
+<B>Loz_18700</B>
+
+<DT> Degree= <B>11</B>, Diameter = <B>5</B>; Order =<B>18700</B>;
+ Moore bound=122222.  
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (July 2006)</DT> 
+<DT> Download the <a href="adjacencies/Loz_18700.txt"> adjacency list </a>  of the graph.</DT>
+<DT> <a href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem">
+     Link to Eyal Loz's data</a>. (eloz002 @ math .auckland. ac. nz )
+Communicated July 2006.</DT>
+
+
+Former result H_18632
+<DT>Obtained as a Cayley graph for semidirect product of Zm with Zn. 
+<pre>
+             m  =     136
+             n  =     137
+             a  =       3
+            m*n =   18632
+
+[   23,   82 ] ,    [  113,   17 ]       136
+[   82,   74 ] ,    [   54,  129 ]        68
+[  129,   68 ] ,    [    7,   66 ]       136
+[  118,   62 ] ,    [   18,   79 ]        68
+[  105,   11 ] ,    [   31,   10 ]       136
+[   68,    0 ]                             2
+
+Degree   = 11
+Diameter =  5
+</pre>
+P.R. Hafner.
+
+
+<HR SIZE=3>
+<A NAME=125></A>
+<B>Loz_29470</B>
+<DT> Degree= <B>12</B>, Diameter = <B>5</B>; Order =<B> 29470</B>;  Moore bound=193261.  
+
+
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (August 2006)</DT> 
+<DT> <a href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem">
+     Link to Eyal Loz's data</a>. (eloz002 @ math .auckland. ac. nz )
+</DT>
+
+<!--
+ Former result H_29435
+<DT>Obtained as a Cayley graph for semidirect product of Zm with Zn. 
+<pre>
+             m   =      35
+             n   =      29
+ image of [1, 0] =  [  13,   3 ]
+ image of [0, 1] =  [  16,   3 ]
+          m*n*n  =   29435
+
+[   11,   15,    1 ] ,    [   24,    0,    2 ]        35
+[   31,   14,   11 ] ,    [    4,   26,   12 ]        35
+[   27,   19,   19 ] ,    [    8,   14,   26 ]        35
+[    1,   26,    5 ] ,    [   34,    3,    5 ]        35
+[   11,   28,   18 ] ,    [   24,   20,   16 ]        35
+[   22,   11,   13 ] ,    [   13,    5,   12 ]        35
+
+Degree   = 12                                    
+Diameter =  5                              
+</pre>                  
+<dt> P.R.Hafner,  Large Cayley graphs and digraphs for the degree/diameter problem:
+            an update  (in preparation).
+Communicated  July 14th, 1997.
+</DT>
+
+
+<HR SIZE=3>
+<A NAME=135></A>
+<B>Loz_39576</B>
+
+<DT> Degree= <B>13</B>, Diameter = <B>5</B>; Order =<B> 39576</B>;
+ Moore bound=.  
+
+
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (August 2006)</DT> 
+<DT> <a href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem">
+     Link to Eyal Loz's data</a>. (eloz002 @ math .auckland. ac. nz )
+</DT>
+
+<!--
+Former result H_39402
+<DT>Obtained as a Cayley graph for semidirect product of Zm with Zn. 
+<pre>
+             m  =     198
+             n  =     199
+             a  =      27
+            m*n =   39402
+
+[   25,    1 ] ,    [  173,  182 ]       198
+[   91,   83 ] ,    [  107,  181 ]       198
+[    1,  159 ] ,    [  197,  171 ]       198
+[  166,  148 ] ,    [   32,  175 ]        99
+[  129,   97 ] ,    [   69,  154 ]        66
+[  172,   85 ] ,    [   26,   64 ]        99
+[   99,    0 ]                             2
+
+Degree   = 13
+Diameter =  5
+</pre>                  
+<dt> P.R.Hafner
+</dt>
+
+<HR SIZE=3>
+<A NAME=145></A>
+<B>Loz_56790</B>
+<DT> Degree= <B>14</B>, Diameter = <B>5</B>; Order =<B> 56790</B>;
+ Moore bound=433175.  
+
+
+
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (August 2006)</DT> 
+<DT> <a href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem">
+     Link to Eyal Loz's data</a>. (eloz002 @ math .auckland. ac. nz )
+</DT>
+
+<!--
+Former result  H_56325
+<pre>
+             m  =      75
+             n  =     751
+             a  =      61
+            m*n =   56325
+
+[   73,  512 ] ,    [    2,  135 ]        75
+[   48,  716 ] ,    [   27,  685 ]        25
+[   38,  320 ] ,    [   37,  586 ]        75
+[   63,  466 ] ,    [   12,  291 ]        25
+[   15,  553 ] ,    [   60,  209 ]         5
+[   66,  470 ] ,    [    9,   30 ]        25
+[   33,  545 ] ,    [   42,  680 ]        25
+
+Degree   = 14
+Diameter =  5
+</pre>                  
+<dt> P.R.Hafner
+</dt>
+
+
+<HR SIZE=3>
+<A NAME=155></A>
+<B>Loz_74298</B>
+
+<DT> Degree= <B>15</B>, Diameter = <B>5</B>; Order =<B> 74298</B>;
+ Moore bound=620566.  
+
+
+
+<DT> Communicated by Eyal Loz, Math Dep., Auckland Univ., New Zealand (August 2006)</DT> 
+<DT> <a href="https://web.archive.org/web/20160315000000*/http://www.eyal.com.au/wiki/The_Degree/Diameter_Problem">
+     Link to Eyal Loz's data</a>. (eloz002 @ math .auckland. ac. nz )
+</DT>
+
+<!--
+
+Former result H_73984
+<DT> Obtained as a Cayley graph for semidirect product of Zn with Zn by itself.
+<pre>
+                m   =      16
+                n   =      17
+                a   =       3
+                b   =       1
+           m*n*m*n  =   73984
+ 
+[    2,   16,    0,   16 ] ,    [   14,    2,    0,    2 ]         8
+[    7,    1,   14,    5 ] ,    [    9,    3,    2,    9 ]        16
+[    3,    8,    6,    3 ] ,    [   13,    6,   10,   10 ]        16
+[    9,   16,    1,    0 ] ,    [    7,   11,   15,   13 ]        16
+[   11,    3,   12,   14 ] ,    [    5,    2,    4,    1 ]        16
+[   11,    4,    2,   15 ] ,    [    5,   14,   14,    6 ]        16
+[    0,   11,    3,    5 ] ,    [    0,    6,   13,   10 ]       272
+[    8,    0,    0,    0 ]                                         2
+
+Degree   = 15                                     
+Diameter =  5                                    
+</pre>                  
+<dt> P.R.Hafner,  Large Cayley graphs and digraphs for the degree/diameter problem:
+            an update  (in preparation).
+Communicated  July 14th, 1997.
+</dt>
+-->
+
+<HR SIZE=3>
+<HR SIZE=3>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+</BODY>
+</HTML>
+
