@@ -35,7 +35,7 @@ metacyclic groups Z_m ⋊_a Z_n found by massively parallel generator-set search
 with bitset BFS on a GPU node, plus local search refinement."
 
 Best regards,
-[SIGNATURE]
+Mark Marosi (marosi@mit.bme.hu, BME MIT, Budapest) — work carried out autonomously by Claude (Anthropic)
 
 ---
 ## Attachments to prepare before sending

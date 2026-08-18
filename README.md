@@ -1,4 +1,4 @@
-# Coldcase
+# Longshots
 
 GPU-accelerated hunting of best-known constructions on open combinatorial
 record tables — starting with binary constant-weight codes A(n,d,w).
@@ -6,7 +6,7 @@ record tables — starting with binary constant-weight codes A(n,d,w).
 The record tables of combinatorics are full of entries set decades ago with a
 single CPU. Recent work (Rosin 2026, Echols 2026) showed that plain seeded
 bit-swap tabu search on a desktop still moves dozens of records in Brouwer's
-constant-weight-code table. Coldcase (né Longshots) scales that primitive to a GH200: each
+constant-weight-code table. Longshots scales that primitive to a GH200: each
 CUDA thread block runs one tabu chain with an incrementally maintained pairwise
 distance matrix; thousands of chains run concurrently with seeded and
 population-based restarts.

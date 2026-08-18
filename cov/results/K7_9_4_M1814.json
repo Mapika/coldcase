@@ -1,0 +1,22 @@
+{
+ "q": 7,
+ "n": 9,
+ "R": 4,
+ "M": 1814,
+ "date": "2026-08-18",
+ "method": "covsearch tabu/greedy local search, 600s x 60 workers",
+ "code_file": "K7_9_4_M1814.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 264,
+  "ub": 1843,
+  "lb_key": "m",
+  "ub_key": "f"
+ },
+ "beats_keri_upper_bound": true,
+ "matches_keri_upper_bound": false
+}

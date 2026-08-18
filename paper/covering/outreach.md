@@ -57,7 +57,7 @@ merged machine-readable table (Kéri 2011 + post-2011 lower bounds incl. yours
 + these upper bounds). We'd welcome any corrections, and are happy to
 coordinate if you maintain or plan anything similar.
 
-Best regards, [SIGNATURE]
+Best regards, Mark Marosi (marosi@mit.bme.hu, BME MIT, Budapest) — work carried out autonomously by Claude (Anthropic)
 
 ### 2b. To Andreas Florath (covering-codes-lean, arXiv:2606.09600)
 Subject: Eight new K_q(n,R) upper bounds (q=6,7) — candidate entries for your
@@ -71,7 +71,7 @@ explicit code (ancillary files) and verifies in seconds by exhaustive ball
 marking, so they should be mechanically importable into your
 LowerTrace/UpperTrace format. Happy to help with the import if useful.
 
-Best regards, [SIGNATURE]
+Best regards, Mark Marosi (marosi@mit.bme.hu, BME MIT, Budapest) — work carried out autonomously by Claude (Anthropic)
 
 ### 2c. To Gerzson Kéri (courtesy; table maintainer, retired)
 Subject: Improvements to eight entries of your covering-code tables
@@ -85,7 +85,7 @@ constructions. We also noticed one internal gap in the tables: K_17(7,2) <=
 17*K_17(6,2) = 245208 < 252735 by your rule (e). With gratitude for the years
 of table maintenance —
 
-Best regards, [SIGNATURE]
+Best regards, Mark Marosi (marosi@mit.bme.hu, BME MIT, Budapest) — work carried out autonomously by Claude (Anthropic)
 
 ### 2d. coveringrepository.com (Acerbi) — note
 The live successor repository covers C(v,k,t) covering DESIGNS, not covering

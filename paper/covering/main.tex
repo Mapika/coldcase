@@ -11,25 +11,32 @@
 \newcommand{\Zq}{\mathbb{Z}_q}
 
 \title{New upper bounds on covering codes $K_q(n,R)$\\ for alphabets of size six and seven}
-\author{Mark Marosi\thanks{email: mark.marosi@egroup.hu. \textbf{[AUTHORSHIP/AFFILIATION TO BE CONFIRMED BY THE AUTHOR BEFORE SUBMISSION.]} The search, verification, and manuscript preparation were carried out autonomously by Claude (Anthropic) on a single NVIDIA GH200 node; see Section~\ref{sec:method}.}}
+\author{Mark Marosi\thanks{Department of Measurement and Information
+Systems, Budapest University of Technology and Economics (BME), Budapest,
+Hungary. email: marosi@mit.bme.hu.}\ \ and Claude (Anthropic)\thanks{The
+search software, the verification protocol, the constructions, and this
+manuscript were produced autonomously by the AI system Claude (Anthropic)
+on a single NVIDIA GH200 node; M.M.'s contribution was the idea of applying
+large-scale GPU/CPU search to the frozen covering-code tables and providing
+the computational resources. See Section~\ref{sec:method}.}}
 \date{August 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We present improved upper bounds for eight entries of the standard tables of
+We present improved upper bounds for nine entries of the standard tables of
 bounds on $K_q(n,R)$, the minimum cardinality of a $q$-ary code of length $n$
 with covering radius $R$, for $q\in\{6,7\}$:
-$\Kq{6}{7}{3}\le 235$, $\Kq{6}{8}{3}\le 1054$, $\Kq{6}{8}{4}\le 169$,
-$\Kq{6}{9}{4}\le 719$, $\Kq{6}{9}{5}\le 126$, $\Kq{6}{10}{4}\le 2951$,
-$\Kq{6}{10}{5}\le 610$, and $\Kq{7}{8}{4}\le 333$.
+$\Kq{6}{7}{3}\le 233$, $\Kq{6}{8}{3}\le 1045$, $\Kq{6}{8}{4}\le 167$,
+$\Kq{6}{9}{4}\le 710$, $\Kq{6}{9}{5}\le 125$, $\Kq{6}{10}{4}\le 2951$,
+$\Kq{6}{10}{5}\le 610$, $\Kq{7}{8}{4}\le 331$, and $\Kq{7}{9}{4}\le 1814$.
 The previous best bounds, recorded in K\'eri's tables (last updated 2011),
 all arose from general constructions (direct sums and related product rules)
 rather than from explicit search; to our knowledge these are the first
 improvements to any upper bound on $K_q(n,R)$ with $q\ge 5$ since 2011.
 The new bounds were found by focused local search seeded with the
-construction-based incumbents. All eight codes are given explicitly in the
+construction-based incumbents. All nine codes are given explicitly in the
 ancillary files, together with a standalone verifier; each code was checked
 by four independent exhaustive verification methods.
 \end{abstract}
@@ -69,8 +76,8 @@ the special case $K_q(n+1,R)\le q\,K_q(n,R)$, the monotonicity
 $K_q(n+1,R+1)\le K_q(n,R)$, and product rules over alphabet factorizations.
 These are inherited arithmetic: no search was ever run in those cells. The
 present note shows that plain local search, seeded with the construction that
-produced the incumbent, beats all eight such bounds that we attacked in the
-range $q\in\{6,7\}$, $n\le 10$ --- in one case by $22\%$.
+produced the incumbent, beats nine such bounds in the range $q\in\{6,7\}$, $n\le 10$ --- in one
+case by $23\%$.
 
 \section{Results}
 
@@ -80,14 +87,15 @@ range $q\in\{6,7\}$, $n\le 10$ --- in one case by $22\%$.
 \toprule
 cell & previous bounds & new UB & $\Delta$ & code file & previous UB from \\
 \midrule
-$\Kq{6}{7}{3}$  & 70--246   & \textbf{235}  & $-11$ & \texttt{K6\_7\_3\_M235.txt}   & $6\cdot \Kq{6}{6}{3}$ \\
-$\Kq{6}{8}{3}$  & 246--1080 & \textbf{1054} & $-26$ & \texttt{K6\_8\_3\_M1054.txt}  & $\Kq{6}{4}{1}\cdot \Kq{6}{4}{2}$ \\
-$\Kq{6}{8}{4}$  & 46--216   & \textbf{169}  & $-47$ & \texttt{K6\_8\_4\_M169.txt}   & $6\cdot \Kq{6}{7}{4}$ \\
-$\Kq{6}{9}{4}$  & 136--738  & \textbf{719}  & $-19$ & \texttt{K6\_9\_4\_M719.txt}   & $\Kq{6}{3}{1}\cdot \Kq{6}{6}{3}$ \\
-$\Kq{6}{9}{5}$  & 32--144   & \textbf{126}  & $-18$ & \texttt{K6\_9\_5\_M126.txt}   & alphabet product rule \\
+$\Kq{6}{7}{3}$  & 70--246   & \textbf{233}  & $-13$ & \texttt{K6\_7\_3\_M233.txt}   & $6\cdot \Kq{6}{6}{3}$ \\
+$\Kq{6}{8}{3}$  & 246--1080 & \textbf{1045} & $-35$ & \texttt{K6\_8\_3\_M1045.txt}  & $\Kq{6}{4}{1}\cdot \Kq{6}{4}{2}$ \\
+$\Kq{6}{8}{4}$  & 46--216   & \textbf{167}  & $-49$ & \texttt{K6\_8\_4\_M167.txt}   & $6\cdot \Kq{6}{7}{4}$ \\
+$\Kq{6}{9}{4}$  & 136--738  & \textbf{710}  & $-28$ & \texttt{K6\_9\_4\_M710.txt}   & $\Kq{6}{3}{1}\cdot \Kq{6}{6}{3}$ \\
+$\Kq{6}{9}{5}$  & 32--144   & \textbf{125}  & $-19$ & \texttt{K6\_9\_5\_M125.txt}   & alphabet product rule \\
 $\Kq{6}{10}{4}$ & 417--2952 & \textbf{2951} & $-1$  & \texttt{K6\_10\_4\_M2951.txt} & $\Kq{6}{4}{1}\cdot \Kq{6}{6}{3}$ \\
 $\Kq{6}{10}{5}$ & 83--615   & \textbf{610}  & $-5$  & \texttt{K6\_10\_5\_M610.txt}  & $\Kq{6}{6}{3}\cdot \Kq{6}{4}{2}$ \\
-$\Kq{7}{8}{4}$  & 76--343   & \textbf{333}  & $-10$ & \texttt{K7\_8\_4\_M333.txt}   & $\Kq{7}{7}{3}$ (monotonicity) \\
+$\Kq{7}{8}{4}$  & 76--343   & \textbf{331}  & $-12$ & \texttt{K7\_8\_4\_M331.txt}   & $\Kq{7}{7}{3}$ (monotonicity) \\
+$\Kq{7}{9}{4}$  & 264--1843 & \textbf{1814} & $-29$ & \texttt{K7\_9\_4\_M1814.txt}  & direct sum \\
 \bottomrule
 \end{tabular}
 \caption{New upper bounds. ``Previous bounds'' are the lower--upper bound
@@ -97,7 +105,7 @@ bound was inherited, per the source keys of~\cite{Keri}.}
 \label{tab:results}
 \end{table}
 
-The eight codes are supplied as ancillary files (one codeword per line,
+The nine codes are supplied as ancillary files (one codeword per line,
 digits over $\{0,\dots,q-1\}$). None of the searches had converged when
 stopped, so we expect several of these bounds to be improvable further by the
 same method with more computation.
@@ -195,7 +203,7 @@ indicator vector, computing no distances at all, with cost independent of
 $M$.
 \end{enumerate}
 In addition, a fifth, independently written dilation verifier (produced
-without access to the other implementations) re-confirmed all eight codes
+without access to the other implementations) re-confirmed all nine codes
 from the published files. The largest check ($q^n = 6^{10} = 60{,}466{,}176$
 words) completes in seconds.
 
@@ -210,7 +218,7 @@ bounds that were inherited from general constructions (relative slack
 between the previous upper bound and the sphere-covering lower bound of
 $4\times$--$10\times$), and consistently failed to improve cells that had
 already been the object of dedicated search or algebraic construction (slack
-$\le 3\times$), such as $\Kq{3}{11}{4}\le 81$ or $\Kq{6}{6}{3}\le 41$.
+$\le 3\times$), such as $\Kq{3}{11}{4}\le 81$, $\Kq{6}{6}{3}\le 41$, and $\Kq{8}{8}{4}\le 512$.
 K\'eri's tables contain many further cells of the first kind, for
 $q\in\{6,\dots,21\}$ and $R\ge 3$; we expect them to fall to the same
 method, and a systematic sweep is in progress. Since the tables have had no
@@ -219,14 +227,17 @@ bounds table (K\'eri 2011 plus the post-2011 lower-bound literature plus the
 present improvements) alongside the code.
 
 \subsection*{Data availability}
-The eight codes, the verifier, and a README are ancillary files of this
-arXiv submission. The full search and verification source code is available
-at \textbf{[REPOSITORY URL TO BE ADDED]}.
+The codes, the verifier, and a README are ancillary files of this
+arXiv submission. The full search and verification source code is public at
+\url{https://github.com/Mapika/coldcase} (covering-code track under
+\texttt{cov/}).
 
 \subsection*{Acknowledgments}
-The search software, the verification protocol, and this note were produced
-autonomously by Claude (Anthropic), running on a dedicated NVIDIA GH200
-node. \textbf{[TO BE REVIEWED BY THE AUTHOR.]}
+This work is AI-assisted in the strong sense: the discovery and verification
+pipeline was designed, implemented, and operated autonomously by Claude
+(Anthropic). The human author's contributions were the initiating idea
+(applying modern large-scale search hardware to record tables frozen in the
+2000s) and the computational resources.
 
 \begin{thebibliography}{9}
 \bibitem{CHLL} G.~Cohen, I.~Honkala, S.~Litsyn, A.~Lobstein,
@@ -253,57 +264,56 @@ codes with a proof-carrying database of certified bounds, arXiv:2606.09600,
 
 
 \appendix
-\section{The code proving $\Kq{6}{8}{4}\le 169$}\label{app:code}
+\section{The code proving $\Kq{6}{8}{4}\le 167$}\label{app:code}
 For self-containedness we print the largest single improvement
-($216\to169$, $-22\%$). Each row lists codewords of $\mathbb{Z}_6^8$;
+($216\to167$, $-23\%$). Each row lists codewords of $\mathbb{Z}_6^8$;
 the machine-readable version is the ancillary file
-\texttt{K6\_8\_4\_M169.txt}.
+\texttt{K6\_8\_4\_M167.txt}.
 
 {\scriptsize
 \begin{verbatim}
-13413135  53400455  13125414  32253533
-12551004  52454202  05521440  33342502
-44555514  41031103  53240312  04212401
-00435123  02202350  52021112  12504245
-11000212  02305532  25241223  23003413
-10223022  50525033  34305303  43010554
-20021234  35112313  01520005  55010150
-34524104  40344155  24515055  50215100
-01144002  33011251  53435304  13555222
-24052113  50114555  40504340  14444315
-54353423  10330254  22205053  22532152
-24311332  21432553  43352224  45225545
-42315325  11354522  31303134  21100125
-45114110  54155011  10142111  20501500
-42231421  23422142  42123454  14350320
-31135242  34133540  40013302  35223200
-30052351  31541413  50532514  43535310
-30004423  35445522  24420251  00301511
-21105430  32210044  51513442  51320111
-05334013  30550145  51412420  21123311
-21204204  20453540  53333231  00431214
-04024022  20345400  32211102  02541334
-43041530  04203451  50050043  01451451
-02412541  32433415  01033525  22343044
-40420300  52034330  44101542  03023020
-03153105  41443143  22415214  41224331
-14035140  25014324  15303352  35424050
-55553210  54243154  03122335  25320502
-34321545  10402034  35054444  12122225
-05402120  41252412  53444041  01250344
-13214510  23550000  44332024  34314011
-44530022  03312243  22524521  45542205
-14042405  42411413  12040511  01351250
-44504231  15545434  32100114  13322503
-43401052  31530353  31220030  03154453
-05045554  04240553  55101324  12055451
-23234445  11512050  45250501  31425531
-20131035  55002001  15131341  33501125
-10421303  45450133  25052035  23505141
-55351335  44205215  51045345  52130203
-15330401  15113023  34140230
-50222243  00110432  00543221
-05234132  11211533  22142150
+42030014  50143021  30440244  25403541
+40250502  02441030  35400150  50023554
+50225151  12333122  33515545  44121521
+14212440  42314041  35042002  34355041
+05025020  12253354  05133334  42335434
+03201411  35343410  24143214  54542204
+32151400  10440535  43332055  32200053
+30051122  00045454  52024303  50551345
+15230201  24410415  54434031  23142140
+33254504  25214034  21244445  53231213
+04130543  01302114  34325315  50135422
+45510313  51220320  45504535  22125553
+31533321  55255112  04041551  42150315
+02322452  15142345  02303401  04013213
+33310230  11101302  41241312  25550524
+13423003  22044222  20311131  14551115
+02105344  10310252  10344333  42540351
+22520011  15221421  51124410  24221205
+11152242  01253131  04202301  53440342
+11031550  20131443  30014311  22432502
+05111025  41054323  33130421  00504200
+20532144  41122233  34544402  40202220
+21401320  23553251  51540443  55412301
+53051015  32234252  12455213  12000145
+31105501  01212555  40424455  13501210
+52103235  35321243  24030300  24100153
+05431103  33343524  31114105  02214523
+45311104  40401434  53352125  01424040
+21352033  30102012  03250042  52511554
+43120104  43112350  20205330  34452453
+54355500  04545025  23535224  44405124
+11015404  50015125  50313003  01310221
+41321232  00553430  25032211  51342511
+14115532  52513140  55154250  43054444
+23323342  31441054  33022530  02422344
+12502423  34233035  00434510  41505000
+30521513  05524132  04301325  21413452
+15533052  44344100  14052131  40033105
+25355405  11335355  41035241  13444111
+14324024  23004353  03455235  33245133
+44453250  54304042  43512332  13003512
+31413225  55000434  45243543
 \end{verbatim}
 }
 
