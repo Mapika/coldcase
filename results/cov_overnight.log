@@ -1,0 +1,580 @@
+=== 21:27:53 10800 -q 6 -n 6 -R 3 --descend-from 41 --workers 60 -t 3000 --rounds 3
+cell K_6(6,3)  q^n=46656  ball=2906
+  Keri 2011: 24 - 41  (upper key q)
+
+--- M = 41 ---
+  workers: best uncovered=0   throughput 1369-1422 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_6_3_M41.txt  (M=41)
+  (reproduces the incumbent upper bound 41)
+
+--- M = 40 ---
+  workers: best uncovered=7   throughput 1307-1381 moves/s each
+  round 1: best uncovered = 7
+  workers: best uncovered=7   throughput 1322-1374 moves/s each
+  round 2: best uncovered = 7
+=== 00:27:53 7200 -q 8 -n 8 -R 4 --descend-from 512 --workers 60 -t 1800 --rounds 3
+cell K_8(8,4)  q^n=16777216  ball=188707
+  Keri 2011: 118 - 512  (upper key c)
+
+--- M = 512 ---
+  workers: best uncovered=793   throughput 3-3 moves/s each
+  round 1: best uncovered = 793
+  workers: best uncovered=788   throughput 3-3 moves/s each
+  round 2: best uncovered = 788
+  workers: best uncovered=796   throughput 3-3 moves/s each
+  round 3: best uncovered = 796
+  M=512 not solved; stopping descent
+=== 01:59:32 7200 -q 5 -n 11 -R 5 --descend-from 625 --workers 60 -t 1800 --rounds 3
+cell K_5(11,5)  q^n=48828125  ball=569053
+  Keri 2011: 103 - 625  (upper key d)
+
+--- M = 625 ---
+  workers: best uncovered=59   throughput 1-1 moves/s each
+  round 1: best uncovered = 59
+  workers: best uncovered=59   throughput 1-1 moves/s each
+  round 2: best uncovered = 59
+  workers: best uncovered=56   throughput 1-1 moves/s each
+  round 3: best uncovered = 56
+  M=625 not solved; stopping descent
+=== 03:38:26 5400 -q 6 -n 8 -R 4 --descend-from 167 --workers 60 -t 1500 --rounds 2
+cell K_6(8,4)  q^n=1679616  ball=51491
+  Keri 2011: 46 - 216  (upper key e)
+
+--- M = 167 ---
+  workers: best uncovered=1   throughput 57-66 moves/s each
+  round 1: best uncovered = 1
+  workers: best uncovered=0   throughput 57-65 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_4_M167.txt  (M=167)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 216 -> 167 ***
+
+--- M = 166 ---
+  workers: best uncovered=2   throughput 56-65 moves/s each
+  round 1: best uncovered = 2
+=== 05:08:26 5400 -q 6 -n 9 -R 5 --descend-from 125 --workers 60 -t 1500 --rounds 2
+cell K_6(9,5)  q^n=10077696  ball=483946
+  Keri 2011: 32 - 144  (upper key j)
+
+--- M = 125 ---
+  workers: best uncovered=0   throughput 3-4 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_5_M125.txt  (M=125)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 144 -> 125 ***
+
+--- M = 124 ---
+  workers: best uncovered=0   throughput 3-4 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_5_M124.txt  (M=124)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 144 -> 124 ***
+
+--- M = 123 ---
+  workers: best uncovered=0   throughput 3-3 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_5_M123.txt  (M=123)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 144 -> 123 ***
+
+--- M = 122 ---
+=== 06:38:26 5400 -q 7 -n 8 -R 4 --descend-from 331 --workers 60 -t 1500 --rounds 2
+cell K_7(8,4)  q^n=5764801  ball=103873
+  Keri 2011: 76 - 343  (upper key c)
+
+--- M = 331 ---
+  workers: best uncovered=0   throughput 8-35 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_8_4_M331.txt  (M=331)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 343 -> 331 ***
+
+--- M = 330 ---
+  workers: best uncovered=0   throughput 8-28 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_8_4_M330.txt  (M=330)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 343 -> 330 ***
+
+--- M = 329 ---
+  workers: best uncovered=0   throughput 8-14 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_8_4_M329.txt  (M=329)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 343 -> 329 ***
+
+--- M = 328 ---
+=== 08:08:26 5400 -q 6 -n 7 -R 3 --descend-from 233 --workers 60 -t 1500 --rounds 2
+cell K_6(7,3)  q^n=279936  ball=4936
+  Keri 2011: 70 - 246  (upper key e)
+
+--- M = 233 ---
+  workers: best uncovered=0   throughput 902-1083 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_7_3_M233.txt  (M=233)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 246 -> 233 ***
+
+--- M = 232 ---
+  workers: best uncovered=1   throughput 832-995 moves/s each
+  round 1: best uncovered = 1
+  workers: best uncovered=0   throughput 890-1040 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_7_3_M232.txt  (M=232)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 246 -> 232 ***
+
+--- M = 231 ---
+=== 09:38:26 5400 -q 7 -n 9 -R 4 --descend-from 1814 --workers 60 -t 1500 --rounds 2
+cell K_7(9,4)  q^n=40353607  ball=182791
+  Keri 2011: 264 - 1843  (upper key f)
+
+--- M = 1814 ---
+  workers: best uncovered=0   throughput 2-2 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1814.txt  (M=1814)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1814 ***
+
+--- M = 1813 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1813.txt  (M=1813)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1813 ***
+
+--- M = 1812 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1812.txt  (M=1812)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1812 ***
+
+--- M = 1811 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1811.txt  (M=1811)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1811 ***
+
+--- M = 1810 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1810.txt  (M=1810)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1810 ***
+
+--- M = 1809 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1809.txt  (M=1809)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1809 ***
+
+--- M = 1808 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1808.txt  (M=1808)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1808 ***
+
+--- M = 1807 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1807.txt  (M=1807)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1807 ***
+
+--- M = 1806 ---
+  workers: best uncovered=0   throughput 4-20 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1806.txt  (M=1806)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1806 ***
+
+--- M = 1805 ---
+  workers: best uncovered=0   throughput 3-35 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1805.txt  (M=1805)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1805 ***
+
+--- M = 1804 ---
+  workers: best uncovered=0   throughput 5-27 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1804.txt  (M=1804)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1804 ***
+
+--- M = 1803 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1803.txt  (M=1803)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1803 ***
+
+--- M = 1802 ---
+  workers: best uncovered=0   throughput 3-30 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1802.txt  (M=1802)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1802 ***
+
+--- M = 1801 ---
+  workers: best uncovered=0   throughput 4-33 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1801.txt  (M=1801)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1801 ***
+
+--- M = 1800 ---
+  workers: best uncovered=0   throughput 4-31 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1800.txt  (M=1800)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1800 ***
+
+--- M = 1799 ---
+  workers: best uncovered=0   throughput 4-26 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1799.txt  (M=1799)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1799 ***
+
+--- M = 1798 ---
+  workers: best uncovered=0   throughput 4-36 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1798.txt  (M=1798)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1798 ***
+
+--- M = 1797 ---
+  workers: best uncovered=0   throughput 3-39 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1797.txt  (M=1797)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1797 ***
+
+--- M = 1796 ---
+  workers: best uncovered=0   throughput 3-26 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1796.txt  (M=1796)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1796 ***
+
+--- M = 1795 ---
+  workers: best uncovered=0   throughput 4-27 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1795.txt  (M=1795)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1795 ***
+
+--- M = 1794 ---
+  workers: best uncovered=0   throughput 5-27 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1794.txt  (M=1794)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1794 ***
+
+--- M = 1793 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1793.txt  (M=1793)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1793 ***
+
+--- M = 1792 ---
+  workers: best uncovered=0   throughput 5-34 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1792.txt  (M=1792)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1792 ***
+
+--- M = 1791 ---
+  workers: best uncovered=0   throughput 5-38 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1791.txt  (M=1791)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1791 ***
+
+--- M = 1790 ---
+  workers: best uncovered=0   throughput 4-28 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1790.txt  (M=1790)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1790 ***
+
+--- M = 1789 ---
+  workers: best uncovered=0   throughput 5-31 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1789.txt  (M=1789)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1789 ***
+
+--- M = 1788 ---
+  workers: best uncovered=0   throughput 3-27 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1788.txt  (M=1788)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1788 ***
+
+--- M = 1787 ---
+  workers: best uncovered=0   throughput 5-29 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1787.txt  (M=1787)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1787 ***
+
+--- M = 1786 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1786.txt  (M=1786)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1786 ***
+
+--- M = 1785 ---
+  workers: best uncovered=0   throughput 3-35 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1785.txt  (M=1785)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1785 ***
+
+--- M = 1784 ---
+  workers: best uncovered=0   throughput 5-31 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1784.txt  (M=1784)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1784 ***
+
+--- M = 1783 ---
+  workers: best uncovered=0   throughput 3-25 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1783.txt  (M=1783)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1783 ***
+
+--- M = 1782 ---
+  workers: best uncovered=0   throughput 3-30 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1782.txt  (M=1782)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1782 ***
+
+--- M = 1781 ---
+  workers: best uncovered=0   throughput 5-34 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1781.txt  (M=1781)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1781 ***
+
+--- M = 1780 ---
+  workers: best uncovered=0   throughput 5-30 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1780.txt  (M=1780)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1780 ***
+
+--- M = 1779 ---
+  workers: best uncovered=0   throughput 5-33 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1779.txt  (M=1779)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1779 ***
+
+--- M = 1778 ---
+  workers: best uncovered=0   throughput 4-22 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1778.txt  (M=1778)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1778 ***
+
+--- M = 1777 ---
+  workers: best uncovered=0   throughput 5-31 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1777.txt  (M=1777)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1777 ***
+
+--- M = 1776 ---
+  workers: best uncovered=0   throughput 4-28 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1776.txt  (M=1776)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1776 ***
+
+--- M = 1775 ---
+  workers: best uncovered=0   throughput 4-31 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1775.txt  (M=1775)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1775 ***
+
+--- M = 1774 ---
+  workers: best uncovered=0   throughput 4-34 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1774.txt  (M=1774)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1774 ***
+
+--- M = 1773 ---
+  workers: best uncovered=0   throughput 4-30 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1773.txt  (M=1773)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1773 ***
+
+--- M = 1772 ---
+  workers: best uncovered=0   throughput 3-26 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1772.txt  (M=1772)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1772 ***
+
+--- M = 1771 ---
+  workers: best uncovered=0   throughput 4-37 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1771.txt  (M=1771)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1771 ***
+
+--- M = 1770 ---
+  workers: best uncovered=0   throughput 4-27 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1770.txt  (M=1770)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1770 ***
+
+--- M = 1769 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1769.txt  (M=1769)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1769 ***
+
+--- M = 1768 ---
+  workers: best uncovered=0   throughput 4-27 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1768.txt  (M=1768)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1768 ***
+
+--- M = 1767 ---
+  workers: best uncovered=0   throughput 5-19 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1767.txt  (M=1767)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1767 ***
+
+--- M = 1766 ---
+  workers: best uncovered=0   throughput 3-26 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1766.txt  (M=1766)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1766 ***
+
+--- M = 1765 ---
+  workers: best uncovered=0   throughput 4-26 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1765.txt  (M=1765)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1765 ***
+
+--- M = 1764 ---
+  workers: best uncovered=0   throughput 3-33 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1764.txt  (M=1764)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1764 ***
+
+--- M = 1763 ---
+  workers: best uncovered=0   throughput 3-26 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1763.txt  (M=1763)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1763 ***
+
+--- M = 1762 ---
+  workers: best uncovered=0   throughput 3-23 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1762.txt  (M=1762)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1762 ***
+
+--- M = 1761 ---
+  workers: best uncovered=0   throughput 3-28 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1761.txt  (M=1761)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1761 ***
+
+--- M = 1760 ---
+  workers: best uncovered=0   throughput 3-27 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1760.txt  (M=1760)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1760 ***
+
+--- M = 1759 ---
+  workers: best uncovered=0   throughput 3-21 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1759.txt  (M=1759)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1759 ***
+
+--- M = 1758 ---
+  workers: best uncovered=0   throughput 3-30 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1758.txt  (M=1758)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1758 ***
+
+--- M = 1757 ---
+  workers: best uncovered=0   throughput 6-47 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1757.txt  (M=1757)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1757 ***
+
+--- M = 1756 ---
+  workers: best uncovered=0   throughput 4-28 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1756.txt  (M=1756)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1756 ***
+
+--- M = 1755 ---
+  workers: best uncovered=0   throughput 4-28 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1755.txt  (M=1755)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1755 ***
+
+--- M = 1754 ---
+  workers: best uncovered=0   throughput 5-30 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1754.txt  (M=1754)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1754 ***
+
+--- M = 1753 ---
+  workers: best uncovered=0   throughput 3-28 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1753.txt  (M=1753)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1753 ***
+
+--- M = 1752 ---
+  workers: best uncovered=0   throughput 3-32 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1752.txt  (M=1752)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1752 ***
+
+--- M = 1751 ---
+  workers: best uncovered=0   throughput 3-31 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1751.txt  (M=1751)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1751 ***
+
+--- M = 1750 ---
+  workers: best uncovered=0   throughput 5-26 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1750.txt  (M=1750)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1750 ***
+
+--- M = 1749 ---
+  workers: best uncovered=0   throughput 3-30 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1749.txt  (M=1749)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1749 ***
+
+--- M = 1748 ---
+  workers: best uncovered=0   throughput 3-34 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1748.txt  (M=1748)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1748 ***
+
+--- M = 1747 ---
+  workers: best uncovered=0   throughput 4-32 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1747.txt  (M=1747)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1747 ***
+
+--- M = 1746 ---
+  workers: best uncovered=0   throughput 4-18 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1746.txt  (M=1746)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1746 ***
+
+--- M = 1745 ---
+  workers: best uncovered=0   throughput 3-39 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1745.txt  (M=1745)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1745 ***
+
+--- M = 1744 ---
+  workers: best uncovered=0   throughput 3-32 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1744.txt  (M=1744)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1744 ***
+
+--- M = 1743 ---
+  workers: best uncovered=0   throughput 4-25 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1743.txt  (M=1743)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1743 ***
+
+--- M = 1742 ---
+  workers: best uncovered=0   throughput 4-36 moves/s each
+=== 11:08:26 5400 -q 6 -n 9 -R 4 --descend-from 710 --workers 60 -t 1500 --rounds 2
+cell K_6(9,4)  q^n=10077696  ball=90196
+  Keri 2011: 136 - 738  (upper key f)
+
+--- M = 710 ---
+  workers: best uncovered=0   throughput 8-25 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M710.txt  (M=710)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 710 ***
+
+--- M = 709 ---
+  workers: best uncovered=0   throughput 7-41 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M709.txt  (M=709)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 709 ***
+
+--- M = 708 ---
+  workers: best uncovered=0   throughput 7-46 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M708.txt  (M=708)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 708 ***
+
+--- M = 707 ---
+  workers: best uncovered=0   throughput 7-25 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M707.txt  (M=707)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 707 ***
+
+--- M = 706 ---
+  workers: best uncovered=0   throughput 7-27 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M706.txt  (M=706)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 706 ***
+
+--- M = 705 ---
+  workers: best uncovered=0   throughput 7-44 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M705.txt  (M=705)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 705 ***
+
+--- M = 704 ---
+  workers: best uncovered=0   throughput 7-82 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M704.txt  (M=704)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 704 ***
+
+--- M = 703 ---
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  workers: best uncovered=0   throughput 7-11 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M703.txt  (M=703)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 703 ***
+
+--- M = 702 ---

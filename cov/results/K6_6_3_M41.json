@@ -4,7 +4,7 @@
  "R": 3,
  "M": 41,
  "date": "2026-08-18",
- "method": "covsearch tabu/greedy local search, 900s x 60 workers",
+ "method": "covsearch tabu/greedy local search, 3000s x 60 workers",
  "code_file": "K6_6_3_M41.txt",
  "verified": {
   "verify_cov_pure_uncovered": 0,
