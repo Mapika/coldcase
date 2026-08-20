@@ -8,19 +8,7 @@
   Echols/Lysenstøen submitted comparable notes in 2026.)
 - **Title**: New upper bounds on covering codes K_q(n,R) for alphabets of size six and seven
 - **Abstract** (plain text, for the form):
-  We present improved upper bounds for eight entries of the standard tables of
-  bounds on K_q(n,R), the minimum cardinality of a q-ary code of length n with
-  covering radius R, for q in {6,7}: K_6(7,3)<=235, K_6(8,3)<=1054,
-  K_6(8,4)<=169, K_6(9,4)<=719, K_6(9,5)<=126, K_6(10,4)<=2951,
-  K_6(10,5)<=610, and K_7(8,4)<=333. The previous best bounds, recorded in
-  Keri's tables (last updated 2011), all arose from general constructions
-  (direct sums and related product rules) rather than from explicit search; to
-  our knowledge these are the first improvements to any upper bound on
-  K_q(n,R) with q>=5 since 2011. The new bounds were found by focused local
-  search seeded with the construction-based incumbents. All eight codes are
-  given explicitly in the ancillary files, together with a standalone
-  verifier; each code was checked by four independent exhaustive verification
-  methods.
+  We present improved upper bounds for nine entries of the standard tables of bounds on K_q(n,R), the minimum cardinality of a q-ary code of length n with covering radius R, for q in {6,7}: K_6(7,3)<=232, K_6(8,3)<=1045, K_6(8,4)<=167, K_6(9,4)<=703, K_6(9,5)<=123, K_6(10,4)<=2951, K_6(10,5)<=610, K_7(8,4)<=329, and K_7(9,4)<=1743. The previous best bounds, recorded in Keri's tables (last updated 2011), all arose from general constructions (direct sums and related product rules) rather than from explicit search; to our knowledge these are the first improvements to any upper bound on K_q(n,R) with q>=5 since 2011. The new bounds were found by focused local search seeded with the construction-based incumbents. All nine codes are given explicitly in the ancillary files, together with a standalone verifier; each code was checked by four independent exhaustive verification methods.
 - **Comments field**: 6 pages. Ancillary files contain the eight codes and a
   standalone verifier.
 - **License**: CC BY 4.0 (matches community practice; allows table reuse).
