@@ -1,0 +1,7 @@
+model q=10 n=10 R=3 : 256 vars, 3282 linear ineqs, 108 psd blocks (sum size 485, sum size^2 3049)
+  model 3.9s, dat-s 0.2s (11.6 MB)
+  sdpa_gmp: phase=pdOPT objd=1.1917563902247046 (419.2 s)
+  psd rounding ok with eps=2^-118 (S=0)
+  theta = 1.000000000000000  (repair candidates: 1)
+  wrote /lambda/nfs/new-fs/longshots/cov/lb/certs_hp/cert_q10_n10_R3.json (0.34 MB)
+q=10 n=10 R=3  certified SDP value 1341798408733096.750000  cube root 110296.675954  => K >= 110297   (phase=pdOPT theta=1.0)

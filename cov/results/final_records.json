@@ -64,9 +64,9 @@
   "n": 10,
   "R": 4,
   "keri": 2952,
-  "ours": 2781,
+  "ours": 2751,
   "previous_ours": 2951,
-  "code_file": "K6_10_4_M2781.txt",
+  "code_file": "K6_10_4_M2751.txt",
   "produced_by": "cov/engine/covengine"
  },
  {
@@ -98,6 +98,16 @@
   "previous_ours": 1743,
   "code_file": "K7_9_4_M1475.txt",
   "produced_by": "cov/engine/covengine"
+ },
+ {
+  "q": 7,
+  "n": 10,
+  "R": 5,
+  "keri": 1225,
+  "ours": 981,
+  "previous_ours": null,
+  "code_file": "K7_10_5_M981.txt",
+  "produced_by": "gpuchain transform-engine LNS (exact distance-count transfor"
  },
  {
   "q": 8,
@@ -132,12 +142,52 @@
  {
   "q": 8,
   "n": 10,
+  "R": 5,
+  "keri": 2461,
+  "ours": 1884,
+  "previous_ours": null,
+  "code_file": "K8_10_5_M1884.txt",
+  "produced_by": "gpuchain transform-engine LNS (exact distance-count transfor"
+ },
+ {
+  "q": 8,
+  "n": 10,
   "R": 6,
   "keri": 342,
   "ours": 341,
   "previous_ours": null,
   "code_file": "K8_10_6_M341.txt",
   "produced_by": "covsearch tabu/greedy local search, 600s x 21 workers"
+ },
+ {
+  "q": 9,
+  "n": 9,
+  "R": 5,
+  "keri": 729,
+  "ours": 684,
+  "previous_ours": null,
+  "code_file": "K9_9_5_M684.txt",
+  "produced_by": "gpuchain transform-engine LNS (exact distance-count transfor"
+ },
+ {
+  "q": 9,
+  "n": 10,
+  "R": 5,
+  "keri": 3969,
+  "ours": 3393,
+  "previous_ours": null,
+  "code_file": "K9_10_5_M3393.txt",
+  "produced_by": "gpuchain transform-engine LNS (exact distance-count transfor"
+ },
+ {
+  "q": 10,
+  "n": 9,
+  "R": 5,
+  "keri": 1088,
+  "ours": 1055,
+  "previous_ours": null,
+  "code_file": "K10_9_5_M1055.txt",
+  "produced_by": "gpuchain transform-engine LNS (exact distance-count transfor"
  },
  {
   "q": 12,

@@ -1,0 +1,16 @@
+model q=19 n=7 R=3 : 95 vars, 1099 linear ineqs, 60 psd blocks (sum size 212, sum size^2 1024)
+  model 0.4s, dat-s 0.0s (2.0 MB)
+  sdpa_gmp: phase=pdOPT objd=1.1421763594946521 (197.0 s)
+  FAILED to round psd duals exactly
+  model 0.0s, dat-s 0.0s (2.0 MB)
+  sdpa_gmp: phase=pdOPT objd=1.1421763594946521 (24.6 s)
+  psd rounding ok with eps=2^-50 (S=0)
+  theta = 0.999472029878863
+  wrote /lambda/nfs/new-fs/longshots/cov/lb/certs_hp/cert_q19_n7_R3.json (0.03 MB)
+q=19 n=7 R=3  certified SDP value 78448321515.675064  cube root 4280.829051  => K >= 4281   (phase=pdOPT theta=0.9994720298788629)
+  model 0.0s, dat-s 0.0s (2.0 MB)
+  sdpa_gmp: phase=pdOPT objd=1.1421763594946521 (24.3 s)
+  psd rounding ok with eps=2^-118 (S=0)
+  theta = 1.000000000000000  (repair candidates: 1)
+  wrote certs_hp/cert_q19_n7_R3.json (0.10 MB)
+q=19 n=7 R=3  certified SDP value 78489761764.701920  cube root 4281.582700  => K >= 4282   (phase=pdOPT theta=1.0)

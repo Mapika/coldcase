@@ -4,7 +4,7 @@
  "R": 4,
  "M": 1475,
  "date": "2026-08-21",
- "method": "covengine portfolio (lincov/symsearch + covsearch2e p5b + covfast), 1200s x 14 cores",
+ "method": "covengine portfolio (lincov/symsearch + covsearch2e p5b + covfast), 3000s x 12 cores",
  "code_file": "K7_9_4_M1475.txt",
  "verified": {
   "verify_cov_pure_uncovered": 0,

@@ -1,0 +1,6 @@
+  model 0.0s, dat-s 0.0s (1.9 MB)
+  sdpa_gmp: phase=pdOPT objd=1.2763713588707735 (26.3 s)
+  psd rounding ok with eps=2^-58 (S=0)
+  theta = 0.999999679784171
+  wrote /lambda/nfs/new-fs/longshots/cov/lb/certs_hp/cert_q16_n7_R3.json (0.10 MB)
+q=16 n=7 R=3  certified SDP value 10963942976.972889  cube root 2221.547428  => K >= 2222   (phase=pdOPT theta=0.999999679784171)

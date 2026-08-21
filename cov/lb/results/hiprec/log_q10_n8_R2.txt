@@ -1,0 +1,10 @@
+  model 0.0s, dat-s 0.1s (2.5 MB)
+  sdpa_gmp: phase=noINFO objd=-2426728.533711428 (13.4 s)
+  psd rounding ok with eps=2^-58 (S=0)
+  theta = 0.000000010740258
+  certificate evaluation failed: ['d_0 = 9523019710003860130812101679138013840156917760/5192296858534827628530496329220096 >= 0, bound is not positive']
+  model 0.0s, dat-s 0.1s (2.5 MB)
+  sdpa_gmp: phase=noINFO objd=-482.64351244714504 (10.0 s)
+  psd rounding ok with eps=2^-58 (S=0)
+  theta = 0.000000058762357
+  certificate evaluation failed: ['d_0 = 191155022352817385810401593498643068394191403739513584827236352/95780971304118053647396689196894323976171195136475136 >= 0, bound is not positive']

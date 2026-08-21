@@ -1,0 +1,11 @@
+  model 0.0s, dat-s 0.1s (2.4 MB)
+  sdpa_gmp: phase=noINFO objd=-141224.34461347712 (11.8 s)
+  psd rounding ok with eps=2^-58 (S=0)
+  theta = 0.000000002520043
+  certificate evaluation failed: ['d_0 = 32508516906315275667368385743769990303055872/5192296858534827628530496329220096 >= 0, bound is not positive']
+  model 0.0s, dat-s 0.1s (2.4 MB)
+  sdpa_gmp: phase=pdOPT objd=0.7511915606332685 (33.3 s)
+  psd rounding ok with eps=2^-58 (S=0)
+  theta = 0.999944936637942
+  wrote /lambda/nfs/new-fs/longshots/cov/lb/certs_hp/cert_q9_n8_R2.json (0.16 MB)
+q=9 n=8 R=2  certified SDP value 13214374021726.685547  cube root 23641.890326  => K >= 23642   (phase=pdOPT theta=0.9999449366379416)

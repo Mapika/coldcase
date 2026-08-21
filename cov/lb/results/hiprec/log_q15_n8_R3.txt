@@ -1,0 +1,12 @@
+model q=15 n=8 R=3 : 136 vars, 1640 linear ineqs, 75 psd blocks (sum size 287, sum size^2 1523)
+  model 0.8s, dat-s 0.1s (3.8 MB)
+  sdpa_gmp: phase=noINFO objd=-6177401.425298149 (18.7 s)
+  psd rounding ok with eps=2^-58 (S=0)
+  theta = 0.000000000242281
+  certificate evaluation failed: ['d_0 = 630478310122741371823279437808235938169685503883146492991504384/95780971304118053647396689196894323976171195136475136 >= 0, bound is not positive']
+  model 0.0s, dat-s 0.1s (3.8 MB)
+  sdpa_gmp: phase=pdOPT objd=0.9726070155401355 (47.3 s)
+  psd rounding ok with eps=2^-58 (S=0)
+  theta = 0.999946373046932
+  wrote /lambda/nfs/new-fs/longshots/cov/lb/certs_hp/cert_q15_n8_R3.json (0.16 MB)
+q=15 n=8 R=3  certified SDP value 4277341498278.128418  cube root 16232.720407  => K >= 16233   (phase=pdOPT theta=0.9999463730469316)

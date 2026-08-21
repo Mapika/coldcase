@@ -1,0 +1,12 @@
+  model 0.0s, dat-s 0.2s (6.3 MB)
+  sdpa_gmp: phase=pdOPT objd=1.1913094910303506 (159.4 s)
+  psd rounding ok with eps=2^-58 (S=0)
+  theta = 0.999949560069179
+  wrote /lambda/nfs/new-fs/longshots/cov/lb/certs_hp/cert_q9_n9_R3.json (0.23 MB)
+q=9 n=9 R=3  certified SDP value 654896284244.355103  cube root 8684.087195  => K >= 8685   (phase=pdOPT theta=0.9999495600691795)
+  model 0.0s, dat-s 0.1s (6.3 MB)
+  sdpa_gmp: phase=pdOPT objd=1.1913094910303506 (142.3 s)
+  psd rounding ok with eps=2^-118 (S=0)
+  theta = 1.000000000000000  (repair candidates: 1)
+  wrote certs_hp/cert_q9_n9_R3.json (0.23 MB)
+q=9 n=9 R=3  certified SDP value 654929318833.889404  cube root 8684.233208  => K >= 8685   (phase=pdOPT theta=1.0)

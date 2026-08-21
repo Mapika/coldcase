@@ -1,0 +1,6 @@
+model q=21 n=7 R=3 : 95 vars, 1099 linear ineqs, 60 psd blocks (sum size 212, sum size^2 1024)
+  model 0.4s, dat-s 0.0s (2.0 MB)
+  sdpa_gmp: phase=noINFO objd=-22537056.244502056 (7.2 s)
+  psd rounding ok with eps=2^-58
+  theta = 0.000000001812158
+  certificate evaluation failed: ['d_0 = 58290313822010572025442672931278777426051432/5192296858534827628530496329220096 >= 0, bound is not positive']

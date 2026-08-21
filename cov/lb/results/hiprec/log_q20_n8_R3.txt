@@ -1,0 +1,13 @@
+model q=20 n=8 R=3 : 136 vars, 1640 linear ineqs, 75 psd blocks (sum size 287, sum size^2 1523)
+  model 0.8s, dat-s 0.1s (4.1 MB)
+  sdpa_gmp: phase=pdOPT objd=0.9824438162810228 (60.2 s)
+  psd rounding ok with eps=2^-58 (S=0)
+  theta = 0.995835636575656
+  wrote /lambda/nfs/new-fs/longshots/cov/lb/certs_hp/cert_q20_n8_R3.json (0.17 MB)
+q=20 n=8 R=3  certified SDP value 275381764937598.125000  cube root 65059.650562  => K >= 65060   (phase=pdOPT theta=0.9958356365756558)
+  model 0.0s, dat-s 0.1s (4.1 MB)
+  sdpa_gmp: phase=pdOPT objd=0.9824438162810228 (59.1 s)
+  psd rounding ok with eps=2^-118 (S=0)
+  theta = 1.000000000000000  (repair candidates: 1)
+  wrote certs_hp/cert_q20_n8_R3.json (0.17 MB)
+q=20 n=8 R=3  certified SDP value 276533350307228.906250  cube root 65150.212778  => K >= 65151   (phase=pdOPT theta=1.0)
