@@ -1,0 +1,22 @@
+{
+ "q": 9,
+ "n": 5,
+ "R": 3,
+ "M": 27,
+ "date": "2026-08-21",
+ "method": "covsearch tabu/greedy local search, 240s x 40 workers",
+ "code_file": "K9_5_3_M27.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 21,
+  "ub": 27,
+  "lb_key": "b",
+  "ub_key": "c"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true
+}

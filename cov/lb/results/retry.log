@@ -1,0 +1,146 @@
+  cvxopt failed at reltol=1e-10: math domain error
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-09: domain error
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: domain error
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-09: math domain error
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: math domain error
+  cvxopt failed at reltol=1e-08: math domain error
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-09: math domain error
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-09: domain error
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: domain error
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-09: domain error
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: domain error
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: domain error
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-09: domain error
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-08: domain error
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: math domain error
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+q=8 n=7 R=2  certified SDP value 112420468.561775  cube root 482.630907  => K >= 483
+q=9 n=8 R=3  certified SDP value 198614894.763498  cube root 583.450395  => K >= 584
+q=10 n=6 R=2  certified SDP value 197739293.308214  cube root 582.591744  => K >= 583
+q=10 n=8 R=2  certified SDP value 30088742.505075  cube root 311.029331  => K >= 312
+q=7 n=9 R=2  certified SDP value 83790105.335004  cube root 437.586833  => K >= 438
+q=9 n=6 R=2  certified SDP value 112690599.849526  cube root 483.017164  => K >= 484
+q=9 n=7 R=2  certified SDP value 104611063.673316  cube root 471.186175  => K >= 472
+q=9 n=9 R=2  certified SDP value 31057909.317691  cube root 314.333551  => K >= 315
+q=7 n=7 R=2  certified SDP value 471162207.289442  cube root 778.138343  => K >= 779
+q=9 n=8 R=2  certified SDP value 24645734.696987  cube root 291.014027  => K >= 292
+q=10 n=7 R=2  certified SDP value 114498304.701830  cube root 485.586218  => K >= 486
+q=10 n=8 R=3  certified SDP value 173489772.822797  cube root 557.730797  => K >= 558
+q=6 n=8 R=2  certified SDP value 269156376.171897  cube root 645.656545  => K >= 646
+q=9 n=9 R=3  certified SDP value 52267442.032124  cube root 373.889913  => K >= 374
+q=6 n=10 R=3  certified SDP value 66720183.321137  cube root 405.588604  => K >= 406
+q=6 n=10 R=2  certified SDP value 263275005.905395  cube root 640.919094  => K >= 641
+q=8 n=9 R=2  certified SDP value 63674773.255534  cube root 399.321293  => K >= 400
+q=10 n=9 R=2  certified SDP value 21377688.191655  cube root 277.536589  => K >= 278
+q=7 n=9 R=3  certified SDP value 218189495.904478  cube root 602.020499  => K >= 603
+q=10 n=9 R=3  certified SDP value 11324545.593495  cube root 224.564065  => K >= 225
+q=7 n=10 R=2  certified SDP value 133444861.537453  cube root 511.015357  => K >= 512
+q=8 n=10 R=3  certified SDP value 15606811.708157  cube root 249.902958  => K >= 250
+q=7 n=10 R=3  certified SDP value 15723740.042063  cube root 250.525508  => K >= 251
+q=8 n=8 R=2  certified SDP value 68613592.783734  cube root 409.389519  => K >= 410
+q=9 n=10 R=3  certified SDP value 3859372.889416  cube root 156.857605  => K >= 157
+q=7 n=8 R=2  certified SDP value 173623057.645213  cube root 557.873587  => K >= 558
+q=9 n=10 R=4  certified SDP value 198974908.557570  cube root 583.802707  => K >= 584
+q=6 n=9 R=2  certified SDP value 247309812.285668  cube root 627.692755  => K >= 628
+q=10 n=10 R=3  certified SDP value 960388.287648  cube root 98.661781  => K >= 99
+q=8 n=9 R=3  certified SDP value 48707050.903912  cube root 365.199868  => K >= 366
+q=10 n=10 R=4  certified SDP value 61153862.053925  cube root 393.980412  => K >= 394
+{'q': 6, 'n': 8, 'R': 2, 'cube': 645.656544523179, 'K': 646, 'cert': 'certs_retry/cert_q6_n8_R2.json', 'sec': 119.35988545417786}
+{'q': 6, 'n': 9, 'R': 2, 'cube': 627.692755001922, 'K': 628, 'cert': 'certs_retry/cert_q6_n9_R2.json', 'sec': 295.0152406692505}
+{'q': 6, 'n': 10, 'R': 2, 'cube': 640.9190944324691, 'K': 641, 'cert': 'certs_retry/cert_q6_n10_R2.json', 'sec': 544.0646448135376}
+{'q': 6, 'n': 10, 'R': 3, 'cube': 405.58860371933457, 'K': 406, 'cert': 'certs_retry/cert_q6_n10_R3.json', 'sec': 522.3361043930054}
+{'q': 7, 'n': 7, 'R': 2, 'cube': 778.1383431121014, 'K': 779, 'cert': 'certs_retry/cert_q7_n7_R2.json', 'sec': 62.022660970687866}
+{'q': 7, 'n': 8, 'R': 2, 'cube': 557.8735872873569, 'K': 558, 'cert': 'certs_retry/cert_q7_n8_R2.json', 'sec': 147.01652359962463}
+{'q': 7, 'n': 9, 'R': 2, 'cube': 437.5868328719107, 'K': 438, 'cert': 'certs_retry/cert_q7_n9_R2.json', 'sec': 325.9006037712097}
+{'q': 7, 'n': 9, 'R': 3, 'cube': 602.0204993557329, 'K': 603, 'cert': 'certs_retry/cert_q7_n9_R3.json', 'sec': 287.09471583366394}
+{'q': 7, 'n': 10, 'R': 2, 'cube': 511.0153570897607, 'K': 512, 'cert': 'certs_retry/cert_q7_n10_R2.json', 'sec': 616.1237051486969}
+{'q': 7, 'n': 10, 'R': 3, 'cube': 250.5255081484221, 'K': 251, 'cert': 'certs_retry/cert_q7_n10_R3.json', 'sec': 720.2936778068542}
+{'q': 8, 'n': 7, 'R': 2, 'cube': 482.6309073233196, 'K': 483, 'cert': 'certs_retry/cert_q8_n7_R2.json', 'sec': 63.80103087425232}
+{'q': 8, 'n': 8, 'R': 2, 'cube': 409.3895193470149, 'K': 410, 'cert': 'certs_retry/cert_q8_n8_R2.json', 'sec': 126.44413590431213}
+{'q': 8, 'n': 9, 'R': 2, 'cube': 399.3212933268284, 'K': 400, 'cert': 'certs_retry/cert_q8_n9_R2.json', 'sec': 278.8184115886688}
+{'q': 8, 'n': 9, 'R': 3, 'cube': 365.19986777712535, 'K': 366, 'cert': 'certs_retry/cert_q8_n9_R3.json', 'sec': 306.24952697753906}
+{'q': 8, 'n': 10, 'R': 3, 'cube': 249.9029581131991, 'K': 250, 'cert': 'certs_retry/cert_q8_n10_R3.json', 'sec': 697.2249014377594}
+{'q': 9, 'n': 6, 'R': 2, 'cube': 483.01716386491705, 'K': 484, 'cert': 'certs_retry/cert_q9_n6_R2.json', 'sec': 14.789381980895996}
+{'q': 9, 'n': 7, 'R': 2, 'cube': 471.18617491916604, 'K': 472, 'cert': 'certs_retry/cert_q9_n7_R2.json', 'sec': 55.51672148704529}
+{'q': 9, 'n': 8, 'R': 2, 'cube': 291.01402725211636, 'K': 292, 'cert': 'certs_retry/cert_q9_n8_R2.json', 'sec': 125.95517778396606}
+{'q': 9, 'n': 8, 'R': 3, 'cube': 583.4503949599756, 'K': 584, 'cert': 'certs_retry/cert_q9_n8_R3.json', 'sec': 123.09451580047607}
+{'q': 9, 'n': 9, 'R': 2, 'cube': 314.3335513170787, 'K': 315, 'cert': 'certs_retry/cert_q9_n9_R2.json', 'sec': 257.49744486808777}
+{'q': 9, 'n': 9, 'R': 3, 'cube': 373.8899130558206, 'K': 374, 'cert': 'certs_retry/cert_q9_n9_R3.json', 'sec': 390.8469340801239}
+{'q': 9, 'n': 10, 'R': 3, 'cube': 156.8576053415935, 'K': 157, 'cert': 'certs_retry/cert_q9_n10_R3.json', 'sec': 699.4087235927582}
+{'q': 9, 'n': 10, 'R': 4, 'cube': 583.8027072481232, 'K': 584, 'cert': 'certs_retry/cert_q9_n10_R4.json', 'sec': 688.0723910331726}
+{'q': 10, 'n': 6, 'R': 2, 'cube': 582.5917440353566, 'K': 583, 'cert': 'certs_retry/cert_q10_n6_R2.json', 'sec': 18.619642972946167}
+{'q': 10, 'n': 7, 'R': 2, 'cube': 485.5862181416912, 'K': 486, 'cert': 'certs_retry/cert_q10_n7_R2.json', 'sec': 40.992236852645874}
+{'q': 10, 'n': 8, 'R': 2, 'cube': 311.02933076372955, 'K': 312, 'cert': 'certs_retry/cert_q10_n8_R2.json', 'sec': 111.63326859474182}
+{'q': 10, 'n': 8, 'R': 3, 'cube': 557.7307968883132, 'K': 558, 'cert': 'certs_retry/cert_q10_n8_R3.json', 'sec': 129.09495759010315}
+{'q': 10, 'n': 9, 'R': 2, 'cube': 277.5365888141297, 'K': 278, 'cert': 'certs_retry/cert_q10_n9_R2.json', 'sec': 286.40998816490173}
+{'q': 10, 'n': 9, 'R': 3, 'cube': 224.56406518455478, 'K': 225, 'cert': 'certs_retry/cert_q10_n9_R3.json', 'sec': 320.00579857826233}
+{'q': 10, 'n': 10, 'R': 3, 'cube': 98.66178117611823, 'K': 99, 'cert': 'certs_retry/cert_q10_n10_R3.json', 'sec': 722.5339889526367}
+{'q': 10, 'n': 10, 'R': 4, 'cube': 393.9804117610177, 'K': 394, 'cert': 'certs_retry/cert_q10_n10_R4.json', 'sec': 781.1062371730804}

@@ -1,0 +1,7 @@
+{'label': 'K6_6_3_idle', 'q': 6, 'n': 6, 'R': 3, 'M': 41, 'chains': 256, 'iters_budget': 30000, 'start_u': 3770, 'wall_s': 87.7, 'agg_it_per_s': 87308, 'per_chain_it_per_s': 341.0, 'solved': 3, 'best_u_min': 0, 'best_u_median': 24}
+{'label': 'K6_8_4_idle', 'q': 6, 'n': 8, 'R': 4, 'M': 169, 'chains': 256, 'iters_budget': 4000, 'start_u': 10914, 'wall_s': 79.2, 'agg_it_per_s': 12927, 'per_chain_it_per_s': 50.5, 'solved': 0, 'best_u_min': 1, 'best_u_median': 11}
+{'label': 'K8_9_4_idle', 'q': 8, 'n': 9, 'R': 4, 'M': 2944, 'chains': 256, 'iters_budget': 400, 'start_u': 88022, 'wall_s': 68.7, 'agg_it_per_s': 1492, 'per_chain_it_per_s': 5.8, 'solved': 0, 'best_u_min': 36378, 'best_u_median': 36752}
+
+CPU socket reference (cov/opt tables, p5b x64 cores): K6(6,3) ~980k it/s, K6(8,4) ~128k it/s, K8(9,4) ~1.2k it/s
+Wrote idle_results.json — compare agg_it_per_s against the socket.
+=== BENCH EXIT 0

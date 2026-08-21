@@ -1,0 +1,8 @@
+# Julia toolchain + package depot (~1 GB), reinstallable:
+#   curl -L https://julialang-s3.julialang.org/bin/linux/aarch64/1.10/julia-1.10.9-linux-aarch64.tar.gz
+#   JULIA_DEPOT_PATH=tools/depot julia -e 'using Pkg; Pkg.add("Combinatorics")'
+tools/
+# upstream clone, see gp_julia/README.md for the URL
+gp_julia/.git/
+__pycache__/
+*.pyc

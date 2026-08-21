@@ -1,0 +1,83 @@
+[
+ {
+  "q": 6,
+  "n": 7,
+  "R": 3,
+  "cube": 67.14144620023853,
+  "K": 68,
+  "cert": "/lambda/nfs/new-fs/longshots/cov/lb/certs_geo/cert_q6_n7_R3.json",
+  "sec": 32.63841938972473
+ },
+ {
+  "q": 6,
+  "n": 8,
+  "R": 3,
+  "cube": 239.51934155521852,
+  "K": 240,
+  "cert": "/lambda/nfs/new-fs/longshots/cov/lb/certs_geo/cert_q6_n8_R3.json",
+  "sec": 43.54794931411743
+ },
+ {
+  "q": 6,
+  "n": 8,
+  "R": 4,
+  "cube": 39.588022924886396,
+  "K": 40,
+  "cert": "/lambda/nfs/new-fs/longshots/cov/lb/certs_geo/cert_q6_n8_R4.json",
+  "sec": 50.87354493141174
+ },
+ {
+  "q": 6,
+  "n": 9,
+  "R": 4,
+  "cube": 126.52242365584243,
+  "K": 127,
+  "cert": "/lambda/nfs/new-fs/longshots/cov/lb/certs_geo/cert_q6_n9_R4.json",
+  "sec": 140.3592607975006
+ },
+ {
+  "q": 6,
+  "n": 9,
+  "R": 5,
+  "cube": 25.639509814257547,
+  "K": 26,
+  "cert": "/lambda/nfs/new-fs/longshots/cov/lb/certs_geo/cert_q6_n9_R5.json",
+  "sec": 164.6434166431427
+ },
+ {
+  "q": 6,
+  "n": 10,
+  "R": 4,
+  "cube": 440.2854078504829,
+  "K": 441,
+  "cert": "/lambda/nfs/new-fs/longshots/cov/lb/certs_geo/cert_q6_n10_R4.json",
+  "sec": 502.0228569507599
+ },
+ {
+  "q": 6,
+  "n": 10,
+  "R": 5,
+  "cube": 74.85540659604507,
+  "K": 75,
+  "cert": "/lambda/nfs/new-fs/longshots/cov/lb/certs_geo/cert_q6_n10_R5.json",
+  "sec": 323.3496251106262
+ },
+ {
+  "q": 7,
+  "n": 8,
+  "R": 4,
+  "cube": 64.02140997373908,
+  "K": 65,
+  "cert": "/lambda/nfs/new-fs/longshots/cov/lb/certs_geo/cert_q7_n8_R4.json",
+  "sec": 113.15350270271301
+ },
+ {
+  "q": 7,
+  "n": 9,
+  "R": 4,
+  "cube": 240.640730351216,
+  "K": 241,
+  "cert": "/lambda/nfs/new-fs/longshots/cov/lb/certs_geo/cert_q7_n9_R4.json",
+  "sec": 230.6107199192047
+ }
+]

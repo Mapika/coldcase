@@ -1,0 +1,235 @@
+% ---------------------------------------------------------------------------
+% Draft "Algorithm engineering" subsection for the journal version of
+%   "New upper bounds on covering codes K_q(n,R) ..."
+% Intended to slot into Section~\ref{sec:method} after "Search".
+% Requires: amsmath, amssymb, booktabs.  Uses \Kq{q}{n}{R} from main.tex.
+% All numbers measured in cov/opt/ on 2026-08-20; see cov/opt/METHODS.md.
+% ---------------------------------------------------------------------------
+
+\subsection{Algorithm engineering}\label{sec:engineering}
+
+The search described above spends essentially all of its time in one place, and
+saying exactly where turns out to determine what is worth optimising.
+
+\subsubsection*{Profile}
+
+Instrumenting each phase of the solver with \texttt{CLOCK\_THREAD\_CPUTIME\_ID}
+on three representative cells --- $\Kq{6}{6}{3}$ at $M=41$ ($q^n=46\,656$),
+$\Kq{6}{8}{4}$ at $M=169$ ($q^n=1\,679\,616$) and $\Kq{8}{9}{4}$ at $M=2944$
+($q^n=134\,217\,728$) --- gives candidate evaluation $92.9\%$, $98.5\%$ and
+$99.6\%$ of the run time respectively. Committing a move takes $3.3\%$,
+$0.8\%$ and $0.4\%$; choosing the uncovered word, computing the $M$ Hamming
+distances and breaking ties together account for under $2\%$ everywhere.
+The cost of one evaluated sphere pattern grows from $1.9$\,ns to $6.0$\,ns to
+$7.4$\,ns as the counter array grows from $93$\,kB (L2-resident) to $3.4$\,MB
+(L3) to $268$\,MB (DRAM): the walk is a strided gather and its throughput is
+set by the working set, so reducing \emph{bytes touched} pays as well as
+reducing \emph{patterns walked}.
+
+\subsubsection*{Sharing one sphere among the moves of a codeword}
+
+Lemma~\ref{lem:move} localises both the leaving and the entering set of a move,
+and a closer reading shows that the leaving set depends on the moved
+coordinate only through a membership predicate. Write $D(w)=\{j: w_j\neq c_j\}$
+and let $c^{(p)}$ denote $c$ with coordinate $p$ replaced by $v$.
+
+\begin{lemma}\label{lem:shared}
+$w$ leaves the ball of $c$ under the move at $p$ if and only if $|D(w)|=R$ and
+$p\notin D(w)$; and $w$ enters the ball of $c^{(p)}$ if and only if
+$|D(w)|=R+1$, $p\in D(w)$ and $w_p=v$.
+\end{lemma}
+
+Consequently, putting
+\[
+T=\#\{w: |D(w)|=R,\ \mathrm{cnt}(w)=1\},\qquad
+H_j=\#\{w: |D(w)|=R,\ \mathrm{cnt}(w)=1,\ j\in D(w)\},
+\]
+the number of words that the move at $p$ newly uncovers equals $T-H_p$ for
+\emph{every} $p$ at once. A single enumeration of the full distance-$R$
+sphere, of size $\binom{n}{R}(q-1)^R$, therefore replaces the $R+1$ separate
+enumerations of $\binom{n-1}{R}(q-1)^R$ patterns each, a saving of
+$(R+1)(n-R)/n$ (2.00, 2.50 and 2.78 on the three cells). The updates to $T$
+and $H$ are executed only when $\mathrm{cnt}(w)=1$, which on the loose cells
+this method targets happens for $0.4\%$ of words at $M=169$ and $0.07\%$ at
+$M=216$ in $\Kq{6}{8}{4}$, so the inner loop reduces to one load and one
+compare --- half the memory traffic per pattern of the original.
+
+\subsubsection*{The entering side from the uncovered words}
+
+The entering side does not share in the same way: enumerating the
+distance-$(R+1)$ sphere once costs $(q-1)n/(R+1)^2$ times the per-position
+walks, which is worse for these parameters. But the entering side counts only
+words with $\mathrm{cnt}(w)=0$, and by Lemma~\ref{lem:shared} membership of
+the entering set is decided in $O(n)$ from the digits of the word. Maintaining
+the set $U$ of uncovered words explicitly therefore replaces
+$(R+1)\binom{n-1}{R}(q-1)^R$ counter reads by $O(n|U|)$ work, which is
+profitable exactly when
+\begin{equation}\label{eq:ulcond}
+n\,|U| \;<\; (R+1)\binom{n-1}{R}(q-1)^R .
+\end{equation}
+The right-hand side is $5\,000$, $109\,375$ and $840\,350$ on the three cells
+while the mean $|U|$ during a run is $58$, $30$ and ${\approx}10^4$, so
+\eqref{eq:ulcond} holds by two to four orders of magnitude for the whole
+useful life of the search. The solver tests \eqref{eq:ulcond} each iteration
+and falls back to the sphere walk when it fails, so it is never worse.
+$U$ is kept as an append-ordered array of (index, digit vector) pairs together
+with a presence bitset over $\Zq^n$; commits append the words they uncover,
+stale entries are removed by an amortised compaction, and no $q^n$-sized index
+array is needed.
+
+Together, the counter reads per candidate codeword fall from
+$2(R+1)\binom{n-1}{R}(q-1)^R$ to $\binom{n}{R}(q-1)^R$, a factor of $4.00$,
+$5.00$ and $5.56$.
+
+\subsubsection*{A wider neighbourhood for free}
+
+$T-H_p$ does not depend on the value $v$ written into coordinate $p$, and the
+entering counts read off $U$ are naturally indexed by the pair $(p,v)$ at no
+extra cost. One sphere enumeration plus one pass over $U$ therefore yields the
+exact objective change of \emph{all} $n(q-1)$ single-coordinate moves of a
+codeword, not only the $R+1$ that move it towards $u$. Since the parameter
+study of the conference version found candidate breadth to be the dominant
+tuning knob, widening the neighbourhood from $R+1$ to $n(q-1)$ moves per
+codeword --- a factor of $7.5$ to $11$ here --- is the natural way to spend
+the saving.
+
+\subsubsection*{Narrower counters on the read path}
+
+Coverage counters are $16$-bit because $M$ may exceed $255$, but evaluation
+only ever asks whether a counter is $0$ or $1$. A side array
+$\mathrm{st}(w)=\min(\mathrm{cnt}(w),2)$ carries everything the read path needs
+in one byte or in two bits, while the exact counters stay for the write path;
+the extra write costs nothing measurable because commits are under $1\%$ of the
+time. On $\Kq{8}{9}{4}$ the two-bit form shrinks the read path from $268$\,MB
+to $33.5$\,MB, bringing it inside the $117$\,MB last-level cache.
+
+\subsubsection*{Correctness}
+
+Every one of these changes is an implementation change: it computes the same
+objective differences as the published solver and must therefore follow the
+same search trajectory from the same seed. That is verified bit-for-bit over
+24 configurations ($q$ from 2 to 7, $R=0$, $R=n-1$, sizes above and below the
+optimum) $\times$ 9 variants, and separately the number of uncovered words the
+solver reports is required to equal the number the standalone verifier
+computes from the written code file --- including the runs that end at a
+nonzero count.
+
+\subsubsection*{Measurements}
+
+The host was shared with a production sweep for the whole measurement
+session, so wall clock is meaningless and every figure below is the solver's
+own \texttt{CLOCK\_PROCESS\_CPUTIME\_ID} reading, with the run order of the
+whole job list randomised. Two experiments were run. In the first, every
+variant was given a fixed iteration budget; since they all follow the same
+trajectory this is a fully controlled comparison with no search-quality
+confound. In the second, each cell was started from a fixed code file and
+each configuration was run with 20 seeds to a fixed target uncovered count,
+recording the CPU time at which the target was first reached.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lccc}
+\toprule
+variant & $\Kq{6}{6}{3}$ & $\Kq{6}{8}{4}$ & $\Kq{8}{9}{4}$ \\
+        & 20\,000 it & 600 it & 50 it \\
+\midrule
+reference implementation      & $1.00\times$ & $1.00\times$ & $1.00\times$ \\
+peeled walk, hoisted offsets  & $1.35\times$ & $1.29\times$ & $1.13\times$ \\
+\quad + 8-bit state array     & $1.28\times$ & $1.65\times$ & $1.65\times$ \\
+\quad + 2-bit state array     & $0.82\times$ & $1.34\times$ & $2.44\times$ \\
+shared sphere, 8-bit state    & $1.32\times$ & $1.95\times$ & $1.95\times$ \\
+\quad + uncovered-word list   & $2.21\times$ & $5.57\times$ & $6.06\times$ \\
+\quad with 2-bit state        & $2.14\times$ & $\mathbf{6.32\times}$ & $\mathbf{9.86\times}$ \\
+\bottomrule
+\end{tabular}
+\caption{Speedup in CPU time at a fixed iteration budget, median of 9 runs
+(6 on the largest cell). Every row performs the identical search: the final
+uncovered counts agree exactly, seed by seed, across all rows. The
+interquartile range is $0.9\%$, $2.2\%$ and $5.6\%$ of the median.}
+\label{tab:engfixed}
+\end{table}
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+cell & $M$ & target & speedup, identical search & with wide neighbourhood \\
+\midrule
+$\Kq{6}{6}{3}$ & 41   & $|U|\le 30$      & $2.03\times$ $[1.99,2.13]$ & $0.28\times$ \\
+$\Kq{6}{8}{4}$ & 169  & $|U|\le 20$      & $6.12\times$ $[6.06,6.62]$ & $8.03\times$ $[5.75,11.02]$ \\
+$\Kq{8}{9}{4}$ & 2944 & $|U|\le 10\,800$ & $8.07\times$ $[6.19,10.72]$ & $11.04\times$ $[8.06,12.17]$ \\
+\bottomrule
+\end{tabular}
+\caption{Median per-seed ratio of CPU time to target over 20 seeds, with a
+percentile-bootstrap 95\% confidence interval. In the fourth column the
+optimised solver reached the target at exactly the same iteration as the
+reference on 20 of 20 seeds in every cell, so the ratio is a pure
+implementation speedup measured pairwise. The fifth column additionally
+widens the candidate neighbourhood, which changes the search: it reaches the
+target in 421 instead of 676 iterations on $\Kq{6}{8}{4}$ and 23 instead of
+30 on $\Kq{8}{9}{4}$, but costs a factor $3.6$ on the small tight cell.}
+\label{tab:engttt}
+\end{table}
+
+After these changes the profile has moved: candidate evaluation falls to
+$72.8\%$, $81.7\%$ and $98.2\%$ of the run time, and committing a move --- which
+concerns a single $(p,v)$ pair and so cannot use the shared identity --- rises
+to $19.2\%$, $14.5\%$ and $1.6\%$. It is the natural next target.
+
+\subsubsection*{What did not help}
+
+Several plausible ideas were implemented and measured, and did not work; we
+record them because the reasons are structural rather than accidental.
+
+\emph{Caching move evaluations between iterations} is impossible here. A
+cached value for codeword $c$ survives a commit on $c'$ only if their
+evaluation spheres are disjoint, which needs $d(c,c')>2R+2$; but $2R+2\ge n$
+for every cell of interest, so every commit invalidates every entry. Large
+$R$ relative to $n$ --- the defining feature of the cells whose bounds are
+inherited arithmetic --- is exactly what rules caching out.
+
+\emph{Early exit on a lower bound.} During a candidate's walk the final
+change is bounded below using the fact that the entering count cannot exceed
+$|U|$. The bound is exact and prunes $1.03\%$, $0.006\%$ and $0.000\%$ of
+patterns on the three cells: it only becomes strong as $|U|$ falls, and small
+$|U|$ is precisely what makes the sparse evaluator fast instead.
+
+\emph{Inverting the leaving side}, i.e.\ maintaining a list of the singly
+covered words as we do for the uncovered ones, pays only if
+$n|U_1| < \binom{n}{R}(q-1)^R$. Measured on the recorded codes, $|U_1|$ is
+5357, 6592 and ${\sim}10^6$ against thresholds of 417, 5469 and 33\,614: it
+fails everywhere. Uncovered words are rare by construction, singly covered
+words are not.
+
+\emph{Symmetry reduction.} Translating the code so that one codeword sits at
+$0^n$ and freezing it quotients out the $q^n$ translations, but gives no
+measurable benefit ($4.87\times$ against $5.26\times$ on $\Kq{6}{8}{4}$,
+$0.89\times$ against $2.11\times$ on $\Kq{6}{6}{3}$). A local search does not
+revisit states exactly, so removing a symmetry removes almost no work; all it
+does here is shrink the candidate pool by one codeword, which on the small
+cell measurably hurts.
+
+\emph{Deterministic focus on the longest-uncovered word}, the cheapest form
+of a guided objective, is clearly harmful: $2.04\times$ against $5.26\times$
+on $\Kq{6}{8}{4}$, and on $\Kq{6}{6}{3}$ only 5 of 20 runs reached the target
+at all. Always choosing the same word destroys the randomisation that lets
+focused local search leave a plateau. A stochastic age weighting remains
+untested.
+
+\emph{Software prefetching} and \emph{transparent huge pages} are both within
+noise. For huge pages the reason is architectural: the base page on this host
+is already 64\,kB, so even the 268\,MB counter array spans only 4096 pages.
+
+\subsubsection*{Restart policy}
+
+The empirical run-time distributions answer the restart question directly. At
+targets the search reaches routinely the distribution is light-tailed
+(coefficient of variation $0.20$--$0.47$ on the two loose cells) and a fixed
+restart interval cannot help; calibrating the best observed gain against the
+memoryless null gives $p=1.0$. On the tight cell $\Kq{6}{6}{3}$ at a target
+hard enough that a quarter of runs stall, the distribution becomes heavier
+than exponential and restarting every ${\approx}1.6$ CPU seconds cuts the
+expected time to target by a factor of $4.2$ ($p=0.002$). The policy that
+follows is to run one chain while it is still improving and to rely on
+independent parallel workers --- which the campaign already uses --- rather
+than on timed restarts.

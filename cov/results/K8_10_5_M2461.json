@@ -1,0 +1,22 @@
+{
+ "q": 8,
+ "n": 10,
+ "R": 5,
+ "M": 2461,
+ "date": "2026-08-20",
+ "method": "covsearch tabu/greedy local search, 600s x 52 workers",
+ "code_file": "K8_10_5_M2461.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": null,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 287,
+  "ub": 2461,
+  "lb_key": "m",
+  "ub_key": "f"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true
+}

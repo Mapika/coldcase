@@ -1,0 +1,122 @@
+running 49 cells on 10 workers
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: 8
+  FAILED to round psd duals to exact psd matrices
+  cvxopt failed at reltol=1e-09: domain error
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-09: 8
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  theta collapsed to 0; dual point unusable
+  FAILED to round psd duals to exact psd matrices
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: 9
+  cvxopt failed at reltol=1e-10: domain error
+  FAILED to round psd duals to exact psd matrices
+  theta collapsed to 0; dual point unusable
+  FAILED to round psd duals to exact psd matrices
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: domain error
+  FAILED to round psd duals to exact psd matrices
+  FAILED to round psd duals to exact psd matrices
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-09: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  theta collapsed to 0; dual point unusable
+  FAILED to round psd duals to exact psd matrices
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: domain error
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: math domain error
+  FAILED to round psd duals to exact psd matrices
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: math domain error
+  theta collapsed to 0; dual point unusable
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-09: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-09: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-09: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: math domain error
+  cvxopt failed at reltol=1e-09: math domain error
+q=3 n=7 R=3  certified SDP value 619.573934  cube root 8.525065  => K >= 9
+q=3 n=8 R=1  certified SDP value 65414457.112477  cube root 402.925339  => K >= 403
+q=5 n=6 R=4  certified SDP value 83.820800  cube root 4.376403  => K >= 5
+q=5 n=7 R=1  certified SDP value 20967923412.193787  cube root 2757.518748  => K >= 2758
+q=5 n=7 R=4  certified SDP value 915.020601  cube root 9.708310  => K >= 10
+q=5 n=8 R=1  certified SDP value 1523498218656.924072  cube root 11506.607970  => K >= 11507
+q=3 n=8 R=2  certified SDP value 190081.230320  cube root 57.497162  => K >= 58
+q=3 n=8 R=3  certified SDP value 3793.459861  cube root 15.595950  => K >= 16
+q=5 n=8 R=2  certified SDP value 276465913.547341  cube root 651.449164  => K >= 652
+q=5 n=8 R=3  certified SDP value 1339844.192847  cube root 110.243104  => K >= 111
+q=3 n=9 R=3  certified SDP value 27280.597686  cube root 30.103567  => K >= 31
+q=3 n=9 R=4  certified SDP value 1071.332193  cube root 10.232334  => K >= 11
+q=3 n=9 R=1  certified SDP value 1203052223.948521  cube root 1063.558771  => K >= 1064
+q=3 n=9 R=2  certified SDP value 2294271.410260  cube root 131.890930  => K >= 132
+
+cell              published ours(certified)   rel.diff      sec
+K3(6,1)             60.8568        60.8568  -6.40e-07     46.8
+K3(6,2)             13.1228        13.1229   4.42e-06     37.7
+K3(7,1)            150.9556       150.9538  -1.18e-05    187.3
+K3(7,2)             26.3830        26.3830   9.77e-08    154.4
+K3(7,3)              8.5250         8.5251   7.66e-06     96.5
+K3(8,1)            402.9463       402.9253  -5.20e-05    336.0
+K3(8,2)             57.4972        57.4972  -6.55e-07    228.3
+K3(8,3)             15.5959        15.5959   3.20e-06    322.9
+K3(9,1)           1063.9751      1063.5588  -3.91e-04    606.3
+K3(9,2)            131.8916       131.8909  -5.08e-06    351.8
+K3(9,3)             30.1035        30.1036   2.23e-06    659.7
+K3(9,4)             10.2323        10.2323   3.35e-06    293.9
+K4(6,1)            226.5900       226.5886  -6.13e-06     38.7
+K4(6,2)             32.9100        32.9104   1.16e-05     23.9
+K4(6,3)              8.7600         8.7614   1.57e-04     25.8
+K4(6,4)              3.3500         3.3599   2.94e-03     22.5
+K4(7,1)            775.0700       774.9105  -2.06e-04     89.3
+K4(7,2)             87.6300        87.6391   1.04e-04    165.2
+K4(7,3)             18.7800        18.7832   1.70e-04    141.8
+K4(7,4)              6.4000         6.4022   3.38e-04    108.7
+K4(8,1)           2694.3800      2687.7036  -2.48e-03    250.8
+K4(8,2)            250.8700       250.8717   6.96e-06    314.5
+K4(8,3)             45.0200        45.0263   1.39e-04    357.6
+K4(8,4)             12.5600        12.5619   1.51e-04    343.4
+K4(9,1)           9362.2800      2570.4363  -7.25e-01    248.6
+K4(9,2)            774.4600       774.3131  -1.90e-04    418.2
+K4(9,3)            115.2800       115.2884   7.29e-05    693.8
+K4(9,4)             26.6600        26.6698   3.66e-04    309.0
+K4(9,5)              9.0300         9.0300   2.20e-06    729.5
+K5(5,1)            161.0300       161.0314   8.46e-06     10.0
+K5(5,2)             21.6600        21.6676   3.49e-04     20.4
+K5(6,1)            624.9900       624.8087  -2.90e-04     11.8
+K5(6,2)             68.8600        68.8613   1.83e-05     56.9
+K5(6,3)             13.8100        13.8185   6.13e-04     53.8
+K5(6,4)              4.3700         4.3764   1.47e-03     35.1
+K5(7,1)           2764.8900      2757.5187  -2.67e-03     61.6
+K5(7,2)            235.3500       235.3490  -4.05e-06    136.8
+K5(7,3)             37.4000        37.4046   1.23e-04    157.0
+K5(7,4)              9.7000         9.7083   8.57e-04    160.5
+K5(8,1)          12133.7000     11506.6080  -5.17e-02    215.6
+K5(8,2)            860.1300       651.4492  -2.43e-01    208.8
+K5(8,3)            110.2400       110.2431   2.82e-05    160.0
+K5(8,4)             23.0400        23.0467   2.89e-04    299.6
+K5(8,5)              7.2700         7.2739   5.36e-04    137.8
+K5(9,2)           3279.5100       919.2916  -7.20e-01    223.8
+K5(9,3)            353.3200       353.1899  -3.68e-04    445.1
+K5(9,4)             61.1800        61.1867   1.09e-04    431.3
+K5(9,5)             15.6700        15.6712   7.88e-05    446.7
+K5(9,6)              5.7900         5.7932   5.54e-04    492.8
+
+matched 44 / 49
+wrote results/reproduce_geo.json

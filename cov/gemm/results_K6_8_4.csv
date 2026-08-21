@@ -1,0 +1,13 @@
+best,cost,engine,file,iters,moves,ms_med,seed,ttt,verified,wall,warmup
+20,0.585,cpu --preset p5b --wide,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/cpu_--presetp5b--wide_1.txt,420,,,1,0.585,20,2.8395446370122954,0.0
+20,1.348,cpu --preset p5b,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/cpu_--presetp5b_1.txt,966,,,1,1.3475,20,5.602720825001597,0.0
+6,20.011,gpu cand=32,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/gpu_c32_1.txt,763,1276976800,22.834,1,8.3539,6,30.500811082019936,0.99
+20,0.73,cpu --preset p5b --wide,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/cpu_--presetp5b--wide_2.txt,533,,,2,0.7299,20,3.0836784389975946,0.0
+20,0.911,cpu --preset p5b,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/cpu_--presetp5b_2.txt,677,,,2,0.9109,20,1.8114743930054829,0.0
+20,20.01,gpu cand=32,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/gpu_c32_2.txt,788,1318169600,22.736,2,12.2083,20,28.61444236699026,1.321
+20,0.527,cpu --preset p5b --wide,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/cpu_--presetp5b--wide_3.txt,380,,,3,0.527,20,1.1151950790081173,0.0
+19,0.699,cpu --preset p5b,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/cpu_--presetp5b_3.txt,526,,,3,0.6989,19,1.4733269879943691,0.0
+11,20.016,gpu cand=32,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/gpu_c32_3.txt,830,1387373504,22.665,3,8.7111,11,28.407963919977192,0.815
+20,0.431,cpu --preset p5b --wide,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/cpu_--presetp5b--wide_4.txt,323,,,4,0.4306,20,0.7043047949846368,0.0
+20,1.168,cpu --preset p5b,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/cpu_--presetp5b_4.txt,866,,,4,1.168,20,2.250664296996547,0.0
+7,20.013,gpu cand=32,/tmp/claude-1000/-lambda-nfs-new-fs-longshots/3ae6d111-07fa-4880-8ce4-cca841595d21/scratchpad/bench/gpu_c32_4.txt,813,1359362400,22.722,4,7.3398,7,30.743843147007283,1.347

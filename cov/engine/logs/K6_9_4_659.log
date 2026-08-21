@@ -1,0 +1,17 @@
+
+======================================================================
+cell K_6(9,4)  q^n=10077696  ball=90196
+  Keri 2011: 136 - 738  (upper key f)
+  sphere-covering bound: M >= 112
+
+--- M = 659  (04:19:55) ---
+    |     0.0s cell K6(9,4)@659  q^n=10077696 ball=90196 redundancy=5.90 budget=3600s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M660.txt (660 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=659)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.90 init~3.0s wide=True restart=False slice=3600s
+    engine finished in 3598s, uncovered=1
+  round 1: best uncovered = 1
+  M=659 not solved
+
+======================================================================
+campaign2 done: 0 code(s) verified and recorded

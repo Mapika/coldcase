@@ -1,0 +1,45 @@
+216 runs
+  20/216 49s
+  40/216 80s
+  60/216 83s
+  80/216 111s
+  100/216 124s
+  120/216 186s
+  140/216 217s
+  160/216 231s
+  180/216 254s
+  200/216 285s
+wrote /lambda/nfs/new-fs/longshots/cov/opt/results_micro.csv
+
+== K6(6,3), fixed 20000 iterations ==
+  base                 med    2.894s  [2.885,2.901]  x 1.00  n=9  unc=[24, 25, 26]
+  p1 walk+hoist        med    2.145s  [2.131,2.158]  x 1.35  n=9  unc=[24, 25, 26]
+  p2 +uint8 state      med    2.253s  [2.247,2.266]  x 1.28  n=9  unc=[24, 25, 26]
+  p2b 2-bit state      med    3.541s  [3.531,3.551]  x 0.82  n=9  unc=[24, 25, 26]
+  p3 +shared sphere    med    2.186s  [2.183,2.194]  x 1.32  n=9  unc=[24, 25, 26]
+  p4 +uncov. list      med    1.307s  [1.299,1.313]  x 2.21  n=9  unc=[24, 25, 26]
+  p5 +hugepages        med    1.314s  [1.287,1.323]  x 2.20  n=9  unc=[24, 25, 26]
+  p5b 2-bit+shared     med    1.352s  [1.315,1.356]  x 2.14  n=9  unc=[24, 25, 26]
+  p5+prefetch          med    1.314s  [1.294,1.323]  x 2.20  n=9  unc=[24, 25, 26]
+
+== K6(8,4), fixed 600 iterations ==
+  base                 med    5.552s  [5.071,5.817]  x 1.00  n=9  unc=[19, 21, 25]
+  p1 walk+hoist        med    4.293s  [4.116,4.434]  x 1.29  n=9  unc=[19, 21, 25]
+  p2 +uint8 state      med    3.369s  [3.312,3.501]  x 1.65  n=9  unc=[19, 21, 25]
+  p2b 2-bit state      med    4.149s  [4.140,4.207]  x 1.34  n=9  unc=[19, 21, 25]
+  p3 +shared sphere    med    2.854s  [2.783,2.898]  x 1.95  n=9  unc=[19, 21, 25]
+  p4 +uncov. list      med    0.996s  [0.987,1.040]  x 5.57  n=9  unc=[19, 21, 25]
+  p5 +hugepages        med    1.026s  [0.998,1.043]  x 5.41  n=9  unc=[19, 21, 25]
+  p5b 2-bit+shared     med    0.879s  [0.868,0.943]  x 6.32  n=9  unc=[19, 21, 25]
+  p5+prefetch          med    1.003s  [0.966,1.020]  x 5.54  n=9  unc=[19, 21, 25]
+
+== K8(9,4), fixed 50 iterations ==
+  base                 med   39.028s  [38.874,40.763]  x 1.00  n=6  unc=[10250, 10275, 10345]
+  p1 walk+hoist        med   34.593s  [30.969,40.173]  x 1.13  n=6  unc=[10250, 10275, 10345]
+  p2 +uint8 state      med   23.714s  [23.151,25.316]  x 1.65  n=6  unc=[10250, 10275, 10345]
+  p2b 2-bit state      med   16.027s  [14.659,23.315]  x 2.44  n=6  unc=[10250, 10275, 10345]
+  p3 +shared sphere    med   20.006s  [19.745,21.640]  x 1.95  n=6  unc=[10250, 10275, 10345]
+  p4 +uncov. list      med    6.437s  [6.375,6.760]  x 6.06  n=6  unc=[10250, 10275, 10345]
+  p5 +hugepages        med    6.391s  [6.332,6.618]  x 6.11  n=6  unc=[10250, 10275, 10345]
+  p5b 2-bit+shared     med    3.958s  [3.906,4.324]  x 9.86  n=6  unc=[10250, 10275, 10345]
+  p5+prefetch          med    6.509s  [6.028,6.573]  x 6.00  n=6  unc=[10250, 10275, 10345]

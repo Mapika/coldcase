@@ -1,0 +1,916 @@
+#!/usr/bin/env python3
+"""
+covengine -- the merged production engine for q-ary covering codes.
+
+Given a cell (q, n, R) and a target size M it tries to produce an M-word code
+covering Z_q^n, and if it cannot it produces the best partial code it found.
+It is a *driver*: every line of search below is executed by one of the existing,
+separately benchmarked solvers.  Nothing that works was rewritten.
+
+Provenance of the parts (see NOTES.md for the measurements behind each):
+
+  lincov      cov/arena/structure -- coset-of-a-linear-code search in syndrome
+              space.  Settles cells whose incumbent is algebraic (K_3(11,4) at
+              M=81 in ~10 ms) and exits instantly where it does not apply.
+  symsearch   cov/arena/structure -- search in the quotient Z_q^(n-1) under
+              x -> x + 1^n.  q times less memory, q codewords moved per move.
+  covsearch2e cov/opt/covsearch2 --preset p5b (shared sphere + uncovered list,
+              6-10x on the evaluation) with the deadline/publishing hardening of
+              cov/arena/lowlevel bolted on.  See covsearch2e.c.
+  covfast     cov/arena/lowlevel -- the hardened free-search inner loop
+              (specialised kernels, NEON, uint8 counters); fastest per move on
+              the small cache-resident cells.
+  covcount    cov/arena/structure -- independent recount, de-duplication and
+              top-up to exactly M distinct words.  No solver's own incremental
+              counter is ever the evidence.
+
+Schedule (cov/arena/strategy's portfolio discipline throughout: independent
+single-threaded chains, stop the world on the first solve, publish the best
+partial continuously so a kill can never lose the run):
+
+  phase A, seconds   algebra.  lincov over the feasible k; seeds assembled from
+                     cov/results/ incumbents and from direct sums / cosets via
+                     constructions.py.
+  phase B, the rest  a portfolio of free-search chains over those seeds, the
+                     per-cell best binary in each chain, part of the portfolio
+                     spread along the symmetry axis (symsearch then free).
+
+Two interfaces:
+
+  arena     covengine Q N R M SEED TIME_S OUTFILE
+  campaign  covengine -q Q -n N -R R -M M [-t SEC] [-s SEED] [--in F]
+                      [--out F] [--threads/--cores C] [--quiet]
+            ... which is covsearch's CLI, so COVSEARCH_BIN=.../covengine makes
+            cov/campaign.py drive the engine unchanged, and a RESULT line with
+            uncovered= is printed for it to parse.
+
+Nothing here decides that a code is a result.  cov/verify_cov.py does, in
+campaign2.py, before anything is written to cov/results/.
+"""
+
+import argparse
+import json
+import math
+import os
+import re
+import shutil
+import signal
+import subprocess
+import sys
+import tempfile
+import time
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+COV = os.path.dirname(HERE)
+
+BIN = {
+    'covsearch2e': os.path.join(HERE, 'covsearch2e'),
+    'covfast':     os.path.join(HERE, 'covfast'),
+    'lincov':      os.path.join(HERE, 'lincov'),
+    'symsearch':   os.path.join(HERE, 'symsearch'),
+    'covcount':    os.path.join(HERE, 'covcount'),
+}
+
+DIGITS = "0123456789abcdefghijklmnopqrstuvwxyz"
+RAM_BYTES = float(os.environ.get('COVENGINE_RAM', 80e9))
+NICE = int(os.environ.get('COVENGINE_NICE', 12))
+# When 1, the engine ignores cov/results/ entirely: no incumbent seeds and no
+# direct-sum factors taken from codes we already own.  The arena wrapper sets
+# it, because two of the judge's public cells (K_6(6,3)@41, K_6(8,4)@169) are
+# cells whose answer is already sitting in cov/results/, and seeding a search
+# with its own answer would make the comparison against the other entries
+# meaningless.  Production (campaign2.py) leaves it off -- there, reusing what
+# we have already proved is the whole point.
+NO_RESULTS = os.environ.get('COVENGINE_NO_RESULTS', '0') == '1'
+
+# every uncovered-count dialect the four solvers speak
+UNC_RE = re.compile(r'(?:^|\s)(?:word_uncovered|uncovered_words|uncovered|unc)=(-?\d+)')
+
+
+# --------------------------------------------------------------------------
+# cell arithmetic
+# --------------------------------------------------------------------------
+
+def ball_volume(q, n, R):
+    return sum(math.comb(n, i) * (q - 1) ** i for i in range(0, min(R, n) + 1))
+
+
+def prime_power(q):
+    for p in range(2, q + 1):
+        if q % p == 0:
+            k, x = 0, q
+            while x % p == 0:
+                x //= p
+                k += 1
+            return x == 1 and p or 0
+    return 0
+
+
+class Cell(object):
+    def __init__(self, q, n, R, M):
+        self.q, self.n, self.R, self.M = q, n, R, M
+        self.qn = q ** n
+        self.V = ball_volume(q, n, R)
+        self.S = math.comb(n - 1, R) * (q - 1) ** R if R <= n - 1 else 1
+        self.redundancy = M * self.V / float(self.qn)
+        # one greedy initialisation = M*V ball marks into a 2*q^n byte array.
+        # ~1e-8 s per mark while that array is cache resident, ~9e-8 s once it
+        # is not (structure/run_entry.sh, measured on K_8(9,4)).
+        f = min(1.0, self.qn / 2e7)
+        self.init_cost = M * self.V * (1e-8 + 8e-8 * f)
+        # bytes one covsearch2e chain holds: uint16 counters + 2-bit state
+        # + the uncovered-list bitset
+        self.chain_bytes = 2.4 * self.qn + 16e6
+
+    def __str__(self):
+        return "K%d(%d,%d)@%d" % (self.q, self.n, self.R, self.M)
+
+
+# --------------------------------------------------------------------------
+# small helpers
+# --------------------------------------------------------------------------
+
+def write_words(path, words, q):
+    tmp = path + '.part'
+    with open(tmp, 'w') as f:
+        for w in words:
+            if q <= 36:
+                f.write(''.join(DIGITS[d] for d in w) + '\n')
+            else:
+                f.write(' '.join(str(d) for d in w) + '\n')
+    os.replace(tmp, path)
+
+
+def trivial_code(cell, path):
+    """M distinct words in counting order -- a legal, parseable answer that
+    exists before any solver starts.  From here on no execution path (overrun,
+    SIGKILL, OOM) can leave the caller an unreadable file."""
+    q, n, M = cell.q, cell.n, min(cell.M, cell.qn)
+    words = []
+    for i in range(M):
+        x, w = i, []
+        for _ in range(n):
+            w.append(x % q)
+            x //= q
+        words.append(list(reversed(w)))
+    write_words(path, words, q)
+
+
+def count_words(path):
+    try:
+        with open(path) as f:
+            return sum(1 for l in f if l.split('#')[0].strip())
+    except OSError:
+        return 0
+
+
+def count_distinct(path, n):
+    try:
+        seen = set()
+        with open(path) as f:
+            for line in f:
+                line = line.split('#')[0].strip()
+                if not line:
+                    continue
+                seen.add(line)
+        return len(seen)
+    except OSError:
+        return 0
+
+
+def last_uncovered(path):
+    """The last uncovered count a solver printed.  A killed worker still
+    competes in the portfolio with the code it left on disk, so its trail is
+    read rather than only its final RESULT line."""
+    try:
+        with open(path, 'rb') as f:
+            f.seek(0, os.SEEK_END)
+            size = f.tell()
+            f.seek(max(0, size - 65536))
+            tail = f.read().decode('utf-8', 'replace')
+    except OSError:
+        return None
+    best = None
+    for m in UNC_RE.finditer(tail):
+        v = int(m.group(1))
+        if v >= 0:
+            best = v
+    return best
+
+
+def publish(src, dst):
+    """Atomically replace dst by src."""
+    if not src or not os.path.exists(src) or os.path.getsize(src) == 0:
+        return False
+    tmp = dst + '.pub'
+    try:
+        shutil.copyfile(src, tmp)
+        os.replace(tmp, dst)
+        return True
+    except OSError:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        return False
+
+
+def popen(cmd, logpath, cwd=None):
+    log = open(logpath, 'w')
+    return subprocess.Popen(cmd, stdout=log, stderr=subprocess.STDOUT,
+                            preexec_fn=lambda: (os.setsid(), os.nice(max(0, NICE - os.nice(0)))),
+                            cwd=cwd), log
+
+
+def kill_tree(p):
+    try:
+        os.killpg(os.getpgid(p.pid), signal.SIGKILL)
+    except OSError:
+        try:
+            p.kill()
+        except OSError:
+            pass
+
+
+# --------------------------------------------------------------------------
+# phase A: algebra and construction seeds
+# --------------------------------------------------------------------------
+
+def results_codes(q, n, R):
+    """Every recorded code for cell (q,n,R), smallest M first."""
+    out = []
+    d = os.path.join(COV, 'results')
+    if NO_RESULTS or not os.path.isdir(d):
+        return out
+    pat = re.compile(r'^K%d_%d_%d_M(\d+)\.txt$' % (q, n, R))
+    for fn in os.listdir(d):
+        m = pat.match(fn)
+        if m:
+            out.append((int(m.group(1)), os.path.join(d, fn)))
+    out.sort()
+    return out
+
+
+def construction_seeds(cell, work, log):
+    """Seeds that cost no search at all.
+
+    (a) a recorded code for this very cell, at M or just above it (the descent
+        seed: covsearch2e turns a code of size M' > M into an attempt at M by
+        remove-and-repair);
+    (b) direct sums  K_q(n1,R1) x K_q(n2,R2)  over every split, with each factor
+        taken from cov/results/ or from a trivial/perfect-code construction --
+        this is the "factor attack" of cov/NOTES.md section 9, which is what
+        produced K_6(9,4), K_6(10,4) and K_6(10,5);
+    (c) constructions.py's own primitive-only recipe for the cell.
+
+    Only seeds whose remove-and-repair cost is affordable are returned: each
+    deletion re-scores every surviving codeword over its whole ball, so an
+    excess of E words costs about E * M' * |B_R| touches.
+    """
+    q, n, R, M = cell.q, cell.n, cell.R, cell.M
+    seeds = []
+
+    def affordable(msize):
+        excess = msize - M
+        if excess < 0:
+            return True
+        return excess * msize * cell.V < 3e9
+
+    for (m2, path) in results_codes(q, n, R):
+        if m2 >= M and affordable(m2):
+            log('  phase A: descent seed %s (%d words)'
+                % (os.path.basename(path), m2))
+            seeds.append(('incumbent-M%d' % m2, path))
+            break
+    for (m2, path) in results_codes(q, n, R):
+        if m2 < M:
+            log('  phase A: partial seed %s (%d words)'
+                % (os.path.basename(path), m2))
+            seeds.append(('partial-M%d' % m2, path))
+            break
+
+    sys.path.insert(0, COV)
+    try:
+        import constructions as C
+    except Exception as e:                                    # pragma: no cover
+        log('  constructions.py unavailable: %s' % e)
+        return seeds
+
+    def factor_code(nn, RR):
+        """(size, thunk building the word list) for cell (q,nn,RR), or None.
+
+        The size is computed WITHOUT building anything: an R=0 factor is the
+        whole space q^nn, which is 16.7 M words for (q,nn)=(8,8), and building
+        that before checking whether the product is usable would turn a
+        seconds-long phase A into an out-of-memory event."""
+        if RR >= nn:
+            return (1, lambda: C.single(nn))
+        if RR == 0:
+            return (q ** nn, lambda: C.full_space(q, nn))
+        best = None
+        for (m2, path) in results_codes(q, nn, RR):
+            def load(path=path):
+                return [[DIGITS.index(ch) for ch in l.split('#')[0].strip()]
+                        for l in open(path) if l.split('#')[0].strip()]
+            best = (m2, load)
+            break
+        if RR == 1:
+            r = 2
+            while (q ** r - 1) // (q - 1) <= nn:
+                if (q ** r - 1) // (q - 1) == nn:
+                    try:
+                        C.GF(q)
+                        size = q ** (nn - r)
+                        if best is None or size < best[0]:
+                            best = (size, lambda r=r: C.hamming_code(q, r))
+                    except Exception:
+                        pass
+                r += 1
+        return best
+
+    cands = []
+    for n1 in range(1, n):
+        n2 = n - n1
+        for R1 in range(0, min(R, n1) + 1):
+            R2 = R - R1
+            if R2 > n2:
+                continue
+            a = factor_code(n1, R1)
+            b = factor_code(n2, R2)
+            if a is None or b is None:
+                continue
+            size = a[0] * b[0]
+            # A construction is a useful start only if it is CLOSE to M:
+            # descending 216 words to 41 by remove-and-repair is not a descent,
+            # it is 175 deletions of noise.  The factor attack that produced
+            # K_6(10,4) <= 2951 started from a 2952-word direct sum.
+            if M <= size <= min(1.6 * M, 200000) and affordable(size):
+                cands.append((size, n1, R1, n2, R2, a, b))
+    cands.sort(key=lambda c: c[0])
+    for (size, n1, R1, n2, R2, a, b) in cands[:1]:
+        try:
+            words = C.direct_sum(a[1](), b[1]())
+        except Exception as e:
+            log('  phase A: direct sum unavailable (%s)' % e)
+            continue
+        path = os.path.join(work, 'seed_sum.txt')
+        write_words(path, words, q)
+        log('  phase A: direct sum (%d,%d)x(%d,%d) = %d*%d = %d words'
+            % (n1, R1, n2, R2, a[0], b[0], size))
+        seeds.append(('directsum-%d' % size, path))
+
+    if not seeds:
+        try:
+            idx = C.load_bounds()
+            rec = C.decompose(idx, q, n, R)
+            if rec and rec[0] <= min(1.6 * M, 200000) and affordable(rec[0]):
+                words = C.build_seed(rec[2])
+                path = os.path.join(work, 'seed_rec.txt')
+                write_words(path, words, q)
+                log('  phase A: %s = %d words' % (rec[1], rec[0]))
+                seeds.append(('recipe-%d' % rec[0], path))
+        except Exception as e:
+            log('  phase A: no construction seed (%s)' % e)
+    return seeds
+
+
+def feasible_k(cell):
+    """k values lincov can use: q must be a prime power and q^k must divide M
+    (the code is a union of M/q^k cosets of an [n,k]_q code).  Large k = few
+    cosets = the most structure, so the driver walks k downwards."""
+    q, M, n = cell.q, cell.M, cell.n
+    if not prime_power(q):
+        return []
+    ks = []
+    k = 1
+    while q ** k <= M and k <= n - 1:
+        if M % (q ** k) == 0:
+            ks.append(k)
+        k += 1
+    return list(reversed(ks))
+
+
+def phase_a(cell, budget, seed, work, out, log, deadline):
+    """Returns (solved_path or None, seed list).  Costs seconds."""
+    seeds = construction_seeds(cell, work, log)
+
+    ks = feasible_k(cell)
+    if not ks:
+        log('  phase A: lincov not applicable (q=%d prime power? %s; M=%d)'
+            % (cell.q, bool(prime_power(cell.q)), cell.M))
+        return None, seeds
+
+    tlin = min(max(1.0, 0.10 * budget), 60.0)
+    ks = ks[:4]
+    slice_t = tlin / len(ks)
+    for k in ks:
+        left = deadline - time.time()
+        if left < 1.0:
+            break
+        st = min(slice_t, left - 0.5)
+        dst = os.path.join(work, 'lin_k%d.txt' % k)
+        lg = os.path.join(work, 'lin_k%d.log' % k)
+        cmd = [BIN['lincov'], '-q', str(cell.q), '-n', str(cell.n),
+               '-R', str(cell.R), '-M', str(cell.M), '-k', str(k),
+               '-t', '%.3f' % st, '-s', str(seed), '--out', dst]
+        p, lf = popen(cmd, lg)
+        try:
+            rc = p.wait(timeout=st + 10)
+        except subprocess.TimeoutExpired:
+            kill_tree(p)
+            rc = 1
+        lf.close()
+        if rc == 3:
+            continue
+        u = last_uncovered(lg)
+        log('  phase A: lincov k=%d -> uncovered=%s' % (k, u))
+        if rc == 0 and os.path.exists(dst) and os.path.getsize(dst) > 0:
+            return dst, seeds
+        if os.path.exists(dst) and os.path.getsize(dst) > 0:
+            seeds.insert(0, ('lincov-k%d' % k, dst))
+    return None, seeds
+
+
+# --------------------------------------------------------------------------
+# phase B: the portfolio
+# --------------------------------------------------------------------------
+
+def plan_portfolio(cell, cores, budget, seeds, seed, log):
+    """Which chains to run.
+
+    Every chain is single-threaded unless the cell is so large that one
+    initialisation dominates the budget: strategy measured 6 independent
+    1-thread chains at 870 moves/s each against 111 for one 6-thread chain on
+    K_6(6,3), because the per-iteration OpenMP fork/join costs more than the
+    sphere walk it hides.  The exception is the regime where a single sphere
+    walk is large (K_8(9,4): one iteration is most of a second), where the same
+    measurement reverses.
+
+    Which binary:  measured head-to-head, single-threaded, same wall clock
+    (bench_engines.sh; the table is in NOTES.md).  covfast wins where the
+    counter array is cache-resident and the win is instruction-level; the
+    shared-sphere + uncovered-list evaluator of covsearch2e wins once the
+    working set spills, which is most cells this project cares about.
+    --wide (the whole n(q-1) neighbourhood for free) is a per-cell decision:
+    METHODS.md measures it as +10.97x/+8.38x end-to-end on the two loose cells
+    and a factor 3.6 LOSS on the tight small one, so it is switched on only
+    where the cell is loose.
+
+    Part of the portfolio is spread along the symmetry axis (structure's
+    measurement on K_6(8,4): a fully invariant code plateaus and a fully free
+    search plateaus, but "most of the code invariant plus a free remainder"
+    solved it 3 times out of 3 at several points in between)."""
+    q, n, R, M = cell.q, cell.n, cell.R, cell.M
+
+    ram_cap = max(1, int(RAM_BYTES / max(1.0, cell.chain_bytes)))
+    nch = max(1, min(cores, ram_cap))
+
+    # One initialisation is paid by every chain.  When it dominates the budget,
+    # spend the cores inside a chain instead of on more of them: this is the
+    # regime where one sphere walk is large enough to hide the OpenMP fork/join
+    # (lowlevel measured 6.5x on 6 threads on K_8(9,4) and a 34x LOSS on
+    # K_6(6,3), which is why the decision is made from the cell and not fixed).
+    threads = 1
+    if cell.init_cost > 0.35 * budget and cores > 1:
+        threads = min(6, cores)
+        nch = max(1, min(nch, max(1, cores // threads)))
+
+    small = cell.qn <= 3e5          # counter array cache-resident: covfast wins
+    # --wide: measured a large win on K_3(11,4)@81 (316-328 uncovered against
+    # 411-449) and on K_8(9,4)@940, and a loss on the tight cache-resident
+    # K_6(6,3)@41.  The crossover sits near redundancy 3, but it is not sharp
+    # enough to bet a whole portfolio on, so the minority setting always gets
+    # chains too.
+    loose = cell.redundancy >= 3.0
+    sym_ok = (M // q) >= 2 and q >= 2 and cell.qn // q >= 1
+
+    # On a big cell the symmetry axis collapses: one free-search initialisation
+    # alone eats a third of the budget, so there is no room for a free
+    # remainder after the invariant phase, and measurement says not to want one.
+    # Paired on K_8(9,4)@940, 55 s, 6 cores each, two seeds (bench_big.sh):
+    #   symsearch 6 threads     6.44 M / 6.51 M uncovered   <- best
+    #   covsearch2e --wide 6thr 7.75 M / 7.74 M
+    #   covfast 6 threads       7.78 M / 7.79 M
+    #   6 x 1-thread portfolio  8.91 M / 9.07 M             <- worst
+    big = cell.qn > 5e7 or cell.init_cost > 0.35 * budget
+    symfrac = 1.0 if big else 0.45
+
+    # A descent run starts from a verified code for this very cell and only has
+    # to remove one word and repair.  symsearch cannot be seeded -- it searches
+    # the quotient from scratch -- so on a descent it would be throwing half
+    # the portfolio at a much harder problem than the one we are solving.
+    descent = any(t.startswith(('incumbent', 'given')) for (t, _) in seeds)
+
+    # how many chains go to the symmetry axis
+    if not sym_ok:
+        nsym = 0
+    elif descent:
+        nsym = nch // 6
+    elif big:
+        # big cell: the free remainder does not fit in the budget, and
+        # symsearch's quotient is q times cheaper to initialise.  Structure
+        # measured symsearch alone at ~6.2M uncovered on K_8(9,4) where free
+        # search reached ~8.9M.
+        nsym = max(1, nch // 2)
+    else:
+        nsym = max(1, nch // 3)
+
+    if os.environ.get('COVENGINE_NSYM'):
+        nsym = min(nch, int(os.environ['COVENGINE_NSYM']))
+
+    nborb = M // q
+    step = max(1, int(round(nborb * 0.07)))
+
+    # Restart policy (METHODS.md section G.4).  At targets the search reaches
+    # routinely the run-time distribution is light-tailed (cv 0.2-0.5) and
+    # restarting can only throw progress away; on a TIGHT cell at a hard target
+    # it becomes heavier than exponential and restarting every ~1.6 CPU s cut
+    # the expected time to target by a factor 4 on K_6(6,3).  So: restart only
+    # where the cell is tight and an initialisation is nearly free.
+    restart = (cell.redundancy < 3.5 and cell.init_cost < 0.02 * budget
+               and budget > 20)
+    if os.environ.get('COVENGINE_RESTART'):
+        restart = os.environ['COVENGINE_RESTART'] == '1'
+    slice_div = float(os.environ.get('COVENGINE_SLICE_DIV', 6.0))
+    slice_t = min(max(budget / slice_div, 5.0), 90.0) if restart else budget
+
+    def wide_for(j):
+        # the majority setting for the cell, with the minority still covered
+        return (j % 4 != 3) if loose else (j % 3 == 2)
+
+    chains = []
+    seedlist = [s[1] for s in seeds]
+    # How much of the portfolio starts from a seed.  A DESCENT seed (a verified
+    # code for this very cell at M' >= M, which covsearch2e turns into an
+    # attempt at M by remove-and-repair) is the whole point of a descent run, so
+    # most chains take it; a merely suggestive seed gets a third of them, and
+    # the rest stay free so that an over-constrained or misleading seed can
+    # never cost us every chain at once.
+    nseeded = 0
+    if seedlist:
+        nseeded = max(1, (2 * nch) // 3 if descent else nch // 3)
+    for i in range(nch):
+        tag = 'c%02d' % i
+        # chain seeds must depend on the caller's seed, or every run of the
+        # cell is the same run (which is exactly the bug this line replaces:
+        # two judge seeds produced byte-identical portfolios)
+        sd = (seed * 1000003 + i * 7919) % 2000000000 + 1
+        # seed the first few chains from phase A, leave the rest unseeded so an
+        # over-constrained or misleading seed can never cost us every chain
+        sfile = seedlist[i % len(seedlist)] if i < nseeded else None
+        if i < nsym:
+            orb = max(1, nborb - (i % 4) * step)
+            chains.append(dict(tag=tag, kind='sym', orbits=orb, seed=sd,
+                               threads=threads, sfile=None,
+                               symfrac=symfrac, wide=wide_for(i),
+                               restart=restart, slice_t=slice_t))
+        else:
+            j = i - nsym
+            if small:
+                eng = 'covfast' if (j % 2 == 0) else 'covsearch2e'
+            else:
+                eng = 'covsearch2e' if (j % 4 != 3) else 'covfast'
+            # covfast truncates a seed larger than M instead of descending by
+            # remove-and-repair, so a descent seed always goes to covsearch2e
+            if eng == 'covfast' and sfile and count_words(sfile) > M:
+                eng = 'covsearch2e'
+            chains.append(dict(tag=tag, kind='free', engine=eng, seed=sd,
+                               threads=threads, sfile=sfile,
+                               restart=restart, slice_t=slice_t,
+                               wide=wide_for(j) and eng == 'covsearch2e'))
+    log('  phase B: %d chains x %d thread(s)  (%d symmetric, %d seeded)  '
+        'redundancy=%.2f init~%.1fs wide=%s restart=%s slice=%.0fs'
+        % (nch, threads, nsym, nseeded, cell.redundancy, cell.init_cost,
+           loose, restart, slice_t))
+    return chains
+
+
+class Chain(object):
+    """One portfolio chain.
+
+    A symmetric chain is two processes in sequence (symsearch in the quotient,
+    then a free search seeded from the invariant code it produced); a free
+    chain is one process.  Either may be *restarted* with a fresh seed when it
+    finishes early -- see `slice_t` in plan_portfolio for when that is a good
+    idea and when it is provably not.
+
+    Every sub-run gets its own output file and its own log, and `best()` looks
+    at all of them, so a restart can never lose a code that an earlier sub-run
+    had already found."""
+
+    def __init__(self, cell, spec, work, tbudget):
+        self.cell = cell
+        self.spec = spec
+        self.tag = spec['tag']
+        self.work = work
+        self.tbudget = tbudget
+        self.slice_t = spec.get('slice_t') or tbudget
+        self.p = None
+        self.lf = None
+        self.stage = 0
+        self.run_no = 0
+        self.runs = []            # [(logpath, codepath)]
+        self.symdst = None
+        self.symlog = None
+
+    def _paths(self, suffix):
+        base = os.path.join(self.work, '%s_r%d' % (self.tag, self.run_no))
+        return base + suffix
+
+    def _start(self, cmd, logpath, codepath):
+        self.runs.append((logpath, codepath))
+        self.p, self.lf = popen(cmd, logpath)
+
+    def _start_free(self, deadline, seedfile, seed):
+        c = self.cell
+        left = deadline - time.time()
+        if left <= 0.6:
+            return False
+        t = min(self.slice_t, left - 0.3)
+        dst, lg = self._paths('.txt'), self._paths('.log')
+        eng = self.spec.get('engine', 'covsearch2e')
+        cmd = [BIN[eng], '-q', str(c.q), '-n', str(c.n), '-R', str(c.R),
+               '-M', str(c.M), '-s', str(seed), '--threads',
+               str(self.spec['threads']), '-t', '%.3f' % t, '--out', dst]
+        if eng == 'covsearch2e':
+            cmd += ['--preset', 'p5b']
+            if self.spec.get('wide'):
+                cmd += ['--wide']
+        if seedfile and os.path.exists(seedfile) and os.path.getsize(seedfile) > 0:
+            cmd += ['--in', seedfile]
+        self.stage = 2
+        self._start(cmd, lg, dst)
+        return True
+
+    def start(self, deadline):
+        c = self.cell
+        left = deadline - time.time()
+        if left <= 0.5:
+            return
+        if self.spec['kind'] == 'sym':
+            ts = min(self.spec.get('symfrac', 0.45) * self.slice_t, left - 0.5)
+            self.symdst, self.symlog = self._paths('.sym'), self._paths('.symlog')
+            self.stage = 1
+            self._start([BIN['symsearch'], '-q', str(c.q), '-n', str(c.n),
+                         '-R', str(c.R), '-M', str(c.M),
+                         '--orbits', str(self.spec['orbits']),
+                         '-t', '%.3f' % ts, '-s', str(self.spec['seed']),
+                         '--threads', str(self.spec['threads']),
+                         '--out', self.symdst], self.symlog, self.symdst)
+        else:
+            self._start_free(deadline, self.spec.get('sfile'), self.spec['seed'])
+
+    def poll(self, deadline):
+        """Advance the chain; returns True while it is still running."""
+        if self.p is None:
+            return False
+        if self.p.poll() is None:
+            return True
+        if self.lf:
+            self.lf.close()
+            self.lf = None
+        if self.stage == 1 and self.spec.get('symfrac', 0.45) < 1.0:
+            # symmetric phase done -> free phase, seeded from the invariant
+            # code.  Neither end of the symmetry axis solves K_6(8,4); the
+            # combination does (structure/NOTES.md section 2).
+            self.spec = dict(self.spec, engine='covsearch2e')
+            if self._start_free(deadline, self.symdst, self.spec['seed']):
+                return True
+            self.p = None
+            return False
+        # restart with a fresh seed, if this cell is one where restarting pays
+        if self.spec.get('restart') and deadline - time.time() > 1.5:
+            self.run_no += 1
+            self.spec = dict(self.spec, seed=self.spec['seed'] + 7919)
+            if self.spec['kind'] == 'sym':
+                self.start(deadline)
+                return self.p is not None
+            if self._start_free(deadline, self.spec.get('sfile'), self.spec['seed']):
+                return True
+        self.p = None
+        return False
+
+    def best(self):
+        """(uncovered, path) for the best code this chain has left on disk,
+        over every sub-run it has made."""
+        cands = []
+        for (lg, dst) in self.runs:
+            try:
+                if os.path.getsize(dst) == 0:
+                    continue
+            except OSError:
+                continue
+            u = last_uncovered(lg)
+            if u is not None:
+                cands.append((u, dst))
+        if not cands:
+            return None
+        return min(cands)
+
+    def kill(self):
+        if self.p is not None:
+            kill_tree(self.p)
+            try:
+                self.p.wait(timeout=5)
+            except Exception:
+                pass
+            self.p = None
+        if self.lf:
+            self.lf.close()
+            self.lf = None
+
+
+# --------------------------------------------------------------------------
+# the engine
+# --------------------------------------------------------------------------
+
+def finish(cell, src, out, log, hard_deadline):
+    """De-duplicate, top up to exactly M distinct words, recount, publish.
+
+    covcount re-reads the candidate from disk and recomputes coverage by direct
+    ball marking, so the answer the engine reports is never the answer a
+    solver's incremental counters believed.  On a space too big for that to be
+    cheap it runs --fast (make the file legal, no coverage array) and the
+    reported count comes from the chain."""
+    q, n, R, M = cell.q, cell.n, cell.R, cell.M
+    fast = cell.qn > 5e6
+    args = [BIN['covcount'], '-q', str(q), '-n', str(n), '-R', str(R),
+            '-M', str(M), '--in', src or os.devnull, '--out', out]
+    if fast:
+        args.append('--fast')
+    left = max(1.0, hard_deadline - time.time())
+    try:
+        r = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                           timeout=min(90.0, max(5.0, left)), text=True)
+        m = UNC_RE.search(r.stdout or '')
+        counted = int(m.group(1)) if m else -1
+    except Exception as e:
+        log('  finish: covcount failed (%s); publishing the raw best' % e)
+        counted = -1
+    if not os.path.exists(out) or os.path.getsize(out) == 0:
+        if src and os.path.exists(src):
+            publish(src, out)
+    return counted
+
+
+def run(cell, budget, seed, out, cores, log, extra_seeds=(), verbose=True):
+    t0 = time.time()
+    work = tempfile.mkdtemp(prefix='covengine_')
+    try:
+        trivial_code(cell, out)
+
+        # reserve for the finisher: covcount --fast is instant, the full
+        # recount allocates q^n bytes and marks M balls
+        if cell.qn > 5e6:
+            reserve = 2.0
+        else:
+            reserve = min(0.25 * budget, 2.2 * (cell.qn / 1.2e8 + cell.M * cell.V / 1.2e8) + 1.5)
+        deadline = t0 + budget - reserve
+        hard = t0 + budget
+
+        best_u, best_p = None, None
+
+        solved, seeds = phase_a(cell, budget, seed, work, out, log, deadline)
+        for s in extra_seeds:
+            if s and os.path.exists(s):
+                seeds.insert(0, ('given', s))
+        if solved:
+            log('  phase A solved the cell')
+            counted = finish(cell, solved, out, log, hard)
+            return 0 if counted in (0, -1) else counted, out
+
+        chains = [Chain(cell, spec, work, deadline - time.time())
+                  for spec in plan_portfolio(cell, cores, budget, seeds, seed, log)]
+        for c in chains:
+            c.start(deadline)
+
+        last_pub = 0.0
+        winner = None
+        while True:
+            alive = False
+            for c in chains:
+                if c.poll(deadline):
+                    alive = True
+            now = time.time()
+            # continuously publish the best partial anyone has on disk
+            cur = None
+            for c in chains:
+                b = c.best()
+                if b is not None and (cur is None or b[0] < cur[0]):
+                    cur = b
+            if cur is not None and (best_u is None or cur[0] < best_u):
+                best_u, best_p = cur[0], cur[1]
+                if now - last_pub > 2.0 or best_u == 0:
+                    publish(best_p, out)
+                    last_pub = now
+            if best_u == 0:
+                # A chain claims a full cover.  Its log can be a beat ahead of
+                # its output file (publication is throttled to 1 Hz), so give
+                # it a moment to land before stopping the world -- and confirm
+                # the claim by an independent recount afterwards either way.
+                for c in chains:
+                    b = c.best()
+                    if b is not None and b[0] == 0:
+                        for _ in range(15):
+                            if c.p is None or c.p.poll() is not None:
+                                break
+                            time.sleep(0.2)
+                cur = None
+                for c in chains:
+                    b = c.best()
+                    if b is not None and (cur is None or b[0] < cur[0]):
+                        cur = b
+                if cur is not None:
+                    best_u, best_p = cur
+                winner = best_p
+                publish(best_p, out)
+                break
+            if not alive or now >= deadline:
+                break
+            time.sleep(0.2)
+
+        for c in chains:
+            c.kill()
+
+        if winner is not None:
+            log('  a chain reports a full cover; confirming by recount')
+        counted = finish(cell, best_p, out, log, hard)
+        if counted >= 0:
+            if best_u is not None and counted != best_u:
+                log('  note: solver said uncovered=%s, recount says %d'
+                    % (best_u, counted))
+            best_u = counted
+        elif best_u is None:
+            best_u = cell.qn
+        return best_u, out
+    finally:
+        shutil.rmtree(work, ignore_errors=True)
+
+
+# --------------------------------------------------------------------------
+# CLI
+# --------------------------------------------------------------------------
+
+def main(argv):
+    # arena interface: Q N R M SEED TIME_S OUTFILE
+    if len(argv) == 7 and all(not a.startswith('-') for a in argv[:6]):
+        q, n, R, M, seed, t = (int(x) for x in argv[:6])
+        out = argv[6]
+        cores = int(os.environ.get('COVENGINE_CORES', 6))
+        quiet = os.environ.get('COVENGINE_QUIET', '0') == '1'
+        cell = Cell(q, n, R, M)
+        t0 = time.time()
+
+        def log(msg):
+            if not quiet:
+                print('%7.1fs %s' % (time.time() - t0, msg), flush=True)
+        log('cell %s  q^n=%d ball=%d sphere=%d redundancy=%.2f  budget=%ds cores=%d'
+            % (cell, cell.qn, cell.V, cell.S, cell.redundancy, t, cores))
+        u, path = run(cell, float(t) - max(1.0, 0.03 * t), seed, out, cores, log)
+        log('best uncovered = %s  -> %s' % (u, out))
+        return 0
+
+    ap = argparse.ArgumentParser(
+        description='covengine -- portfolio driver for K_q(n,R) <= M',
+        formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument('-q', type=int, required=True)
+    ap.add_argument('-n', type=int, required=True)
+    ap.add_argument('-R', type=int, required=True)
+    ap.add_argument('-M', type=int, required=True)
+    ap.add_argument('-t', type=float, default=60.0, help='wall seconds')
+    ap.add_argument('-s', '--seed', type=int, default=1)
+    ap.add_argument('--in', dest='inpath', help='seed code file')
+    ap.add_argument('--out', help='write the best code here')
+    ap.add_argument('--cores', type=int, default=None,
+                    help='CPU cores for the portfolio (default 6, or --threads)')
+    ap.add_argument('--threads', type=int, default=None,
+                    help='alias for --cores, for covsearch CLI compatibility')
+    ap.add_argument('--quiet', action='store_true')
+    # accepted and ignored, so a covsearch command line still parses
+    for flag in ('--random-init', '--sa'):
+        ap.add_argument(flag, action='store_true', help=argparse.SUPPRESS)
+    for flag in ('--cand', '--tabu', '--kick', '--noise', '--iters', '--stall'):
+        ap.add_argument(flag, default=None, help=argparse.SUPPRESS)
+    a = ap.parse_args(argv)
+
+    cell = Cell(a.q, a.n, a.R, a.M)
+    cores = a.cores or a.threads or int(os.environ.get('COVENGINE_CORES', 6))
+    out = a.out or os.path.join(tempfile.mkdtemp(prefix='covengine_out_'), 'code.txt')
+    t0 = time.time()
+
+    def log(msg):
+        if not a.quiet:
+            print('%7.1fs %s' % (time.time() - t0, msg), flush=True)
+
+    log('cell %s  q^n=%d ball=%d redundancy=%.2f budget=%.0fs cores=%d'
+        % (cell, cell.qn, cell.V, cell.redundancy, a.t, cores))
+    extra = [a.inpath] if a.inpath else []
+    u, path = run(cell, a.t, a.seed, out, cores, log, extra_seeds=extra)
+    el = time.time() - t0
+    print('RESULT q=%d n=%d R=%d M=%d uncovered=%d iters=0 kicks=0 time=%.2f '
+          'rate=0 engine=covengine' % (a.q, a.n, a.R, a.M, u, el), flush=True)
+    return 0 if u == 0 else 1
+
+
+if __name__ == '__main__':
+    sys.exit(main(sys.argv[1:]))

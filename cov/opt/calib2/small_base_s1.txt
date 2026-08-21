@@ -1,0 +1,223 @@
+# covsearch q=6 n=6 R=3 M=41  q^n=46656  ball=2906  sphere-move=1250  threads=1
+# sphere-covering bound: M >= 17
+# init uncovered=1411
+# improved: unc=1308 at it=1 t=0.0s cpu=0.0001
+# improved: unc=1271 at it=2 t=0.0s cpu=0.0003
+# improved: unc=1230 at it=3 t=0.0s cpu=0.0004
+# improved: unc=1160 at it=4 t=0.0s cpu=0.0006
+# improved: unc=1086 at it=5 t=0.0s cpu=0.0007
+# improved: unc=1054 at it=6 t=0.0s cpu=0.0008
+# improved: unc=1026 at it=7 t=0.0s cpu=0.0010
+# improved: unc=981 at it=8 t=0.0s cpu=0.0011
+# improved: unc=951 at it=9 t=0.0s cpu=0.0012
+# improved: unc=928 at it=10 t=0.0s cpu=0.0013
+# improved: unc=889 at it=11 t=0.0s cpu=0.0014
+# improved: unc=860 at it=12 t=0.0s cpu=0.0016
+# improved: unc=836 at it=13 t=0.0s cpu=0.0017
+# improved: unc=802 at it=14 t=0.0s cpu=0.0018
+# improved: unc=773 at it=15 t=0.0s cpu=0.0019
+# improved: unc=752 at it=16 t=0.0s cpu=0.0020
+# improved: unc=731 at it=17 t=0.0s cpu=0.0022
+# improved: unc=710 at it=18 t=0.0s cpu=0.0023
+# improved: unc=705 at it=19 t=0.0s cpu=0.0024
+# improved: unc=692 at it=20 t=0.0s cpu=0.0027
+# improved: unc=687 at it=21 t=0.0s cpu=0.0028
+# improved: unc=654 at it=22 t=0.0s cpu=0.0029
+# improved: unc=633 at it=23 t=0.0s cpu=0.0030
+# improved: unc=623 at it=24 t=0.0s cpu=0.0031
+# improved: unc=609 at it=25 t=0.0s cpu=0.0032
+# improved: unc=586 at it=26 t=0.0s cpu=0.0034
+# improved: unc=557 at it=27 t=0.0s cpu=0.0035
+# improved: unc=539 at it=28 t=0.0s cpu=0.0036
+# improved: unc=530 at it=29 t=0.0s cpu=0.0038
+# improved: unc=511 at it=30 t=0.0s cpu=0.0039
+# improved: unc=499 at it=31 t=0.0s cpu=0.0040
+# improved: unc=497 at it=32 t=0.0s cpu=0.0041
+# improved: unc=488 at it=33 t=0.0s cpu=0.0042
+# improved: unc=486 at it=35 t=0.0s cpu=0.0045
+# improved: unc=481 at it=36 t=0.0s cpu=0.0046
+# improved: unc=461 at it=37 t=0.0s cpu=0.0048
+# improved: unc=457 at it=39 t=0.0s cpu=0.0050
+# improved: unc=451 at it=40 t=0.0s cpu=0.0051
+# improved: unc=444 at it=42 t=0.0s cpu=0.0054
+# improved: unc=424 at it=43 t=0.1s cpu=0.0056
+# improved: unc=414 at it=44 t=0.1s cpu=0.0058
+# improved: unc=405 at it=45 t=0.1s cpu=0.0059
+# improved: unc=400 at it=47 t=0.1s cpu=0.0061
+# improved: unc=384 at it=48 t=0.1s cpu=0.0063
+# improved: unc=369 at it=50 t=0.1s cpu=0.0065
+# improved: unc=362 at it=51 t=0.1s cpu=0.0067
+# improved: unc=348 at it=52 t=0.1s cpu=0.0068
+# improved: unc=339 at it=53 t=0.1s cpu=0.0069
+# improved: unc=333 at it=54 t=0.1s cpu=0.0071
+# improved: unc=323 at it=56 t=0.1s cpu=0.0073
+# improved: unc=314 at it=60 t=0.1s cpu=0.0079
+# improved: unc=311 at it=61 t=0.1s cpu=0.0080
+# improved: unc=299 at it=62 t=0.1s cpu=0.0081
+# improved: unc=297 at it=65 t=0.1s cpu=0.0086
+# improved: unc=285 at it=66 t=0.1s cpu=0.0088
+# improved: unc=279 at it=67 t=0.1s cpu=0.0089
+# improved: unc=274 at it=68 t=0.1s cpu=0.0090
+# improved: unc=271 at it=71 t=0.1s cpu=0.0094
+# improved: unc=261 at it=72 t=0.1s cpu=0.0095
+# improved: unc=260 at it=73 t=0.1s cpu=0.0097
+# improved: unc=256 at it=74 t=0.1s cpu=0.0098
+# improved: unc=254 at it=81 t=0.1s cpu=0.0108
+# improved: unc=253 at it=82 t=0.1s cpu=0.0109
+# improved: unc=251 at it=84 t=0.1s cpu=0.0112
+# improved: unc=242 at it=86 t=0.1s cpu=0.0115
+# improved: unc=240 at it=88 t=0.1s cpu=0.0118
+# improved: unc=239 at it=90 t=0.1s cpu=0.0121
+# improved: unc=238 at it=91 t=0.1s cpu=0.0122
+# improved: unc=236 at it=92 t=0.1s cpu=0.0123
+# improved: unc=233 at it=94 t=0.1s cpu=0.0126
+# improved: unc=220 at it=95 t=0.1s cpu=0.0128
+# improved: unc=216 at it=103 t=0.1s cpu=0.0138
+# improved: unc=214 at it=123 t=0.2s cpu=0.0168
+# improved: unc=207 at it=125 t=0.2s cpu=0.0170
+# improved: unc=206 at it=130 t=0.2s cpu=0.0178
+# improved: unc=204 at it=133 t=0.2s cpu=0.0183
+# improved: unc=202 at it=134 t=0.2s cpu=0.0184
+# improved: unc=197 at it=141 t=0.2s cpu=0.0194
+# improved: unc=196 at it=146 t=0.2s cpu=0.0201
+# improved: unc=186 at it=148 t=0.2s cpu=0.0203
+# improved: unc=179 at it=167 t=0.2s cpu=0.0232
+# improved: unc=176 at it=168 t=0.3s cpu=0.0234
+# improved: unc=170 at it=169 t=0.3s cpu=0.0236
+# improved: unc=163 at it=170 t=0.3s cpu=0.0237
+# improved: unc=161 at it=171 t=0.3s cpu=0.0239
+# improved: unc=160 at it=177 t=0.3s cpu=0.0247
+# improved: unc=156 at it=188 t=0.3s cpu=0.0262
+# improved: unc=150 at it=190 t=0.3s cpu=0.0266
+# improved: unc=148 at it=192 t=0.3s cpu=0.0269
+# improved: unc=138 at it=193 t=0.3s cpu=0.0270
+# improved: unc=137 at it=194 t=0.3s cpu=0.0272
+# improved: unc=136 at it=206 t=0.3s cpu=0.0288
+# improved: unc=135 at it=323 t=0.5s cpu=0.0455
+# improved: unc=134 at it=326 t=0.5s cpu=0.0459
+# improved: unc=128 at it=465 t=0.8s cpu=0.0657
+# improved: unc=124 at it=483 t=0.8s cpu=0.0682
+# improved: unc=119 at it=485 t=0.8s cpu=0.0686
+# improved: unc=118 at it=487 t=0.8s cpu=0.0688
+# improved: unc=112 at it=497 t=0.8s cpu=0.0703
+# improved: unc=111 at it=502 t=0.8s cpu=0.0710
+# improved: unc=109 at it=507 t=0.9s cpu=0.0718
+# improved: unc=108 at it=515 t=0.9s cpu=0.0729
+# improved: unc=105 at it=516 t=0.9s cpu=0.0731
+# improved: unc=101 at it=536 t=0.9s cpu=0.0760
+# improved: unc=96 at it=759 t=1.3s cpu=0.1083
+# improved: unc=92 at it=846 t=1.4s cpu=0.1209
+# improved: unc=91 at it=847 t=1.4s cpu=0.1211
+# improved: unc=90 at it=943 t=1.6s cpu=0.1351
+# improved: unc=89 at it=1132 t=1.9s cpu=0.1627
+# improved: unc=88 at it=1137 t=2.0s cpu=0.1636
+# improved: unc=87 at it=1138 t=2.0s cpu=0.1638
+# improved: unc=84 at it=1167 t=2.0s cpu=0.1681
+# improved: unc=82 at it=1169 t=2.0s cpu=0.1684
+# improved: unc=81 at it=1173 t=2.0s cpu=0.1690
+# improved: unc=78 at it=1174 t=2.0s cpu=0.1691
+# improved: unc=77 at it=1176 t=2.1s cpu=0.1695
+# improved: unc=73 at it=1186 t=2.1s cpu=0.1710
+# improved: unc=70 at it=1189 t=2.1s cpu=0.1714
+# improved: unc=67 at it=1478 t=2.6s cpu=0.2141
+# improved: unc=66 at it=1479 t=2.6s cpu=0.2144
+# improved: unc=64 at it=1496 t=2.6s cpu=0.2168
+# improved: unc=62 at it=1625 t=3.0s cpu=0.2359
+# improved: unc=60 at it=1730 t=3.2s cpu=0.2512
+# improved: unc=59 at it=2396 t=4.6s cpu=0.3491
+# improved: unc=58 at it=2397 t=4.7s cpu=0.3493
+# improved: unc=57 at it=2729 t=5.3s cpu=0.3980
+# improved: unc=56 at it=2850 t=5.6s cpu=0.4159
+# improved: unc=54 at it=2955 t=5.8s cpu=0.4311
+# t=  10.0s it=5248       unc=93         best=54 (524 it/s)
+# improved: unc=52 at it=5758 t=10.9s cpu=0.8426
+# improved: unc=51 at it=6099 t=11.7s cpu=0.8932
+# improved: unc=50 at it=6114 t=11.7s cpu=0.8955
+# improved: unc=48 at it=6144 t=11.7s cpu=0.8999
+# improved: unc=47 at it=6145 t=11.7s cpu=0.9002
+# improved: unc=46 at it=6224 t=11.9s cpu=0.9117
+# improved: unc=45 at it=8607 t=17.1s cpu=1.2618
+# t=  20.0s it=9872       unc=71         best=45 (493 it/s)
+# improved: unc=41 at it=10325 t=21.0s cpu=1.5150
+# improved: unc=40 at it=10329 t=21.0s cpu=1.5157
+# improved: unc=39 at it=10331 t=21.0s cpu=1.5160
+# improved: unc=38 at it=10382 t=21.2s cpu=1.5237
+# improved: unc=36 at it=10386 t=21.2s cpu=1.5244
+# improved: unc=35 at it=10524 t=21.5s cpu=1.5448
+# improved: unc=32 at it=10845 t=21.9s cpu=1.5933
+# improved: unc=31 at it=10920 t=22.0s cpu=1.6046
+# improved: unc=30 at it=11246 t=22.3s cpu=1.6534
+# improved: unc=27 at it=12446 t=24.1s cpu=1.8332
+# improved: unc=26 at it=12452 t=24.1s cpu=1.8341
+# t=  30.0s it=17984      unc=55         best=26 (599 it/s)
+# t=  40.0s it=23408      unc=48         best=26 (585 it/s)
+# improved: unc=25 at it=23455 t=40.1s cpu=3.4640
+# improved: unc=22 at it=23457 t=40.1s cpu=3.4643
+# improved: unc=21 at it=23458 t=40.1s cpu=3.4645
+# improved: unc=20 at it=23483 t=40.1s cpu=3.4681
+# improved: unc=17 at it=23484 t=40.1s cpu=3.4683
+# improved: unc=16 at it=23499 t=40.1s cpu=3.4707
+# improved: unc=14 at it=23512 t=40.1s cpu=3.4727
+# improved: unc=13 at it=23529 t=40.1s cpu=3.4753
+# improved: unc=12 at it=23553 t=40.1s cpu=3.4789
+# improved: unc=8 at it=23689 t=40.2s cpu=3.4991
+# t=  50.1s it=30992      unc=15         best=8 (619 it/s)
+# t=  60.1s it=36512      unc=22         best=8 (608 it/s)
+# t=  70.1s it=46976      unc=19         best=8 (670 it/s)
+# t=  80.1s it=58400      unc=31         best=8 (729 it/s)
+# t=  90.1s it=70176      unc=14         best=8 (779 it/s)
+# t= 100.1s it=81312      unc=20         best=8 (812 it/s)
+# t= 110.1s it=86944      unc=15         best=8 (789 it/s)
+# t= 120.1s it=97248      unc=35         best=8 (809 it/s)
+# t= 130.2s it=107056     unc=26         best=8 (822 it/s)
+# t= 140.2s it=111728     unc=20         best=8 (797 it/s)
+# t= 150.2s it=116448     unc=23         best=8 (775 it/s)
+# t= 160.2s it=123232     unc=14         best=8 (769 it/s)
+# t= 170.2s it=134208     unc=17         best=8 (788 it/s)
+# t= 180.3s it=140896     unc=13         best=8 (782 it/s)
+# t= 190.3s it=147792     unc=22         best=8 (777 it/s)
+# t= 200.3s it=154800     unc=33         best=8 (773 it/s)
+# t= 210.3s it=160928     unc=18         best=8 (765 it/s)
+# t= 220.3s it=167168     unc=24         best=8 (759 it/s)
+# t= 230.3s it=174000     unc=22         best=8 (755 it/s)
+# t= 240.4s it=180992     unc=11         best=8 (753 it/s)
+# t= 250.4s it=187472     unc=31         best=8 (749 it/s)
+# t= 260.4s it=194560     unc=10         best=8 (747 it/s)
+# t= 270.5s it=200384     unc=16         best=8 (741 it/s)
+# t= 280.5s it=209280     unc=29         best=8 (746 it/s)
+# t= 290.5s it=214720     unc=58         best=8 (739 it/s)
+# t= 300.5s it=220112     unc=20         best=8 (732 it/s)
+# t= 310.5s it=232304     unc=8          best=8 (748 it/s)
+# t= 320.6s it=241600     unc=17         best=8 (754 it/s)
+# t= 330.6s it=247456     unc=21         best=8 (749 it/s)
+# t= 340.6s it=256224     unc=19         best=8 (752 it/s)
+# t= 350.6s it=264800     unc=8          best=8 (755 it/s)
+# t= 360.6s it=270448     unc=22         best=8 (750 it/s)
+# t= 370.6s it=276208     unc=20         best=8 (745 it/s)
+# t= 380.7s it=280928     unc=14         best=8 (738 it/s)
+# t= 390.7s it=285200     unc=21         best=8 (730 it/s)
+# t= 400.7s it=289600     unc=14         best=8 (723 it/s)
+# t= 410.7s it=293728     unc=12         best=8 (715 it/s)
+# t= 420.8s it=300544     unc=18         best=8 (714 it/s)
+# t= 430.8s it=304752     unc=14         best=8 (707 it/s)
+# t= 440.8s it=309808     unc=24         best=8 (703 it/s)
+# t= 450.8s it=314112     unc=14         best=8 (697 it/s)
+# t= 460.8s it=318992     unc=15         best=8 (692 it/s)
+# t= 470.8s it=323248     unc=14         best=8 (687 it/s)
+# t= 480.9s it=328064     unc=18         best=8 (682 it/s)
+# t= 490.9s it=334560     unc=16         best=8 (682 it/s)
+# t= 500.9s it=339472     unc=20         best=8 (678 it/s)
+# t= 511.0s it=348448     unc=25         best=8 (682 it/s)
+# t= 521.0s it=353888     unc=15         best=8 (679 it/s)
+# t= 531.0s it=358176     unc=9          best=8 (675 it/s)
+# t= 541.0s it=363344     unc=20         best=8 (672 it/s)
+# t= 551.1s it=367264     unc=17         best=8 (666 it/s)
+# t= 561.1s it=371776     unc=19         best=8 (663 it/s)
+# t= 571.1s it=376512     unc=16         best=8 (659 it/s)
+# t= 581.1s it=381088     unc=18         best=8 (656 it/s)
+# t= 591.1s it=386752     unc=17         best=8 (654 it/s)
+# t= 601.1s it=391696     unc=24         best=8 (652 it/s)
+# t= 611.1s it=396112     unc=19         best=8 (648 it/s)
+# t= 621.2s it=400080     unc=18         best=8 (644 it/s)
+# t= 631.2s it=404160     unc=22         best=8 (640 it/s)
+RESULT q=6 n=6 R=3 M=41 uncovered=8 iters=408432 kicks=78 time=640.01 rate=638 cpu=60.001 cpurate=6807 target=-1 ttt_cpu=-1.0000 ttt_wall=-1.0000 ttt_it=-1

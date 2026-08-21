@@ -1,0 +1,5 @@
++ S='taskset -c 56-63 nice -n 15 ./covsearch2_prof'
++ taskset -c 56-63 nice -n 15 ./covsearch2_prof -q 6 -n 6 -R 3 -M 41 --iters 20000 -t 99999 -s 1 --threads 1 --quiet --preset base
++ taskset -c 56-63 nice -n 15 ./covsearch2_prof -q 6 -n 8 -R 4 -M 169 --iters 2000 -t 99999 -s 1 --threads 1 --quiet --preset base
++ taskset -c 56-63 nice -n 15 ./covsearch2_prof -q 8 -n 9 -R 4 -M 2944 --iters 120 -t 99999 -s 1 --threads 1 --quiet --preset base
++ echo DONE

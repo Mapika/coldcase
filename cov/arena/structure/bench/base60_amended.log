@@ -1,0 +1,5 @@
+baseline     K6(6,3)@41: solved 1/5 median_score -172 median_wall 60.0s
+baseline     K6(8,4)@169: solved 0/5 median_score -5 median_wall 63.0s
+baseline     K8(9,4)@940: solved 0/5 median_score -66092 median_wall 108.3s
+baseline     K3(11,4)@81: solved 0/5 median_score -2349 median_wall 60.1s
+{"baseline": {"total_solved": 1, "sum_median": -68618}}

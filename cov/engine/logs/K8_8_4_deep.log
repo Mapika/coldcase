@@ -1,0 +1,52 @@
+
+======================================================================
+cell K_8(8,4)  q^n=16777216  ball=188707
+  Keri 2011: 118 - 512  (upper key c)
+  sphere-covering bound: M >= 89
+
+--- M = 507  (23:22:23) ---
+    |     0.0s cell K8(8,4)@507  q^n=16777216 ball=188707 redundancy=5.70 budget=900s cores=16
+    |     0.0s   phase A: descent seed K8_8_4_M508.txt (508 words)
+    |     0.0s   phase A: lincov not applicable (q=8 prime power? True; M=507)
+    |     0.0s   phase B: 16 chains x 1 thread(s)  (2 symmetric, 10 seeded)  redundancy=5.70 init~7.4s wide=True restart=False slice=900s
+    |     2.8s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_8_4_M507.txt  (M=507)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 512 -> 507 ***
+
+--- M = 506  (23:22:43) ---
+    |     0.0s cell K8(8,4)@506  q^n=16777216 ball=188707 redundancy=5.69 budget=900s cores=16
+    |     0.0s   phase A: descent seed K8_8_4_M507.txt (507 words)
+    |     0.0s   phase A: lincov not applicable (q=8 prime power? True; M=506)
+    |     0.0s   phase B: 16 chains x 1 thread(s)  (2 symmetric, 10 seeded)  redundancy=5.69 init~7.4s wide=True restart=False slice=900s
+    |     3.0s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_8_4_M506.txt  (M=506)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 512 -> 506 ***
+
+--- M = 505  (23:23:02) ---
+    |     0.0s cell K8(8,4)@505  q^n=16777216 ball=188707 redundancy=5.68 budget=900s cores=16
+    |     0.0s   phase A: descent seed K8_8_4_M506.txt (506 words)
+    |     0.0s   phase A: lincov not applicable (q=8 prime power? True; M=505)
+    |     0.0s   phase B: 16 chains x 1 thread(s)  (2 symmetric, 10 seeded)  redundancy=5.68 init~7.3s wide=True restart=False slice=900s
+    |   562.8s   a chain reports a full cover; confirming by recount
+    engine finished in 563s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_8_4_M505.txt  (M=505)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 512 -> 505 ***
+
+--- M = 504  (23:32:42) ---
+    |     0.0s cell K8(8,4)@504  q^n=16777216 ball=188707 redundancy=5.67 budget=900s cores=16
+    |     0.0s   phase A: descent seed K8_8_4_M505.txt (505 words)
+    |    70.1s   phase A: lincov k=1 -> uncovered=None
+    |    70.1s   phase B: 16 chains x 1 thread(s)  (2 symmetric, 10 seeded)  redundancy=5.67 init~7.3s wide=True restart=False slice=900s
+    engine finished in 898s, uncovered=2
+  round 1: best uncovered = 2
+  M=504 not solved
+
+=== recorded ===
+  K_8(8,4) <= 507   K8_8_4_M507.txt   *** BEATS KERI 512 ***
+  K_8(8,4) <= 506   K8_8_4_M506.txt   *** BEATS KERI 512 ***
+  K_8(8,4) <= 505   K8_8_4_M505.txt   *** BEATS KERI 512 ***
+
+======================================================================
+campaign2 done: 3 code(s) verified and recorded

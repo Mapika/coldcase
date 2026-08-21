@@ -1,0 +1,2302 @@
+
+======================================================================
+cell K_6(9,4)  q^n=10077696  ball=90196
+  Keri 2011: 136 - 738  (upper key f)
+  sphere-covering bound: M >= 112
+
+--- M = 694  (02:00:57) ---
+    |     0.0s cell K6(9,4)@694  q^n=10077696 ball=90196 redundancy=6.21 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M695.txt (695 words)
+    |     0.1s   phase A: direct sum (3,1)x(6,3) = 18*41 = 738 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=694)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.21 init~3.1s wide=True restart=False slice=900s
+    |    18.5s   a chain reports a full cover; confirming by recount
+    engine finished in 19s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M694.txt  (M=694)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 694 ***
+
+--- M = 693  (02:01:31) ---
+    |     0.0s cell K6(9,4)@693  q^n=10077696 ball=90196 redundancy=6.20 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M694.txt (694 words)
+    |     0.1s   phase A: direct sum (3,1)x(6,3) = 18*41 = 738 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=693)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.20 init~3.1s wide=True restart=False slice=900s
+    |     3.9s   a chain reports a full cover; confirming by recount
+    engine finished in 4s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M693.txt  (M=693)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 693 ***
+
+--- M = 692  (02:01:47) ---
+    |     0.0s cell K6(9,4)@692  q^n=10077696 ball=90196 redundancy=6.19 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M693.txt (693 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=692)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.19 init~3.1s wide=True restart=False slice=900s
+    |     9.8s   a chain reports a full cover; confirming by recount
+    engine finished in 10s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M692.txt  (M=692)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 692 ***
+
+--- M = 691  (02:02:15) ---
+    |     0.0s cell K6(9,4)@691  q^n=10077696 ball=90196 redundancy=6.18 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M692.txt (692 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=691)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.18 init~3.1s wide=True restart=False slice=900s
+    |    76.6s   a chain reports a full cover; confirming by recount
+    engine finished in 77s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M691.txt  (M=691)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 691 ***
+
+--- M = 690  (02:03:45) ---
+    |     0.0s cell K6(9,4)@690  q^n=10077696 ball=90196 redundancy=6.18 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M691.txt (691 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=690)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.18 init~3.1s wide=True restart=False slice=900s
+    |   408.2s   a chain reports a full cover; confirming by recount
+    engine finished in 408s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M690.txt  (M=690)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 690 ***
+
+--- M = 689  (02:10:48) ---
+    |     0.0s cell K6(9,4)@689  q^n=10077696 ball=90196 redundancy=6.17 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M690.txt (690 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=689)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.17 init~3.1s wide=True restart=False slice=900s
+    |     3.0s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M689.txt  (M=689)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 689 ***
+
+--- M = 688  (02:11:04) ---
+    |     0.0s cell K6(9,4)@688  q^n=10077696 ball=90196 redundancy=6.16 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M689.txt (689 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=688)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.16 init~3.1s wide=True restart=False slice=900s
+    |     3.7s   a chain reports a full cover; confirming by recount
+    engine finished in 4s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M688.txt  (M=688)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 688 ***
+
+--- M = 687  (02:11:23) ---
+    |     0.0s cell K6(9,4)@687  q^n=10077696 ball=90196 redundancy=6.15 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M688.txt (688 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=687)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.15 init~3.1s wide=True restart=False slice=900s
+    |     3.0s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M687.txt  (M=687)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 687 ***
+
+--- M = 686  (02:11:40) ---
+    |     0.0s cell K6(9,4)@686  q^n=10077696 ball=90196 redundancy=6.14 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M687.txt (687 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=686)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.14 init~3.1s wide=True restart=False slice=900s
+    |     2.9s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M686.txt  (M=686)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 686 ***
+
+--- M = 685  (02:11:57) ---
+    |     0.0s cell K6(9,4)@685  q^n=10077696 ball=90196 redundancy=6.13 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M686.txt (686 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=685)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.13 init~3.1s wide=True restart=False slice=900s
+    |     3.1s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M685.txt  (M=685)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 685 ***
+
+--- M = 684  (02:12:23) ---
+    |     0.0s cell K6(9,4)@684  q^n=10077696 ball=90196 redundancy=6.12 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M685.txt (685 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=684)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.12 init~3.1s wide=True restart=False slice=900s
+    |     4.7s   a chain reports a full cover; confirming by recount
+    engine finished in 5s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M684.txt  (M=684)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 684 ***
+
+--- M = 683  (02:12:47) ---
+    |     0.0s cell K6(9,4)@683  q^n=10077696 ball=90196 redundancy=6.11 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M684.txt (684 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=683)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.11 init~3.1s wide=True restart=False slice=900s
+    |     2.9s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M683.txt  (M=683)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 683 ***
+
+--- M = 682  (02:13:03) ---
+    |     0.0s cell K6(9,4)@682  q^n=10077696 ball=90196 redundancy=6.10 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M683.txt (683 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=682)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.10 init~3.1s wide=True restart=False slice=900s
+    |     5.3s   a chain reports a full cover; confirming by recount
+    engine finished in 5s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M682.txt  (M=682)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 682 ***
+
+--- M = 681  (02:13:25) ---
+    |     0.0s cell K6(9,4)@681  q^n=10077696 ball=90196 redundancy=6.09 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M682.txt (682 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=681)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.09 init~3.1s wide=True restart=False slice=900s
+    |     3.4s   a chain reports a full cover; confirming by recount
+    engine finished in 4s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M681.txt  (M=681)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 681 ***
+
+--- M = 680  (02:13:40) ---
+    |     0.0s cell K6(9,4)@680  q^n=10077696 ball=90196 redundancy=6.09 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M681.txt (681 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=680)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.09 init~3.1s wide=True restart=False slice=900s
+    |     4.3s   a chain reports a full cover; confirming by recount
+    engine finished in 4s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M680.txt  (M=680)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 680 ***
+
+--- M = 679  (02:13:56) ---
+    |     0.0s cell K6(9,4)@679  q^n=10077696 ball=90196 redundancy=6.08 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M680.txt (680 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=679)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.08 init~3.1s wide=True restart=False slice=900s
+    |     2.8s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M679.txt  (M=679)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 679 ***
+
+--- M = 678  (02:14:10) ---
+    |     0.0s cell K6(9,4)@678  q^n=10077696 ball=90196 redundancy=6.07 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M679.txt (679 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=678)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.07 init~3.1s wide=True restart=False slice=900s
+    |     2.9s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M678.txt  (M=678)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 678 ***
+
+--- M = 677  (02:14:26) ---
+    |     0.0s cell K6(9,4)@677  q^n=10077696 ball=90196 redundancy=6.06 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M678.txt (678 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=677)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.06 init~3.1s wide=True restart=False slice=900s
+    |     4.9s   a chain reports a full cover; confirming by recount
+    engine finished in 5s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M677.txt  (M=677)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 677 ***
+
+--- M = 676  (02:14:42) ---
+    |     0.0s cell K6(9,4)@676  q^n=10077696 ball=90196 redundancy=6.05 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M677.txt (677 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=676)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.05 init~3.1s wide=True restart=False slice=900s
+    |     3.9s   a chain reports a full cover; confirming by recount
+    engine finished in 4s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M676.txt  (M=676)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 676 ***
+
+--- M = 675  (02:14:58) ---
+    |     0.0s cell K6(9,4)@675  q^n=10077696 ball=90196 redundancy=6.04 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M676.txt (676 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=675)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.04 init~3.1s wide=True restart=False slice=900s
+    |     4.5s   a chain reports a full cover; confirming by recount
+    engine finished in 5s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M675.txt  (M=675)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 675 ***
+
+--- M = 674  (02:15:14) ---
+    |     0.0s cell K6(9,4)@674  q^n=10077696 ball=90196 redundancy=6.03 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M675.txt (675 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=674)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.03 init~3.1s wide=True restart=False slice=900s
+    |     4.8s   a chain reports a full cover; confirming by recount
+    engine finished in 5s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M674.txt  (M=674)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 674 ***
+
+--- M = 673  (02:15:31) ---
+    |     0.0s cell K6(9,4)@673  q^n=10077696 ball=90196 redundancy=6.02 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M674.txt (674 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=673)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.02 init~3.1s wide=True restart=False slice=900s
+    |     3.2s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M673.txt  (M=673)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 673 ***
+
+--- M = 672  (02:15:47) ---
+    |     0.0s cell K6(9,4)@672  q^n=10077696 ball=90196 redundancy=6.01 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M673.txt (673 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=672)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.01 init~3.0s wide=True restart=False slice=900s
+    |     9.6s   a chain reports a full cover; confirming by recount
+    engine finished in 10s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M672.txt  (M=672)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 672 ***
+
+--- M = 671  (02:16:08) ---
+    |     0.0s cell K6(9,4)@671  q^n=10077696 ball=90196 redundancy=6.01 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M672.txt (672 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=671)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.01 init~3.0s wide=True restart=False slice=900s
+    |    13.3s   a chain reports a full cover; confirming by recount
+    engine finished in 13s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M671.txt  (M=671)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 671 ***
+
+--- M = 670  (02:16:33) ---
+    |     0.0s cell K6(9,4)@670  q^n=10077696 ball=90196 redundancy=6.00 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M671.txt (671 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=670)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=6.00 init~3.0s wide=True restart=False slice=900s
+    |     9.2s   a chain reports a full cover; confirming by recount
+    engine finished in 9s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M670.txt  (M=670)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 670 ***
+
+--- M = 669  (02:16:54) ---
+    |     0.0s cell K6(9,4)@669  q^n=10077696 ball=90196 redundancy=5.99 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M670.txt (670 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=669)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.99 init~3.0s wide=True restart=False slice=900s
+    |     9.2s   a chain reports a full cover; confirming by recount
+    engine finished in 9s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M669.txt  (M=669)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 669 ***
+
+--- M = 668  (02:17:16) ---
+    |     0.0s cell K6(9,4)@668  q^n=10077696 ball=90196 redundancy=5.98 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M669.txt (669 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=668)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.98 init~3.0s wide=True restart=False slice=900s
+    |   413.9s   a chain reports a full cover; confirming by recount
+    engine finished in 414s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M668.txt  (M=668)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 668 ***
+
+--- M = 667  (02:24:25) ---
+    |     0.0s cell K6(9,4)@667  q^n=10077696 ball=90196 redundancy=5.97 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M668.txt (668 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=667)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.97 init~3.0s wide=True restart=False slice=900s
+    |     8.7s   a chain reports a full cover; confirming by recount
+    engine finished in 9s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M667.txt  (M=667)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 667 ***
+
+--- M = 666  (02:24:48) ---
+    |     0.0s cell K6(9,4)@666  q^n=10077696 ball=90196 redundancy=5.96 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M667.txt (667 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=666)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.96 init~3.0s wide=True restart=False slice=900s
+    |    20.7s   a chain reports a full cover; confirming by recount
+    engine finished in 21s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M666.txt  (M=666)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 666 ***
+
+--- M = 665  (02:25:23) ---
+    |     0.0s cell K6(9,4)@665  q^n=10077696 ball=90196 redundancy=5.95 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M666.txt (666 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=665)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.95 init~3.0s wide=True restart=False slice=900s
+    |    10.8s   a chain reports a full cover; confirming by recount
+    engine finished in 11s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M665.txt  (M=665)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 665 ***
+
+--- M = 664  (02:25:48) ---
+    |     0.0s cell K6(9,4)@664  q^n=10077696 ball=90196 redundancy=5.94 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M665.txt (665 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=664)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.94 init~3.0s wide=True restart=False slice=900s
+    |   113.3s   a chain reports a full cover; confirming by recount
+    engine finished in 113s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_9_4_M664.txt  (M=664)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 738 -> 664 ***
+
+--- M = 663  (02:28:01) ---
+    |     0.0s cell K6(9,4)@663  q^n=10077696 ball=90196 redundancy=5.93 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_9_4_M664.txt (664 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=663)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.93 init~3.0s wide=True restart=False slice=900s
+    engine finished in 898s, uncovered=2
+  round 1: best uncovered = 2
+  M=663 not solved
+
+=== recorded ===
+  K_6(9,4) <= 694   K6_9_4_M694.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 693   K6_9_4_M693.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 692   K6_9_4_M692.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 691   K6_9_4_M691.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 690   K6_9_4_M690.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 689   K6_9_4_M689.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 688   K6_9_4_M688.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 687   K6_9_4_M687.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 686   K6_9_4_M686.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 685   K6_9_4_M685.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 684   K6_9_4_M684.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 683   K6_9_4_M683.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 682   K6_9_4_M682.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 681   K6_9_4_M681.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 680   K6_9_4_M680.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 679   K6_9_4_M679.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 678   K6_9_4_M678.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 677   K6_9_4_M677.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 676   K6_9_4_M676.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 675   K6_9_4_M675.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 674   K6_9_4_M674.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 673   K6_9_4_M673.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 672   K6_9_4_M672.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 671   K6_9_4_M671.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 670   K6_9_4_M670.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 669   K6_9_4_M669.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 668   K6_9_4_M668.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 667   K6_9_4_M667.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 666   K6_9_4_M666.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 665   K6_9_4_M665.txt   *** BEATS KERI 738 ***
+  K_6(9,4) <= 664   K6_9_4_M664.txt   *** BEATS KERI 738 ***
+
+======================================================================
+cell K_6(10,5)  q^n=60466176  ball=934926
+  Keri 2011: 83 - 615  (upper key f)
+  sphere-covering bound: M >= 65
+
+--- M = 601  (02:42:59) ---
+    |     0.0s cell K6(10,5)@601  q^n=60466176 ball=934926 redundancy=9.29 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M602.txt (602 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=601)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.29 init~50.6s wide=True restart=False slice=900s
+    |     8.6s   a chain reports a full cover; confirming by recount
+    engine finished in 9s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M601.txt  (M=601)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 601 ***
+
+--- M = 600  (02:45:40) ---
+    |     0.0s cell K6(10,5)@600  q^n=60466176 ball=934926 redundancy=9.28 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M601.txt (601 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=600)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.28 init~50.5s wide=True restart=False slice=900s
+    |     6.2s   a chain reports a full cover; confirming by recount
+    engine finished in 6s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M600.txt  (M=600)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 600 ***
+
+--- M = 599  (02:48:52) ---
+    |     0.0s cell K6(10,5)@599  q^n=60466176 ball=934926 redundancy=9.26 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M600.txt (600 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=599)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.26 init~50.4s wide=True restart=False slice=900s
+    |     8.5s   a chain reports a full cover; confirming by recount
+    engine finished in 9s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M599.txt  (M=599)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 599 ***
+
+--- M = 598  (02:53:12) ---
+    |     0.0s cell K6(10,5)@598  q^n=60466176 ball=934926 redundancy=9.25 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M599.txt (599 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=598)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.25 init~50.3s wide=True restart=False slice=900s
+    |    13.1s   a chain reports a full cover; confirming by recount
+    engine finished in 13s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M598.txt  (M=598)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 598 ***
+
+--- M = 597  (02:57:40) ---
+    |     0.0s cell K6(10,5)@597  q^n=60466176 ball=934926 redundancy=9.23 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M598.txt (598 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=597)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.23 init~50.2s wide=True restart=False slice=900s
+    |    15.0s   a chain reports a full cover; confirming by recount
+    engine finished in 15s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M597.txt  (M=597)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 597 ***
+
+--- M = 596  (03:01:48) ---
+    |     0.0s cell K6(10,5)@596  q^n=60466176 ball=934926 redundancy=9.22 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M597.txt (597 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=596)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.22 init~50.1s wide=True restart=False slice=900s
+    |    14.0s   a chain reports a full cover; confirming by recount
+    engine finished in 14s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M596.txt  (M=596)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 596 ***
+
+--- M = 595  (03:06:10) ---
+    |     0.0s cell K6(10,5)@595  q^n=60466176 ball=934926 redundancy=9.20 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M596.txt (596 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=595)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.20 init~50.1s wide=True restart=False slice=900s
+    |     4.9s   a chain reports a full cover; confirming by recount
+    engine finished in 5s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M595.txt  (M=595)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 595 ***
+
+--- M = 594  (03:09:36) ---
+    |     0.0s cell K6(10,5)@594  q^n=60466176 ball=934926 redundancy=9.18 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M595.txt (595 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=594)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.18 init~50.0s wide=True restart=False slice=900s
+    |     5.1s   a chain reports a full cover; confirming by recount
+    engine finished in 5s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M594.txt  (M=594)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 594 ***
+
+--- M = 593  (03:13:13) ---
+    |     0.0s cell K6(10,5)@593  q^n=60466176 ball=934926 redundancy=9.17 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M594.txt (594 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=593)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.17 init~49.9s wide=True restart=False slice=900s
+    |     7.7s   a chain reports a full cover; confirming by recount
+    engine finished in 8s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M593.txt  (M=593)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 593 ***
+
+--- M = 592  (03:15:37) ---
+    |     0.0s cell K6(10,5)@592  q^n=60466176 ball=934926 redundancy=9.15 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M593.txt (593 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=592)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.15 init~49.8s wide=True restart=False slice=900s
+    |     6.9s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M592.txt  (M=592)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 592 ***
+
+--- M = 591  (03:17:44) ---
+    |     0.0s cell K6(10,5)@591  q^n=60466176 ball=934926 redundancy=9.14 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M592.txt (592 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=591)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.14 init~49.7s wide=True restart=False slice=900s
+    |     5.8s   a chain reports a full cover; confirming by recount
+    engine finished in 6s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M591.txt  (M=591)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 591 ***
+
+--- M = 590  (03:20:05) ---
+    |     0.0s cell K6(10,5)@590  q^n=60466176 ball=934926 redundancy=9.12 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M591.txt (591 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=590)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.12 init~49.6s wide=True restart=False slice=900s
+    |     7.3s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M590.txt  (M=590)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 590 ***
+
+--- M = 589  (03:22:17) ---
+    |     0.0s cell K6(10,5)@589  q^n=60466176 ball=934926 redundancy=9.11 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M590.txt (590 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=589)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.11 init~49.6s wide=True restart=False slice=900s
+    |     7.7s   a chain reports a full cover; confirming by recount
+    engine finished in 8s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M589.txt  (M=589)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 589 ***
+
+--- M = 588  (03:24:47) ---
+    |     0.0s cell K6(10,5)@588  q^n=60466176 ball=934926 redundancy=9.09 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M589.txt (589 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=588)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.09 init~49.5s wide=True restart=False slice=900s
+    |     5.0s   a chain reports a full cover; confirming by recount
+    engine finished in 5s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M588.txt  (M=588)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 588 ***
+
+--- M = 587  (03:26:29) ---
+    |     0.0s cell K6(10,5)@587  q^n=60466176 ball=934926 redundancy=9.08 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M588.txt (588 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=587)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.08 init~49.4s wide=True restart=False slice=900s
+    |     3.6s   a chain reports a full cover; confirming by recount
+    engine finished in 4s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M587.txt  (M=587)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 587 ***
+
+--- M = 586  (03:28:08) ---
+    |     0.0s cell K6(10,5)@586  q^n=60466176 ball=934926 redundancy=9.06 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M587.txt (587 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=586)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.06 init~49.3s wide=True restart=False slice=900s
+    |     3.4s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M586.txt  (M=586)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 586 ***
+
+--- M = 585  (03:29:55) ---
+    |     0.0s cell K6(10,5)@585  q^n=60466176 ball=934926 redundancy=9.05 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M586.txt (586 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=585)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.05 init~49.2s wide=True restart=False slice=900s
+    |     3.7s   a chain reports a full cover; confirming by recount
+    engine finished in 4s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M585.txt  (M=585)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 585 ***
+
+--- M = 584  (03:31:34) ---
+    |     0.0s cell K6(10,5)@584  q^n=60466176 ball=934926 redundancy=9.03 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M585.txt (585 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=584)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.03 init~49.1s wide=True restart=False slice=900s
+    |     3.6s   a chain reports a full cover; confirming by recount
+    engine finished in 4s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M584.txt  (M=584)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 584 ***
+
+--- M = 583  (03:33:14) ---
+    |     0.0s cell K6(10,5)@583  q^n=60466176 ball=934926 redundancy=9.01 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M584.txt (584 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=583)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.01 init~49.1s wide=True restart=False slice=900s
+    |     3.2s   a chain reports a full cover; confirming by recount
+    engine finished in 3s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M583.txt  (M=583)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 583 ***
+
+--- M = 582  (03:34:55) ---
+    |     0.0s cell K6(10,5)@582  q^n=60466176 ball=934926 redundancy=9.00 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M583.txt (583 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=582)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=9.00 init~49.0s wide=True restart=False slice=900s
+    |     3.5s   a chain reports a full cover; confirming by recount
+    engine finished in 4s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M582.txt  (M=582)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 582 ***
+
+--- M = 581  (03:36:33) ---
+    |     0.0s cell K6(10,5)@581  q^n=60466176 ball=934926 redundancy=8.98 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M582.txt (582 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=581)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=8.98 init~48.9s wide=True restart=False slice=900s
+    |     4.7s   a chain reports a full cover; confirming by recount
+    engine finished in 5s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M581.txt  (M=581)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 581 ***
+
+--- M = 580  (03:41:41) ---
+    |     0.0s cell K6(10,5)@580  q^n=60466176 ball=934926 redundancy=8.97 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M581.txt (581 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=580)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=8.97 init~48.8s wide=True restart=False slice=900s
+    |    27.2s   a chain reports a full cover; confirming by recount
+    engine finished in 27s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M580.txt  (M=580)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 580 ***
+
+--- M = 579  (03:47:00) ---
+    |     0.0s cell K6(10,5)@579  q^n=60466176 ball=934926 redundancy=8.95 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M580.txt (580 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=579)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=8.95 init~48.7s wide=True restart=False slice=900s
+    |    22.7s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M579.txt  (M=579)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 579 ***
+
+--- M = 578  (03:51:29) ---
+    |     0.0s cell K6(10,5)@578  q^n=60466176 ball=934926 redundancy=8.94 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M579.txt (579 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=578)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=8.94 init~48.6s wide=True restart=False slice=900s
+    |    25.0s   a chain reports a full cover; confirming by recount
+    engine finished in 25s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M578.txt  (M=578)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 578 ***
+
+--- M = 577  (03:55:05) ---
+    |     0.0s cell K6(10,5)@577  q^n=60466176 ball=934926 redundancy=8.92 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M578.txt (578 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=577)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=8.92 init~48.6s wide=True restart=False slice=900s
+    |    20.8s   a chain reports a full cover; confirming by recount
+    engine finished in 21s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M577.txt  (M=577)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 577 ***
+
+--- M = 576  (03:58:49) ---
+    |     0.0s cell K6(10,5)@576  q^n=60466176 ball=934926 redundancy=8.91 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M577.txt (577 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=576)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=8.91 init~48.5s wide=True restart=False slice=900s
+    |    18.0s   a chain reports a full cover; confirming by recount
+    engine finished in 18s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M576.txt  (M=576)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 576 ***
+
+--- M = 575  (04:02:41) ---
+    |     0.0s cell K6(10,5)@575  q^n=60466176 ball=934926 redundancy=8.89 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_5_M576.txt (576 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=575)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=8.89 init~48.4s wide=True restart=False slice=900s
+    |    13.2s   a chain reports a full cover; confirming by recount
+    engine finished in 13s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_5_M575.txt  (M=575)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 615 -> 575 ***
+
+=== recorded ===
+  K_6(10,5) <= 601   K6_10_5_M601.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 600   K6_10_5_M600.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 599   K6_10_5_M599.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 598   K6_10_5_M598.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 597   K6_10_5_M597.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 596   K6_10_5_M596.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 595   K6_10_5_M595.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 594   K6_10_5_M594.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 593   K6_10_5_M593.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 592   K6_10_5_M592.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 591   K6_10_5_M591.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 590   K6_10_5_M590.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 589   K6_10_5_M589.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 588   K6_10_5_M588.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 587   K6_10_5_M587.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 586   K6_10_5_M586.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 585   K6_10_5_M585.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 584   K6_10_5_M584.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 583   K6_10_5_M583.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 582   K6_10_5_M582.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 581   K6_10_5_M581.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 580   K6_10_5_M580.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 579   K6_10_5_M579.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 578   K6_10_5_M578.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 577   K6_10_5_M577.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 576   K6_10_5_M576.txt   *** BEATS KERI 615 ***
+  K_6(10,5) <= 575   K6_10_5_M575.txt   *** BEATS KERI 615 ***
+
+======================================================================
+cell K_7(8,4)  q^n=5764801  ball=103873
+  Keri 2011: 76 - 343  (upper key c)
+  sphere-covering bound: M >= 56
+
+--- M = 321  (04:08:22) ---
+    |     0.0s cell K7(8,4)@321  q^n=5764801 ball=103873 redundancy=5.78 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_8_4_M322.txt (322 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=321)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.78 init~1.1s wide=True restart=False slice=900s
+    |    42.3s   a chain reports a full cover; confirming by recount
+    engine finished in 42s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_8_4_M321.txt  (M=321)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 343 -> 321 ***
+
+--- M = 320  (04:09:12) ---
+    |     0.0s cell K7(8,4)@320  q^n=5764801 ball=103873 redundancy=5.77 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_8_4_M321.txt (321 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=320)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.77 init~1.1s wide=True restart=False slice=900s
+    |    53.7s   a chain reports a full cover; confirming by recount
+    engine finished in 54s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_8_4_M320.txt  (M=320)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 343 -> 320 ***
+
+--- M = 319  (04:10:20) ---
+    |     0.0s cell K7(8,4)@319  q^n=5764801 ball=103873 redundancy=5.75 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_8_4_M320.txt (320 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=319)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.75 init~1.1s wide=True restart=False slice=900s
+    |   412.0s   a chain reports a full cover; confirming by recount
+    engine finished in 412s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_8_4_M319.txt  (M=319)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 343 -> 319 ***
+
+--- M = 318  (04:17:19) ---
+    |     0.0s cell K7(8,4)@318  q^n=5764801 ball=103873 redundancy=5.73 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_8_4_M319.txt (319 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=318)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.73 init~1.1s wide=True restart=False slice=900s
+    |     6.2s   a chain reports a full cover; confirming by recount
+    engine finished in 6s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_8_4_M318.txt  (M=318)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 343 -> 318 ***
+
+--- M = 317  (04:17:30) ---
+    |     0.0s cell K7(8,4)@317  q^n=5764801 ball=103873 redundancy=5.71 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_8_4_M318.txt (318 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=317)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.71 init~1.1s wide=True restart=False slice=900s
+    |     5.5s   a chain reports a full cover; confirming by recount
+    engine finished in 6s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_8_4_M317.txt  (M=317)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 343 -> 317 ***
+
+--- M = 316  (04:17:42) ---
+    |     0.0s cell K7(8,4)@316  q^n=5764801 ball=103873 redundancy=5.69 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_8_4_M317.txt (317 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=316)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.69 init~1.1s wide=True restart=False slice=900s
+    |    23.8s   a chain reports a full cover; confirming by recount
+    engine finished in 24s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_8_4_M316.txt  (M=316)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 343 -> 316 ***
+
+--- M = 315  (04:18:11) ---
+    |     0.0s cell K7(8,4)@315  q^n=5764801 ball=103873 redundancy=5.68 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_8_4_M316.txt (316 words)
+    |    70.0s   phase A: lincov k=1 -> uncovered=None
+    |    70.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.68 init~1.1s wide=True restart=False slice=900s
+    engine finished in 898s, uncovered=2
+  round 1: best uncovered = 2
+  M=315 not solved
+
+=== recorded ===
+  K_7(8,4) <= 321   K7_8_4_M321.txt   *** BEATS KERI 343 ***
+  K_7(8,4) <= 320   K7_8_4_M320.txt   *** BEATS KERI 343 ***
+  K_7(8,4) <= 319   K7_8_4_M319.txt   *** BEATS KERI 343 ***
+  K_7(8,4) <= 318   K7_8_4_M318.txt   *** BEATS KERI 343 ***
+  K_7(8,4) <= 317   K7_8_4_M317.txt   *** BEATS KERI 343 ***
+  K_7(8,4) <= 316   K7_8_4_M316.txt   *** BEATS KERI 343 ***
+
+======================================================================
+cell K_6(8,3)  q^n=1679616  ball=7741
+  Keri 2011: 246 - 1080  (upper key f)
+  sphere-covering bound: M >= 217
+
+--- M = 1035  (04:33:09) ---
+    |     0.0s cell K6(8,3)@1035  q^n=1679616 ball=7741 redundancy=4.77 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1036.txt (1036 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1035)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.77 init~0.1s wide=True restart=False slice=900s
+    |     0.4s   a chain reports a full cover; confirming by recount
+    engine finished in 0s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1035.txt  (M=1035)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1035 ***
+
+--- M = 1034  (04:33:11) ---
+    |     0.0s cell K6(8,3)@1034  q^n=1679616 ball=7741 redundancy=4.77 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1035.txt (1035 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1034)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.77 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1034.txt  (M=1034)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1034 ***
+
+--- M = 1033  (04:33:13) ---
+    |     0.0s cell K6(8,3)@1033  q^n=1679616 ball=7741 redundancy=4.76 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1034.txt (1034 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1033)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.76 init~0.1s wide=True restart=False slice=900s
+    |     0.3s   a chain reports a full cover; confirming by recount
+    engine finished in 0s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1033.txt  (M=1033)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1033 ***
+
+--- M = 1032  (04:33:15) ---
+    |     0.0s cell K6(8,3)@1032  q^n=1679616 ball=7741 redundancy=4.76 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1033.txt (1033 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1032)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.76 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1032.txt  (M=1032)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1032 ***
+
+--- M = 1031  (04:33:18) ---
+    |     0.0s cell K6(8,3)@1031  q^n=1679616 ball=7741 redundancy=4.75 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1032.txt (1032 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1031)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.75 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1031.txt  (M=1031)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1031 ***
+
+--- M = 1030  (04:33:22) ---
+    |     0.0s cell K6(8,3)@1030  q^n=1679616 ball=7741 redundancy=4.75 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1031.txt (1031 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1030)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.75 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1030.txt  (M=1030)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1030 ***
+
+--- M = 1029  (04:33:24) ---
+    |     0.0s cell K6(8,3)@1029  q^n=1679616 ball=7741 redundancy=4.74 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1030.txt (1030 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1029)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.74 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1029.txt  (M=1029)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1029 ***
+
+--- M = 1028  (04:33:27) ---
+    |     0.0s cell K6(8,3)@1028  q^n=1679616 ball=7741 redundancy=4.74 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1029.txt (1029 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1028)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.74 init~0.1s wide=True restart=False slice=900s
+    |     0.7s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1028.txt  (M=1028)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1028 ***
+
+--- M = 1027  (04:33:31) ---
+    |     0.0s cell K6(8,3)@1027  q^n=1679616 ball=7741 redundancy=4.73 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1028.txt (1028 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1027)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.73 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1027.txt  (M=1027)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1027 ***
+
+--- M = 1026  (04:33:36) ---
+    |     0.0s cell K6(8,3)@1026  q^n=1679616 ball=7741 redundancy=4.73 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1027.txt (1027 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1026)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.73 init~0.1s wide=True restart=False slice=900s
+    |     0.7s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1026.txt  (M=1026)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1026 ***
+
+--- M = 1025  (04:33:38) ---
+    |     0.0s cell K6(8,3)@1025  q^n=1679616 ball=7741 redundancy=4.72 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1026.txt (1026 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1025)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.72 init~0.1s wide=True restart=False slice=900s
+    |     0.7s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1025.txt  (M=1025)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1025 ***
+
+--- M = 1024  (04:33:41) ---
+    |     0.0s cell K6(8,3)@1024  q^n=1679616 ball=7741 redundancy=4.72 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1025.txt (1025 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1024)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.72 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1024.txt  (M=1024)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1024 ***
+
+--- M = 1023  (04:33:45) ---
+    |     0.0s cell K6(8,3)@1023  q^n=1679616 ball=7741 redundancy=4.71 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1024.txt (1024 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1023)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.71 init~0.1s wide=True restart=False slice=900s
+    |     0.4s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1023.txt  (M=1023)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1023 ***
+
+--- M = 1022  (04:33:48) ---
+    |     0.0s cell K6(8,3)@1022  q^n=1679616 ball=7741 redundancy=4.71 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1023.txt (1023 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1022)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.71 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1022.txt  (M=1022)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1022 ***
+
+--- M = 1021  (04:33:52) ---
+    |     0.0s cell K6(8,3)@1021  q^n=1679616 ball=7741 redundancy=4.71 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1022.txt (1022 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1021)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.71 init~0.1s wide=True restart=False slice=900s
+    |     0.7s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1021.txt  (M=1021)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1021 ***
+
+--- M = 1020  (04:33:55) ---
+    |     0.0s cell K6(8,3)@1020  q^n=1679616 ball=7741 redundancy=4.70 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1021.txt (1021 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1020)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.70 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1020.txt  (M=1020)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1020 ***
+
+--- M = 1019  (04:33:59) ---
+    |     0.0s cell K6(8,3)@1019  q^n=1679616 ball=7741 redundancy=4.70 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1020.txt (1020 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1019)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.70 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1019.txt  (M=1019)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1019 ***
+
+--- M = 1018  (04:34:01) ---
+    |     0.0s cell K6(8,3)@1018  q^n=1679616 ball=7741 redundancy=4.69 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1019.txt (1019 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1018)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.69 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1018.txt  (M=1018)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1018 ***
+
+--- M = 1017  (04:34:07) ---
+    |     0.0s cell K6(8,3)@1017  q^n=1679616 ball=7741 redundancy=4.69 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1018.txt (1018 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1017)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.69 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1017.txt  (M=1017)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1017 ***
+
+--- M = 1016  (04:34:09) ---
+    |     0.0s cell K6(8,3)@1016  q^n=1679616 ball=7741 redundancy=4.68 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1017.txt (1017 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1016)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.68 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1016.txt  (M=1016)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1016 ***
+
+--- M = 1015  (04:34:13) ---
+    |     0.0s cell K6(8,3)@1015  q^n=1679616 ball=7741 redundancy=4.68 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1016.txt (1016 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1015)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.68 init~0.1s wide=True restart=False slice=900s
+    |     0.8s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1015.txt  (M=1015)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1015 ***
+
+--- M = 1014  (04:34:15) ---
+    |     0.0s cell K6(8,3)@1014  q^n=1679616 ball=7741 redundancy=4.67 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1015.txt (1015 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1014)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.67 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1014.txt  (M=1014)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1014 ***
+
+--- M = 1013  (04:34:18) ---
+    |     0.0s cell K6(8,3)@1013  q^n=1679616 ball=7741 redundancy=4.67 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1014.txt (1014 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1013)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.67 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1013.txt  (M=1013)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1013 ***
+
+--- M = 1012  (04:34:22) ---
+    |     0.0s cell K6(8,3)@1012  q^n=1679616 ball=7741 redundancy=4.66 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1013.txt (1013 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1012)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.66 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1012.txt  (M=1012)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1012 ***
+
+--- M = 1011  (04:34:26) ---
+    |     0.0s cell K6(8,3)@1011  q^n=1679616 ball=7741 redundancy=4.66 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1012.txt (1012 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1011)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.66 init~0.1s wide=True restart=False slice=900s
+    |     0.8s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1011.txt  (M=1011)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1011 ***
+
+--- M = 1010  (04:34:30) ---
+    |     0.0s cell K6(8,3)@1010  q^n=1679616 ball=7741 redundancy=4.65 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1011.txt (1011 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1010)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.65 init~0.1s wide=True restart=False slice=900s
+    |     1.0s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1010.txt  (M=1010)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1010 ***
+
+--- M = 1009  (04:34:34) ---
+    |     0.0s cell K6(8,3)@1009  q^n=1679616 ball=7741 redundancy=4.65 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1010.txt (1010 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1009)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.65 init~0.1s wide=True restart=False slice=900s
+    |     1.2s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1009.txt  (M=1009)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1009 ***
+
+--- M = 1008  (04:34:37) ---
+    |     0.0s cell K6(8,3)@1008  q^n=1679616 ball=7741 redundancy=4.65 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1009.txt (1009 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1008)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.65 init~0.1s wide=True restart=False slice=900s
+    |     0.6s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1008.txt  (M=1008)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1008 ***
+
+--- M = 1007  (04:34:40) ---
+    |     0.0s cell K6(8,3)@1007  q^n=1679616 ball=7741 redundancy=4.64 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1008.txt (1008 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1007)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.64 init~0.1s wide=True restart=False slice=900s
+    |     1.2s   a chain reports a full cover; confirming by recount
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1007.txt  (M=1007)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1007 ***
+
+--- M = 1006  (04:34:44) ---
+    |     0.0s cell K6(8,3)@1006  q^n=1679616 ball=7741 redundancy=4.64 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1007.txt (1007 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1006)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.64 init~0.1s wide=True restart=False slice=900s
+    |    13.9s   a chain reports a full cover; confirming by recount
+    engine finished in 14s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1006.txt  (M=1006)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1006 ***
+
+--- M = 1005  (04:35:00) ---
+    |     0.0s cell K6(8,3)@1005  q^n=1679616 ball=7741 redundancy=4.63 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1006.txt (1006 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1005)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.63 init~0.1s wide=True restart=False slice=900s
+    |     4.0s   a chain reports a full cover; confirming by recount
+    engine finished in 4s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_8_3_M1005.txt  (M=1005)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1080 -> 1005 ***
+
+--- M = 1004  (04:35:06) ---
+    |     0.0s cell K6(8,3)@1004  q^n=1679616 ball=7741 redundancy=4.63 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_3_M1005.txt (1005 words)
+    |     0.1s   phase A: direct sum (4,1)x(4,2) = 72*15 = 1080 words
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=1004)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=4.63 init~0.1s wide=True restart=False slice=900s
+    engine finished in 898s, uncovered=2
+  round 1: best uncovered = 2
+  M=1004 not solved
+
+=== recorded ===
+  K_6(8,3) <= 1035   K6_8_3_M1035.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1034   K6_8_3_M1034.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1033   K6_8_3_M1033.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1032   K6_8_3_M1032.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1031   K6_8_3_M1031.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1030   K6_8_3_M1030.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1029   K6_8_3_M1029.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1028   K6_8_3_M1028.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1027   K6_8_3_M1027.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1026   K6_8_3_M1026.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1025   K6_8_3_M1025.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1024   K6_8_3_M1024.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1023   K6_8_3_M1023.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1022   K6_8_3_M1022.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1021   K6_8_3_M1021.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1020   K6_8_3_M1020.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1019   K6_8_3_M1019.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1018   K6_8_3_M1018.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1017   K6_8_3_M1017.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1016   K6_8_3_M1016.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1015   K6_8_3_M1015.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1014   K6_8_3_M1014.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1013   K6_8_3_M1013.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1012   K6_8_3_M1012.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1011   K6_8_3_M1011.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1010   K6_8_3_M1010.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1009   K6_8_3_M1009.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1008   K6_8_3_M1008.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1007   K6_8_3_M1007.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1006   K6_8_3_M1006.txt   *** BEATS KERI 1080 ***
+  K_6(8,3) <= 1005   K6_8_3_M1005.txt   *** BEATS KERI 1080 ***
+
+======================================================================
+cell K_7(9,4)  q^n=40353607  ball=182791
+  Keri 2011: 264 - 1843  (upper key f)
+  sphere-covering bound: M >= 221
+
+--- M = 1729  (04:50:04) ---
+    |     0.0s cell K7(9,4)@1729  q^n=40353607 ball=182791 redundancy=7.83 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1730.txt (1730 words)
+    |    70.1s   phase A: lincov k=1 -> uncovered=None
+    |    70.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.83 init~28.4s wide=True restart=False slice=900s
+    |    79.1s   a chain reports a full cover; confirming by recount
+    engine finished in 79s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1729.txt  (M=1729)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1729 ***
+
+--- M = 1728  (04:52:25) ---
+    |     0.0s cell K7(9,4)@1728  q^n=40353607 ball=182791 redundancy=7.83 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1729.txt (1729 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1728)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.83 init~28.4s wide=True restart=False slice=900s
+    |     9.9s   a chain reports a full cover; confirming by recount
+    engine finished in 10s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1728.txt  (M=1728)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1728 ***
+
+--- M = 1727  (04:53:58) ---
+    |     0.0s cell K7(9,4)@1727  q^n=40353607 ball=182791 redundancy=7.82 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1728.txt (1728 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1727)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.82 init~28.4s wide=True restart=False slice=900s
+    |    10.1s   a chain reports a full cover; confirming by recount
+    engine finished in 10s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1727.txt  (M=1727)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1727 ***
+
+--- M = 1726  (04:55:27) ---
+    |     0.0s cell K7(9,4)@1726  q^n=40353607 ball=182791 redundancy=7.82 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1727.txt (1727 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1726)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.82 init~28.4s wide=True restart=False slice=900s
+    |     9.1s   a chain reports a full cover; confirming by recount
+    engine finished in 9s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1726.txt  (M=1726)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1726 ***
+
+--- M = 1725  (04:56:44) ---
+    |     0.0s cell K7(9,4)@1725  q^n=40353607 ball=182791 redundancy=7.81 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1726.txt (1726 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1725)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.81 init~28.4s wide=True restart=False slice=900s
+    |     8.5s   a chain reports a full cover; confirming by recount
+    engine finished in 9s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1725.txt  (M=1725)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1725 ***
+
+--- M = 1724  (04:58:10) ---
+    |     0.0s cell K7(9,4)@1724  q^n=40353607 ball=182791 redundancy=7.81 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1725.txt (1725 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1724)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.81 init~28.4s wide=True restart=False slice=900s
+    |     8.9s   a chain reports a full cover; confirming by recount
+    engine finished in 9s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1724.txt  (M=1724)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1724 ***
+
+--- M = 1723  (04:59:26) ---
+    |     0.0s cell K7(9,4)@1723  q^n=40353607 ball=182791 redundancy=7.80 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1724.txt (1724 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1723)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.80 init~28.3s wide=True restart=False slice=900s
+    |     8.3s   a chain reports a full cover; confirming by recount
+    engine finished in 8s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1723.txt  (M=1723)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1723 ***
+
+--- M = 1722  (05:00:48) ---
+    |     0.0s cell K7(9,4)@1722  q^n=40353607 ball=182791 redundancy=7.80 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1723.txt (1723 words)
+    |    70.1s   phase A: lincov k=1 -> uncovered=None
+    |    70.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.80 init~28.3s wide=True restart=False slice=900s
+    |    88.8s   a chain reports a full cover; confirming by recount
+    engine finished in 89s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1722.txt  (M=1722)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1722 ***
+
+--- M = 1721  (05:04:40) ---
+    |     0.0s cell K7(9,4)@1721  q^n=40353607 ball=182791 redundancy=7.80 budget=900s cores=12
+    |     0.1s   phase A: descent seed K7_9_4_M1722.txt (1722 words)
+    |     0.2s   phase A: lincov not applicable (q=7 prime power? True; M=1721)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.80 init~28.3s wide=True restart=False slice=900s
+    |    24.8s   a chain reports a full cover; confirming by recount
+    engine finished in 25s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1721.txt  (M=1721)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1721 ***
+
+--- M = 1720  (05:07:33) ---
+    |     0.0s cell K7(9,4)@1720  q^n=40353607 ball=182791 redundancy=7.79 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1721.txt (1721 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1720)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.79 init~28.3s wide=True restart=False slice=900s
+    |    15.3s   a chain reports a full cover; confirming by recount
+    engine finished in 15s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1720.txt  (M=1720)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1720 ***
+
+--- M = 1719  (05:10:04) ---
+    |     0.0s cell K7(9,4)@1719  q^n=40353607 ball=182791 redundancy=7.79 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1720.txt (1720 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1719)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.79 init~28.3s wide=True restart=False slice=900s
+    |    20.9s   a chain reports a full cover; confirming by recount
+    engine finished in 21s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1719.txt  (M=1719)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1719 ***
+
+--- M = 1718  (05:13:23) ---
+    |     0.0s cell K7(9,4)@1718  q^n=40353607 ball=182791 redundancy=7.78 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1719.txt (1719 words)
+    |     0.2s   phase A: lincov not applicable (q=7 prime power? True; M=1718)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.78 init~28.3s wide=True restart=False slice=900s
+    |    18.3s   a chain reports a full cover; confirming by recount
+    engine finished in 19s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1718.txt  (M=1718)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1718 ***
+
+--- M = 1717  (05:15:25) ---
+    |     0.0s cell K7(9,4)@1717  q^n=40353607 ball=182791 redundancy=7.78 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1718.txt (1718 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1717)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.78 init~28.2s wide=True restart=False slice=900s
+    |    11.0s   a chain reports a full cover; confirming by recount
+    engine finished in 11s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1717.txt  (M=1717)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1717 ***
+
+--- M = 1716  (05:16:39) ---
+    |     0.0s cell K7(9,4)@1716  q^n=40353607 ball=182791 redundancy=7.77 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1717.txt (1717 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1716)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.77 init~28.2s wide=True restart=False slice=900s
+    |    10.1s   a chain reports a full cover; confirming by recount
+    engine finished in 10s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1716.txt  (M=1716)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1716 ***
+
+--- M = 1715  (05:17:45) ---
+    |     0.0s cell K7(9,4)@1715  q^n=40353607 ball=182791 redundancy=7.77 budget=900s cores=12
+    |     0.1s   phase A: descent seed K7_9_4_M1716.txt (1716 words)
+    |     1.0s   phase A: lincov k=3 -> uncovered=0
+    |     1.0s   phase A solved the cell
+    engine finished in 1s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1715.txt  (M=1715)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1715 ***
+
+--- M = 1714  (05:18:40) ---
+    |     0.0s cell K7(9,4)@1714  q^n=40353607 ball=182791 redundancy=7.76 budget=900s cores=12
+    |     0.1s   phase A: descent seed K7_9_4_M1715.txt (1715 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1714)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.76 init~28.2s wide=True restart=False slice=900s
+    |    10.1s   a chain reports a full cover; confirming by recount
+    engine finished in 10s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1714.txt  (M=1714)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1714 ***
+
+--- M = 1713  (05:19:46) ---
+    |     0.0s cell K7(9,4)@1713  q^n=40353607 ball=182791 redundancy=7.76 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1714.txt (1714 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1713)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.76 init~28.2s wide=True restart=False slice=900s
+    |     8.5s   a chain reports a full cover; confirming by recount
+    engine finished in 9s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1713.txt  (M=1713)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1713 ***
+
+--- M = 1712  (05:20:47) ---
+    |     0.0s cell K7(9,4)@1712  q^n=40353607 ball=182791 redundancy=7.75 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1713.txt (1713 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1712)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.75 init~28.2s wide=True restart=False slice=900s
+    |     6.2s   a chain reports a full cover; confirming by recount
+    engine finished in 6s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1712.txt  (M=1712)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1712 ***
+
+--- M = 1711  (05:21:46) ---
+    |     0.0s cell K7(9,4)@1711  q^n=40353607 ball=182791 redundancy=7.75 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1712.txt (1712 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1711)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.75 init~28.1s wide=True restart=False slice=900s
+    |     6.3s   a chain reports a full cover; confirming by recount
+    engine finished in 6s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1711.txt  (M=1711)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1711 ***
+
+--- M = 1710  (05:22:45) ---
+    |     0.0s cell K7(9,4)@1710  q^n=40353607 ball=182791 redundancy=7.75 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1711.txt (1711 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1710)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.75 init~28.1s wide=True restart=False slice=900s
+    |     7.3s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1710.txt  (M=1710)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1710 ***
+
+--- M = 1709  (05:23:45) ---
+    |     0.0s cell K7(9,4)@1709  q^n=40353607 ball=182791 redundancy=7.74 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1710.txt (1710 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1709)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.74 init~28.1s wide=True restart=False slice=900s
+    |     6.3s   a chain reports a full cover; confirming by recount
+    engine finished in 6s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1709.txt  (M=1709)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1709 ***
+
+--- M = 1708  (05:24:44) ---
+    |     0.0s cell K7(9,4)@1708  q^n=40353607 ball=182791 redundancy=7.74 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1709.txt (1709 words)
+    |    70.1s   phase A: lincov k=1 -> uncovered=None
+    |    70.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.74 init~28.1s wide=True restart=False slice=900s
+    |    76.2s   a chain reports a full cover; confirming by recount
+    engine finished in 76s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1708.txt  (M=1708)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1708 ***
+
+--- M = 1707  (05:26:53) ---
+    |     0.0s cell K7(9,4)@1707  q^n=40353607 ball=182791 redundancy=7.73 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1708.txt (1708 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1707)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.73 init~28.1s wide=True restart=False slice=900s
+    |     6.7s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1707.txt  (M=1707)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1707 ***
+
+--- M = 1706  (05:27:54) ---
+    |     0.0s cell K7(9,4)@1706  q^n=40353607 ball=182791 redundancy=7.73 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1707.txt (1707 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1706)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.73 init~28.1s wide=True restart=False slice=900s
+    |     7.1s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1706.txt  (M=1706)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1706 ***
+
+--- M = 1705  (05:28:54) ---
+    |     0.0s cell K7(9,4)@1705  q^n=40353607 ball=182791 redundancy=7.72 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1706.txt (1706 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1705)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.72 init~28.0s wide=True restart=False slice=900s
+    |     7.4s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1705.txt  (M=1705)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1705 ***
+
+--- M = 1704  (05:29:53) ---
+    |     0.0s cell K7(9,4)@1704  q^n=40353607 ball=182791 redundancy=7.72 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1705.txt (1705 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1704)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.72 init~28.0s wide=True restart=False slice=900s
+    |     7.4s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1704.txt  (M=1704)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1704 ***
+
+--- M = 1703  (05:30:53) ---
+    |     0.0s cell K7(9,4)@1703  q^n=40353607 ball=182791 redundancy=7.71 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1704.txt (1704 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1703)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.71 init~28.0s wide=True restart=False slice=900s
+    |     7.1s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1703.txt  (M=1703)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1703 ***
+
+--- M = 1702  (05:31:52) ---
+    |     0.0s cell K7(9,4)@1702  q^n=40353607 ball=182791 redundancy=7.71 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1703.txt (1703 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1702)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.71 init~28.0s wide=True restart=False slice=900s
+    |     7.1s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1702.txt  (M=1702)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1702 ***
+
+--- M = 1701  (05:32:53) ---
+    |     0.0s cell K7(9,4)@1701  q^n=40353607 ball=182791 redundancy=7.71 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1702.txt (1702 words)
+    |    70.1s   phase A: lincov k=1 -> uncovered=None
+    |    70.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.71 init~28.0s wide=True restart=False slice=900s
+    |    77.1s   a chain reports a full cover; confirming by recount
+    engine finished in 77s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1701.txt  (M=1701)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1701 ***
+
+--- M = 1700  (05:35:03) ---
+    |     0.0s cell K7(9,4)@1700  q^n=40353607 ball=182791 redundancy=7.70 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1701.txt (1701 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1700)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.70 init~28.0s wide=True restart=False slice=900s
+    |     7.2s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1700.txt  (M=1700)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1700 ***
+
+--- M = 1699  (05:36:05) ---
+    |     0.0s cell K7(9,4)@1699  q^n=40353607 ball=182791 redundancy=7.70 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1700.txt (1700 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1699)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.70 init~28.0s wide=True restart=False slice=900s
+    |     7.5s   a chain reports a full cover; confirming by recount
+    engine finished in 8s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1699.txt  (M=1699)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1699 ***
+
+--- M = 1698  (05:37:06) ---
+    |     0.0s cell K7(9,4)@1698  q^n=40353607 ball=182791 redundancy=7.69 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1699.txt (1699 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1698)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.69 init~27.9s wide=True restart=False slice=900s
+    |     8.0s   a chain reports a full cover; confirming by recount
+    engine finished in 8s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1698.txt  (M=1698)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1698 ***
+
+--- M = 1697  (05:38:07) ---
+    |     0.0s cell K7(9,4)@1697  q^n=40353607 ball=182791 redundancy=7.69 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1698.txt (1698 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1697)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.69 init~27.9s wide=True restart=False slice=900s
+    |     7.1s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1697.txt  (M=1697)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1697 ***
+
+--- M = 1696  (05:39:08) ---
+    |     0.0s cell K7(9,4)@1696  q^n=40353607 ball=182791 redundancy=7.68 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1697.txt (1697 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1696)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.68 init~27.9s wide=True restart=False slice=900s
+    |     6.9s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1696.txt  (M=1696)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1696 ***
+
+--- M = 1695  (05:40:09) ---
+    |     0.0s cell K7(9,4)@1695  q^n=40353607 ball=182791 redundancy=7.68 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1696.txt (1696 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1695)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.68 init~27.9s wide=True restart=False slice=900s
+    |     7.1s   a chain reports a full cover; confirming by recount
+    engine finished in 7s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1695.txt  (M=1695)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1695 ***
+
+--- M = 1694  (05:41:10) ---
+    |     0.0s cell K7(9,4)@1694  q^n=40353607 ball=182791 redundancy=7.67 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1695.txt (1695 words)
+    |    70.1s   phase A: lincov k=1 -> uncovered=None
+    |    70.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.67 init~27.9s wide=True restart=False slice=900s
+    |    76.9s   a chain reports a full cover; confirming by recount
+    engine finished in 77s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1694.txt  (M=1694)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1694 ***
+
+--- M = 1693  (05:43:21) ---
+    |     0.0s cell K7(9,4)@1693  q^n=40353607 ball=182791 redundancy=7.67 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1694.txt (1694 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1693)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.67 init~27.9s wide=True restart=False slice=900s
+    |     8.1s   a chain reports a full cover; confirming by recount
+    engine finished in 8s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1693.txt  (M=1693)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1693 ***
+
+--- M = 1692  (05:44:23) ---
+    |     0.0s cell K7(9,4)@1692  q^n=40353607 ball=182791 redundancy=7.66 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1693.txt (1693 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1692)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.66 init~27.8s wide=True restart=False slice=900s
+    |     7.5s   a chain reports a full cover; confirming by recount
+    engine finished in 8s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1692.txt  (M=1692)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1692 ***
+
+--- M = 1691  (05:45:24) ---
+    |     0.0s cell K7(9,4)@1691  q^n=40353607 ball=182791 redundancy=7.66 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1692.txt (1692 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1691)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.66 init~27.8s wide=True restart=False slice=900s
+    |     7.7s   a chain reports a full cover; confirming by recount
+    engine finished in 8s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1691.txt  (M=1691)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1691 ***
+
+--- M = 1690  (05:46:26) ---
+    |     0.0s cell K7(9,4)@1690  q^n=40353607 ball=182791 redundancy=7.66 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1691.txt (1691 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1690)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.66 init~27.8s wide=True restart=False slice=900s
+    |     7.7s   a chain reports a full cover; confirming by recount
+    engine finished in 8s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1690.txt  (M=1690)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1690 ***
+
+--- M = 1689  (05:47:27) ---
+    |     0.0s cell K7(9,4)@1689  q^n=40353607 ball=182791 redundancy=7.65 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1690.txt (1690 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1689)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.65 init~27.8s wide=True restart=False slice=900s
+    |    11.1s   a chain reports a full cover; confirming by recount
+    engine finished in 11s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1689.txt  (M=1689)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1689 ***
+
+--- M = 1688  (05:50:06) ---
+    |     0.0s cell K7(9,4)@1688  q^n=40353607 ball=182791 redundancy=7.65 budget=900s cores=12
+    |     0.1s   phase A: descent seed K7_9_4_M1689.txt (1689 words)
+    |     0.2s   phase A: lincov not applicable (q=7 prime power? True; M=1688)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.65 init~27.8s wide=True restart=False slice=900s
+    |    17.7s   a chain reports a full cover; confirming by recount
+    engine finished in 18s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1688.txt  (M=1688)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1688 ***
+
+--- M = 1687  (05:52:47) ---
+    |     0.0s cell K7(9,4)@1687  q^n=40353607 ball=182791 redundancy=7.64 budget=900s cores=12
+    |     0.1s   phase A: descent seed K7_9_4_M1688.txt (1688 words)
+    |    70.2s   phase A: lincov k=1 -> uncovered=None
+    |    70.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.64 init~27.8s wide=True restart=False slice=900s
+    |    84.6s   a chain reports a full cover; confirming by recount
+    engine finished in 85s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1687.txt  (M=1687)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1687 ***
+
+--- M = 1686  (05:56:57) ---
+    |     0.0s cell K7(9,4)@1686  q^n=40353607 ball=182791 redundancy=7.64 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1687.txt (1687 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1686)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.64 init~27.7s wide=True restart=False slice=900s
+    |    26.7s   a chain reports a full cover; confirming by recount
+    engine finished in 27s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1686.txt  (M=1686)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1686 ***
+
+--- M = 1685  (05:59:43) ---
+    |     0.0s cell K7(9,4)@1685  q^n=40353607 ball=182791 redundancy=7.63 budget=900s cores=12
+    |     0.1s   phase A: descent seed K7_9_4_M1686.txt (1686 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1685)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.63 init~27.7s wide=True restart=False slice=900s
+    |    26.8s   a chain reports a full cover; confirming by recount
+    engine finished in 27s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1685.txt  (M=1685)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1685 ***
+
+--- M = 1684  (06:01:28) ---
+    |     0.0s cell K7(9,4)@1684  q^n=40353607 ball=182791 redundancy=7.63 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1685.txt (1685 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1684)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.63 init~27.7s wide=True restart=False slice=900s
+    |    18.2s   a chain reports a full cover; confirming by recount
+    engine finished in 18s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1684.txt  (M=1684)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1684 ***
+
+--- M = 1683  (06:02:55) ---
+    |     0.0s cell K7(9,4)@1683  q^n=40353607 ball=182791 redundancy=7.62 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1684.txt (1684 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1683)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.62 init~27.7s wide=True restart=False slice=900s
+    |    18.0s   a chain reports a full cover; confirming by recount
+    engine finished in 18s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1683.txt  (M=1683)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1683 ***
+
+--- M = 1682  (06:04:24) ---
+    |     0.0s cell K7(9,4)@1682  q^n=40353607 ball=182791 redundancy=7.62 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1683.txt (1683 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1682)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.62 init~27.7s wide=True restart=False slice=900s
+    |    17.5s   a chain reports a full cover; confirming by recount
+    engine finished in 18s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1682.txt  (M=1682)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1682 ***
+
+--- M = 1681  (06:05:47) ---
+    |     0.0s cell K7(9,4)@1681  q^n=40353607 ball=182791 redundancy=7.61 budget=900s cores=12
+    |     0.1s   phase A: descent seed K7_9_4_M1682.txt (1682 words)
+    |     0.1s   phase A: lincov not applicable (q=7 prime power? True; M=1681)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.61 init~27.7s wide=True restart=False slice=900s
+    |    17.0s   a chain reports a full cover; confirming by recount
+    engine finished in 17s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1681.txt  (M=1681)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1681 ***
+
+--- M = 1680  (06:07:11) ---
+    |     0.0s cell K7(9,4)@1680  q^n=40353607 ball=182791 redundancy=7.61 budget=900s cores=12
+    |     0.0s   phase A: descent seed K7_9_4_M1681.txt (1681 words)
+    |    70.1s   phase A: lincov k=1 -> uncovered=None
+    |    70.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.61 init~27.6s wide=True restart=False slice=900s
+    |    92.9s   a chain reports a full cover; confirming by recount
+    engine finished in 93s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K7_9_4_M1680.txt  (M=1680)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 1843 -> 1680 ***
+
+=== recorded ===
+  K_7(9,4) <= 1729   K7_9_4_M1729.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1728   K7_9_4_M1728.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1727   K7_9_4_M1727.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1726   K7_9_4_M1726.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1725   K7_9_4_M1725.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1724   K7_9_4_M1724.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1723   K7_9_4_M1723.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1722   K7_9_4_M1722.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1721   K7_9_4_M1721.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1720   K7_9_4_M1720.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1719   K7_9_4_M1719.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1718   K7_9_4_M1718.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1717   K7_9_4_M1717.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1716   K7_9_4_M1716.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1715   K7_9_4_M1715.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1714   K7_9_4_M1714.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1713   K7_9_4_M1713.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1712   K7_9_4_M1712.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1711   K7_9_4_M1711.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1710   K7_9_4_M1710.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1709   K7_9_4_M1709.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1708   K7_9_4_M1708.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1707   K7_9_4_M1707.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1706   K7_9_4_M1706.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1705   K7_9_4_M1705.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1704   K7_9_4_M1704.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1703   K7_9_4_M1703.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1702   K7_9_4_M1702.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1701   K7_9_4_M1701.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1700   K7_9_4_M1700.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1699   K7_9_4_M1699.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1698   K7_9_4_M1698.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1697   K7_9_4_M1697.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1696   K7_9_4_M1696.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1695   K7_9_4_M1695.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1694   K7_9_4_M1694.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1693   K7_9_4_M1693.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1692   K7_9_4_M1692.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1691   K7_9_4_M1691.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1690   K7_9_4_M1690.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1689   K7_9_4_M1689.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1688   K7_9_4_M1688.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1687   K7_9_4_M1687.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1686   K7_9_4_M1686.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1685   K7_9_4_M1685.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1684   K7_9_4_M1684.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1683   K7_9_4_M1683.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1682   K7_9_4_M1682.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1681   K7_9_4_M1681.txt   *** BEATS KERI 1843 ***
+  K_7(9,4) <= 1680   K7_9_4_M1680.txt   *** BEATS KERI 1843 ***
+
+======================================================================
+cell K_6(10,4)  q^n=60466176  ball=147426
+  Keri 2011: 417 - 2952  (upper key f)
+  sphere-covering bound: M >= 411
+
+--- M = 2941  (06:09:56) ---
+    |     0.0s cell K6(10,4)@2941  q^n=60466176 ball=147426 redundancy=7.17 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2942.txt (2942 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2941)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.17 init~39.0s wide=True restart=False slice=900s
+    |    31.7s   a chain reports a full cover; confirming by recount
+    engine finished in 32s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2941.txt  (M=2941)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2941 ***
+
+--- M = 2940  (06:12:08) ---
+    |     0.0s cell K6(10,4)@2940  q^n=60466176 ball=147426 redundancy=7.17 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2941.txt (2941 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2940)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.17 init~39.0s wide=True restart=False slice=900s
+    |    23.1s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2940.txt  (M=2940)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2940 ***
+
+--- M = 2939  (06:14:24) ---
+    |     0.0s cell K6(10,4)@2939  q^n=60466176 ball=147426 redundancy=7.17 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2940.txt (2940 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2939)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.17 init~39.0s wide=True restart=False slice=900s
+    |    35.4s   a chain reports a full cover; confirming by recount
+    engine finished in 35s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2939.txt  (M=2939)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2939 ***
+
+--- M = 2938  (06:16:49) ---
+    |     0.0s cell K6(10,4)@2938  q^n=60466176 ball=147426 redundancy=7.16 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2939.txt (2939 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2938)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.16 init~39.0s wide=True restart=False slice=900s
+    |    33.3s   a chain reports a full cover; confirming by recount
+    engine finished in 33s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2938.txt  (M=2938)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2938 ***
+
+--- M = 2937  (06:19:19) ---
+    |     0.0s cell K6(10,4)@2937  q^n=60466176 ball=147426 redundancy=7.16 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2938.txt (2938 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2937)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.16 init~39.0s wide=True restart=False slice=900s
+    |    33.7s   a chain reports a full cover; confirming by recount
+    engine finished in 34s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2937.txt  (M=2937)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2937 ***
+
+--- M = 2936  (06:21:47) ---
+    |     0.0s cell K6(10,4)@2936  q^n=60466176 ball=147426 redundancy=7.16 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2937.txt (2937 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2936)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.16 init~39.0s wide=True restart=False slice=900s
+    |    28.1s   a chain reports a full cover; confirming by recount
+    engine finished in 28s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2936.txt  (M=2936)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2936 ***
+
+--- M = 2935  (06:23:43) ---
+    |     0.0s cell K6(10,4)@2935  q^n=60466176 ball=147426 redundancy=7.16 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2936.txt (2936 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2935)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.16 init~38.9s wide=True restart=False slice=900s
+    |    23.1s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2935.txt  (M=2935)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2935 ***
+
+--- M = 2934  (06:25:36) ---
+    |     0.0s cell K6(10,4)@2934  q^n=60466176 ball=147426 redundancy=7.15 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2935.txt (2935 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2934)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.15 init~38.9s wide=True restart=False slice=900s
+    |    23.1s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2934.txt  (M=2934)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2934 ***
+
+--- M = 2933  (06:27:27) ---
+    |     0.0s cell K6(10,4)@2933  q^n=60466176 ball=147426 redundancy=7.15 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2934.txt (2934 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2933)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.15 init~38.9s wide=True restart=False slice=900s
+    |    22.8s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2933.txt  (M=2933)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2933 ***
+
+--- M = 2932  (06:29:16) ---
+    |     0.0s cell K6(10,4)@2932  q^n=60466176 ball=147426 redundancy=7.15 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2933.txt (2933 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2932)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.15 init~38.9s wide=True restart=False slice=900s
+    |    22.9s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2932.txt  (M=2932)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2932 ***
+
+--- M = 2931  (06:31:05) ---
+    |     0.0s cell K6(10,4)@2931  q^n=60466176 ball=147426 redundancy=7.15 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2932.txt (2932 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2931)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.15 init~38.9s wide=True restart=False slice=900s
+    |    22.9s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2931.txt  (M=2931)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2931 ***
+
+--- M = 2930  (06:32:58) ---
+    |     0.0s cell K6(10,4)@2930  q^n=60466176 ball=147426 redundancy=7.14 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2931.txt (2931 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2930)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.14 init~38.9s wide=True restart=False slice=900s
+    |    23.0s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2930.txt  (M=2930)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2930 ***
+
+--- M = 2929  (06:34:44) ---
+    |     0.0s cell K6(10,4)@2929  q^n=60466176 ball=147426 redundancy=7.14 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2930.txt (2930 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2929)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.14 init~38.9s wide=True restart=False slice=900s
+    |    23.1s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2929.txt  (M=2929)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2929 ***
+
+--- M = 2928  (06:36:37) ---
+    |     0.0s cell K6(10,4)@2928  q^n=60466176 ball=147426 redundancy=7.14 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2929.txt (2929 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2928)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.14 init~38.8s wide=True restart=False slice=900s
+    |    22.6s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2928.txt  (M=2928)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2928 ***
+
+--- M = 2927  (06:38:26) ---
+    |     0.0s cell K6(10,4)@2927  q^n=60466176 ball=147426 redundancy=7.14 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2928.txt (2928 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2927)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.14 init~38.8s wide=True restart=False slice=900s
+    |    23.0s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2927.txt  (M=2927)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2927 ***
+
+--- M = 2926  (06:40:17) ---
+    |     0.0s cell K6(10,4)@2926  q^n=60466176 ball=147426 redundancy=7.13 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2927.txt (2927 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2926)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.13 init~38.8s wide=True restart=False slice=900s
+    |    22.5s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2926.txt  (M=2926)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2926 ***
+
+--- M = 2925  (06:42:06) ---
+    |     0.0s cell K6(10,4)@2925  q^n=60466176 ball=147426 redundancy=7.13 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2926.txt (2926 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2925)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.13 init~38.8s wide=True restart=False slice=900s
+    |    23.3s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2925.txt  (M=2925)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2925 ***
+
+--- M = 2924  (06:43:57) ---
+    |     0.0s cell K6(10,4)@2924  q^n=60466176 ball=147426 redundancy=7.13 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2925.txt (2925 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2924)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.13 init~38.8s wide=True restart=False slice=900s
+    |    22.9s   a chain reports a full cover; confirming by recount
+    engine finished in 23s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2924.txt  (M=2924)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2924 ***
+
+--- M = 2923  (06:45:43) ---
+    |     0.0s cell K6(10,4)@2923  q^n=60466176 ball=147426 redundancy=7.13 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2924.txt (2924 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2923)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.13 init~38.8s wide=True restart=False slice=900s
+    |    15.0s   a chain reports a full cover; confirming by recount
+    engine finished in 15s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2923.txt  (M=2923)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2923 ***
+
+--- M = 2922  (06:47:18) ---
+    |     0.0s cell K6(10,4)@2922  q^n=60466176 ball=147426 redundancy=7.12 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2923.txt (2923 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2922)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.12 init~38.8s wide=True restart=False slice=900s
+    |    15.0s   a chain reports a full cover; confirming by recount
+    engine finished in 15s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2922.txt  (M=2922)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2922 ***
+
+--- M = 2921  (06:48:51) ---
+    |     0.0s cell K6(10,4)@2921  q^n=60466176 ball=147426 redundancy=7.12 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2922.txt (2922 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2921)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.12 init~38.8s wide=True restart=False slice=900s
+    |    14.9s   a chain reports a full cover; confirming by recount
+    engine finished in 15s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2921.txt  (M=2921)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2921 ***
+
+--- M = 2920  (06:50:28) ---
+    |     0.0s cell K6(10,4)@2920  q^n=60466176 ball=147426 redundancy=7.12 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2921.txt (2921 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2920)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.12 init~38.7s wide=True restart=False slice=900s
+    |    16.4s   a chain reports a full cover; confirming by recount
+    engine finished in 16s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2920.txt  (M=2920)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2920 ***
+
+--- M = 2919  (06:52:05) ---
+    |     0.0s cell K6(10,4)@2919  q^n=60466176 ball=147426 redundancy=7.12 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2920.txt (2920 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2919)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.12 init~38.7s wide=True restart=False slice=900s
+    |    14.9s   a chain reports a full cover; confirming by recount
+    engine finished in 15s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2919.txt  (M=2919)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2919 ***
+
+--- M = 2918  (06:53:43) ---
+    |     0.0s cell K6(10,4)@2918  q^n=60466176 ball=147426 redundancy=7.11 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2919.txt (2919 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2918)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.11 init~38.7s wide=True restart=False slice=900s
+    |    19.3s   a chain reports a full cover; confirming by recount
+    engine finished in 19s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2918.txt  (M=2918)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2918 ***
+
+--- M = 2917  (06:55:23) ---
+    |     0.0s cell K6(10,4)@2917  q^n=60466176 ball=147426 redundancy=7.11 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2918.txt (2918 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2917)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.11 init~38.7s wide=True restart=False slice=900s
+    |    16.6s   a chain reports a full cover; confirming by recount
+    engine finished in 17s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2917.txt  (M=2917)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2917 ***
+
+--- M = 2916  (06:57:02) ---
+    |     0.0s cell K6(10,4)@2916  q^n=60466176 ball=147426 redundancy=7.11 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2917.txt (2917 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2916)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.11 init~38.7s wide=True restart=False slice=900s
+    |    16.4s   a chain reports a full cover; confirming by recount
+    engine finished in 17s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2916.txt  (M=2916)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2916 ***
+
+--- M = 2915  (06:58:41) ---
+    |     0.0s cell K6(10,4)@2915  q^n=60466176 ball=147426 redundancy=7.11 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2916.txt (2916 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2915)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.11 init~38.7s wide=True restart=False slice=900s
+    |    16.2s   a chain reports a full cover; confirming by recount
+    engine finished in 16s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2915.txt  (M=2915)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2915 ***
+
+--- M = 2914  (07:00:32) ---
+    |     0.0s cell K6(10,4)@2914  q^n=60466176 ball=147426 redundancy=7.10 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2915.txt (2915 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2914)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.10 init~38.7s wide=True restart=False slice=900s
+    |    19.1s   a chain reports a full cover; confirming by recount
+    engine finished in 19s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2914.txt  (M=2914)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2914 ***
+
+--- M = 2913  (07:02:10) ---
+    |     0.0s cell K6(10,4)@2913  q^n=60466176 ball=147426 redundancy=7.10 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2914.txt (2914 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2913)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.10 init~38.7s wide=True restart=False slice=900s
+    |    11.7s   a chain reports a full cover; confirming by recount
+    engine finished in 12s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2913.txt  (M=2913)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2913 ***
+
+--- M = 2912  (07:03:38) ---
+    |     0.0s cell K6(10,4)@2912  q^n=60466176 ball=147426 redundancy=7.10 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2913.txt (2913 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2912)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.10 init~38.6s wide=True restart=False slice=900s
+    |    17.2s   a chain reports a full cover; confirming by recount
+    engine finished in 17s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2912.txt  (M=2912)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2912 ***
+
+--- M = 2911  (07:05:10) ---
+    |     0.0s cell K6(10,4)@2911  q^n=60466176 ball=147426 redundancy=7.10 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2912.txt (2912 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2911)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.10 init~38.6s wide=True restart=False slice=900s
+    |    12.5s   a chain reports a full cover; confirming by recount
+    engine finished in 13s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2911.txt  (M=2911)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2911 ***
+
+--- M = 2910  (07:06:38) ---
+    |     0.0s cell K6(10,4)@2910  q^n=60466176 ball=147426 redundancy=7.10 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2911.txt (2911 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2910)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.10 init~38.6s wide=True restart=False slice=900s
+    |    12.1s   a chain reports a full cover; confirming by recount
+    engine finished in 12s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2910.txt  (M=2910)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2910 ***
+
+--- M = 2909  (07:08:42) ---
+    |     0.0s cell K6(10,4)@2909  q^n=60466176 ball=147426 redundancy=7.09 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2910.txt (2910 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2909)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.09 init~38.6s wide=True restart=False slice=900s
+    |    29.4s   a chain reports a full cover; confirming by recount
+    engine finished in 30s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2909.txt  (M=2909)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2909 ***
+
+--- M = 2908  (07:11:50) ---
+    |     0.0s cell K6(10,4)@2908  q^n=60466176 ball=147426 redundancy=7.09 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2909.txt (2909 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2908)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.09 init~38.6s wide=True restart=False slice=900s
+    |    38.0s   a chain reports a full cover; confirming by recount
+    engine finished in 38s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2908.txt  (M=2908)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2908 ***
+
+--- M = 2907  (07:14:41) ---
+    |     0.0s cell K6(10,4)@2907  q^n=60466176 ball=147426 redundancy=7.09 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2908.txt (2908 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2907)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.09 init~38.6s wide=True restart=False slice=900s
+    |    35.8s   a chain reports a full cover; confirming by recount
+    engine finished in 36s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2907.txt  (M=2907)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2907 ***
+
+--- M = 2906  (07:17:45) ---
+    |     0.0s cell K6(10,4)@2906  q^n=60466176 ball=147426 redundancy=7.09 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2907.txt (2907 words)
+    |     0.3s   phase A: lincov not applicable (q=6 prime power? False; M=2906)
+    |     0.3s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.09 init~38.6s wide=True restart=False slice=900s
+    |    35.9s   a chain reports a full cover; confirming by recount
+    engine finished in 36s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2906.txt  (M=2906)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2906 ***
+
+--- M = 2905  (07:20:12) ---
+    |     0.0s cell K6(10,4)@2905  q^n=60466176 ball=147426 redundancy=7.08 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2906.txt (2906 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2905)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.08 init~38.5s wide=True restart=False slice=900s
+    |    11.1s   a chain reports a full cover; confirming by recount
+    engine finished in 11s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2905.txt  (M=2905)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2905 ***
+
+--- M = 2904  (07:21:40) ---
+    |     0.0s cell K6(10,4)@2904  q^n=60466176 ball=147426 redundancy=7.08 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2905.txt (2905 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2904)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.08 init~38.5s wide=True restart=False slice=900s
+    |    12.5s   a chain reports a full cover; confirming by recount
+    engine finished in 13s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2904.txt  (M=2904)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2904 ***
+
+--- M = 2903  (07:23:07) ---
+    |     0.0s cell K6(10,4)@2903  q^n=60466176 ball=147426 redundancy=7.08 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2904.txt (2904 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2903)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.08 init~38.5s wide=True restart=False slice=900s
+    |    11.3s   a chain reports a full cover; confirming by recount
+    engine finished in 11s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2903.txt  (M=2903)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2903 ***
+
+--- M = 2902  (07:24:34) ---
+    |     0.0s cell K6(10,4)@2902  q^n=60466176 ball=147426 redundancy=7.08 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2903.txt (2903 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2902)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.08 init~38.5s wide=True restart=False slice=900s
+    |    11.5s   a chain reports a full cover; confirming by recount
+    engine finished in 12s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2902.txt  (M=2902)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2902 ***
+
+--- M = 2901  (07:26:00) ---
+    |     0.0s cell K6(10,4)@2901  q^n=60466176 ball=147426 redundancy=7.07 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2902.txt (2902 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2901)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.07 init~38.5s wide=True restart=False slice=900s
+    |    11.3s   a chain reports a full cover; confirming by recount
+    engine finished in 11s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2901.txt  (M=2901)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2901 ***
+
+--- M = 2900  (07:27:48) ---
+    |     0.0s cell K6(10,4)@2900  q^n=60466176 ball=147426 redundancy=7.07 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2901.txt (2901 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2900)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.07 init~38.5s wide=True restart=False slice=900s
+    |    25.4s   a chain reports a full cover; confirming by recount
+    engine finished in 26s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2900.txt  (M=2900)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2900 ***
+
+--- M = 2899  (07:29:53) ---
+    |     0.0s cell K6(10,4)@2899  q^n=60466176 ball=147426 redundancy=7.07 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2900.txt (2900 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2899)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.07 init~38.5s wide=True restart=False slice=900s
+    |    19.0s   a chain reports a full cover; confirming by recount
+    engine finished in 19s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2899.txt  (M=2899)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2899 ***
+
+--- M = 2898  (07:31:33) ---
+    |     0.0s cell K6(10,4)@2898  q^n=60466176 ball=147426 redundancy=7.07 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2899.txt (2899 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2898)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.07 init~38.5s wide=True restart=False slice=900s
+    |    16.2s   a chain reports a full cover; confirming by recount
+    engine finished in 16s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2898.txt  (M=2898)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2898 ***
+
+--- M = 2897  (07:33:15) ---
+    |     0.0s cell K6(10,4)@2897  q^n=60466176 ball=147426 redundancy=7.06 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2898.txt (2898 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2897)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.06 init~38.4s wide=True restart=False slice=900s
+    |    19.8s   a chain reports a full cover; confirming by recount
+    engine finished in 20s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2897.txt  (M=2897)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2897 ***
+
+--- M = 2896  (07:35:04) ---
+    |     0.0s cell K6(10,4)@2896  q^n=60466176 ball=147426 redundancy=7.06 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2897.txt (2897 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2896)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.06 init~38.4s wide=True restart=False slice=900s
+    |    24.2s   a chain reports a full cover; confirming by recount
+    engine finished in 24s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2896.txt  (M=2896)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2896 ***
+
+--- M = 2895  (07:36:54) ---
+    |     0.0s cell K6(10,4)@2895  q^n=60466176 ball=147426 redundancy=7.06 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2896.txt (2896 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2895)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.06 init~38.4s wide=True restart=False slice=900s
+    |    19.4s   a chain reports a full cover; confirming by recount
+    engine finished in 20s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2895.txt  (M=2895)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2895 ***
+
+--- M = 2894  (07:38:38) ---
+    |     0.0s cell K6(10,4)@2894  q^n=60466176 ball=147426 redundancy=7.06 budget=900s cores=12
+    |     0.1s   phase A: descent seed K6_10_4_M2895.txt (2895 words)
+    |     0.2s   phase A: lincov not applicable (q=6 prime power? False; M=2894)
+    |     0.2s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.06 init~38.4s wide=True restart=False slice=900s
+    |    20.3s   a chain reports a full cover; confirming by recount
+    engine finished in 20s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2894.txt  (M=2894)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2894 ***
+
+--- M = 2893  (07:40:20) ---
+    |     0.0s cell K6(10,4)@2893  q^n=60466176 ball=147426 redundancy=7.05 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2894.txt (2894 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2893)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.05 init~38.4s wide=True restart=False slice=900s
+    |   125.5s   a chain reports a full cover; confirming by recount
+    engine finished in 126s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2893.txt  (M=2893)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2893 ***
+
+--- M = 2892  (07:43:45) ---
+    |     0.0s cell K6(10,4)@2892  q^n=60466176 ball=147426 redundancy=7.05 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2893.txt (2893 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2892)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.05 init~38.4s wide=True restart=False slice=900s
+    |    17.0s   a chain reports a full cover; confirming by recount
+    engine finished in 17s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2892.txt  (M=2892)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2892 ***
+
+--- M = 2891  (07:45:24) ---
+    |     0.0s cell K6(10,4)@2891  q^n=60466176 ball=147426 redundancy=7.05 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2892.txt (2892 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2891)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.05 init~38.4s wide=True restart=False slice=900s
+    |    12.1s   a chain reports a full cover; confirming by recount
+    engine finished in 12s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2891.txt  (M=2891)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2891 ***
+
+--- M = 2890  (07:46:51) ---
+    |     0.0s cell K6(10,4)@2890  q^n=60466176 ball=147426 redundancy=7.05 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_10_4_M2891.txt (2891 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=2890)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.05 init~38.3s wide=True restart=False slice=900s
+    |    19.5s   a chain reports a full cover; confirming by recount
+    engine finished in 20s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K6_10_4_M2890.txt  (M=2890)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 2952 -> 2890 ***
+
+=== recorded ===
+  K_6(10,4) <= 2941   K6_10_4_M2941.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2940   K6_10_4_M2940.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2939   K6_10_4_M2939.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2938   K6_10_4_M2938.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2937   K6_10_4_M2937.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2936   K6_10_4_M2936.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2935   K6_10_4_M2935.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2934   K6_10_4_M2934.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2933   K6_10_4_M2933.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2932   K6_10_4_M2932.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2931   K6_10_4_M2931.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2930   K6_10_4_M2930.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2929   K6_10_4_M2929.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2928   K6_10_4_M2928.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2927   K6_10_4_M2927.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2926   K6_10_4_M2926.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2925   K6_10_4_M2925.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2924   K6_10_4_M2924.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2923   K6_10_4_M2923.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2922   K6_10_4_M2922.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2921   K6_10_4_M2921.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2920   K6_10_4_M2920.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2919   K6_10_4_M2919.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2918   K6_10_4_M2918.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2917   K6_10_4_M2917.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2916   K6_10_4_M2916.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2915   K6_10_4_M2915.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2914   K6_10_4_M2914.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2913   K6_10_4_M2913.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2912   K6_10_4_M2912.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2911   K6_10_4_M2911.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2910   K6_10_4_M2910.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2909   K6_10_4_M2909.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2908   K6_10_4_M2908.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2907   K6_10_4_M2907.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2906   K6_10_4_M2906.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2905   K6_10_4_M2905.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2904   K6_10_4_M2904.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2903   K6_10_4_M2903.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2902   K6_10_4_M2902.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2901   K6_10_4_M2901.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2900   K6_10_4_M2900.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2899   K6_10_4_M2899.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2898   K6_10_4_M2898.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2897   K6_10_4_M2897.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2896   K6_10_4_M2896.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2895   K6_10_4_M2895.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2894   K6_10_4_M2894.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2893   K6_10_4_M2893.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2892   K6_10_4_M2892.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2891   K6_10_4_M2891.txt   *** BEATS KERI 2952 ***
+  K_6(10,4) <= 2890   K6_10_4_M2890.txt   *** BEATS KERI 2952 ***
+
+======================================================================
+cell K_6(7,3)  q^n=279936  ball=4936
+  Keri 2011: 70 - 246  (upper key e)
+  sphere-covering bound: M >= 57
+
+--- M = 226  (07:48:40) ---
+    |     0.0s cell K6(7,3)@226  q^n=279936 ball=4936 redundancy=3.98 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_7_3_M227.txt (227 words)
+    |     0.1s   phase A: direct sum unavailable (can only concatenate tuple (not "list") to tuple)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=226)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=3.98 init~0.0s wide=True restart=False slice=900s
+    engine finished in 898s, uncovered=1
+  round 1: best uncovered = 1
+  M=226 not solved
+
+======================================================================
+cell K_6(8,4)  q^n=1679616  ball=51491
+  Keri 2011: 46 - 216  (upper key e)
+  sphere-covering bound: M >= 33
+
+--- M = 165  (08:03:39) ---
+    |     0.0s cell K6(8,4)@165  q^n=1679616 ball=51491 redundancy=5.06 budget=900s cores=12
+    |     0.0s   phase A: descent seed K6_8_4_M166.txt (166 words)
+    |     0.0s   phase A: direct sum (4,2)x(4,2) = 15*15 = 225 words
+    |     0.0s   phase A: lincov not applicable (q=6 prime power? False; M=165)
+    |     0.0s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.06 init~0.1s wide=True restart=False slice=900s
+    engine finished in 898s, uncovered=2
+  round 1: best uncovered = 2
+  M=165 not solved
+
+======================================================================
+campaign2 done: 197 code(s) verified and recorded

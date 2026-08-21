@@ -1,0 +1,22 @@
+{
+ "q": 17,
+ "n": 4,
+ "R": 2,
+ "M": 99,
+ "date": "2026-08-21",
+ "method": "covsearch tabu/greedy local search, 240s x 40 workers",
+ "code_file": "K17_4_2_M99.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 97,
+  "ub": 99,
+  "lb_key": "b",
+  "ub_key": "n"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true
+}

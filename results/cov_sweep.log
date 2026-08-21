@@ -1,0 +1,1754 @@
+[08-20 10:55:44] CELL K8(10,5) lb=287 ub=2461 start=2461 workers=52 budget=1200s
+cell K_8(10,5)  q^n=1073741824  ball=4783010
+  Keri 2011: 287 - 2461  (upper key f)
+
+--- M = 2461 ---
+  workers: best uncovered=0   throughput 0-0 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_10_5_M2461.txt  (M=2461)
+  (reproduces the incumbent upper bound 2461)
+
+--- M = 2460 ---
+[08-20 11:20:44]   timeout K8(10,5)
+[08-20 11:20:44] CELL K9(10,5) lb=481 ub=3969 start=3969 workers=52 budget=1200s
+cell K_9(10,5)  q^n=3486784401  ball=9182097
+  Keri 2011: 481 - 3969  (upper key f)
+
+--- M = 3969 ---
+[08-20 11:45:44]   timeout K9(10,5)
+[08-20 11:45:44] CELL K10(9,4) lb=1130 ub=8500 start=8500 workers=52 budget=1200s
+cell K_10(9,4)  q^n=1000000000  ball=890920
+  Keri 2011: 1130 - 8500  (upper key f)
+
+--- M = 8500 ---
+[08-20 12:10:44]   timeout K10(9,4)
+[08-20 12:10:44] CELL K9(9,4) lb=703 ub=5103 start=5103 workers=52 budget=720s
+cell K_9(9,4)  q^n=387420489  ball=561481
+  Keri 2011: 703 - 5103  (upper key f)
+
+--- M = 5103 ---
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  round 1: best uncovered = None
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  round 2: best uncovered = None
+  M=5103 not solved; stopping descent
+[08-20 12:24:01] CELL K9(10,5) lb=481 ub=3969 start=3969 workers=6 budget=1200s
+cell K_9(10,5)  q^n=3486784401  ball=9182097
+  Keri 2011: 481 - 3969  (upper key f)
+
+--- M = 3969 ---
+[08-20 12:49:01]   timeout K9(10,5)
+[08-20 12:49:01] CELL K10(9,4) lb=1130 ub=8500 start=8500 workers=23 budget=1200s
+cell K_10(9,4)  q^n=1000000000  ball=890920
+  Keri 2011: 1130 - 8500  (upper key f)
+
+--- M = 8500 ---
+  workers: best uncovered=67902   throughput 1-1 moves/s each
+  round 1: best uncovered = 67902
+[08-20 13:14:01]   timeout K10(9,4)
+[08-20 13:14:01] CELL K9(9,4) lb=703 ub=5103 start=5103 workers=40 budget=720s
+cell K_9(9,4)  q^n=387420489  ball=561481
+  Keri 2011: 703 - 5103  (upper key f)
+
+--- M = 5103 ---
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  round 1: best uncovered = None
+[08-20 13:20:56] CELL K9(9,4) lb=703 ub=5103 start=5103 workers=40 budget=720s
+cell K_9(9,4)  q^n=387420489  ball=561481
+  Keri 2011: 703 - 5103  (upper key f)
+
+--- M = 5103 ---
+  workers: best uncovered=17724   throughput 2-2 moves/s each
+  round 1: best uncovered = 17724
+  workers: best uncovered=27639   throughput 0-0 moves/s each
+  round 2: best uncovered = 27639
+  M=5103 not solved; stopping descent
+[08-20 13:37:56]   timeout K9(9,4)
+[08-20 13:37:56] CELL K8(9,4) lb=409 ub=2944 start=2944 workers=40 budget=720s
+cell K_8(9,4)  q^n=134217728  ball=333166
+  Keri 2011: 409 - 2944  (upper key f)
+
+--- M = 2944 ---
+  workers: best uncovered=696   throughput 14-17 moves/s each
+  round 1: best uncovered = 696
+  workers: best uncovered=697   throughput 15-15 moves/s each
+  round 2: best uncovered = 697
+  M=2944 not solved; stopping descent
+[08-20 13:51:18] CELL K10(9,5) lb=174 ub=1088 start=1088 workers=23 budget=1200s
+cell K_10(9,5)  q^n=1000000000  ball=8331094
+  Keri 2011: 174 - 1088  (upper key f)
+
+--- M = 1088 ---
+  workers: best uncovered=216   throughput 1-2 moves/s each
+  round 1: best uncovered = 216
+  workers: best uncovered=224   throughput 1-2 moves/s each
+  round 2: best uncovered = 224
+  M=1088 not solved; stopping descent
+[08-20 14:14:38] CELL K9(9,5) lb=120 ub=729 start=729 workers=40 budget=720s
+cell K_9(9,5)  q^n=387420489  ball=4690249
+  Keri 2011: 120 - 729  (upper key c)
+
+--- M = 729 ---
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  worker produced no RESULT line:
+
+  round 1: best uncovered = None
+[08-20 14:19:57] CELL K9(9,5) lb=120 ub=729 start=729 workers=40 budget=720s
+cell K_9(9,5)  q^n=387420489  ball=4690249
+  Keri 2011: 120 - 729  (upper key c)
+
+--- M = 729 ---
+  workers: best uncovered=4   throughput 1-1 moves/s each
+  round 1: best uncovered = 4
+  workers: best uncovered=5   throughput 1-1 moves/s each
+  round 2: best uncovered = 5
+  M=729 not solved; stopping descent
+  workers: best uncovered=0   throughput 2-2 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K9_9_5_M729.txt  (M=729)
+  (reproduces the incumbent upper bound 729)
+
+--- M = 728 ---
+[08-20 14:36:57]   timeout K9(9,5)
+[08-20 14:36:57] CELL K8(10,6) lb=58 ub=342 start=342 workers=21 budget=1200s
+cell K_8(10,6)  q^n=1073741824  ball=29489300
+  Keri 2011: 58 - 342  (upper key n)
+
+--- M = 342 ---
+  workers: best uncovered=0   throughput 1-1 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_10_6_M342.txt  (M=342)
+  (reproduces the incumbent upper bound 342)
+
+--- M = 341 ---
+  workers: best uncovered=0   throughput 1-1 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_10_6_M341.txt  (M=341)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 342 -> 341 ***
+
+--- M = 340 ---
+[08-20 15:01:57]   timeout K8(10,6)
+[08-20 15:01:57]   *** RECORD K8(10,6): 342 -> 341
+[08-20 15:01:57] CELL K9(10,6) lb=87 ub=477 start=477 workers=6 budget=1200s
+cell K_9(10,6)  q^n=3486784401  ball=64232337
+  Keri 2011: 87 - 477  (upper key n)
+
+--- M = 477 ---
+  workers: best uncovered=2217   throughput 1-1 moves/s each
+  round 1: best uncovered = 2217
+[08-20 15:26:57]   timeout K9(10,6)
+[08-20 15:26:57] CELL K8(9,5) lb=80 ub=384 start=384 workers=40 budget=720s
+cell K_8(9,5)  q^n=134217728  ball=2450848
+  Keri 2011: 80 - 384  (upper key j)
+
+--- M = 384 ---
+  workers: best uncovered=639   throughput 5-5 moves/s each
+  round 1: best uncovered = 639
+  workers: best uncovered=635   throughput 5-5 moves/s each
+  round 2: best uncovered = 635
+  M=384 not solved; stopping descent
+[08-20 15:39:25] CELL K10(8,4) lb=265 ub=1156 start=1156 workers=40 budget=720s
+cell K_10(8,4)  q^n=100000000  ball=502435
+  Keri 2011: 265 - 1156  (upper key f)
+
+--- M = 1156 ---
+  workers: best uncovered=11468   throughput 13-13 moves/s each
+  round 1: best uncovered = 11468
+  workers: best uncovered=11404   throughput 13-13 moves/s each
+  round 2: best uncovered = 11404
+  M=1156 not solved; stopping descent
+[08-20 15:51:47] CELL K8(8,4) lb=118 ub=512 start=512 workers=40 budget=480s
+cell K_8(8,4)  q^n=16777216  ball=188707
+  Keri 2011: 118 - 512  (upper key c)
+
+--- M = 512 ---
+  workers: best uncovered=740   throughput 131-133 moves/s each
+  round 1: best uncovered = 740
+  workers: best uncovered=740   throughput 132-134 moves/s each
+  round 2: best uncovered = 740
+  M=512 not solved; stopping descent
+[08-20 15:59:50] CELL K9(8,4) lb=181 ub=729 start=729 workers=40 budget=480s
+cell K_9(8,4)  q^n=43046721  ball=317249
+  Keri 2011: 181 - 729  (upper key c)
+
+--- M = 729 ---
+  workers: best uncovered=7964   throughput 30-31 moves/s each
+  round 1: best uncovered = 7964
+  workers: best uncovered=8034   throughput 30-31 moves/s each
+  round 2: best uncovered = 8034
+  M=729 not solved; stopping descent
+[08-20 16:07:58] CELL K14(8,5) lb=119 ub=448 start=448 workers=15 budget=1200s
+cell K_14(8,5)  q^n=1475789056  ball=22919547
+  Keri 2011: 119 - 448  (upper key c)
+
+--- M = 448 ---
+  workers: best uncovered=10094   throughput 1-1 moves/s each
+  round 1: best uncovered = 10094
+  workers: best uncovered=9904   throughput 1-1 moves/s each
+  round 2: best uncovered = 9904
+  M=448 not solved; stopping descent
+[08-20 16:30:43] CELL K15(8,5) lb=141 ub=519 start=519 workers=9 budget=1200s
+cell K_15(8,5)  q^n=2562890625  ball=32966529
+  Keri 2011: 141 - 519  (upper key c)
+
+--- M = 519 ---
+  workers: best uncovered=70882   throughput 1-1 moves/s each
+  round 1: best uncovered = 70882
+  workers: best uncovered=70459   throughput 1-1 moves/s each
+  round 2: best uncovered = 70459
+  M=519 not solved; stopping descent
+[08-20 16:54:41] CELL K13(8,5) lb=98 ub=356 start=356 workers=28 budget=720s
+cell K_13(8,5)  q^n=815730721  ball=15487009
+  Keri 2011: 98 - 356  (upper key c)
+
+--- M = 356 ---
+  workers: best uncovered=8761   throughput 1-1 moves/s each
+  round 1: best uncovered = 8761
+  workers: best uncovered=10034   throughput 1-1 moves/s each
+  round 2: best uncovered = 10034
+  M=356 not solved; stopping descent
+[08-20 17:08:42] CELL K10(8,5) lb=48 ub=168 start=168 workers=40 budget=720s
+cell K_10(8,5)  q^n=100000000  ball=3809179
+  Keri 2011: 48 - 168  (upper key c)
+
+--- M = 168 ---
+  workers: best uncovered=93   throughput 5-5 moves/s each
+  round 1: best uncovered = 93
+  workers: best uncovered=76   throughput 5-5 moves/s each
+  round 2: best uncovered = 76
+  M=168 not solved; stopping descent
+[08-20 17:20:58] CELL K12(8,5) lb=78 ub=264 start=264 workers=40 budget=720s
+cell K_12(8,5)  q^n=429981696  ball=10121739
+  Keri 2011: 78 - 264  (upper key c)
+
+--- M = 264 ---
+  workers: best uncovered=6269   throughput 1-1 moves/s each
+  round 1: best uncovered = 6269
+  workers: best uncovered=5746   throughput 1-1 moves/s each
+  round 2: best uncovered = 5746
+  M=264 not solved; stopping descent
+[08-20 17:34:15] CELL K11(8,5) lb=64 ub=216 start=216 workers=40 budget=720s
+cell K_11(8,5)  q^n=214358881  ball=6358881
+  Keri 2011: 64 - 216  (upper key c)
+
+--- M = 216 ---
+  workers: best uncovered=697   throughput 2-3 moves/s each
+  round 1: best uncovered = 697
+  workers: best uncovered=699   throughput 2-3 moves/s each
+  round 2: best uncovered = 699
+  M=216 not solved; stopping descent
+[08-20 17:46:48] CELL K8(8,5) lb=29 ub=90 start=90 workers=40 budget=480s
+cell K_8(8,5)  q^n=16777216  ball=1129899
+  Keri 2011: 29 - 90  (upper key z)
+
+--- M = 90 ---
+  workers: best uncovered=0   throughput 48-80 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_8_5_M90.txt  (M=90)
+  (reproduces the incumbent upper bound 90)
+
+--- M = 89 ---
+  workers: best uncovered=0   throughput 49-87 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_8_5_M89.txt  (M=89)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 90 -> 89 ***
+
+--- M = 88 ---
+  workers: best uncovered=0   throughput 46-94 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_8_5_M88.txt  (M=88)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 90 -> 88 ***
+
+--- M = 87 ---
+  workers: best uncovered=0   throughput 46-89 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_8_5_M87.txt  (M=87)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 90 -> 87 ***
+
+--- M = 86 ---
+  workers: best uncovered=0   throughput 46-89 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_8_5_M86.txt  (M=86)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 90 -> 86 ***
+
+--- M = 85 ---
+  workers: best uncovered=0   throughput 45-86 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_8_5_M85.txt  (M=85)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 90 -> 85 ***
+
+--- M = 84 ---
+[08-20 17:59:48]   timeout K8(8,5)
+[08-20 17:59:48]   *** RECORD K8(8,5): 90 -> 85
+[08-20 17:59:48] CELL K9(10,7) lb=25 ub=77 start=77 workers=6 budget=1200s
+cell K_9(10,7)  q^n=3486784401  ball=315890577
+  Keri 2011: 25 - 77  (upper key z)
+
+--- M = 77 ---
+  workers: best uncovered=5515   throughput 0-0 moves/s each
+  round 1: best uncovered = 5515
+  workers: best uncovered=5341   throughput 0-0 moves/s each
+  round 2: best uncovered = 5341
+  M=77 not solved; stopping descent
+[08-20 18:23:45] CELL K9(8,5) lb=39 ub=120 start=120 workers=40 budget=480s
+cell K_9(8,5)  q^n=43046721  ball=2152257
+  Keri 2011: 39 - 120  (upper key c)
+
+--- M = 120 ---
+  workers: best uncovered=15   throughput 14-15 moves/s each
+  round 1: best uncovered = 15
+  workers: best uncovered=11   throughput 14-15 moves/s each
+  round 2: best uncovered = 11
+  M=120 not solved; stopping descent
+[08-20 18:31:51] CELL K10(9,6) lb=39 ub=114 start=114 workers=23 budget=1200s
+cell K_10(9,6)  q^n=1000000000  ball=52972138
+  Keri 2011: 39 - 114  (upper key q)
+
+--- M = 114 ---
+  workers: best uncovered=7427   throughput 1-1 moves/s each
+  round 1: best uncovered = 7427
+  workers: best uncovered=6987   throughput 1-1 moves/s each
+  round 2: best uncovered = 6987
+  M=114 not solved; stopping descent
+[08-20 18:53:21] CELL K14(7,4) lb=162 ub=448 start=448 workers=40 budget=720s
+cell K_14(7,4)  q^n=105413504  ball=1080171
+  Keri 2011: 162 - 448  (upper key q)
+
+--- M = 448 ---
+  workers: best uncovered=59803   throughput 4-5 moves/s each
+  round 1: best uncovered = 59803
+  workers: best uncovered=59706   throughput 4-5 moves/s each
+  round 2: best uncovered = 59706
+  M=448 not solved; stopping descent
+[08-20 19:05:38] CELL K15(7,4) lb=192 ub=519 start=519 workers=40 budget=720s
+cell K_15(7,4)  q^n=170859375  ball=1444815
+  Keri 2011: 192 - 519  (upper key n)
+
+--- M = 519 ---
+  workers: best uncovered=199178   throughput 2-2 moves/s each
+  round 1: best uncovered = 199178
+  workers: best uncovered=198179   throughput 2-2 moves/s each
+  round 2: best uncovered = 198179
+  M=519 not solved; stopping descent
+[08-20 19:18:09] CELL K13(7,4) lb=132 ub=356 start=356 workers=40 budget=480s
+cell K_13(7,4)  q^n=62748517  ball=789349
+  Keri 2011: 132 - 356  (upper key q)
+
+--- M = 356 ---
+  workers: best uncovered=32111   throughput 8-9 moves/s each
+  round 1: best uncovered = 32111
+  workers: best uncovered=32239   throughput 8-9 moves/s each
+  round 2: best uncovered = 32239
+  M=356 not solved; stopping descent
+[08-20 19:26:18] CELL K16(7,4) lb=227 ub=611 start=611 workers=40 budget=720s
+cell K_16(7,4)  q^n=268435456  ball=1894831
+  Keri 2011: 227 - 611  (upper key q)
+
+--- M = 611 ---
+  workers: best uncovered=485507   throughput 2-2 moves/s each
+  round 1: best uncovered = 485507
+  workers: best uncovered=485834   throughput 2-2 moves/s each
+  round 2: best uncovered = 485834
+  M=611 not solved; stopping descent
+[08-20 19:39:07] CELL K12(6,3) lb=144 ub=384 start=384 workers=40 budget=480s
+cell K_12(6,3)  q^n=2985984  ball=28502
+  Keri 2011: 144 - 384  (upper key j)
+
+--- M = 384 ---
+  workers: best uncovered=6935   throughput 381-401 moves/s each
+  round 1: best uncovered = 6935
+  workers: best uncovered=6935   throughput 381-397 moves/s each
+  round 2: best uncovered = 6935
+  M=384 not solved; stopping descent
+[08-20 19:47:07] CELL K9(9,6) lb=31 ub=81 start=81 workers=40 budget=720s
+cell K_9(9,6)  q^n=387420489  ball=26710345
+  Keri 2011: 31 - 81  (upper key q)
+
+--- M = 81 ---
+  workers: best uncovered=6562   throughput 1-1 moves/s each
+  round 1: best uncovered = 6562
+  workers: best uncovered=7891   throughput 1-1 moves/s each
+  round 2: best uncovered = 7891
+  M=81 not solved; stopping descent
+[08-20 19:59:54] CELL K8(7,3) lb=196 ub=512 start=512 workers=40 budget=480s
+cell K_8(7,3)  q^n=2097152  ball=13084
+  Keri 2011: 196 - 512  (upper key c)
+
+--- M = 512 ---
+  workers: best uncovered=12599   throughput 713-895 moves/s each
+  round 1: best uncovered = 12599
+  workers: best uncovered=12639   throughput 741-895 moves/s each
+  round 2: best uncovered = 12639
+  M=512 not solved; stopping descent
+[08-20 20:07:54] CELL K16(6,3) lb=344 ub=896 start=896 workers=40 budget=480s
+cell K_16(6,3)  q^n=16777216  ball=70966
+  Keri 2011: 344 - 896  (upper key j)
+
+--- M = 896 ---
+  workers: best uncovered=57427   throughput 103-105 moves/s each
+  round 1: best uncovered = 57427
+  workers: best uncovered=57695   throughput 103-105 moves/s each
+  round 2: best uncovered = 57695
+  M=896 not solved; stopping descent
+[08-20 20:15:57] CELL K14(6,3) lb=235 ub=610 start=610 workers=40 budget=480s
+cell K_14(6,3)  q^n=7529536  ball=46554
+  Keri 2011: 235 - 610  (upper key q)
+
+--- M = 610 ---
+  workers: best uncovered=20036   throughput 200-203 moves/s each
+  round 1: best uncovered = 20036
+  workers: best uncovered=20152   throughput 200-203 moves/s each
+  round 2: best uncovered = 20152
+  M=610 not solved; stopping descent
+[08-20 20:23:58] CELL K17(7,4) lb=271 ub=703 start=703 workers=40 budget=720s
+cell K_17(7,4)  q^n=410338673  ball=2442609
+  Keri 2011: 271 - 703  (upper key q)
+
+--- M = 703 ---
+  workers: best uncovered=1249627   throughput 1-1 moves/s each
+  round 1: best uncovered = 1249627
+  workers: best uncovered=1238969   throughput 1-1 moves/s each
+  round 2: best uncovered = 1238969
+  M=703 not solved; stopping descent
+[08-20 20:37:12] CELL K11(7,4) lb=84 ub=216 start=216 workers=40 budget=480s
+cell K_11(7,4)  q^n=19487171  ball=387171
+  Keri 2011: 84 - 216  (upper key n)
+
+--- M = 216 ---
+  workers: best uncovered=8524   throughput 55-57 moves/s each
+  round 1: best uncovered = 8524
+  workers: best uncovered=8600   throughput 56-57 moves/s each
+  round 2: best uncovered = 8600
+  M=216 not solved; stopping descent
+[08-20 20:45:15] CELL K13(6,3) lb=193 ub=495 start=495 workers=40 budget=480s
+cell K_13(6,3)  q^n=4826809  ball=36793
+  Keri 2011: 193 - 495  (upper key q)
+
+--- M = 495 ---
+  workers: best uncovered=10920   throughput 279-285 moves/s each
+  round 1: best uncovered = 10920
+  workers: best uncovered=10876   throughput 280-285 moves/s each
+  round 2: best uncovered = 10876
+  M=495 not solved; stopping descent
+[08-20 20:53:15] CELL K10(7,4) lb=66 ub=168 start=168 workers=40 budget=480s
+cell K_10(7,4)  q^n=10000000  ball=256915
+  Keri 2011: 66 - 168  (upper key n)
+
+--- M = 168 ---
+  workers: best uncovered=2695   throughput 144-146 moves/s each
+  round 1: best uncovered = 2695
+  workers: best uncovered=2695   throughput 144-146 moves/s each
+  round 2: best uncovered = 2695
+  M=168 not solved; stopping descent
+[08-20 21:01:17] CELL K12(7,4) lb=104 ub=264 start=264 workers=40 budget=480s
+cell K_12(7,4)  q^n=35831808  ball=561639
+  Keri 2011: 104 - 264  (upper key n)
+
+--- M = 264 ---
+  workers: best uncovered=29779   throughput 16-17 moves/s each
+  round 1: best uncovered = 29779
+  workers: best uncovered=29852   throughput 16-17 moves/s each
+  round 2: best uncovered = 29852
+  M=264 not solved; stopping descent
+[08-20 21:09:22] CELL K15(6,3) lb=291 ub=730 start=730 workers=40 budget=480s
+cell K_15(6,3)  q^n=11390625  ball=57905
+  Keri 2011: 291 - 730  (upper key q)
+
+--- M = 730 ---
+  workers: best uncovered=39508   throughput 152-155 moves/s each
+  round 1: best uncovered = 39508
+  workers: best uncovered=39225   throughput 152-154 moves/s each
+  round 2: best uncovered = 39225
+  M=730 not solved; stopping descent
+[08-20 21:17:23] CELL K8(7,4) lb=37 ub=92 start=92 workers=40 budget=480s
+cell K_8(7,4)  q^n=2097152  ball=97119
+  Keri 2011: 37 - 92  (upper key n)
+
+--- M = 92 ---
+  workers: best uncovered=66   throughput 505-540 moves/s each
+  round 1: best uncovered = 66
+  workers: best uncovered=64   throughput 491-543 moves/s each
+  round 2: best uncovered = 64
+  M=92 not solved; stopping descent
+[08-20 21:25:24] CELL K18(7,4) lb=316 ub=774 start=774 workers=38 budget=720s
+cell K_18(7,4)  q^n=612220032  ball=3101379
+  Keri 2011: 316 - 774  (upper key q)
+
+--- M = 774 ---
+  workers: best uncovered=3473965   throughput 1-1 moves/s each
+  round 1: best uncovered = 3473965
+  workers: best uncovered=3463752   throughput 1-1 moves/s each
+  round 2: best uncovered = 3463752
+  M=774 not solved; stopping descent
+[08-20 21:39:01] CELL K9(7,3) lb=308 ub=729 start=729 workers=40 budget=480s
+cell K_9(7,3)  q^n=4782969  ball=19321
+  Keri 2011: 308 - 729  (upper key c)
+
+--- M = 729 ---
+  workers: best uncovered=53275   throughput 470-538 moves/s each
+  round 1: best uncovered = 53275
+  workers: best uncovered=53111   throughput 488-547 moves/s each
+  round 2: best uncovered = 53111
+  M=729 not solved; stopping descent
+[08-20 21:47:02] CELL K19(7,4) lb=367 ub=866 start=866 workers=26 budget=720s
+cell K_19(7,4)  q^n=893871739  ball=3885211
+  Keri 2011: 367 - 866  (upper key q)
+
+--- M = 866 ---
+  workers: best uncovered=6653120   throughput 1-1 moves/s each
+  round 1: best uncovered = 6653120
+  workers: best uncovered=6665851   throughput 1-1 moves/s each
+  round 2: best uncovered = 6665851
+  M=866 not solved; stopping descent
+[08-20 22:00:55] CELL K9(7,4) lb=51 ub=120 start=120 workers=40 budget=480s
+cell K_9(7,4)  q^n=4782969  ball=162681
+  Keri 2011: 51 - 120  (upper key n)
+
+--- M = 120 ---
+  workers: best uncovered=1108   throughput 266-269 moves/s each
+  round 1: best uncovered = 1108
+  workers: best uncovered=1109   throughput 265-268 moves/s each
+  round 2: best uncovered = 1109
+  M=120 not solved; stopping descent
+[08-20 22:08:56] CELL K20(7,4) lb=419 ub=979 start=979 workers=18 budget=1200s
+cell K_20(7,4)  q^n=1280000000  ball=4809015
+  Keri 2011: 419 - 979  (upper key q)
+
+--- M = 979 ---
+  workers: best uncovered=9644357   throughput 1-1 moves/s each
+  round 1: best uncovered = 9644357
+  workers: best uncovered=9735044   throughput 1-1 moves/s each
+  round 2: best uncovered = 9735044
+  M=979 not solved; stopping descent
+[08-20 22:31:06] CELL K11(6,3) lb=119 ub=275 start=275 workers=40 budget=480s
+cell K_11(6,3)  q^n=1771561  ball=21561
+  Keri 2011: 119 - 275  (upper key q)
+
+--- M = 275 ---
+  workers: best uncovered=5842   throughput 400-413 moves/s each
+  round 1: best uncovered = 5842
+  workers: best uncovered=5869   throughput 389-410 moves/s each
+  round 2: best uncovered = 5869
+  M=275 not solved; stopping descent
+[08-20 22:39:06] CELL K10(6,3) lb=92 ub=209 start=209 workers=40 budget=480s
+cell K_10(6,3)  q^n=1000000  ball=15850
+  Keri 2011: 92 - 209  (upper key q)
+
+--- M = 209 ---
+  workers: best uncovered=2584   throughput 516-531 moves/s each
+  round 1: best uncovered = 2584
+  workers: best uncovered=2558   throughput 522-556 moves/s each
+  round 2: best uncovered = 2558
+  M=209 not solved; stopping descent
+[08-20 22:47:07] CELL K8(10,7) lb=20 ub=44 start=44 workers=21 budget=1200s
+cell K_8(10,7)  q^n=1073741824  ball=128314460
+  Keri 2011: 20 - 44  (upper key z)
+
+--- M = 44 ---
+  workers: best uncovered=64596   throughput 0-1 moves/s each
+  round 1: best uncovered = 64596
+  workers: best uncovered=66646   throughput 0-0 moves/s each
+  round 2: best uncovered = 66646
+  M=44 not solved; stopping descent
+[08-20 23:08:55] CELL K8(9,6) lb=22 ub=48 start=48 workers=40 budget=720s
+cell K_8(9,6)  q^n=134217728  ball=12333364
+  Keri 2011: 22 - 48  (upper key n)
+
+--- M = 48 ---
+  workers: best uncovered=44901   throughput 2-2 moves/s each
+  round 1: best uncovered = 44901
+  workers: best uncovered=46464   throughput 3-3 moves/s each
+  round 2: best uncovered = 46464
+  M=48 not solved; stopping descent
+[08-20 23:21:11] CELL K9(6,3) lb=71 ub=147 start=147 workers=40 budget=480s
+cell K_9(6,3)  q^n=531441  ball=11249
+  Keri 2011: 71 - 147  (upper key q)
+
+--- M = 147 ---
+  workers: best uncovered=1755   throughput 763-856 moves/s each
+  round 1: best uncovered = 1755
+  workers: best uncovered=1766   throughput 723-740 moves/s each
+  round 2: best uncovered = 1766
+  M=147 not solved; stopping descent
+[08-20 23:29:12] CELL K21(7,4) lb=497 ub=1029 start=1029 workers=12 budget=1200s
+cell K_21(7,4)  q^n=1801088541  ball=5888541
+  Keri 2011: 497 - 1029  (upper key n)
+
+--- M = 1029 ---
+  workers: best uncovered=23470604   throughput 1-1 moves/s each
+  round 1: best uncovered = 23470604
+  workers: best uncovered=23939371   throughput 1-1 moves/s each
+  round 2: best uncovered = 23939371
+  M=1029 not solved; stopping descent
+[08-20 23:52:08] CELL K8(6,3) lb=52 ub=107 start=107 workers=40 budget=480s
+cell K_8(6,3)  q^n=262144  ball=7638
+  Keri 2011: 52 - 107  (upper key q)
+
+--- M = 107 ---
+  workers: best uncovered=538   throughput 1074-1128 moves/s each
+  round 1: best uncovered = 538
+  workers: best uncovered=548   throughput 1078-1112 moves/s each
+  round 2: best uncovered = 548
+  M=107 not solved; stopping descent
+[08-21 00:00:09] CELL K13(5,2) lb=311 ub=583 start=583 workers=40 budget=480s
+cell K_13(5,2)  q^n=371293  ball=1501
+  Keri 2011: 311 - 583  (upper key q)
+
+--- M = 583 ---
+  workers: best uncovered=10401   throughput 1335-1395 moves/s each
+  round 1: best uncovered = 10401
+  workers: best uncovered=10420   throughput 1327-1381 moves/s each
+  round 2: best uncovered = 10420
+  M=583 not solved; stopping descent
+[08-21 00:08:09] CELL K15(5,2) lb=465 ub=855 start=855 workers=40 budget=480s
+cell K_15(5,2)  q^n=759375  ball=2031
+  Keri 2011: 465 - 855  (upper key n)
+
+--- M = 855 ---
+  workers: best uncovered=27551   throughput 1175-1232 moves/s each
+  round 1: best uncovered = 27551
+  workers: best uncovered=27557   throughput 1186-1263 moves/s each
+  round 2: best uncovered = 27557
+  M=855 not solved; stopping descent
+[08-21 00:16:10] CELL K12(5,2) lb=256 ub=468 start=468 workers=40 budget=480s
+cell K_12(5,2)  q^n=248832  ball=1266
+  Keri 2011: 256 - 468  (upper key n)
+
+--- M = 468 ---
+  workers: best uncovered=6042   throughput 1398-1499 moves/s each
+  round 1: best uncovered = 6042
+  workers: best uncovered=6032   throughput 1392-1527 moves/s each
+  round 2: best uncovered = 6032
+  M=468 not solved; stopping descent
+[08-21 00:24:10] CELL K14(5,2) lb=381 ub=686 start=686 workers=40 budget=480s
+cell K_14(5,2)  q^n=537824  ball=1756
+  Keri 2011: 381 - 686  (upper key n)
+
+--- M = 686 ---
+  workers: best uncovered=20246   throughput 1246-1285 moves/s each
+  round 1: best uncovered = 20246
+  workers: best uncovered=20222   throughput 1252-1304 moves/s each
+  round 2: best uncovered = 20222
+  M=686 not solved; stopping descent
+[08-21 00:32:10] CELL K16(5,2) lb=576 ub=1024 start=1024 workers=40 budget=480s
+cell K_16(5,2)  q^n=1048576  ball=2326
+  Keri 2011: 576 - 1024  (upper key n)
+
+--- M = 1024 ---
+  workers: best uncovered=40896   throughput 1090-1167 moves/s each
+  round 1: best uncovered = 40896
+  workers: best uncovered=40838   throughput 1144-1349 moves/s each
+  round 2: best uncovered = 40838
+  M=1024 not solved; stopping descent
+[08-21 00:40:11] CELL K11(5,2) lb=208 ub=365 start=365 workers=40 budget=480s
+cell K_11(5,2)  q^n=161051  ball=1051
+  Keri 2011: 208 - 365  (upper key q)
+
+--- M = 365 ---
+  workers: best uncovered=3462   throughput 1504-2254 moves/s each
+  round 1: best uncovered = 3462
+  workers: best uncovered=3477   throughput 1469-1776 moves/s each
+  round 2: best uncovered = 3477
+  M=365 not solved; stopping descent
+[08-21 00:48:11] CELL K10(5,2) lb=149 ub=250 start=250 workers=40 budget=480s
+cell K_10(5,2)  q^n=100000  ball=856
+  Keri 2011: 149 - 250  (upper key n)
+
+--- M = 250 ---
+  workers: best uncovered=3262   throughput 1528-1635 moves/s each
+  round 1: best uncovered = 3262
+  workers: best uncovered=3260   throughput 1544-1741 moves/s each
+  round 2: best uncovered = 3260
+  M=250 not solved; stopping descent
+[08-21 00:56:12] CELL K9(5,2) lb=113 ub=189 start=189 workers=40 budget=480s
+cell K_9(5,2)  q^n=59049  ball=681
+  Keri 2011: 113 - 189  (upper key n)
+
+--- M = 189 ---
+  workers: best uncovered=1460   throughput 1586-1709 moves/s each
+  round 1: best uncovered = 1460
+  workers: best uncovered=1467   throughput 1585-1629 moves/s each
+  round 2: best uncovered = 1467
+  M=189 not solved; stopping descent
+[08-21 01:04:12] CELL K8(5,2) lb=83 ub=128 start=128 workers=40 budget=480s
+cell K_8(5,2)  q^n=32768  ball=526
+  Keri 2011: 83 - 128  (upper key n)
+
+--- M = 128 ---
+  workers: best uncovered=848   throughput 1631-1717 moves/s each
+  round 1: best uncovered = 848
+  workers: best uncovered=853   throughput 1633-1680 moves/s each
+  round 2: best uncovered = 853
+  M=128 not solved; stopping descent
+[08-21 01:12:12] CELL K15(8,6) lb=33 ub=49 start=49 workers=9 budget=1200s
+cell K_15(8,6)  q^n=2562890625  ball=243793537
+  Keri 2011: 33 - 49  (upper key n)
+
+--- M = 49 ---
+  workers: best uncovered=943901   throughput 0-0 moves/s each
+  round 1: best uncovered = 943901
+  workers: best uncovered=926531   throughput 0-0 moves/s each
+  round 2: best uncovered = 926531
+  M=49 not solved; stopping descent
+[08-21 01:36:04] CELL K13(8,6) lb=25 ub=37 start=37 workers=28 budget=720s
+cell K_13(8,6)  q^n=815730721  ball=99094561
+  Keri 2011: 25 - 37  (upper key n)
+
+--- M = 37 ---
+  workers: best uncovered=203505   throughput 0-1 moves/s each
+  round 1: best uncovered = 203505
+  workers: best uncovered=206679   throughput 0-1 moves/s each
+  round 2: best uncovered = 206679
+  M=37 not solved; stopping descent
+[08-21 01:49:12] CELL K13(7,5) lb=29 ub=42 start=42 workers=40 budget=480s
+cell K_13(7,5)  q^n=62748517  ball=6014821
+  Keri 2011: 29 - 42  (upper key n)
+
+--- M = 42 ---
+  workers: best uncovered=46841   throughput 5-5 moves/s each
+  round 1: best uncovered = 46841
+  workers: best uncovered=39350   throughput 4-5 moves/s each
+  round 2: best uncovered = 39350
+  M=42 not solved; stopping descent
+[08-21 01:57:19] CELL K14(8,6) lb=29 ub=42 start=42 workers=15 budget=1200s
+cell K_14(8,6)  q^n=1475789056  ball=158070199
+  Keri 2011: 29 - 42  (upper key n)
+
+--- M = 42 ---
+  workers: best uncovered=440368   throughput 0-0 moves/s each
+  round 1: best uncovered = 440368
+  workers: best uncovered=444752   throughput 0-0 moves/s each
+  round 2: best uncovered = 444752
+  M=42 not solved; stopping descent
+[08-21 02:18:56] CELL K12(7,5) lb=25 ub=36 start=36 workers=40 budget=480s
+cell K_12(7,5)  q^n=35831808  ball=3943710
+  Keri 2011: 25 - 36  (upper key n)
+
+--- M = 36 ---
+  workers: best uncovered=24524   throughput 9-10 moves/s each
+  round 1: best uncovered = 24524
+  workers: best uncovered=24738   throughput 9-9 moves/s each
+  round 2: best uncovered = 24738
+  M=36 not solved; stopping descent
+[08-21 02:27:00] CELL K14(7,5) lb=34 ub=48 start=48 workers=40 budget=720s
+cell K_14(7,5)  q^n=105413504  ball=8877324
+  Keri 2011: 34 - 48  (upper key n)
+
+--- M = 48 ---
+  workers: best uncovered=115345   throughput 2-2 moves/s each
+  round 1: best uncovered = 115345
+  workers: best uncovered=119226   throughput 2-2 moves/s each
+  round 2: best uncovered = 119226
+  M=48 not solved; stopping descent
+[08-21 02:39:15] CELL K11(7,5) lb=22 ub=31 start=31 workers=40 budget=480s
+cell K_11(7,5)  q^n=19487171  ball=2487171
+  Keri 2011: 22 - 31  (upper key n)
+
+--- M = 31 ---
+  workers: best uncovered=6481   throughput 17-19 moves/s each
+  round 1: best uncovered = 6481
+  workers: best uncovered=10724   throughput 18-19 moves/s each
+  round 2: best uncovered = 10724
+  M=31 not solved; stopping descent
+[08-21 02:47:18] CELL K12(8,6) lb=23 ub=32 start=32 workers=40 budget=720s
+cell K_12(8,6)  q^n=429981696  ball=59725447
+  Keri 2011: 23 - 32  (upper key n)
+
+--- M = 32 ---
+  workers: best uncovered=88647   throughput 1-1 moves/s each
+  round 1: best uncovered = 88647
+  workers: best uncovered=90089   throughput 1-1 moves/s each
+  round 2: best uncovered = 90089
+  M=32 not solved; stopping descent
+[08-21 03:00:02] CELL K15(7,5) lb=39 ub=54 start=54 workers=40 budget=720s
+cell K_15(7,5)  q^n=170859375  ball=12739119
+  Keri 2011: 39 - 54  (upper key n)
+
+--- M = 54 ---
+  workers: best uncovered=255357   throughput 1-1 moves/s each
+  round 1: best uncovered = 255357
+  workers: best uncovered=255121   throughput 1-1 moves/s each
+  round 2: best uncovered = 255121
+  M=54 not solved; stopping descent
+[08-21 03:12:24] CELL K10(7,5) lb=19 ub=26 start=26 workers=40 budget=480s
+cell K_10(7,5)  q^n=10000000  ball=1496944
+  Keri 2011: 19 - 26  (upper key n)
+
+--- M = 26 ---
+  workers: best uncovered=0   throughput 42-45 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K10_7_5_M26.txt  (M=26)
+  (reproduces the incumbent upper bound 26)
+
+--- M = 25 ---
+  workers: best uncovered=1232   throughput 44-47 moves/s each
+  round 1: best uncovered = 1232
+  workers: best uncovered=1248   throughput 45-48 moves/s each
+  round 2: best uncovered = 1248
+  M=25 not solved; stopping descent
+[08-21 03:24:37] CELL K12(6,4) lb=30 ub=41 start=41 workers=40 budget=480s
+cell K_12(6,4)  q^n=2985984  ball=248117
+  Keri 2011: 30 - 41  (upper key q)
+
+--- M = 41 ---
+  workers: best uncovered=0   throughput 135-380 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K12_6_4_M41.txt  (M=41)
+  (reproduces the incumbent upper bound 41)
+
+--- M = 40 ---
+  workers: best uncovered=0   throughput 184-372 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K12_6_4_M40.txt  (M=40)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 41 -> 40 ***
+
+--- M = 39 ---
+  workers: best uncovered=0   throughput 201-312 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K12_6_4_M39.txt  (M=39)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 41 -> 39 ***
+
+--- M = 38 ---
+[08-21 03:37:37]   timeout K12(6,4)
+[08-21 03:37:37]   *** RECORD K12(6,4): 41 -> 39
+[08-21 03:37:37] CELL K16(7,5) lb=44 ub=60 start=60 workers=40 budget=720s
+cell K_16(7,5)  q^n=268435456  ball=17841706
+  Keri 2011: 44 - 60  (upper key n)
+
+--- M = 60 ---
+  workers: best uncovered=501106   throughput 1-1 moves/s each
+  round 1: best uncovered = 501106
+  workers: best uncovered=500623   throughput 1-1 moves/s each
+  round 2: best uncovered = 500623
+  M=60 not solved; stopping descent
+[08-21 03:50:22] CELL K11(8,6) lb=20 ub=27 start=27 workers=40 budget=720s
+cell K_11(8,6)  q^n=214358881  ball=34358881
+  Keri 2011: 20 - 27  (upper key n)
+
+--- M = 27 ---
+  workers: best uncovered=31309   throughput 2-2 moves/s each
+  round 1: best uncovered = 31309
+  workers: best uncovered=30103   throughput 2-2 moves/s each
+  round 2: best uncovered = 30103
+  M=27 not solved; stopping descent
+[08-21 04:02:43] CELL K17(7,5) lb=49 ub=66 start=66 workers=40 budget=720s
+cell K_17(7,5)  q^n=410338673  ball=24462705
+  Keri 2011: 49 - 66  (upper key n)
+
+--- M = 66 ---
+  workers: best uncovered=951156   throughput 0-0 moves/s each
+  round 1: best uncovered = 951156
+  workers: best uncovered=957543   throughput 0-0 moves/s each
+  round 2: best uncovered = 957543
+  M=66 not solved; stopping descent
+[08-21 04:15:48] CELL K8(6,2) lb=382 ub=512 start=512 workers=40 budget=480s
+cell K_8(6,2)  q^n=262144  ball=778
+  Keri 2011: 382 - 512  (upper key p)
+
+--- M = 512 ---
+  workers: best uncovered=27290   throughput 1561-1813 moves/s each
+  round 1: best uncovered = 27290
+  workers: best uncovered=27238   throughput 1510-1556 moves/s each
+  round 2: best uncovered = 27238
+  M=512 not solved; stopping descent
+[08-21 04:23:48] CELL K8(6,4) lb=15 ub=20 start=20 workers=40 budget=480s
+cell K_8(6,4)  q^n=262144  ball=43653
+  Keri 2011: 15 - 20  (upper key n)
+
+--- M = 20 ---
+  workers: best uncovered=0   throughput 769-2277 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_6_4_M20.txt  (M=20)
+  (reproduces the incumbent upper bound 20)
+
+--- M = 19 ---
+  workers: best uncovered=24   throughput 855-879 moves/s each
+  round 1: best uncovered = 24
+  workers: best uncovered=0   throughput 864-886 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_6_4_M19.txt  (M=19)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 20 -> 19 ***
+
+--- M = 18 ---
+[08-21 04:36:48]   timeout K8(6,4)
+[08-21 04:36:48]   *** RECORD K8(6,4): 20 -> 19
+[08-21 04:36:48] CELL K9(6,4) lb=18 ub=24 start=24 workers=40 budget=480s
+cell K_9(6,4)  q^n=531441  ball=72689
+  Keri 2011: 18 - 24  (upper key q)
+
+--- M = 24 ---
+  workers: best uncovered=0   throughput 266-644 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K9_6_4_M24.txt  (M=24)
+  (reproduces the incumbent upper bound 24)
+
+--- M = 23 ---
+  workers: best uncovered=208   throughput 593-619 moves/s each
+  round 1: best uncovered = 208
+  workers: best uncovered=208   throughput 600-622 moves/s each
+  round 2: best uncovered = 208
+  M=23 not solved; stopping descent
+[08-21 04:48:53] CELL K10(6,4) lb=21 ub=28 start=28 workers=40 budget=480s
+cell K_10(6,4)  q^n=1000000  ball=114265
+  Keri 2011: 21 - 28  (upper key q)
+
+--- M = 28 ---
+  workers: best uncovered=0   throughput 336-548 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K10_6_4_M28.txt  (M=28)
+  (reproduces the incumbent upper bound 28)
+
+--- M = 27 ---
+  workers: best uncovered=648   throughput 417-427 moves/s each
+  round 1: best uncovered = 648
+  workers: best uncovered=648   throughput 415-428 moves/s each
+  round 2: best uncovered = 648
+  M=27 not solved; stopping descent
+[08-21 05:00:58] CELL K19(7,5) lb=61 ub=81 start=81 workers=26 budget=720s
+cell K_19(7,5)  q^n=893871739  ball=43566139
+  Keri 2011: 61 - 81  (upper key n)
+
+--- M = 81 ---
+  workers: best uncovered=2545946   throughput 0-0 moves/s each
+  round 1: best uncovered = 2545946
+  workers: best uncovered=2544482   throughput 0-0 moves/s each
+  round 2: best uncovered = 2544482
+  M=81 not solved; stopping descent
+[08-21 05:15:11] CELL K11(6,4) lb=25 ub=33 start=33 workers=40 budget=480s
+cell K_11(6,4)  q^n=1771561  ball=171561
+  Keri 2011: 25 - 33  (upper key q)
+
+--- M = 33 ---
+  workers: best uncovered=0   throughput 218-269 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K11_6_4_M33.txt  (M=33)
+  (reproduces the incumbent upper bound 33)
+
+--- M = 32 ---
+  workers: best uncovered=432   throughput 408-437 moves/s each
+  round 1: best uncovered = 432
+  workers: best uncovered=432   throughput 418-448 moves/s each
+  round 2: best uncovered = 432
+  M=32 not solved; stopping descent
+[08-21 05:27:18] CELL K13(6,4) lb=35 ub=46 start=46 workers=40 budget=480s
+cell K_13(6,4)  q^n=4826809  ball=347833
+  Keri 2011: 35 - 46  (upper key q)
+
+--- M = 46 ---
+  workers: best uncovered=0   throughput 105-349 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K13_6_4_M46.txt  (M=46)
+  (reproduces the incumbent upper bound 46)
+
+--- M = 45 ---
+  workers: best uncovered=0   throughput 363-481 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K13_6_4_M45.txt  (M=45)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 46 -> 45 ***
+
+--- M = 44 ---
+  workers: best uncovered=648   throughput 192-197 moves/s each
+  round 1: best uncovered = 648
+  workers: best uncovered=648   throughput 191-195 moves/s each
+  round 2: best uncovered = 648
+  M=44 not solved; stopping descent
+[08-21 05:39:31]   *** RECORD K13(6,4): 46 -> 45
+[08-21 05:39:31] CELL K9(7,5) lb=16 ub=21 start=21 workers=40 budget=480s
+cell K_9(7,5)  q^n=4782969  ball=850809
+  Keri 2011: 16 - 21  (upper key n)
+
+--- M = 21 ---
+  workers: best uncovered=84   throughput 126-128 moves/s each
+  round 1: best uncovered = 84
+  workers: best uncovered=72   throughput 124-127 moves/s each
+  round 2: best uncovered = 72
+  M=21 not solved; stopping descent
+[08-21 05:47:31] CELL K18(7,5) lb=55 ub=72 start=72 workers=38 budget=720s
+cell K_18(7,5)  q^n=612220032  ball=32918376
+  Keri 2011: 55 - 72  (upper key n)
+
+--- M = 72 ---
+  workers: best uncovered=1696083   throughput 0-0 moves/s each
+  round 1: best uncovered = 1696083
+  workers: best uncovered=1695499   throughput 0-0 moves/s each
+  round 2: best uncovered = 1695499
+  M=72 not solved; stopping descent
+[08-21 06:00:48] CELL K20(7,5) lb=68 ub=89 start=89 workers=18 budget=1200s
+cell K_20(7,5)  q^n=1280000000  ball=56807094
+  Keri 2011: 68 - 89  (upper key n)
+
+--- M = 89 ---
+  workers: best uncovered=3849839   throughput 0-0 moves/s each
+  round 1: best uncovered = 3849839
+  workers: best uncovered=3873385   throughput 0-0 moves/s each
+  round 2: best uncovered = 3873385
+  M=89 not solved; stopping descent
+[08-21 06:22:53] CELL K21(7,5) lb=75 ub=98 start=98 workers=12 budget=1200s
+cell K_21(7,5)  q^n=1801088541  ball=73088541
+  Keri 2011: 75 - 98  (upper key n)
+
+--- M = 98 ---
+  workers: best uncovered=5686085   throughput 0-0 moves/s each
+  round 1: best uncovered = 5686085
+  workers: best uncovered=5666472   throughput 0-0 moves/s each
+  round 2: best uncovered = 5666472
+  M=98 not solved; stopping descent
+[08-21 06:44:36] CELL K14(6,4) lb=40 ub=52 start=52 workers=40 budget=480s
+cell K_14(6,4)  q^n=7529536  ball=474969
+  Keri 2011: 40 - 52  (upper key q)
+
+--- M = 52 ---
+  workers: best uncovered=0   throughput 44-171 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K14_6_4_M52.txt  (M=52)
+  (reproduces the incumbent upper bound 52)
+
+--- M = 51 ---
+  workers: best uncovered=0   throughput 119-225 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K14_6_4_M51.txt  (M=51)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 52 -> 51 ***
+
+--- M = 50 ---
+  workers: best uncovered=0   throughput 128-186 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K14_6_4_M50.txt  (M=50)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 52 -> 50 ***
+
+--- M = 49 ---
+  workers: best uncovered=8448   throughput 107-109 moves/s each
+  round 1: best uncovered = 8448
+[08-21 06:57:36]   timeout K14(6,4)
+[08-21 06:57:36]   *** RECORD K14(6,4): 52 -> 50
+[08-21 06:57:36] CELL K8(5,3) lb=17 ub=22 start=22 workers=40 budget=480s
+cell K_8(5,3)  q^n=32768  ball=3956
+  Keri 2011: 17 - 22  (upper key q)
+
+--- M = 22 ---
+  workers: best uncovered=0   throughput 593-1723 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_5_3_M22.txt  (M=22)
+  (reproduces the incumbent upper bound 22)
+
+--- M = 21 ---
+  workers: best uncovered=26   throughput 1450-4615 moves/s each
+  round 1: best uncovered = 26
+  workers: best uncovered=26   throughput 1778-6915 moves/s each
+  round 2: best uncovered = 26
+  M=21 not solved; stopping descent
+[08-21 07:07:21] CELL K10(8,6) lb=17 ub=22 start=22 workers=40 budget=720s
+cell K_10(8,6)  q^n=100000000  ball=18689527
+  Keri 2011: 17 - 22  (upper key n)
+
+--- M = 22 ---
+  workers: best uncovered=8715   throughput 4-4 moves/s each
+  round 1: best uncovered = 8715
+  workers: best uncovered=9128   throughput 4-4 moves/s each
+  round 2: best uncovered = 9128
+  M=22 not solved; stopping descent
+[08-21 07:19:28] CELL K9(5,3) lb=21 ub=27 start=27 workers=40 budget=480s
+cell K_9(5,3)  q^n=59049  ball=5801
+  Keri 2011: 21 - 27  (upper key c)
+
+--- M = 27 ---
+  workers: best uncovered=0   throughput 1124-21312 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K9_5_3_M27.txt  (M=27)
+  (reproduces the incumbent upper bound 27)
+
+--- M = 26 ---
+  workers: best uncovered=16   throughput 1721-4650 moves/s each
+  round 1: best uncovered = 16
+  workers: best uncovered=16   throughput 1779-5353 moves/s each
+  round 2: best uncovered = 16
+  M=26 not solved; stopping descent
+[08-21 07:27:38] CELL K15(6,4) lb=46 ub=59 start=59 workers=40 budget=480s
+cell K_15(6,4)  q^n=11390625  ball=634145
+  Keri 2011: 46 - 59  (upper key c)
+
+--- M = 59 ---
+  workers: best uncovered=0   throughput 22-64 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K15_6_4_M59.txt  (M=59)
+  (reproduces the incumbent upper bound 59)
+
+--- M = 58 ---
+  workers: best uncovered=0   throughput 123-161 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K15_6_4_M58.txt  (M=58)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 59 -> 58 ***
+
+--- M = 57 ---
+  workers: best uncovered=0   throughput 113-188 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K15_6_4_M57.txt  (M=57)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 59 -> 57 ***
+
+--- M = 56 ---
+  workers: best uncovered=9126   throughput 71-74 moves/s each
+  round 1: best uncovered = 9126
+  workers: best uncovered=9208   throughput 76-79 moves/s each
+  round 2: best uncovered = 9208
+  M=56 not solved; stopping descent
+[08-21 07:40:07]   *** RECORD K15(6,4): 59 -> 57
+[08-21 07:40:07] CELL K9(6,2) lb=585 ub=729 start=729 workers=40 budget=480s
+cell K_9(6,2)  q^n=531441  ball=1009
+  Keri 2011: 585 - 729  (upper key p)
+
+--- M = 729 ---
+  workers: best uncovered=74523   throughput 1682-2349 moves/s each
+  round 1: best uncovered = 74523
+  workers: best uncovered=74432   throughput 1903-2826 moves/s each
+  round 2: best uncovered = 74432
+  M=729 not solved; stopping descent
+[08-21 07:48:08] CELL K17(6,4) lb=59 ub=73 start=73 workers=40 budget=480s
+cell K_17(6,4)  q^n=24137569  ball=1068897
+  Keri 2011: 59 - 73  (upper key c)
+
+--- M = 73 ---
+  workers: best uncovered=8052   throughput 8-16 moves/s each
+  round 1: best uncovered = 8052
+  workers: best uncovered=9056   throughput 8-16 moves/s each
+  round 2: best uncovered = 9056
+  M=73 not solved; stopping descent
+[08-21 07:56:11] CELL K10(5,3) lb=26 ub=32 start=32 workers=40 budget=480s
+cell K_10(5,3)  q^n=100000  ball=8146
+  Keri 2011: 26 - 32  (upper key q)
+
+--- M = 32 ---
+  workers: best uncovered=0   throughput 1292-8821 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K10_5_3_M32.txt  (M=32)
+  (reproduces the incumbent upper bound 32)
+
+--- M = 31 ---
+  workers: best uncovered=56   throughput 1608-2182 moves/s each
+  round 1: best uncovered = 56
+  workers: best uncovered=56   throughput 1679-2138 moves/s each
+  round 2: best uncovered = 56
+  M=31 not solved; stopping descent
+[08-21 08:08:15] CELL K16(6,4) lb=52 ub=64 start=64 workers=40 budget=480s
+cell K_16(6,4)  q^n=16777216  ball=830341
+  Keri 2011: 52 - 64  (upper key c)
+
+--- M = 64 ---
+  workers: best uncovered=130533   throughput 15-15 moves/s each
+  round 1: best uncovered = 130533
+  workers: best uncovered=132763   throughput 15-15 moves/s each
+  round 2: best uncovered = 132763
+  M=64 not solved; stopping descent
+[08-21 08:16:17] CELL K11(5,3) lb=31 ub=38 start=38 workers=40 budget=480s
+cell K_11(5,3)  q^n=161051  ball=11051
+  Keri 2011: 31 - 38  (upper key q)
+
+--- M = 38 ---
+  workers: best uncovered=0   throughput 875-9080 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K11_5_3_M38.txt  (M=38)
+  (reproduces the incumbent upper bound 38)
+
+--- M = 37 ---
+  workers: best uncovered=167   throughput 1510-2073 moves/s each
+  round 1: best uncovered = 167
+  workers: best uncovered=167   throughput 1514-2191 moves/s each
+  round 2: best uncovered = 167
+  M=37 not solved; stopping descent
+[08-21 08:25:04] CELL K18(6,4) lb=66 ub=80 start=80 workers=40 budget=480s
+cell K_18(6,4)  q^n=34012224  ball=1355513
+  Keri 2011: 66 - 80  (upper key n)
+
+--- M = 80 ---
+  workers: best uncovered=4805   throughput 6-11 moves/s each
+  round 1: best uncovered = 4805
+  workers: best uncovered=12565   throughput 6-11 moves/s each
+  round 2: best uncovered = 12565
+  M=80 not solved; stopping descent
+[08-21 08:33:09] CELL K19(6,4) lb=73 ub=86 start=86 workers=40 budget=480s
+cell K_19(6,4)  q^n=47045881  ball=1696249
+  Keri 2011: 73 - 86  (upper key n)
+
+--- M = 86 ---
+  workers: best uncovered=119302   throughput 5-6 moves/s each
+  round 1: best uncovered = 119302
+  workers: best uncovered=40726   throughput 5-6 moves/s each
+  round 2: best uncovered = 40726
+  M=86 not solved; stopping descent
+[08-21 08:41:17] CELL K12(5,3) lb=37 ub=43 start=43 workers=40 budget=480s
+cell K_12(5,3)  q^n=248832  ball=14576
+  Keri 2011: 37 - 43  (upper key z)
+
+--- M = 43 ---
+  workers: best uncovered=0   throughput 1203-3757 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K12_5_3_M43.txt  (M=43)
+  (reproduces the incumbent upper bound 43)
+
+--- M = 42 ---
+  workers: best uncovered=288   throughput 1321-2114 moves/s each
+  round 1: best uncovered = 288
+  workers: best uncovered=288   throughput 1289-1941 moves/s each
+  round 2: best uncovered = 288
+  M=42 not solved; stopping descent
+[08-21 08:53:21] CELL K20(6,4) lb=81 ub=93 start=93 workers=40 budget=480s
+cell K_20(6,4)  q^n=64000000  ball=2097525
+  Keri 2011: 81 - 93  (upper key n)
+
+--- M = 93 ---
+  workers: best uncovered=451359   throughput 5-5 moves/s each
+  round 1: best uncovered = 451359
+  workers: best uncovered=386817   throughput 5-5 moves/s each
+  round 2: best uncovered = 386817
+  M=93 not solved; stopping descent
+[08-21 09:01:29] CELL K8(7,5) lb=14 ub=16 start=16 workers=40 budget=480s
+cell K_8(7,5)  q^n=2097152  ball=450066
+  Keri 2011: 14 - 16  (upper key n)
+
+--- M = 16 ---
+  workers: best uncovered=0   throughput 181-402 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K8_7_5_M16.txt  (M=16)
+  (reproduces the incumbent upper bound 16)
+
+--- M = 15 ---
+  workers: best uncovered=192   throughput 208-219 moves/s each
+  round 1: best uncovered = 192
+  workers: best uncovered=192   throughput 202-213 moves/s each
+  round 2: best uncovered = 192
+  M=15 not solved; stopping descent
+[08-21 09:12:40] CELL K9(8,6) lb=15 ub=17 start=17 workers=40 budget=480s
+cell K_9(8,6)  q^n=43046721  ball=9492289
+  Keri 2011: 15 - 17  (upper key n)
+
+--- M = 17 ---
+  workers: best uncovered=2390   throughput 9-9 moves/s each
+  round 1: best uncovered = 2390
+  workers: best uncovered=2354   throughput 8-8 moves/s each
+  round 2: best uncovered = 2354
+  M=17 not solved; stopping descent
+[08-21 09:20:43] CELL K10(9,7) lb=16 ub=18 start=18 workers=23 budget=1200s
+cell K_10(9,7)  q^n=1000000000  ball=225159022
+  Keri 2011: 16 - 18  (upper key n)
+
+--- M = 18 ---
+  workers: best uncovered=27820   throughput 1-1 moves/s each
+  round 1: best uncovered = 27820
+  workers: best uncovered=27926   throughput 1-1 moves/s each
+  round 2: best uncovered = 27926
+  M=18 not solved; stopping descent
+[08-21 09:41:56] CELL K8(4,1) lb=171 ub=192 start=192 workers=40 budget=480s
+cell K_8(4,1)  q^n=4096  ball=29
+  Keri 2011: 171 - 192  (upper key l)
+
+--- M = 192 ---
+  workers: best uncovered=30   throughput 1745-6847 moves/s each
+  round 1: best uncovered = 30
+  workers: best uncovered=30   throughput 1803-6562 moves/s each
+  round 2: best uncovered = 30
+  M=192 not solved; stopping descent
+[08-21 09:49:56] CELL K13(5,3) lb=43 ub=48 start=48 workers=40 budget=480s
+cell K_13(5,3)  q^n=371293  ball=18781
+  Keri 2011: 43 - 48  (upper key q)
+
+--- M = 48 ---
+  workers: best uncovered=0   throughput 878-2567 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K13_5_3_M48.txt  (M=48)
+  (reproduces the incumbent upper bound 48)
+
+--- M = 47 ---
+  workers: best uncovered=384   throughput 1031-1125 moves/s each
+  round 1: best uncovered = 384
+  workers: best uncovered=384   throughput 1000-1055 moves/s each
+  round 2: best uncovered = 384
+  M=47 not solved; stopping descent
+[08-21 10:02:00] CELL K21(6,4) lb=89 ub=99 start=99 workers=40 budget=480s
+cell K_21(6,4)  q^n=85766121  ball=2566121
+  Keri 2011: 89 - 99  (upper key n)
+
+--- M = 99 ---
+  workers: best uncovered=1083060   throughput 3-3 moves/s each
+  round 1: best uncovered = 1083060
+  workers: best uncovered=1069115   throughput 3-3 moves/s each
+  round 2: best uncovered = 1069115
+  M=99 not solved; stopping descent
+[08-21 10:10:13] CELL K11(4,1) lb=444 ub=485 start=485 workers=40 budget=480s
+cell K_11(4,1)  q^n=14641  ball=41
+  Keri 2011: 444 - 485  (upper key l)
+
+--- M = 485 ---
+  workers: best uncovered=70   throughput 1749-8752 moves/s each
+  round 1: best uncovered = 70
+  workers: best uncovered=66   throughput 1752-5180 moves/s each
+  round 2: best uncovered = 66
+  M=485 not solved; stopping descent
+[08-21 10:18:13] CELL K14(5,3) lb=50 ub=54 start=54 workers=40 budget=480s
+cell K_14(5,3)  q^n=537824  ball=23726
+  Keri 2011: 50 - 54  (upper key n)
+
+--- M = 54 ---
+  workers: best uncovered=0   throughput 560-3891 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K14_5_3_M54.txt  (M=54)
+  (reproduces the incumbent upper bound 54)
+
+--- M = 53 ---
+  workers: best uncovered=576   throughput 863-1030 moves/s each
+  round 1: best uncovered = 576
+  workers: best uncovered=576   throughput 876-1050 moves/s each
+  round 2: best uncovered = 576
+  M=53 not solved; stopping descent
+[08-21 10:29:00] CELL K14(4,1) lb=915 ub=984 start=984 workers=40 budget=480s
+cell K_14(4,1)  q^n=38416  ball=53
+  Keri 2011: 915 - 984  (upper key l)
+
+--- M = 984 ---
+  workers: best uncovered=168   throughput 1798-6704 moves/s each
+  round 1: best uncovered = 168
+  workers: best uncovered=240   throughput 1699-3670 moves/s each
+  round 2: best uncovered = 240
+  M=984 not solved; stopping descent
+[08-21 10:37:00] CELL K10(4,1) lb=334 ub=352 start=352 workers=40 budget=480s
+cell K_10(4,1)  q^n=10000  ball=37
+  Keri 2011: 334 - 352  (upper key l)
+
+--- M = 352 ---
+  workers: best uncovered=0   throughput 1724-12856 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K10_4_1_M352.txt  (M=352)
+  (reproduces the incumbent upper bound 352)
+
+--- M = 351 ---
+  workers: best uncovered=21   throughput 1757-5846 moves/s each
+  round 1: best uncovered = 21
+  workers: best uncovered=21   throughput 2027-17353 moves/s each
+  round 2: best uncovered = 21
+  M=351 not solved; stopping descent
+[08-21 10:49:04] CELL K13(4,1) lb=733 ub=765 start=765 workers=40 budget=480s
+cell K_13(4,1)  q^n=28561  ball=49
+  Keri 2011: 733 - 765  (upper key l)
+
+--- M = 765 ---
+  workers: best uncovered=0   throughput 1940-87634 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K13_4_1_M765.txt  (M=765)
+  (reproduces the incumbent upper bound 765)
+
+--- M = 764 ---
+  workers: best uncovered=27   throughput 2060-13497 moves/s each
+  round 1: best uncovered = 27
+  workers: best uncovered=27   throughput 2007-14407 moves/s each
+  round 2: best uncovered = 27
+  M=764 not solved; stopping descent
+[08-21 11:01:08] CELL K15(5,3) lb=57 ub=59 start=59 workers=40 budget=480s
+cell K_15(5,3)  q^n=759375  ball=29471
+  Keri 2011: 57 - 59  (upper key n)
+
+--- M = 59 ---
+  workers: best uncovered=0   throughput 462-3305 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K15_5_3_M59.txt  (M=59)
+  (reproduces the incumbent upper bound 59)
+
+--- M = 58 ---
+  workers: best uncovered=1536   throughput 777-929 moves/s each
+  round 1: best uncovered = 1536
+  workers: best uncovered=1536   throughput 800-967 moves/s each
+  round 2: best uncovered = 1536
+  M=58 not solved; stopping descent
+[08-21 11:09:58] CELL K21(5,3) lb=111 ub=114 start=114 workers=40 budget=480s
+cell K_21(5,3)  q^n=4084101  ball=84101
+  Keri 2011: 111 - 114  (upper key n)
+
+--- M = 114 ---
+  workers: best uncovered=0   throughput 193-248 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K21_5_3_M114.txt  (M=114)
+  (reproduces the incumbent upper bound 114)
+
+--- M = 113 ---
+  workers: best uncovered=2900   throughput 252-272 moves/s each
+  round 1: best uncovered = 2900
+  workers: best uncovered=2900   throughput 268-310 moves/s each
+  round 2: best uncovered = 2900
+  M=113 not solved; stopping descent
+[08-21 11:22:06] CELL K17(4,2) lb=97 ub=99 start=99 workers=40 budget=480s
+cell K_17(4,2)  q^n=83521  ball=1601
+  Keri 2011: 97 - 99  (upper key n)
+
+--- M = 99 ---
+  workers: best uncovered=0   throughput 1541-28351 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K17_4_2_M99.txt  (M=99)
+  (reproduces the incumbent upper bound 99)
+
+--- M = 98 ---
+  workers: best uncovered=120   throughput 1900-6634 moves/s each
+  round 1: best uncovered = 120
+  workers: best uncovered=120   throughput 1806-5408 moves/s each
+  round 2: best uncovered = 120
+  M=98 not solved; stopping descent
+[08-21 11:30:20] CELL K18(4,2) lb=109 ub=111 start=111 workers=40 budget=480s
+cell K_18(4,2)  q^n=104976  ball=1803
+  Keri 2011: 109 - 111  (upper key n)
+
+--- M = 111 ---
+  workers: best uncovered=0   throughput 1511-25706 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K18_4_2_M111.txt  (M=111)
+  (reproduces the incumbent upper bound 111)
+
+--- M = 110 ---
+  workers: best uncovered=140   throughput 1921-5661 moves/s each
+  round 1: best uncovered = 140
+  workers: best uncovered=140   throughput 1841-5005 moves/s each
+  round 2: best uncovered = 140
+  M=110 not solved; stopping descent
+[08-21 11:39:26] CELL K19(4,2) lb=121 ub=123 start=123 workers=40 budget=480s
+cell K_19(4,2)  q^n=130321  ball=2017
+  Keri 2011: 121 - 123  (upper key n)
+
+--- M = 123 ---
+  workers: best uncovered=0   throughput 1648-8103 moves/s each
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K19_4_2_M123.txt  (M=123)
+  (reproduces the incumbent upper bound 123)
+
+--- M = 122 ---
+  workers: best uncovered=168   throughput 1628-3255 moves/s each
+  round 1: best uncovered = 168
+  workers: best uncovered=168   throughput 1563-2332 moves/s each
+  round 2: best uncovered = 168
+  M=122 not solved; stopping descent
+[08-21 11:51:32] CELL K8(10,4) lb=2045 ub=11776 start=11776 workers=21 budget=1200s
+cell K_8(10,4)  q^n=1073741824  ball=547646
+  Keri 2011: 2045 - 11776  (upper key f)
+
+--- M = 11776 ---
+  workers: best uncovered=696313   throughput 3-3 moves/s each
+  round 1: best uncovered = 696313
+[08-21 12:16:32]   timeout K8(10,4)
+[08-21 12:16:32] CELL K9(10,4) lb=3872 ub=19683 start=19683 workers=6 budget=1200s
+cell K_9(10,4)  q^n=3486784401  ball=924561
+  Keri 2011: 3872 - 19683  (upper key f)
+
+--- M = 19683 ---

@@ -1,0 +1,21 @@
+baseline K_6(6,3)@41 seed=1000 wall=3.3s uncovered=0 score=1000
+baseline K_6(6,3)@41 seed=1001 wall=60.0s uncovered=8 score=-8
+baseline K_6(6,3)@41 seed=1002 wall=60.0s uncovered=14 score=-14
+baseline K_6(6,3)@41 seed=1003 wall=60.1s uncovered=8 score=-8
+baseline K_6(6,3)@41 seed=1004 wall=60.2s uncovered=10 score=-10
+baseline K_6(8,4)@169 seed=1000 wall=63.0s uncovered=4 score=-4
+baseline K_6(8,4)@169 seed=1001 wall=60.8s uncovered=9 score=-9
+baseline K_6(8,4)@169 seed=1002 wall=65.3s uncovered=7 score=-7
+baseline K_6(8,4)@169 seed=1003 wall=60.7s uncovered=5 score=-5
+baseline K_6(8,4)@169 seed=1004 wall=63.1s uncovered=7 score=-7
+baseline K_8(9,4)@940 seed=1000 wall=104.1s uncovered=8938474 score=-8938474
+cov/arena/structure/bench/base_scored.sh: line 18: 368257 Killed                  timeout -s KILL $((T+60)) nice -n 15 "$CS" -q $Q -n $N -R $R -M $M -t $T -s $s --threads 6 --quiet --out "$out" > /dev/null 2>&1
+baseline K_8(9,4)@940 seed=1001 wall=120.0s uncovered=INVALID score=-1000000
+baseline K_8(9,4)@940 seed=1002 wall=119.5s uncovered=8836903 score=-8836903
+baseline K_8(9,4)@940 seed=1003 wall=108.3s uncovered=8870595 score=-8870595
+baseline K_8(9,4)@940 seed=1004 wall=96.2s uncovered=8834755 score=-8834755
+baseline K_3(11,4)@81 seed=1000 wall=61.1s uncovered=452 score=-452
+baseline K_3(11,4)@81 seed=1001 wall=60.0s uncovered=411 score=-411
+baseline K_3(11,4)@81 seed=1002 wall=60.0s uncovered=408 score=-408
+baseline K_3(11,4)@81 seed=1003 wall=60.2s uncovered=416 score=-416
+baseline K_3(11,4)@81 seed=1004 wall=60.1s uncovered=452 score=-452

@@ -1,0 +1,10 @@
+strategy     K6(7,3)@233: solved 0/7 median_score -11 median_wall 86.7s
+strategy     K7(8,4)@330: solved 0/7 median_score -5 median_wall 87.7s
+strategy     K6(9,5)@124: solved 0/7 median_score -6 median_wall 89.4s
+strategy     K9(8,3)@1420: solved 0/7 median_score -311716 median_wall 87.2s
+{
+ "strategy": {
+  "total_solved": 0,
+  "sum_median": -311738
+ }
+}

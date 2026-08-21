@@ -1,0 +1,10 @@
+structure    K6(6,3)@41: solved 2/5 median_score -65 median_wall 57.8s
+structure    K6(8,4)@169: solved 5/5 median_score 1000 median_wall 57.9s
+structure    K8(9,4)@940: solved 0/5 median_score -52548 median_wall 57.8s
+structure    K3(11,4)@81: solved 5/5 median_score 1000 median_wall 0.9s
+{
+ "structure": {
+  "total_solved": 12,
+  "sum_median": -50613
+ }
+}

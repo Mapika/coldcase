@@ -1,0 +1,10 @@
+lowlevel     K6(7,3)@233: solved 0/7 median_score -8 median_wall 84.7s
+lowlevel     K7(8,4)@330: solved 1/7 median_score -1 median_wall 84.8s
+lowlevel     K6(9,5)@124: solved 0/7 median_score -2 median_wall 84.9s
+lowlevel     K9(8,3)@1420: solved 0/7 median_score -303375 median_wall 84.8s
+{
+ "lowlevel": {
+  "total_solved": 1,
+  "sum_median": -303386
+ }
+}

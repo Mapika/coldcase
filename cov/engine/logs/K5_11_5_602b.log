@@ -1,0 +1,30 @@
+
+======================================================================
+cell K_5(11,5)  q^n=48828125  ball=569053
+  Keri 2011: 103 - 625  (upper key d)
+  sphere-covering bound: M >= 86
+
+--- M = 602  (04:00:25) ---
+    |     0.0s cell K5(11,5)@602  q^n=48828125 ball=569053 redundancy=7.02 budget=3600s cores=16
+    |     0.0s   phase A: descent seed K5_11_5_M603.txt (603 words)
+    |     0.1s   phase A: lincov not applicable (q=5 prime power? True; M=602)
+    |     0.1s   phase B: 16 chains x 1 thread(s)  (2 symmetric, 10 seeded)  redundancy=7.02 init~30.8s wide=True restart=False slice=3600s
+    |   787.9s   a chain reports a full cover; confirming by recount
+    engine finished in 788s, uncovered=0
+  VERIFIED and stored: /lambda/nfs/new-fs/longshots/cov/results/K5_11_5_M602.txt  (M=602)
+  *** THIS BEATS THE KERI 2011 UPPER BOUND 625 -> 602 ***
+
+--- M = 601  (04:16:07) ---
+    |     0.0s cell K5(11,5)@601  q^n=48828125 ball=569053 redundancy=7.00 budget=3600s cores=16
+    |     0.0s   phase A: descent seed K5_11_5_M602.txt (602 words)
+    |     0.1s   phase A: lincov not applicable (q=5 prime power? True; M=601)
+    |     0.1s   phase B: 16 chains x 1 thread(s)  (2 symmetric, 10 seeded)  redundancy=7.00 init~30.8s wide=True restart=False slice=3600s
+    engine finished in 3598s, uncovered=2
+  round 1: best uncovered = 2
+  M=601 not solved
+
+=== recorded ===
+  K_5(11,5) <= 602   K5_11_5_M602.txt   *** BEATS KERI 625 ***
+
+======================================================================
+campaign2 done: 1 code(s) verified and recorded

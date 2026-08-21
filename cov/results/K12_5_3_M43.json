@@ -1,0 +1,22 @@
+{
+ "q": 12,
+ "n": 5,
+ "R": 3,
+ "M": 43,
+ "date": "2026-08-21",
+ "method": "covsearch tabu/greedy local search, 240s x 40 workers",
+ "code_file": "K12_5_3_M43.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 37,
+  "ub": 43,
+  "lb_key": "b",
+  "ub_key": "z"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true
+}

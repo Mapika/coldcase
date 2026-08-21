@@ -1,0 +1,34 @@
+structure    K6(6,3)@41: solved 2/5 median_score -172 median_wall 57.6s
+structure    K6(8,4)@169: solved 5/5 median_score 1000 median_wall 57.5s
+structure    K8(9,4)@940: solved 0/5 median_score -49638 median_wall 57.7s
+structure    K3(11,4)@81: solved 5/5 median_score 1000 median_wall 0.3s
+lowlevel     K6(6,3)@41: solved 0/5 median_score -193 median_wall 56.6s
+lowlevel     K6(8,4)@169: solved 0/5 median_score -2 median_wall 56.6s
+lowlevel     K8(9,4)@940: solved 0/5 median_score -62057 median_wall 56.8s
+lowlevel     K3(11,4)@81: solved 0/5 median_score -2377 median_wall 56.7s
+strategy     K6(6,3)@41: solved 1/5 median_score -172 median_wall 58.1s
+strategy     K6(8,4)@169: solved 0/5 median_score -5 median_wall 58.4s
+strategy     K8(9,4)@940: solved 0/5 median_score -69688 median_wall 58.4s
+strategy     K3(11,4)@81: solved 0/5 median_score -2456 median_wall 58.0s
+engine0      K6(6,3)@41: solved 4/5 median_score 1000 median_wall 20.2s
+engine0      K6(8,4)@169: solved 5/5 median_score 1000 median_wall 26.7s
+engine0      K8(9,4)@940: solved 0/5 median_score -48311 median_wall 56.0s
+engine0      K3(11,4)@81: solved 5/5 median_score 1000 median_wall 0.3s
+{
+ "structure": {
+  "total_solved": 12,
+  "sum_median": -47810
+ },
+ "lowlevel": {
+  "total_solved": 0,
+  "sum_median": -64629
+ },
+ "strategy": {
+  "total_solved": 1,
+  "sum_median": -72321
+ },
+ "engine0": {
+  "total_solved": 14,
+  "sum_median": -45311
+ }
+}

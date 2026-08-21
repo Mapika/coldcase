@@ -1,0 +1,17 @@
+
+======================================================================
+cell K_5(11,5)  q^n=48828125  ball=569053
+  Keri 2011: 103 - 625  (upper key d)
+  sphere-covering bound: M >= 86
+
+--- M = 602  (02:20:47) ---
+    |     0.0s cell K5(11,5)@602  q^n=48828125 ball=569053 redundancy=7.02 budget=2700s cores=12
+    |     0.0s   phase A: descent seed K5_11_5_M603.txt (603 words)
+    |     0.1s   phase A: lincov not applicable (q=5 prime power? True; M=602)
+    |     0.1s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=7.02 init~30.8s wide=True restart=False slice=2700s
+    engine finished in 2698s, uncovered=1
+  round 1: best uncovered = 1
+  M=602 not solved
+
+======================================================================
+campaign2 done: 0 code(s) verified and recorded

@@ -1,0 +1,22 @@
+{
+ "q": 13,
+ "n": 6,
+ "R": 4,
+ "M": 45,
+ "date": "2026-08-21",
+ "method": "covsearch tabu/greedy local search, 240s x 40 workers",
+ "code_file": "K13_6_4_M45.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 35,
+  "ub": 46,
+  "lb_key": "k",
+  "ub_key": "q"
+ },
+ "beats_keri_upper_bound": true,
+ "matches_keri_upper_bound": false
+}

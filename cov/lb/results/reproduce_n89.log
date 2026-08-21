@@ -1,0 +1,66 @@
+running 26 cells on 14 workers
+  FAILED to round psd duals to exact psd matrices
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-09: domain error
+  cvxopt failed at reltol=1e-10: math domain error
+  cvxopt failed at reltol=1e-09: domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-09: math domain error
+  cvxopt failed at reltol=1e-10: domain error
+  cvxopt failed at reltol=1e-10: domain error
+q=4 n=8 R=3  certified SDP value 91284.669904  cube root 45.026268  => K >= 46
+q=4 n=8 R=4  certified SDP value 1982.283852  cube root 12.561899  => K >= 13
+q=3 n=9 R=3  certified SDP value 27280.597686  cube root 30.103567  => K >= 31
+q=4 n=8 R=1  certified SDP value 1.000021  cube root 1.000007  => K >= 2
+q=4 n=9 R=4  certified SDP value 18969.561501  cube root 26.669759  => K >= 27
+q=3 n=9 R=4  certified SDP value 1071.332193  cube root 10.232334  => K >= 11
+q=4 n=8 R=2  certified SDP value 13718.474727  cube root 23.938776  => K >= 24
+q=5 n=9 R=3  certified SDP value 4540.564201  cube root 16.559095  => K >= 17
+q=4 n=9 R=1  certified SDP value 1.000140  cube root 1.000047  => K >= 2
+q=5 n=8 R=2  certified SDP value 1.000004  cube root 1.000001  => K >= 2
+q=5 n=8 R=4  certified SDP value 12241.205168  cube root 23.046663  => K >= 24
+q=3 n=8 R=1  certified SDP value 79.462568  cube root 4.299199  => K >= 5
+q=5 n=8 R=5  certified SDP value 384.858850  cube root 7.273897  => K >= 8
+q=3 n=9 R=2  certified SDP value 2294259.139091  cube root 131.890695  => K >= 132
+q=4 n=9 R=3  certified SDP value 1532337.520668  cube root 115.288188  => K >= 116
+q=3 n=9 R=1  certified SDP value 1.000004  cube root 1.000001  => K >= 2
+q=4 n=9 R=5  certified SDP value 736.319190  cube root 9.030020  => K >= 10
+q=3 n=8 R=2  certified SDP value 190081.203710  cube root 57.497160  => K >= 58
+q=5 n=9 R=4  certified SDP value 229071.507163  cube root 61.186699  => K >= 62
+q=3 n=8 R=3  certified SDP value 3793.459861  cube root 15.595950  => K >= 16
+q=5 n=9 R=2  certified SDP value 1.000111  cube root 1.000037  => K >= 2
+q=5 n=9 R=5  certified SDP value 3848.661288  cube root 15.671235  => K >= 16
+
+cell              published ours(certified)   rel.diff      sec
+K3(8,1)            402.9463         4.2992  -9.89e-01     64.5
+K3(8,2)             57.4972        57.4972  -7.02e-07     74.1
+K3(8,3)             15.5959        15.5959   3.20e-06     65.3
+K3(9,1)           1063.9751         1.0000  -9.99e-01     18.6
+K3(9,2)            131.8916       131.8907  -6.86e-06    232.8
+K3(9,3)             30.1035        30.1036   2.23e-06    191.1
+K3(9,4)             10.2323        10.2323   3.35e-06    208.3
+K4(8,1)           2694.3800         1.0000  -1.00e+00      9.1
+K4(8,2)            250.8700        23.9388  -9.05e-01     67.4
+K4(8,3)             45.0200        45.0263   1.39e-04    134.8
+K4(8,4)             12.5600        12.5619   1.51e-04    139.2
+K4(9,1)           9362.2800         1.0000  -1.00e+00     29.2
+K4(9,2)            774.4600         1.0000  -9.99e-01     22.7
+K4(9,3)            115.2800       115.2882   7.10e-05    239.3
+K4(9,4)             26.6600        26.6698   3.66e-04    196.1
+K4(9,5)              9.0300         9.0300   2.20e-06    257.4
+K5(8,1)          12133.7000         1.0001  -1.00e+00     12.3
+K5(8,2)            860.1300         1.0000  -9.99e-01     15.1
+K5(8,3)            110.2400       110.2431   2.80e-05     77.1
+K5(8,4)             23.0400        23.0467   2.89e-04    107.7
+K5(8,5)              7.2700         7.2739   5.36e-04    121.7
+K5(9,2)           3279.5100         1.0000  -1.00e+00     32.5
+K5(9,3)            353.3200        16.5591  -9.53e-01    156.9
+K5(9,4)             61.1800        61.1867   1.09e-04    244.1
+K5(9,5)             15.6700        15.6712   7.88e-05    294.2
+K5(9,6)              5.7900         5.7932   5.54e-04    329.9
+
+matched 16 / 26
+wrote results/reproduce_n89.json

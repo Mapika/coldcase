@@ -1,0 +1,10 @@
+[
+ {"q": 6, "n": 7,  "R": 3, "descend_from": 231,  "floor": 226},
+ {"q": 6, "n": 8,  "R": 4, "descend_from": 166,  "floor": 160},
+ {"q": 6, "n": 9,  "R": 4, "descend_from": 702,  "floor": 695},
+ {"q": 6, "n": 10, "R": 5, "descend_from": 609,  "floor": 602},
+ {"q": 7, "n": 8,  "R": 4, "descend_from": 328,  "floor": 322},
+ {"q": 6, "n": 8,  "R": 3, "descend_from": 1044, "floor": 1036},
+ {"q": 7, "n": 9,  "R": 4, "descend_from": 1742, "floor": 1730},
+ {"q": 6, "n": 10, "R": 4, "descend_from": 2950, "floor": 2942}
+]

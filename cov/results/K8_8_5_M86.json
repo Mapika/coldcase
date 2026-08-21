@@ -1,0 +1,22 @@
+{
+ "q": 8,
+ "n": 8,
+ "R": 5,
+ "M": 86,
+ "date": "2026-08-20",
+ "method": "covsearch tabu/greedy local search, 240s x 40 workers",
+ "code_file": "K8_8_5_M86.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 29,
+  "ub": 90,
+  "lb_key": "m",
+  "ub_key": "z"
+ },
+ "beats_keri_upper_bound": true,
+ "matches_keri_upper_bound": false
+}

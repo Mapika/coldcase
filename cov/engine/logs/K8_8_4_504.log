@@ -1,0 +1,23 @@
+
+======================================================================
+cell K_8(8,4)  q^n=16777216  ball=188707
+  Keri 2011: 118 - 512  (upper key c)
+  sphere-covering bound: M >= 89
+
+--- M = 504  (00:43:20) ---
+    |     0.0s cell K8(8,4)@504  q^n=16777216 ball=188707 redundancy=5.67 budget=2700s cores=12
+    |     0.0s   phase A: descent seed K8_8_4_M505.txt (505 words)
+    |    70.0s   phase A: lincov k=1 -> uncovered=None
+    |    70.0s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.67 init~7.3s wide=True restart=False slice=2700s
+    engine finished in 2698s, uncovered=1
+  round 1: best uncovered = 1
+    |     0.0s cell K8(8,4)@504  q^n=16777216 ball=188707 redundancy=5.67 budget=2700s cores=12
+    |     0.0s   phase A: descent seed K8_8_4_M505.txt (505 words)
+    |    70.0s   phase A: lincov k=1 -> uncovered=None
+    |    70.0s   phase B: 12 chains x 1 thread(s)  (2 symmetric, 8 seeded)  redundancy=5.67 init~7.3s wide=True restart=False slice=2700s
+    engine finished in 2698s, uncovered=4
+  round 2: best uncovered = 4
+  M=504 not solved
+
+======================================================================
+campaign2 done: 0 code(s) verified and recorded

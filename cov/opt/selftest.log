@@ -1,0 +1,98 @@
+== 1. trajectory identity vs the original solver ==
+  [-q 6 -n 6 -R 3 -M 41  --iters 2000 s=1] uncovered=70 ok
+  [-q 6 -n 6 -R 3 -M 41  --iters 2000 s=2] uncovered=56 ok
+  [-q 6 -n 6 -R 3 -M 41  --iters 2000 s=3] uncovered=62 ok
+  [-q 6 -n 8 -R 4 -M 169 --iters 150 s=1] uncovered=55 ok
+  [-q 6 -n 8 -R 4 -M 169 --iters 150 s=2] uncovered=64 ok
+  [-q 6 -n 8 -R 4 -M 169 --iters 150 s=3] uncovered=76 ok
+  [-q 7 -n 5 -R 2 -M 120 --iters 400 s=1] uncovered=6 ok
+  [-q 7 -n 5 -R 2 -M 120 --iters 400 s=2] uncovered=5 ok
+  [-q 7 -n 5 -R 2 -M 120 --iters 400 s=3] uncovered=5 ok
+  [-q 3 -n 7 -R 1 -M 34  --iters 1500 s=1] uncovered=1677 ok
+  [-q 3 -n 7 -R 1 -M 34  --iters 1500 s=2] uncovered=1677 ok
+  [-q 3 -n 7 -R 1 -M 34  --iters 1500 s=3] uncovered=1677 ok
+  [-q 5 -n 4 -R 0 -M 600 --iters 300 s=1] uncovered=25 ok
+  [-q 5 -n 4 -R 0 -M 600 --iters 300 s=2] uncovered=25 ok
+  [-q 5 -n 4 -R 0 -M 600 --iters 300 s=3] uncovered=25 ok
+  [-q 4 -n 5 -R 4 -M 3   --iters 100 s=1] uncovered=1 ok
+  [-q 4 -n 5 -R 4 -M 3   --iters 100 s=2] uncovered=1 ok
+  [-q 4 -n 5 -R 4 -M 3   --iters 100 s=3] uncovered=1 ok
+  [-q 2 -n 8 -R 2 -M 12  --iters 800 s=1] uncovered=0 ok
+  [-q 2 -n 8 -R 2 -M 12  --iters 800 s=2] uncovered=0 ok
+  [-q 2 -n 8 -R 2 -M 12  --iters 800 s=3] uncovered=0 ok
+  [-q 6 -n 5 -R 2 -M 66  --iters 900 s=1] uncovered=29 ok
+  [-q 6 -n 5 -R 2 -M 66  --iters 900 s=2] uncovered=26 ok
+  [-q 6 -n 5 -R 2 -M 66  --iters 900 s=3] uncovered=29 ok
+== 2. solver count == verifier count, all variants, including nonzero ==
+  K6(4,2) M=15 --preset base -> solver=0 verifier=0 OK
+  K6(4,2) M=15 --preset p5 -> solver=0 verifier=0 OK
+  K6(4,2) M=15 --preset p5b -> solver=0 verifier=0 OK
+  K6(4,2) M=15 --preset p5b --wide -> solver=0 verifier=0 OK
+  K6(4,2) M=15 --preset p5 --pf -> solver=0 verifier=0 OK
+  K6(4,2) M=15 --preset p5 --early -> solver=0 verifier=0 OK
+  K6(4,2) M=15 --preset p5 --fix0 -> solver=0 verifier=0 OK
+  K6(4,2) M=15 --preset p5 --upick -> solver=0 verifier=0 OK
+  K6(4,2) M=15 --preset p5 --ucache -> solver=0 verifier=0 OK
+  K6(4,2) M=15 --preset p4 --sa -> solver=6 verifier=6 OK
+  K7(3,1) M=25 --preset base -> solver=0 verifier=0 OK
+  K7(3,1) M=25 --preset p5 -> solver=0 verifier=0 OK
+  K7(3,1) M=25 --preset p5b -> solver=0 verifier=0 OK
+  K7(3,1) M=25 --preset p5b --wide -> solver=0 verifier=0 OK
+  K7(3,1) M=25 --preset p5 --pf -> solver=0 verifier=0 OK
+  K7(3,1) M=25 --preset p5 --early -> solver=0 verifier=0 OK
+  K7(3,1) M=25 --preset p5 --fix0 -> solver=0 verifier=0 OK
+  K7(3,1) M=25 --preset p5 --upick -> solver=0 verifier=0 OK
+  K7(3,1) M=25 --preset p5 --ucache -> solver=0 verifier=0 OK
+  K7(3,1) M=25 --preset p4 --sa -> solver=0 verifier=0 OK
+  K2(8,2) M=12 --preset base -> solver=0 verifier=0 OK
+  K2(8,2) M=12 --preset p5 -> solver=0 verifier=0 OK
+  K2(8,2) M=12 --preset p5b -> solver=0 verifier=0 OK
+  K2(8,2) M=12 --preset p5b --wide -> solver=0 verifier=0 OK
+  K2(8,2) M=12 --preset p5 --pf -> solver=0 verifier=0 OK
+  K2(8,2) M=12 --preset p5 --early -> solver=0 verifier=0 OK
+  K2(8,2) M=12 --preset p5 --fix0 -> solver=0 verifier=0 OK
+  K2(8,2) M=12 --preset p5 --upick -> solver=0 verifier=0 OK
+  K2(8,2) M=12 --preset p5 --ucache -> solver=0 verifier=0 OK
+  K2(8,2) M=12 --preset p4 --sa -> solver=0 verifier=0 OK
+  K6(6,3) M=41 --preset base -> solver=63 verifier=63 OK
+  K6(6,3) M=41 --preset p5 -> solver=63 verifier=63 OK
+  K6(6,3) M=41 --preset p5b -> solver=63 verifier=63 OK
+  K6(6,3) M=41 --preset p5b --wide -> solver=54 verifier=54 OK
+  K6(6,3) M=41 --preset p5 --pf -> solver=63 verifier=63 OK
+  K6(6,3) M=41 --preset p5 --early -> solver=63 verifier=63 OK
+  K6(6,3) M=41 --preset p5 --fix0 -> solver=59 verifier=59 OK
+  K6(6,3) M=41 --preset p5 --upick -> solver=117 verifier=117 OK
+  K6(6,3) M=41 --preset p5 --ucache -> solver=62 verifier=62 OK
+  K6(6,3) M=41 --preset p4 --sa -> solver=199 verifier=199 OK
+  K3(4,1) M=9 --preset base -> solver=0 verifier=0 OK
+  K3(4,1) M=9 --preset p5 -> solver=0 verifier=0 OK
+  K3(4,1) M=9 --preset p5b -> solver=0 verifier=0 OK
+  K3(4,1) M=9 --preset p5b --wide -> solver=0 verifier=0 OK
+  K3(4,1) M=9 --preset p5 --pf -> solver=0 verifier=0 OK
+  K3(4,1) M=9 --preset p5 --early -> solver=0 verifier=0 OK
+  K3(4,1) M=9 --preset p5 --fix0 -> solver=0 verifier=0 OK
+  K3(4,1) M=9 --preset p5 --upick -> solver=0 verifier=0 OK
+  K3(4,1) M=9 --preset p5 --ucache -> solver=0 verifier=0 OK
+  K3(4,1) M=9 --preset p4 --sa -> solver=0 verifier=0 OK
+  K5(4,1) M=125 --preset base -> solver=0 verifier=0 OK
+  K5(4,1) M=125 --preset p5 -> solver=0 verifier=0 OK
+  K5(4,1) M=125 --preset p5b -> solver=0 verifier=0 OK
+  K5(4,1) M=125 --preset p5b --wide -> solver=0 verifier=0 OK
+  K5(4,1) M=125 --preset p5 --pf -> solver=0 verifier=0 OK
+  K5(4,1) M=125 --preset p5 --early -> solver=0 verifier=0 OK
+  K5(4,1) M=125 --preset p5 --fix0 -> solver=0 verifier=0 OK
+  K5(4,1) M=125 --preset p5 --upick -> solver=0 verifier=0 OK
+  K5(4,1) M=125 --preset p5 --ucache -> solver=0 verifier=0 OK
+  K5(4,1) M=125 --preset p4 --sa -> solver=0 verifier=0 OK
+  K6(5,2) M=60 --preset base -> solver=83 verifier=83 OK
+  K6(5,2) M=60 --preset p5 -> solver=83 verifier=83 OK
+  K6(5,2) M=60 --preset p5b -> solver=83 verifier=83 OK
+  K6(5,2) M=60 --preset p5b --wide -> solver=83 verifier=83 OK
+  K6(5,2) M=60 --preset p5 --pf -> solver=83 verifier=83 OK
+  K6(5,2) M=60 --preset p5 --early -> solver=83 verifier=83 OK
+  K6(5,2) M=60 --preset p5 --fix0 -> solver=93 verifier=93 OK
+  K6(5,2) M=60 --preset p5 --upick -> solver=105 verifier=105 OK
+  K6(5,2) M=60 --preset p5 --ucache -> solver=89 verifier=89 OK
+  K6(5,2) M=60 --preset p4 --sa -> solver=116 verifier=116 OK
+
+SELFTEST: ALL PASS

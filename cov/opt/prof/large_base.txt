@@ -1,0 +1,13 @@
+RESULT q=8 n=9 R=4 M=2944 uncovered=8127 iters=120 kicks=0 time=41.46 rate=3 cpu=41.455 cpurate=3 target=-1 ttt_cpu=-1.0000 ttt_wall=-1.0000 ttt_it=-1
+# PROF total_measured=41.454 cpu=41.455 iters=120
+# PROF pick_uncovered     0.002 s    0.00% of cpu  calls=120  us/call=13.26
+# PROF cand_collect       0.001 s    0.00% of cpu  calls=120  us/call=11.09
+# PROF cand_eval         41.298 s   99.62% of cpu  calls=120  us/call=344150.93
+# PROF select             0.001 s    0.00% of cpu  calls=120  us/call=5.16
+# PROF commit             0.152 s    0.37% of cpu  calls=120  us/call=1265.96
+# PROF bestcopy           0.000 s    0.00% of cpu  calls=120  us/call=3.45
+# PROF kick               0.000 s    0.00% of cpu  calls=0  us/call=0.00
+# PROF clock              0.000 s    0.00% of cpu  calls=0  us/call=0.00
+# PROF patterns_eval=5616059050 patterns_commit=20168400 ratio=278.5
+# PROF mean_ncand=278.5 mean_take=278.5 mean_uncovered=9474.7 mean_bestd=-23.56 pick_scans=1416 early_saved_patterns=0
+# PROF ns_per_eval_pattern=7.354

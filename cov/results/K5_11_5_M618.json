@@ -1,0 +1,24 @@
+{
+ "q": 5,
+ "n": 11,
+ "R": 5,
+ "M": 618,
+ "date": "2026-08-20",
+ "method": "covengine portfolio (lincov/symsearch + covsearch2e p5b + covfast), 900s x 12 cores",
+ "code_file": "K5_11_5_M618.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 103,
+  "ub": 625,
+  "lb_key": "m",
+  "ub_key": "d"
+ },
+ "beats_keri_upper_bound": true,
+ "matches_keri_upper_bound": false,
+ "engine": "cov/engine/covengine",
+ "engine_rounds": 1
+}

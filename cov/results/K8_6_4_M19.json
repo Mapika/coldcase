@@ -1,0 +1,22 @@
+{
+ "q": 8,
+ "n": 6,
+ "R": 4,
+ "M": 19,
+ "date": "2026-08-21",
+ "method": "covsearch tabu/greedy local search, 240s x 40 workers",
+ "code_file": "K8_6_4_M19.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 15,
+  "ub": 20,
+  "lb_key": "k",
+  "ub_key": "n"
+ },
+ "beats_keri_upper_bound": true,
+ "matches_keri_upper_bound": false
+}

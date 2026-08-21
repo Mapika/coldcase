@@ -10,34 +10,44 @@
 \newcommand{\Kq}[3]{K_{#1}(#2,#3)}
 \newcommand{\Zq}{\mathbb{Z}_q}
 
-\title{New upper bounds on covering codes $K_q(n,R)$\\ for alphabets of size six and seven}
+\input{tables_generated}
+
+\title{New upper and lower bounds on covering codes $K_q(n,R)$\\ for alphabets of size five to fifteen}
 \author{Mark Marosi\thanks{Department of Measurement and Information
 Systems, Budapest University of Technology and Economics (BME), Budapest,
 Hungary. email: marosi@mit.bme.hu. The search software, the verification
 protocol, the constructions, and this manuscript were produced by the AI
 system Claude (Anthropic), operating autonomously on a single NVIDIA GH200
 node; the author's contributions were the initiating idea, methodological
-guidance, and the computational resources. See Section~\ref{sec:method}.}}
+guidance, and the computational resources. See the Acknowledgments.}}
 \date{August 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We present improved upper bounds for nine entries of the standard tables of
-bounds on $K_q(n,R)$, the minimum cardinality of a $q$-ary code of length $n$
-with covering radius $R$, for $q\in\{6,7\}$:
-$\Kq{6}{7}{3}\le 232$, $\Kq{6}{8}{3}\le 1045$, $\Kq{6}{8}{4}\le 167$,
-$\Kq{6}{9}{4}\le 703$, $\Kq{6}{9}{5}\le 123$, $\Kq{6}{10}{4}\le 2951$,
-$\Kq{6}{10}{5}\le 610$, $\Kq{7}{8}{4}\le 329$, and $\Kq{7}{9}{4}\le 1743$.
-The previous best bounds, recorded in K\'eri's tables (last updated 2011),
-all arose from general constructions (direct sums and related product rules)
-rather than from explicit search; to our knowledge these are the first
-improvements to any upper bound on $K_q(n,R)$ with $q\ge 5$ since 2011.
-The new bounds were found by focused local search seeded with the
-construction-based incumbents. All nine codes are given explicitly in the
-ancillary files, together with a standalone verifier; each code was checked
-by four independent exhaustive verification methods.
+We improve both ends of the standard tables of bounds on $K_q(n,R)$, the
+minimum cardinality of a $q$-ary code of length $n$ with covering radius $R$,
+in the range $5\le q\le 15$. On the upper-bound side we give eighteen improved
+bounds, obtained by an engineered focused local search seeded with structural
+constructions; to our knowledge these are the first improvements to any upper
+bound on $K_q(n,R)$ with $q\ge 5$ since the 2011 freeze of K\'eri's tables,
+and they include reductions of up to $23\%$
+($\Kq{6}{8}{4}\le 166$) below bounds that had stood for decades. On the
+lower-bound side we give seven improved bounds for $6\le q\le 10$, obtained
+from an exact-arithmetic reimplementation of the Gijswijt--Polak semidefinite
+programming hierarchy, whose published results cover only $q\le 5$; every new
+lower bound is backed by a rational dual certificate that a standalone,
+dependency-free checker verifies in exact arithmetic, so the bounds do not
+rest on floating-point computation. One cell is improved from both sides:
+$441\le \Kq{6}{10}{4}\le 2784$, against the previous $417$--$2952$. Beyond
+the bounds themselves we report the algorithm engineering that produced them
+--- a shared-sphere incremental evaluation that speeds up the local search
+$6$--$10\times$, structural solvers over cosets of linear codes and
+translation quotients, a measured portfolio policy, and a controlled
+comparison of CPU and GPU implementations --- together with the exhaustive,
+redundant verification protocol. All eighteen codes and all seven
+certificates are provided in machine-readable form with standalone verifiers.
 \end{abstract}
 
 \section{Introduction}
@@ -52,62 +62,98 @@ is a central quantity of covering-code theory~\cite{CHLL}; the binary case
 $K_2(n,1)$ includes the domination number of the hypercube, and the ternary
 case $K_3(n,1)$ is the classical football pool problem.
 
-Upper bounds on $K_q(n,R)$ are established by explicit constructions, and the
-state of the art is recorded in the tables of K\'eri~\cite{Keri}, which
-subsume and extend the earlier tables of Cohen, Honkala, Litsyn and
-Lobstein~\cite{CHLL}. The last update to K\'eri's tables was made in November
-2011. Recent activity on $K_q(n,R)$ has concentrated on \emph{lower} bounds:
-Wu and Chen~\cite{WuChen} improved binary lower bounds via congruence
-arguments, and Gijswijt and Polak~\cite{GijswijtPolak} obtained many new
-lower bounds for $q\le 5$ from semidefinite programming. On the upper-bound
-side, for alphabets $q\ge 5$ we are not aware of any published improvement
-since the 2011 freeze; a systematic search of the literature (arXiv, DBLP,
-OpenAlex, Lobstein's covering-code bibliography, and the publication lists of
-the authors active in this area) found none.
+Upper bounds on $K_q(n,R)$ are established by explicit constructions, lower
+bounds by combinatorial or convex-relaxation arguments, and the state of the
+art is recorded in the tables of K\'eri~\cite{Keri}, which subsume and extend
+the earlier tables of Cohen, Honkala, Litsyn and Lobstein~\cite{CHLL}. The
+last update to K\'eri's tables was made in November 2011. Recent activity has
+concentrated on lower bounds for small alphabets: Wu and Chen~\cite{WuChen}
+improved binary lower bounds via congruence arguments, and Gijswijt and
+Polak~\cite{GijswijtPolak} obtained many new lower bounds for $q\le 5$ from a
+semidefinite programming hierarchy. For alphabets $q\ge 5$ we are not aware
+of any published improvement on either side since the 2011 freeze; a
+systematic search of the literature (arXiv, DBLP, OpenAlex, Lobstein's
+covering-code bibliography, and the publication lists of the authors active
+in this area) found none.
 
-The reason the entries treated here were improvable is visible in K\'eri's
-own source annotations. For moderate $q$ and $R\ge 3$ nearly all tabulated
-upper bounds carry keys denoting \emph{general constructions}: the direct sum
+This paper improves both sides in that range: eighteen upper bounds for
+$5\le q\le 15$ (Table~\ref{tab:ub}) and seven lower bounds for $6\le q\le 10$
+(Table~\ref{tab:lb}).
+
+Two structural observations explain where the improvements come from. On the
+upper-bound side, K\'eri's source annotations show that for moderate $q$ and
+$R\ge 3$ most tabulated bounds are \emph{inherited arithmetic} --- direct sums
 \begin{equation}\label{eq:directsum}
 K_q(n_1+n_2,\,R_1+R_2)\;\le\;K_q(n_1,R_1)\cdot K_q(n_2,R_2),
 \end{equation}
 the special case $K_q(n+1,R)\le q\,K_q(n,R)$, the monotonicity
-$K_q(n+1,R+1)\le K_q(n,R)$, and product rules over alphabet factorizations.
-These are inherited arithmetic: no search was ever run in those cells. The
-present note shows that plain local search, seeded with the construction that
-produced the incumbent, beats nine such bounds in the range $q\in\{6,7\}$, $n\le 10$ --- in one
-case by $23\%$.
+$K_q(n+1,R+1)\le K_q(n,R)$, and product rules over alphabet factorizations
+--- cells in which no search was ever run. Those cells fall furthest (up to
+$23\%$). But the engineered search of Section~\ref{sec:method} also shaves
+several cells whose incumbents came from dedicated search or codes in the
+2000s (the cells with keys \texttt{n}, \texttt{q}, \texttt{z} in
+Table~\ref{tab:ub}), by $1$--$6\%$. On the lower-bound side, the size of the
+symmetry-reduced Gijswijt--Polak SDP depends only on $n$ and not on $q$, so
+their $q\le 5$ boundary was one of compute and numerical precision rather
+than of model size; carrying the same relaxation into $6\le q\le 10$ with
+exact certification yields improvements precisely on the cells whose
+incumbent lower bounds are weak relative to the sphere-covering bound
+(Section~\ref{sec:lb}).
 
-\section{Results}
+The results were produced autonomously by an AI system on a single
+GH200 node over roughly one week; we describe the methodology --- including a
+frozen-rules competition between independently developed solvers, used to
+select the production algorithm --- in Sections~\ref{sec:method}
+and~\ref{sec:engine}, and the verification protocol, which we regard as the
+load-bearing part of any record claim, in Section~\ref{sec:verify}.
 
-\begin{table}[h]
+\section{Results}\label{sec:results}
+
+\begin{table}[p]
 \centering
-\begin{tabular}{lccccl}
-\toprule
-cell & previous bounds & new UB & $\Delta$ & code file & previous UB from \\
-\midrule
-$\Kq{6}{7}{3}$  & 70--246   & \textbf{232}  & $-14$ & \texttt{K6\_7\_3\_M232.txt}   & $6\cdot \Kq{6}{6}{3}$ \\
-$\Kq{6}{8}{3}$  & 246--1080 & \textbf{1045} & $-35$ & \texttt{K6\_8\_3\_M1045.txt}  & $\Kq{6}{4}{1}\cdot \Kq{6}{4}{2}$ \\
-$\Kq{6}{8}{4}$  & 46--216   & \textbf{167}  & $-49$ & \texttt{K6\_8\_4\_M167.txt}   & $6\cdot \Kq{6}{7}{4}$ \\
-$\Kq{6}{9}{4}$  & 136--738  & \textbf{703}  & $-35$ & \texttt{K6\_9\_4\_M703.txt}   & $\Kq{6}{3}{1}\cdot \Kq{6}{6}{3}$ \\
-$\Kq{6}{9}{5}$  & 32--144   & \textbf{123}  & $-21$ & \texttt{K6\_9\_5\_M123.txt}   & alphabet product rule \\
-$\Kq{6}{10}{4}$ & 417--2952 & \textbf{2951} & $-1$  & \texttt{K6\_10\_4\_M2951.txt} & $\Kq{6}{4}{1}\cdot \Kq{6}{6}{3}$ \\
-$\Kq{6}{10}{5}$ & 83--615   & \textbf{610}  & $-5$  & \texttt{K6\_10\_5\_M610.txt}  & $\Kq{6}{6}{3}\cdot \Kq{6}{4}{2}$ \\
-$\Kq{7}{8}{4}$  & 76--343   & \textbf{329}  & $-14$ & \texttt{K7\_8\_4\_M329.txt}   & $\Kq{7}{7}{3}$ (monotonicity) \\
-$\Kq{7}{9}{4}$  & 264--1843 & \textbf{1743} & $-100$ & \texttt{K7\_9\_4\_M1743.txt}  & direct sum \\
-\bottomrule
-\end{tabular}
-\caption{New upper bounds. ``Previous bounds'' are the lower--upper bound
-pairs of K\'eri's tables~\cite{Keri}; lower bounds are unaffected by this
-work. The last column gives the construction from which the previous upper
-bound was inherited, per the source keys of~\cite{Keri}.}
-\label{tab:results}
+\small
+\ubtable
+\caption{New upper bounds. ``Previous bounds'' are the lower--upper pairs of
+K\'eri's tables~\cite{Keri} (a bold lower bound is this paper's, from
+Table~\ref{tab:lb}); ``key'' is the source annotation of the previous upper
+bound in~\cite{Keri}, expanded in the last column. A ${}^{\downarrow}$ marks
+bounds at which our descent had not yet stalled when this version was
+prepared: these are snapshots, not walls, and we expect them to improve
+further. All other bounds resisted a dedicated attack at $M-1$.}
+\label{tab:ub}
 \end{table}
 
-The nine codes are supplied as ancillary files (one codeword per line,
-digits over $\{0,\dots,q-1\}$). None of the searches had converged when
-stopped, so we expect several of these bounds to be improvable further by the
-same method with more computation.
+\begin{table}[p]
+\centering
+\small
+\lbtable
+\caption{New lower bounds, all with exact rational certificates. ``Sphere
+bound'' is $\lceil q^n/|B_R|\rceil$; ``previous LB'' is K\'eri's
+table~\cite{Keri} with its source key (\texttt{y} = improved sphere-covering
+bound, \texttt{s} = Lang--Quistorff--Schneider 2006); ``SDP
+value$^{1/3}$'' is the cube root of the certified rational value of the
+semidefinite bound of~\cite{GijswijtPolak} (which bounds $K_q(n,R)^3$).}
+\label{tab:lb}
+\end{table}
+
+Table~\ref{tab:ub} lists the eighteen new upper bounds with the construction
+that produced the previous bound, and Table~\ref{tab:lb} the seven new lower
+bounds. Three points deserve note.
+
+First, the cell $\Kq{6}{10}{4}$ is improved from both sides, from
+$417$--$2952$ to $441$--$2784$. Second, none of the record cells' searches is
+known to be exhausted: the three highest-redundancy cells
+($\Kq{6}{10}{4}$, $\Kq{6}{10}{5}$, $\Kq{7}{9}{4}$) never stalled in any run
+--- each stop was a scheduling decision, and successive sessions took
+$\Kq{7}{9}{4}$ from $1843$ to $1743$, $1600$, and now $1479$ --- so the
+marked bounds should be read as a progress report on cells that had simply
+never been searched. Third, the seven lower-bound improvements land exactly
+where the incumbents are weakest: every improved cell carries K\'eri key
+\texttt{y} or \texttt{s} (bounds within $1$--$4\%$ of sphere-covering),
+and no cell with key \texttt{m} (Haas--Halupczok--Schlage-Puchta 2009, up to
+$52\%$ above sphere-covering) is improved --- on those cells the
+triple-distribution SDP at this level of the hierarchy is simply weaker than
+the best combinatorial arguments at $q\ge 6$ (Section~\ref{sec:lb:where}).
 
 \begin{remark}\label{rem:keri17}
 An audit of the tables of~\cite{Keri} against their own derivation rules
@@ -118,9 +164,9 @@ $K_q(n{+}1,R)\le q\,K_q(n,R)$. We record this as an observation; it involves
 no new construction.
 \end{remark}
 
-\section{Method}\label{sec:method}
+\section{Upper bounds: the search}\label{sec:method}
 
-\subsection{Search}
+\subsection{Focused local search}\label{sec:search}
 
 We search for a code of prescribed size $M$ minimizing the number of
 uncovered words. The state is a multiset of $M$ codewords together with the
@@ -162,8 +208,6 @@ tenures and WalkSAT-style noise were harmful on these instances. Simulated
 annealing sustained a $33\times$ higher move rate and still lost to the
 focused search --- move quality beats move count here.
 
-\subsection{Seeding and descent}
-
 For each cell we first rebuilt a code of the incumbent size from the same
 construction that produced the incumbent bound (e.g., for $\Kq{6}{10}{4}$ the
 direct sum \eqref{eq:directsum} of an optimal $\Kq{6}{4}{1}$ code of size 72
@@ -175,59 +219,504 @@ the small factors and re-composing (a ``factor attack'') was decisive for
 seeding; the improvements themselves come from the descent breaking out of
 the product structure.
 
-\subsection{Hardware and effort}
+\subsection{Algorithm engineering}\label{sec:engineering}
 
-All record searches ran on the 64-core Grace CPU of a single NVIDIA GH200
-node (a CUDA port was implemented and verified but was latency-bound and
-slower than the CPU at these instance sizes). Per-cell effort ranged from
-seconds ($\Kq{6}{8}{4}$, $\Kq{6}{9}{5}$) to under two hours of wall clock;
-none of the descents had converged when stopped. Move throughput ranged from
-$\sim$1.3k moves/s per worker on the largest cells to $\sim$400k on the
-smallest.
+The search described above spends essentially all of its time in one place, and
+saying exactly where turns out to determine what is worth optimising.
+
+\subsubsection*{Profile}
+
+Instrumenting each phase of the solver with \texttt{CLOCK\_THREAD\_CPUTIME\_ID}
+on three representative cells --- $\Kq{6}{6}{3}$ at $M=41$ ($q^n=46\,656$),
+$\Kq{6}{8}{4}$ at $M=169$ ($q^n=1\,679\,616$) and $\Kq{8}{9}{4}$ at $M=2944$
+($q^n=134\,217\,728$) --- gives candidate evaluation $92.9\%$, $98.5\%$ and
+$99.6\%$ of the run time respectively. Committing a move takes $3.3\%$,
+$0.8\%$ and $0.4\%$; choosing the uncovered word, computing the $M$ Hamming
+distances and breaking ties together account for under $2\%$ everywhere.
+The cost of one evaluated sphere pattern grows from $1.9$\,ns to $6.0$\,ns to
+$7.4$\,ns as the counter array grows from $93$\,kB (L2-resident) to $3.4$\,MB
+(L3) to $268$\,MB (DRAM): the walk is a strided gather and its throughput is
+set by the working set, so reducing \emph{bytes touched} pays as well as
+reducing \emph{patterns walked}.
+
+\subsubsection*{Sharing one sphere among the moves of a codeword}
+
+Lemma~\ref{lem:move} localises both the leaving and the entering set of a move,
+and a closer reading shows that the leaving set depends on the moved
+coordinate only through a membership predicate. Write $D(w)=\{j: w_j\neq c_j\}$
+and let $c^{(p)}$ denote $c$ with coordinate $p$ replaced by $v$.
+
+\begin{lemma}\label{lem:shared}
+$w$ leaves the ball of $c$ under the move at $p$ if and only if $|D(w)|=R$ and
+$p\notin D(w)$; and $w$ enters the ball of $c^{(p)}$ if and only if
+$|D(w)|=R+1$, $p\in D(w)$ and $w_p=v$.
+\end{lemma}
+
+Consequently, putting
+\[
+T=\#\{w: |D(w)|=R,\ \mathrm{cnt}(w)=1\},\qquad
+H_j=\#\{w: |D(w)|=R,\ \mathrm{cnt}(w)=1,\ j\in D(w)\},
+\]
+the number of words that the move at $p$ newly uncovers equals $T-H_p$ for
+\emph{every} $p$ at once. A single enumeration of the full distance-$R$
+sphere, of size $\binom{n}{R}(q-1)^R$, therefore replaces the $R+1$ separate
+enumerations of $\binom{n-1}{R}(q-1)^R$ patterns each, a saving of
+$(R+1)(n-R)/n$ (2.00, 2.50 and 2.78 on the three cells). The updates to $T$
+and $H$ are executed only when $\mathrm{cnt}(w)=1$, which on the loose cells
+this method targets happens for $0.4\%$ of words at $M=169$ and $0.07\%$ at
+$M=216$ in $\Kq{6}{8}{4}$, so the inner loop reduces to one load and one
+compare --- half the memory traffic per pattern of the original.
+
+\subsubsection*{The entering side from the uncovered words}
+
+The entering side does not share in the same way: enumerating the
+distance-$(R+1)$ sphere once costs $(q-1)n/(R+1)^2$ times the per-position
+walks, which is worse for these parameters. But the entering side counts only
+words with $\mathrm{cnt}(w)=0$, and by Lemma~\ref{lem:shared} membership of
+the entering set is decided in $O(n)$ from the digits of the word. Maintaining
+the set $U$ of uncovered words explicitly therefore replaces
+$(R+1)\binom{n-1}{R}(q-1)^R$ counter reads by $O(n|U|)$ work, which is
+profitable exactly when
+\begin{equation}\label{eq:ulcond}
+n\,|U| \;<\; (R+1)\binom{n-1}{R}(q-1)^R .
+\end{equation}
+The right-hand side is $5\,000$, $109\,375$ and $840\,350$ on the three cells
+while the mean $|U|$ during a run is $58$, $30$ and ${\approx}10^4$, so
+\eqref{eq:ulcond} holds by two to four orders of magnitude for the whole
+useful life of the search. The solver tests \eqref{eq:ulcond} each iteration
+and falls back to the sphere walk when it fails, so it is never worse.
+$U$ is kept as an append-ordered array of (index, digit vector) pairs together
+with a presence bitset over $\Zq^n$; commits append the words they uncover,
+stale entries are removed by an amortised compaction, and no $q^n$-sized index
+array is needed.
+
+Together, the counter reads per candidate codeword fall from
+$2(R+1)\binom{n-1}{R}(q-1)^R$ to $\binom{n}{R}(q-1)^R$, a factor of $4.00$,
+$5.00$ and $5.56$.
+
+\subsubsection*{A wider neighbourhood for free}
+
+$T-H_p$ does not depend on the value $v$ written into coordinate $p$, and the
+entering counts read off $U$ are naturally indexed by the pair $(p,v)$ at no
+extra cost. One sphere enumeration plus one pass over $U$ therefore yields the
+exact objective change of \emph{all} $n(q-1)$ single-coordinate moves of a
+codeword, not only the $R+1$ that move it towards $u$. Since the parameter
+study of Section~\ref{sec:search} found candidate breadth to be the dominant
+tuning knob, widening the neighbourhood from $R+1$ to $n(q-1)$ moves per
+codeword --- a factor of $7.5$ to $11$ here --- is the natural way to spend
+the saving.
+
+\subsubsection*{Narrower counters on the read path}
+
+Coverage counters are $16$-bit because $M$ may exceed $255$, but evaluation
+only ever asks whether a counter is $0$ or $1$. A side array
+$\mathrm{st}(w)=\min(\mathrm{cnt}(w),2)$ carries everything the read path needs
+in one byte or in two bits, while the exact counters stay for the write path;
+the extra write costs nothing measurable because commits are under $1\%$ of the
+time. On $\Kq{8}{9}{4}$ the two-bit form shrinks the read path from $268$\,MB
+to $33.5$\,MB, bringing it inside the $117$\,MB last-level cache.
+
+\subsubsection*{Correctness}
+
+Every one of these changes is an implementation change: it computes the same
+objective differences as the reference solver and must therefore follow the
+same search trajectory from the same seed. That is verified bit-for-bit over
+24 configurations ($q$ from 2 to 7, $R=0$, $R=n-1$, sizes above and below the
+optimum) $\times$ 9 variants, and separately the number of uncovered words the
+solver reports is required to equal the number the standalone verifier
+computes from the written code file --- including the runs that end at a
+nonzero count.
+
+\subsubsection*{Measurements}
+
+The host was shared with a production sweep for the whole measurement
+session, so wall clock is meaningless and every figure below is the solver's
+own \texttt{CLOCK\_PROCESS\_CPUTIME\_ID} reading, with the run order of the
+whole job list randomised. Two experiments were run. In the first
+(Table~\ref{tab:engfixed}), every variant was given a fixed iteration budget;
+since they all follow the same trajectory this is a fully controlled
+comparison with no search-quality confound. In the second
+(Table~\ref{tab:engttt}), each cell was started from a fixed code file and
+each configuration was run with 20 seeds to a fixed target uncovered count,
+recording the CPU time at which the target was first reached.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lccc}
+\toprule
+variant & $\Kq{6}{6}{3}$ & $\Kq{6}{8}{4}$ & $\Kq{8}{9}{4}$ \\
+        & 20\,000 it & 600 it & 50 it \\
+\midrule
+reference implementation      & $1.00\times$ & $1.00\times$ & $1.00\times$ \\
+peeled walk, hoisted offsets  & $1.35\times$ & $1.29\times$ & $1.13\times$ \\
+\quad + 8-bit state array     & $1.28\times$ & $1.65\times$ & $1.65\times$ \\
+\quad + 2-bit state array     & $0.82\times$ & $1.34\times$ & $2.44\times$ \\
+shared sphere, 8-bit state    & $1.32\times$ & $1.95\times$ & $1.95\times$ \\
+\quad + uncovered-word list   & $2.21\times$ & $5.57\times$ & $6.06\times$ \\
+\quad with 2-bit state        & $2.14\times$ & $\mathbf{6.32\times}$ & $\mathbf{9.86\times}$ \\
+\bottomrule
+\end{tabular}
+\caption{Speedup in CPU time at a fixed iteration budget, median of 9 runs
+(6 on the largest cell). Every row performs the identical search: the final
+uncovered counts agree exactly, seed by seed, across all rows. The
+interquartile range is $0.9\%$, $2.2\%$ and $5.6\%$ of the median.}
+\label{tab:engfixed}
+\end{table}
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+cell & $M$ & target & speedup, identical search & with wide neighbourhood \\
+\midrule
+$\Kq{6}{6}{3}$ & 41   & $|U|\le 30$      & $2.03\times$ $[1.99,2.13]$ & $0.28\times$ \\
+$\Kq{6}{8}{4}$ & 169  & $|U|\le 20$      & $6.12\times$ $[6.06,6.62]$ & $8.03\times$ $[5.75,11.02]$ \\
+$\Kq{8}{9}{4}$ & 2944 & $|U|\le 10\,800$ & $8.07\times$ $[6.19,10.72]$ & $11.04\times$ $[8.06,12.17]$ \\
+\bottomrule
+\end{tabular}
+\caption{Median per-seed ratio of CPU time to target over 20 seeds, with a
+percentile-bootstrap 95\% confidence interval. In the fourth column the
+optimised solver reached the target at exactly the same iteration as the
+reference on 20 of 20 seeds in every cell, so the ratio is a pure
+implementation speedup measured pairwise. The fifth column additionally
+widens the candidate neighbourhood, which changes the search: it reaches the
+target in 421 instead of 676 iterations on $\Kq{6}{8}{4}$ and 23 instead of
+30 on $\Kq{8}{9}{4}$, but costs a factor $3.6$ on the small tight cell.}
+\label{tab:engttt}
+\end{table}
+
+After these changes the profile has moved: candidate evaluation falls to
+$72.8\%$, $81.7\%$ and $98.2\%$ of the run time, and committing a move --- which
+concerns a single $(p,v)$ pair and so cannot use the shared identity --- rises
+to $19.2\%$, $14.5\%$ and $1.6\%$.
+
+\subsubsection*{What did not help}
+
+Several plausible ideas were implemented and measured, and did not work; we
+record them because the reasons are structural rather than accidental.
+
+\emph{Caching move evaluations between iterations} is impossible here. A
+cached value for codeword $c$ survives a commit on $c'$ only if their
+evaluation spheres are disjoint, which needs $d(c,c')>2R+2$; but $2R+2\ge n$
+for every cell of interest, so every commit invalidates every entry. Large
+$R$ relative to $n$ --- the defining feature of the cells whose bounds are
+inherited arithmetic --- is exactly what rules caching out.
+
+\emph{Early exit on a lower bound.} During a candidate's walk the final
+change is bounded below using the fact that the entering count cannot exceed
+$|U|$. The bound is exact and prunes $1.03\%$, $0.006\%$ and $0.000\%$ of
+patterns on the three cells: it only becomes strong as $|U|$ falls, and small
+$|U|$ is precisely what makes the sparse evaluator fast instead.
+
+\emph{Inverting the leaving side}, i.e.\ maintaining a list of the singly
+covered words as we do for the uncovered ones, pays only if
+$n|U_1| < \binom{n}{R}(q-1)^R$. Measured on the recorded codes, $|U_1|$ is
+5357, 6592 and ${\sim}10^6$ against thresholds of 417, 5469 and 33\,614: it
+fails everywhere. Uncovered words are rare by construction, singly covered
+words are not.
+
+\emph{Symmetry reduction.} Translating the code so that one codeword sits at
+$0^n$ and freezing it quotients out the $q^n$ translations, but gives no
+measurable benefit ($4.87\times$ against $5.26\times$ on $\Kq{6}{8}{4}$,
+$0.89\times$ against $2.11\times$ on $\Kq{6}{6}{3}$). A local search does not
+revisit states exactly, so removing a symmetry removes almost no work; all it
+does here is shrink the candidate pool by one codeword, which on the small
+cell measurably hurts.
+
+\emph{Deterministic focus on the longest-uncovered word}, the cheapest form
+of a guided objective, is clearly harmful: $2.04\times$ against $5.26\times$
+on $\Kq{6}{8}{4}$, and on $\Kq{6}{6}{3}$ only 5 of 20 runs reached the target
+at all. Always choosing the same word destroys the randomisation that lets
+focused local search leave a plateau. A stochastic age weighting remains
+untested.
+
+\emph{Software prefetching} and \emph{transparent huge pages} are both within
+noise. For huge pages the reason is architectural: the base page on this host
+is already 64\,kB, so even the 268\,MB counter array spans only 4096 pages.
+
+\subsubsection*{Restart policy}
+
+The empirical run-time distributions answer the restart question directly. At
+targets the search reaches routinely the distribution is light-tailed
+(coefficient of variation $0.20$--$0.47$ on the two loose cells) and a fixed
+restart interval cannot help; calibrating the best observed gain against the
+memoryless null gives $p=1.0$. On the tight cell $\Kq{6}{6}{3}$ at a target
+hard enough that a quarter of runs stall, the distribution becomes heavier
+than exponential and restarting every ${\approx}1.6$ CPU seconds cuts the
+expected time to target by a factor of $4.2$ ($p=0.002$). The policy that
+follows is to run one chain while it is still improving and to rely on
+independent parallel workers rather than on timed restarts.
+
+\section{Upper bounds: structure, and the production portfolio}\label{sec:engine}
+
+\subsection{Structural solvers}\label{sec:structure}
+
+Free search over subsets of $\Zq^n$ is the wrong tool for cells whose optima
+are algebraic, and several of K\'eri's incumbents are exactly that. Two
+structural solvers close the gap.
+
+\emph{Unions of cosets of a linear code.} When $q$ is a prime power and
+$M = c\,q^k$, we search for codes of the form
+$C=\bigcup_{i=1}^{c}(x_i + L)$ with $L$ a linear $[n,k]_q$ code. Covering is
+then a property of syndromes: $C$ covers $\Zq^n$ iff the $c$ syndromes of the
+$x_i$ cover the $q^{n-k}$-element syndrome space under the weighted distance
+induced by coset-leader weights, collapsing a $q^n$-word problem to a
+$q^{n-k}$-syndrome one. The effect is drastic on the cells it fits: the
+incumbent $\Kq{8}{8}{4}\le 512=8^3$ --- which free search could not even
+reproduce (its best from scratch was $740$) --- is reconstructed and verified
+in $0.18$ seconds including process start-up, and the descent to the new
+record $505$ then starts from a verified incumbent. The same solver settles
+$\Kq{5}{11}{5}\le 625=5^4$ and the known-hard $\Kq{3}{11}{4}\le 81=3^4$ (a
+cell on which the free search plateaued $410$ words short) in under a second
+each.
+
+\emph{Translation quotients.} A second solver searches codes invariant under
+$x\mapsto x+\mathbf{1}$, working in the quotient (size $q^{n-1}$ effective)
+with a genuinely free remainder: measurements on $\Kq{6}{8}{4}$ showed that
+neither a fully invariant code (which provably plateaus, since one spare
+codeword cannot repair a deficient orbit) nor a fully free search solves the
+cell, while ``mostly invariant plus a free remainder'' solves it reliably.
+On the largest cells the quotient search beats the best free search by
+$17\%$ at equal core-seconds.
+
+\subsection{A solver competition with frozen rules}\label{sec:arena}
+
+The production configuration was selected by a competition rather than by
+intuition. Four solver lineages --- the algorithm-engineering line of
+Section~\ref{sec:engineering}, a low-level SIMD line, the structural line of
+Section~\ref{sec:structure}, and a portfolio-scheduling line --- were
+developed independently against a published contract: a fixed entry-point
+interface, $\le 6$ threads, $\le 25$\,GB, frozen scoring (a full verified
+cover scores $1000$; a partial cover scores the negated uncovered fraction;
+invalid output scores worse than any valid partial), public development
+cells, and \emph{held-out} judging cells revealed only at evaluation time,
+15 seeds each, all entries sharing one machine in one window. The judge
+verifies every output file independently; no solver's self-reported count is
+ever trusted. One scoring amendment was made before judging (normalising
+partial scores by $q^n$) after a competitor demonstrated that the original
+absolute penalty let invalid output outscore valid partial covers on large
+cells.
+
+The outcome was not a single winner but a decomposition: the structural line
+won the held-out judging outright (11/28 solves), the engineering line had
+the fastest evaluator, the low-level line had the fastest inner loop on
+cache-resident cells and the only deadline-safe initialisation and
+atomic-publishing discipline, and the portfolio line's scheduling (many
+single-threaded chains, stop on first solve) beat multi-threading everywhere
+except the largest cells. The production engine is the merge of all four,
+each component verbatim where it won:
+
+\begin{itemize}
+\item \textbf{Phase A (algebra, seconds):} the coset solver over every
+feasible $k$; seeds from recorded codes and from direct sums over every
+split, taken from the growing result set.
+\item \textbf{Phase B (portfolio):} independent single-threaded chains with
+distinct engines, seeds, and symmetry settings; the mix decided by measured
+thresholds ($q^n$, redundancy $q^n/(M|B_R|)$, initialisation cost against
+budget). Below $3\cdot 10^5$ words half the chains run the SIMD engine;
+above $5\cdot 10^7$ the portfolio is all-quotient; the wide neighbourhood is
+enabled near redundancy $\ge 3$; timed restarts only on tight cells.
+\item \textbf{Discipline:} the wall clock covers initialisation; the
+incumbent is published atomically on every improvement, so a kill at any
+moment leaves the best code on disk; a finishing pass re-reads the winner
+from disk, de-duplicates, and recomputes coverage by direct ball marking.
+\end{itemize}
+
+Under the frozen judge the merged engine was at least as good as every
+component on every cell and strictly better on three of four public cells
+(14/20 solves against the best component's 12/20, and 2.2--2.9$\times$
+faster to a cover where both solve). All record cells were then attacked
+with the merged engine under a descend-until-wall protocol.
+
+\subsection{Hardware, and a controlled CPU/GPU comparison}\label{sec:gpu}
+
+All eighteen record codes were found on the 64 Neoverse-V2 cores of a single
+NVIDIA GH200 node; per-cell effort ranged from seconds to a few core-days.
+Because the promise of GPU acceleration for this problem family is a natural
+question, we report a controlled comparison on the same node (a 480\,GB
+GH200, H100-class GPU).
+
+Two GPU formulations were implemented and verified. The first casts
+candidate evaluation as small integer matrix products over coverage
+bitmaps to engage the tensor cores; it is structurally starved, because the
+contracted dimension is only $nq\approx 50$ ($30\times$ below the
+arithmetic-intensity knee of the hardware), and never approached the CPU.
+The second runs 256 independent search chains in one persistent kernel
+(one chain per thread block, no host synchronisation, the whole counter
+state resident in HBM). At equal validated search semantics, the persistent
+kernel reaches $0.09\times$ the throughput of the full 64-core socket on
+$\Kq{6}{6}{3}$, $0.10\times$ on $\Kq{6}{8}{4}$, and $1.24\times$ on the
+largest benchmarked cell $\Kq{8}{9}{4}$ ($q^n=1.3\cdot 10^8$, aggregate
+$1492$ versus $1200$ moves/s) --- the regime where each chain's working set
+defeats the CPU caches while the GPU's bandwidth advantage applies. The
+honest summary is that on this problem a GPU currently buys about one extra
+CPU socket of capacity on the very largest cells and is counterproductive
+below $q^n\sim 10^8$; all bounds reported here are CPU results.
+
+\section{Lower bounds: exact certificates for $q\ge 6$}\label{sec:lb}
+
+\subsection{The relaxation}
+
+Gijswijt and Polak~\cite{GijswijtPolak} bound $K_q(n,R)^3$ below by a
+semidefinite program over variables indexed by orbits of triples of words
+under $\mathrm{Aut}(q,n)=S_q\wr S_n$, with positive-semidefiniteness
+constraints from the block-diagonalisation of the Terwilliger algebra of the
+Hamming scheme, linear constraints from sphere-covering inequalities, and
+matrix-cut constraints (their Theorem 4.18). Two facts make the $q\ge 6$
+corner attackable. First, the size of the reduced SDP depends only on $n$
+--- at $n=11$ it has 339 variables and 126 blocks of size at most 12 ---
+so alphabet size costs nothing; $q$ enters only through the coefficients.
+Second, published work stops at $q\le 5$, so the incumbents at $q\ge 6$ are
+the 2011 table values.
+
+We reimplemented the reduced SDP from scratch with the entire model
+generation in exact integer arithmetic, and validated the implementation
+four ways: (a) a self-test that pushes explicit verified covering codes
+through the model and checks every constraint in exact rational arithmetic
+(objective exactly $|C|^3$); (b) a coefficient-level comparison against the
+authors' published Julia code, matching every generated coefficient ---
+orbit partitions, objective, block-diagonalisation, distribution numbers ---
+over six $(q,n,R)$ cells spanning $q=3$ to $7$, tens of thousands of
+big-integer values each; (c) reproduction of their published values: over
+the 49 published table values we recomputed, 44 match to published display
+precision, and 18 of the 22 published \emph{improved lower bounds} we
+attempted are reproduced exactly at the integer level (the misses are all in
+precision-limited territory, below); (d) the invariant that no certified
+lower bound may exceed a known upper bound, checked against all 1145 table
+cells --- no violation ever occurred.
+
+\subsection{Certification: nothing floating-point is trusted}\label{sec:lb:cert}
+
+The SDP is solved numerically (an interior-point method; a first-order
+solver as fallback), but the solver's output is used only as a
+\emph{suggestion}. By weak duality, any feasible point of the dual ---
+multipliers $y_k\ge 0$ for the linear constraints and PSD matrices $Y_b$ for
+the blocks --- certifies the bound it attains, regardless of how it was
+found. We therefore round the numerical dual to rationals over a dyadic
+denominator ($2^{46}$), push each $Y_b$ strictly into the PSD cone, and, if
+any dual inequality $d_v\le c_v$ fails in exact arithmetic, shrink the whole
+dual by a dyadic factor $\theta$, which restores exact feasibility at the
+cost of scaling the bound. A well-conditioned solve gives $\theta=1$.
+
+The resulting certificate --- the rationals $y_k$, $Y_b$ and the claimed
+value --- is checked by a standalone program of about seven hundred lines
+that uses only the Python standard library: it \emph{re-derives the entire
+SDP} from $(q,n,R)$ in exact integer arithmetic, checks $y_k\ge 0$, checks
+each $Y_b\succeq 0$ by an exact symmetric-pivot $LDL^{\mathsf T}$
+factorisation over rationals, checks every dual inequality in integer
+arithmetic, and takes the cube root by exact integer comparison. It also
+checks that the covering inequality supplied in the certificate is itself
+valid, so a certificate cannot smuggle in an unsound constraint; tampered
+certificates are rejected. The seven bounds of Table~\ref{tab:lb} are
+precisely the cells (out of 163 certified) where the certified value exceeds
+the 2011 incumbent. Every number in Table~\ref{tab:lb} rests on this checker
+alone; the floating-point solve is not part of the trusted base.
+
+\subsection{Conditioning, and where the improvements land}\label{sec:lb:where}
+
+Making the interior-point method survive these instances was the main
+technical obstacle: the optimum is $|C|^3\sim 10^{13}$ while every
+constraint constant is $O(1)$, and the objective coefficients span ten
+orders of magnitude, so a naive scaling collapses on exactly the interesting
+cells (the solver reports spurious infeasibility, or the rounded dual loses
+half its value to $\theta$). The scaling that works is a geometric-mean
+equilibration, applied entirely in powers of two so that the map back to the
+unscaled dual is exact: normalise the objective by the cube of the
+sphere-covering bound and give each variable the magnitude profile of the
+square root of its objective contribution. On $\Kq{6}{8}{3}$ this lifts the
+certified value from $183$ to $240$ against a true SDP optimum of $239.52$;
+on $\Kq{6}{10}{4}$ from $56$ to $441$.
+
+Even so, double precision carries the method only to SDP values around
+$1.5\cdot 10^9$ (cube root ${\approx}1150$); beyond that the solver fails in
+a way the pipeline detects automatically (the SDP provably dominates the
+sphere-covering bound, so any certificate below it flags a failed solve
+rather than a weak bound --- such cells are reported as failures, never as
+bounds). This ceiling, not the model, is what limits the present sweep: 68
+of the 163 certified cells are in the failed-solve state, concentrated on
+the large-$R=2$ cells where the incumbents are barely above sphere-covering
+and the head-room is greatest, and several failures are near-misses
+($\Kq{20}{8}{4}$ certified $2615.7$ against an incumbent $2760$;
+$\Kq{21}{8}{4}$ $3135.1$ against $3288$). A higher-precision solver
+(the published $q\le 5$ results used 512-bit arithmetic) would open that
+range; we did not have one for this hardware.
+
+The pattern of the seven successes is exactly what this analysis predicts:
+every improved cell has an incumbent within $1$--$4\%$ of the
+sphere-covering bound (K\'eri keys \texttt{y} and \texttt{s}), while no
+cell with a Haas--Halupczok--Schlage-Puchta incumbent (key \texttt{m},
+$13$--$52\%$ above sphere-covering) is improved --- at $q\ge 6$ this level
+of the SDP hierarchy delivers $1.15$--$1.43\times$ sphere-covering,
+decaying with $q$, and so overtakes the combinatorial bounds only where
+they are weak. We also note that the fractional-covering \emph{linear}
+program cannot help at all here: since $\mathrm{Aut}(q,n)$ acts
+transitively on $\Zq^n$, averaging shows its optimum is exactly $q^n/|B_R|$
+--- the LP \emph{is} the sphere-covering bound, which is why the track goes
+straight to the SDP.
 
 \section{Verification}\label{sec:verify}
 
 False records are worse than no records, so verification is exhaustive,
-exact, and redundant. Every claimed code was checked by four methods, two of
-which share no code with the other two:
-\begin{enumerate}
-\item ball marking: mark all words within distance $R$ of each codeword in a
-$q^n$ bitmap and confirm the bitmap is full;
-\item meet-in-the-middle bitset covering over a coordinate split;
-\item a min-distance scan: enumerate all $q^n$ words and compute each word's
-distance to the nearest codeword (this also reports the exact covering
-radius);
-\item Hamming-graph dilation: $R$-fold neighborhood dilation of the code's
-indicator vector, computing no distances at all, with cost independent of
-$M$.
-\end{enumerate}
-In addition, a fifth, independently written dilation verifier (produced
-without access to the other implementations) re-confirmed all nine codes
-from the published files. The largest check ($q^n = 6^{10} = 60{,}466{,}176$
-words) completes in seconds.
+exact, and redundant, and no solver's internal state is ever the evidence.
+
+\emph{Upper bounds.} Every claimed code, re-read from its published file,
+was checked by four methods, two of which share no code with the other two:
+(1) ball marking: mark all words within distance $R$ of each codeword in a
+$q^n$ bitmap and confirm the bitmap is full; (2) meet-in-the-middle bitset
+covering over a coordinate split; (3) a min-distance scan over all $q^n$
+words, which also reports the exact covering radius; (4) Hamming-graph
+dilation: $R$-fold neighbourhood dilation of the code's indicator array,
+computing no distances at all, with cost independent of $M$. In addition, a
+fifth, independently written dilation verifier (produced without access to
+the other implementations) re-confirmed all eighteen codes from the
+published files immediately before this version was prepared. The largest
+check ($q^n=6^{10}=60\,466\,176$ words) completes in seconds. The
+distinct-codeword count of every file is checked against the claimed $M$.
+
+\emph{Lower bounds.} Section~\ref{sec:lb:cert}: exact rational dual
+certificates, an exact standalone checker, and the global invariant against
+known upper bounds. The seven record certificates were re-verified
+immediately before this version was prepared.
 
 The ancillary files include \texttt{verify\_cov.py}, a standalone
-dependency-free Python verifier: \texttt{python3 verify\_cov.py CODEFILE q n R}
-exhaustively re-checks any of the claimed bounds in at most a few minutes.
+dependency-free verifier (\texttt{python3 verify\_cov.py CODEFILE q n R}
+re-checks any claimed upper bound in at most a few minutes; code files use
+digits \texttt{0}--\texttt{9} then \texttt{a}--\texttt{z} for $q>10$), and
+\texttt{certify.py} together with the seven certificates
+(\texttt{python3 certify.py CERT.json} re-checks a lower bound, typically in
+minutes).
 
 \section{Discussion}
 
-The pattern in our experiments is clean: local search consistently beat
-bounds that were inherited from general constructions (relative slack
-between the previous upper bound and the sphere-covering lower bound of
-$4\times$--$10\times$), and consistently failed to improve cells that had
-already been the object of dedicated search or algebraic construction (slack
-$\le 3\times$), such as $\Kq{3}{11}{4}\le 81$, $\Kq{6}{6}{3}\le 41$, and $\Kq{8}{8}{4}\le 512$.
-K\'eri's tables contain many further cells of the first kind, for
-$q\in\{6,\dots,21\}$ and $R\ge 3$; we expect them to fall to the same
-method, and a systematic sweep is in progress. Since the tables have had no
-maintainer since 2011, we also intend to publish a merged, machine-readable
-bounds table (K\'eri 2011 plus the post-2011 lower-bound literature plus the
-present improvements) alongside the code.
+The pattern in the upper-bound experiments is clean: local search
+consistently beat bounds that were inherited from general constructions
+(relative slack between the previous upper bound and the sphere-covering
+bound of $4\times$--$10\times$), shaved single-digit percentages off several
+cells previously set by dedicated search, and consistently failed on cells
+that were already the object of intensive search or algebraic construction
+(slack $\le 3\times$), such as $\Kq{3}{11}{4}\le 81$ and $\Kq{6}{6}{3}\le
+41$. K\'eri's tables contain further cells of the first kind for
+$q\le 21$; the three highest-redundancy cells we attacked were still
+improving at every budget we gave them, and we expect the marked bounds in
+Table~\ref{tab:ub} to keep falling.
+
+On the lower-bound side the boundary is equally clean, and it is a precision
+boundary, not a model boundary: the same relaxation that produced the seven
+new bounds certifies values within a few percent of the incumbents on cells
+an order of magnitude larger, and fails there only for lack of a
+higher-precision interior-point solver on this hardware. That, and the
+van Wee-type strengthenings of the linear side that the published hierarchy
+uses at $q=2$ but no one has run at $q\ge 6$, are the obvious next steps.
+
+Since the tables have had no maintainer since 2011, we also publish a
+merged, machine-readable bounds table (K\'eri 2011, the post-2011
+lower-bound literature, and the present improvements) alongside the code.
 
 \subsection*{Data availability}
-The codes, the verifier, and a README are ancillary files of this
-arXiv submission. The full search and verification source code is public at
+The eighteen codes, the seven certificates, both standalone verifiers, and a
+README are ancillary files of the arXiv version of this paper. The full
+search, certification, and verification source code, together with the
+merged bounds table, is public at
 \url{https://github.com/Mapika/coldcase} (covering-code track under
 \texttt{cov/}).
 
@@ -254,67 +743,31 @@ J.~H.~van Lint, L.~T.~Wille, New upper bounds for the football pool problem
 for 6, 7 and 8 matches, J.~Combin.\ Theory Ser.~A 52 (1989) 304--312.
 \bibitem{Ostergard} P.~R.~J.~\"Osterg\aa rd, Constructing covering codes by
 tabu search, J.~Combin.\ Des.\ 5 (1997) 71--80.
+\bibitem{KeriOstergard2005} G.~K\'eri, P.~R.~J.~\"Osterg\aa rd, Bounds for
+covering codes over large alphabets, Des.\ Codes Cryptogr.\ 37 (2005)
+45--60.
 \bibitem{KeriOstergard} G.~K\'eri, P.~R.~J.~\"Osterg\aa rd, Further results
 on the covering radius of small codes, Discrete Mathematics 307 (2007)
 69--77.
+\bibitem{cvxopt} M.~S.~Andersen, J.~Dahl, L.~Vandenberghe, CVXOPT: a Python
+package for convex optimization, \url{https://cvxopt.org}.
+\bibitem{scs} B.~O'Donoghue, E.~Chu, N.~Parikh, S.~Boyd, Conic optimization
+via operator splitting and homogeneous self-dual embedding, J.~Optim.\
+Theory Appl.\ 169 (2016) 1042--1068.
 \bibitem{Florath} A.~Florath, A Lean 4 formalization of $q$-ary covering
 codes with a proof-carrying database of certified bounds, arXiv:2606.09600,
 2026.
 \end{thebibliography}
 
-
 \appendix
-\section{The code proving $\Kq{6}{8}{4}\le 167$}\label{app:code}
+\section{The code proving $\Kq{6}{8}{4}\le 166$}\label{app:code}
 For self-containedness we print the largest single improvement
-($216\to167$, $-23\%$). Each row lists codewords of $\mathbb{Z}_6^8$;
+($216\to166$, $-23\%$). Each row lists codewords of $\mathbb{Z}_6^8$;
 the machine-readable version is the ancillary file
-\texttt{K6\_8\_4\_M167.txt}.
+\texttt{K6\_8\_4\_M166.txt}.
 
 {\scriptsize
-\begin{verbatim}
-42030014  50143021  30440244  25403541
-40250502  02441030  35400150  50023554
-50225151  12333122  33515545  44121521
-14212440  42314041  35042002  34355041
-05025020  12253354  05133334  42335434
-03201411  35343410  24143214  54542204
-32151400  10440535  43332055  32200053
-30051122  00045454  52024303  50551345
-15230201  24410415  54434031  23142140
-33254504  25214034  21244445  53231213
-04130543  01302114  34325315  50135422
-45510313  51220320  45504535  22125553
-31533321  55255112  04041551  42150315
-02322452  15142345  02303401  04013213
-33310230  11101302  41241312  25550524
-13423003  22044222  20311131  14551115
-02105344  10310252  10344333  42540351
-22520011  15221421  51124410  24221205
-11152242  01253131  04202301  53440342
-11031550  20131443  30014311  22432502
-05111025  41054323  33130421  00504200
-20532144  41122233  34544402  40202220
-21401320  23553251  51540443  55412301
-53051015  32234252  12455213  12000145
-31105501  01212555  40424455  13501210
-52103235  35321243  24030300  24100153
-05431103  33343524  31114105  02214523
-45311104  40401434  53352125  01424040
-21352033  30102012  03250042  52511554
-43120104  43112350  20205330  34452453
-54355500  04545025  23535224  44405124
-11015404  50015125  50313003  01310221
-41321232  00553430  25032211  51342511
-14115532  52513140  55154250  43054444
-23323342  31441054  33022530  02422344
-12502423  34233035  00434510  41505000
-30521513  05524132  04301325  21413452
-15533052  44344100  14052131  40033105
-25355405  11335355  41035241  13444111
-14324024  23004353  03455235  33245133
-44453250  54304042  43512332  13003512
-31413225  55000434  45243543
-\end{verbatim}
+\input{appendix_code}
 }
 
 \end{document}

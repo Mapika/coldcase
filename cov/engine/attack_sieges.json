@@ -1,0 +1,5 @@
+[
+ {"q": 6,  "n": 6,  "R": 3, "descend_from": 40,  "floor": 38},
+ {"q": 8,  "n": 8,  "R": 4, "descend_from": 512, "floor": 508},
+ {"q": 5,  "n": 11, "R": 5, "descend_from": 625, "floor": 621}
+]

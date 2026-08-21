@@ -1,0 +1,23 @@
+
+======================================================================
+cell K_6(6,3)  q^n=46656  ball=2906
+  Keri 2011: 24 - 41  (upper key q)
+  sphere-covering bound: M >= 17
+
+--- M = 40  (01:51:06) ---
+    |     0.0s cell K6(6,3)@40  q^n=46656 ball=2906 redundancy=2.49 budget=3600s cores=16
+    |     0.0s   phase A: descent seed K6_6_3_M41.txt (41 words)
+    |     0.0s   phase A: lincov not applicable (q=6 prime power? False; M=40)
+    |     0.1s   phase B: 16 chains x 1 thread(s)  (2 symmetric, 10 seeded)  redundancy=2.49 init~0.0s wide=False restart=True slice=90s
+    engine finished in 3599s, uncovered=7
+  round 1: best uncovered = 7
+    |     0.0s cell K6(6,3)@40  q^n=46656 ball=2906 redundancy=2.49 budget=3600s cores=16
+    |     0.0s   phase A: descent seed K6_6_3_M41.txt (41 words)
+    |     0.1s   phase A: lincov not applicable (q=6 prime power? False; M=40)
+    |     0.1s   phase B: 16 chains x 1 thread(s)  (2 symmetric, 10 seeded)  redundancy=2.49 init~0.0s wide=False restart=True slice=90s
+    engine finished in 3599s, uncovered=7
+  round 2: best uncovered = 7
+  M=40 not solved
+
+======================================================================
+campaign2 done: 0 code(s) verified and recorded

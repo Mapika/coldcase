@@ -1,0 +1,12 @@
+RESULT q=6 n=6 R=3 M=41 uncovered=51 iters=6400 kicks=0 time=62.21 rate=103
+RESULT q=6 n=6 R=3 M=41 uncovered=24 iters=8448 kicks=0 time=62.10 rate=136
+RESULT q=6 n=6 R=3 M=41 uncovered=33 iters=11264 kicks=0 time=61.08 rate=184
+RESULT q=6 n=8 R=4 M=169 uncovered=14 iters=1792 kicks=0 time=60.99 rate=29
+RESULT q=6 n=8 R=4 M=169 uncovered=10 iters=1536 kicks=0 time=63.91 rate=24
+RESULT q=6 n=8 R=4 M=169 uncovered=8 iters=1536 kicks=0 time=60.84 rate=25
+RESULT q=8 n=9 R=4 M=940 uncovered=8938474 iters=256 kicks=0 time=188.45 rate=1
+RESULT q=8 n=9 R=4 M=940 uncovered=8885364 iters=256 kicks=0 time=166.40 rate=2
+RESULT q=8 n=9 R=4 M=940 uncovered=7071765 iters=1280 kicks=0 time=64.60 rate=20
+RESULT q=3 n=11 R=4 M=81 uncovered=412 iters=332288 kicks=63 time=60.17 rate=5522
+RESULT q=3 n=11 R=4 M=81 uncovered=411 iters=104704 kicks=18 time=60.03 rate=1744
+RESULT q=3 n=11 R=4 M=81 uncovered=408 iters=197632 kicks=35 time=60.07 rate=3290

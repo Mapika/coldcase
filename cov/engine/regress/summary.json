@@ -1,0 +1,26 @@
+[
+ {
+  "cell": "K_6(7,3)",
+  "start": 246,
+  "target": 232,
+  "reached": 232,
+  "ok": true,
+  "seconds": 70
+ },
+ {
+  "cell": "K_6(8,4)",
+  "start": 216,
+  "target": 167,
+  "reached": 167,
+  "ok": true,
+  "seconds": 281
+ },
+ {
+  "cell": "K_7(8,4)",
+  "start": 343,
+  "target": 329,
+  "reached": 329,
+  "ok": true,
+  "seconds": 182
+ }
+]

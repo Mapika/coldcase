@@ -1,0 +1,10 @@
+baseline0    K6(7,3)@233: solved 0/7 median_score -22 median_wall 87.2s
+baseline0    K7(8,4)@330: solved 0/7 median_score -2000000 median_wall 90.1s
+baseline0    K6(9,5)@124: solved 0/7 median_score -2000000 median_wall 90.1s
+baseline0    K9(8,3)@1420: solved 0/7 median_score -2000000 median_wall 90.1s
+{
+ "baseline0": {
+  "total_solved": 0,
+  "sum_median": -6000022
+ }
+}

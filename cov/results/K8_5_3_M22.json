@@ -1,0 +1,22 @@
+{
+ "q": 8,
+ "n": 5,
+ "R": 3,
+ "M": 22,
+ "date": "2026-08-21",
+ "method": "covsearch tabu/greedy local search, 240s x 40 workers",
+ "code_file": "K8_5_3_M22.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 17,
+  "ub": 22,
+  "lb_key": "b",
+  "ub_key": "q"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true
+}

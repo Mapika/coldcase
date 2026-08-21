@@ -1,65 +1,182 @@
 [
  {
+  "q": 5,
+  "n": 11,
+  "R": 5,
+  "keri": 625,
+  "ours": 602,
+  "previous_ours": null,
+  "code_file": "K5_11_5_M602.txt",
+  "produced_by": "cov/engine/covengine"
+ },
+ {
   "q": 6,
   "n": 7,
   "R": 3,
   "keri": 246,
-  "ours": 232
+  "ours": 227,
+  "previous_ours": 232,
+  "code_file": "K6_7_3_M227.txt",
+  "produced_by": "cov/engine/covengine"
  },
  {
   "q": 6,
   "n": 8,
   "R": 3,
   "keri": 1080,
-  "ours": 1045
+  "ours": 1005,
+  "previous_ours": 1045,
+  "code_file": "K6_8_3_M1005.txt",
+  "produced_by": "cov/engine/covengine"
  },
  {
   "q": 6,
   "n": 8,
   "R": 4,
   "keri": 216,
-  "ours": 167
+  "ours": 166,
+  "previous_ours": 167,
+  "code_file": "K6_8_4_M166.txt",
+  "produced_by": "cov/engine/covengine"
  },
  {
   "q": 6,
   "n": 9,
   "R": 4,
   "keri": 738,
-  "ours": 703
+  "ours": 660,
+  "previous_ours": 703,
+  "code_file": "K6_9_4_M660.txt",
+  "produced_by": "cov/engine/covengine"
  },
  {
   "q": 6,
   "n": 9,
   "R": 5,
   "keri": 144,
-  "ours": 123
+  "ours": 119,
+  "previous_ours": 123,
+  "code_file": "K6_9_5_M119.txt",
+  "produced_by": "cov/engine/covengine"
  },
  {
   "q": 6,
   "n": 10,
   "R": 4,
   "keri": 2952,
-  "ours": 2951
+  "ours": 2781,
+  "previous_ours": 2951,
+  "code_file": "K6_10_4_M2781.txt",
+  "produced_by": "cov/engine/covengine"
  },
  {
   "q": 6,
   "n": 10,
   "R": 5,
   "keri": 615,
-  "ours": 610
+  "ours": 486,
+  "previous_ours": 610,
+  "code_file": "K6_10_5_M486.txt",
+  "produced_by": "cov/engine/covengine"
  },
  {
   "q": 7,
   "n": 8,
   "R": 4,
   "keri": 343,
-  "ours": 329
+  "ours": 316,
+  "previous_ours": 329,
+  "code_file": "K7_8_4_M316.txt",
+  "produced_by": "cov/engine/covengine"
  },
  {
   "q": 7,
   "n": 9,
   "R": 4,
   "keri": 1843,
-  "ours": 1743
+  "ours": 1475,
+  "previous_ours": 1743,
+  "code_file": "K7_9_4_M1475.txt",
+  "produced_by": "cov/engine/covengine"
+ },
+ {
+  "q": 8,
+  "n": 6,
+  "R": 4,
+  "keri": 20,
+  "ours": 19,
+  "previous_ours": null,
+  "code_file": "K8_6_4_M19.txt",
+  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+ },
+ {
+  "q": 8,
+  "n": 8,
+  "R": 4,
+  "keri": 512,
+  "ours": 505,
+  "previous_ours": null,
+  "code_file": "K8_8_4_M505.txt",
+  "produced_by": "cov/engine/covengine"
+ },
+ {
+  "q": 8,
+  "n": 8,
+  "R": 5,
+  "keri": 90,
+  "ours": 85,
+  "previous_ours": null,
+  "code_file": "K8_8_5_M85.txt",
+  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+ },
+ {
+  "q": 8,
+  "n": 10,
+  "R": 6,
+  "keri": 342,
+  "ours": 341,
+  "previous_ours": null,
+  "code_file": "K8_10_6_M341.txt",
+  "produced_by": "covsearch tabu/greedy local search, 600s x 21 workers"
+ },
+ {
+  "q": 12,
+  "n": 6,
+  "R": 4,
+  "keri": 41,
+  "ours": 39,
+  "previous_ours": null,
+  "code_file": "K12_6_4_M39.txt",
+  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+ },
+ {
+  "q": 13,
+  "n": 6,
+  "R": 4,
+  "keri": 46,
+  "ours": 45,
+  "previous_ours": null,
+  "code_file": "K13_6_4_M45.txt",
+  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+ },
+ {
+  "q": 14,
+  "n": 6,
+  "R": 4,
+  "keri": 52,
+  "ours": 50,
+  "previous_ours": null,
+  "code_file": "K14_6_4_M50.txt",
+  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+ },
+ {
+  "q": 15,
+  "n": 6,
+  "R": 4,
+  "keri": 59,
+  "ours": 57,
+  "previous_ours": null,
+  "code_file": "K15_6_4_M57.txt",
+  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
  }
 ]

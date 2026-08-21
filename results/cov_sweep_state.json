@@ -1,0 +1,698 @@
+{
+"8,10,5": {
+"ub": 2461,
+"achieved": 2461,
+"improved": false,
+"ts": "2026-08-20 11:20"
+},
+"9,10,5": {
+"ub": 3969,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 12:49"
+},
+"10,9,4": {
+"ub": 8500,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 13:14"
+},
+"9,9,4": {
+"ub": 5103,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 13:37"
+},
+"8,9,4": {
+"ub": 2944,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 13:51"
+},
+"10,9,5": {
+"ub": 1088,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 14:14"
+},
+"9,9,5": {
+"ub": 729,
+"achieved": 729,
+"improved": false,
+"ts": "2026-08-20 14:36"
+},
+"8,10,6": {
+"ub": 342,
+"achieved": 341,
+"improved": true,
+"ts": "2026-08-20 15:01"
+},
+"9,10,6": {
+"ub": 477,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 15:26"
+},
+"8,9,5": {
+"ub": 384,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 15:39"
+},
+"10,8,4": {
+"ub": 1156,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 15:51"
+},
+"8,8,4": {
+"ub": 512,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 15:59"
+},
+"9,8,4": {
+"ub": 729,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 16:07"
+},
+"14,8,5": {
+"ub": 448,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 16:30"
+},
+"15,8,5": {
+"ub": 519,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 16:54"
+},
+"13,8,5": {
+"ub": 356,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 17:08"
+},
+"10,8,5": {
+"ub": 168,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 17:20"
+},
+"12,8,5": {
+"ub": 264,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 17:34"
+},
+"11,8,5": {
+"ub": 216,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 17:46"
+},
+"8,8,5": {
+"ub": 90,
+"achieved": 85,
+"improved": true,
+"ts": "2026-08-20 17:59"
+},
+"9,10,7": {
+"ub": 77,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 18:23"
+},
+"9,8,5": {
+"ub": 120,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 18:31"
+},
+"10,9,6": {
+"ub": 114,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 18:53"
+},
+"14,7,4": {
+"ub": 448,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 19:05"
+},
+"15,7,4": {
+"ub": 519,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 19:18"
+},
+"13,7,4": {
+"ub": 356,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 19:26"
+},
+"16,7,4": {
+"ub": 611,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 19:39"
+},
+"12,6,3": {
+"ub": 384,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 19:47"
+},
+"9,9,6": {
+"ub": 81,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 19:59"
+},
+"8,7,3": {
+"ub": 512,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 20:07"
+},
+"16,6,3": {
+"ub": 896,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 20:15"
+},
+"14,6,3": {
+"ub": 610,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 20:23"
+},
+"17,7,4": {
+"ub": 703,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 20:37"
+},
+"11,7,4": {
+"ub": 216,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 20:45"
+},
+"13,6,3": {
+"ub": 495,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 20:53"
+},
+"10,7,4": {
+"ub": 168,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 21:01"
+},
+"12,7,4": {
+"ub": 264,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 21:09"
+},
+"15,6,3": {
+"ub": 730,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 21:17"
+},
+"8,7,4": {
+"ub": 92,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 21:25"
+},
+"18,7,4": {
+"ub": 774,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 21:39"
+},
+"9,7,3": {
+"ub": 729,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 21:47"
+},
+"19,7,4": {
+"ub": 866,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 22:00"
+},
+"9,7,4": {
+"ub": 120,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 22:08"
+},
+"20,7,4": {
+"ub": 979,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 22:31"
+},
+"11,6,3": {
+"ub": 275,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 22:39"
+},
+"10,6,3": {
+"ub": 209,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 22:47"
+},
+"8,10,7": {
+"ub": 44,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 23:08"
+},
+"8,9,6": {
+"ub": 48,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 23:21"
+},
+"9,6,3": {
+"ub": 147,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 23:29"
+},
+"21,7,4": {
+"ub": 1029,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-20 23:52"
+},
+"8,6,3": {
+"ub": 107,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 00:00"
+},
+"13,5,2": {
+"ub": 583,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 00:08"
+},
+"15,5,2": {
+"ub": 855,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 00:16"
+},
+"12,5,2": {
+"ub": 468,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 00:24"
+},
+"14,5,2": {
+"ub": 686,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 00:32"
+},
+"16,5,2": {
+"ub": 1024,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 00:40"
+},
+"11,5,2": {
+"ub": 365,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 00:48"
+},
+"10,5,2": {
+"ub": 250,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 00:56"
+},
+"9,5,2": {
+"ub": 189,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 01:04"
+},
+"8,5,2": {
+"ub": 128,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 01:12"
+},
+"15,8,6": {
+"ub": 49,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 01:36"
+},
+"13,8,6": {
+"ub": 37,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 01:49"
+},
+"13,7,5": {
+"ub": 42,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 01:57"
+},
+"14,8,6": {
+"ub": 42,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 02:18"
+},
+"12,7,5": {
+"ub": 36,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 02:27"
+},
+"14,7,5": {
+"ub": 48,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 02:39"
+},
+"11,7,5": {
+"ub": 31,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 02:47"
+},
+"12,8,6": {
+"ub": 32,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 03:00"
+},
+"15,7,5": {
+"ub": 54,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 03:12"
+},
+"10,7,5": {
+"ub": 26,
+"achieved": 26,
+"improved": false,
+"ts": "2026-08-21 03:24"
+},
+"12,6,4": {
+"ub": 41,
+"achieved": 39,
+"improved": true,
+"ts": "2026-08-21 03:37"
+},
+"16,7,5": {
+"ub": 60,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 03:50"
+},
+"11,8,6": {
+"ub": 27,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 04:02"
+},
+"17,7,5": {
+"ub": 66,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 04:15"
+},
+"8,6,2": {
+"ub": 512,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 04:23"
+},
+"8,6,4": {
+"ub": 20,
+"achieved": 19,
+"improved": true,
+"ts": "2026-08-21 04:36"
+},
+"9,6,4": {
+"ub": 24,
+"achieved": 24,
+"improved": false,
+"ts": "2026-08-21 04:48"
+},
+"10,6,4": {
+"ub": 28,
+"achieved": 28,
+"improved": false,
+"ts": "2026-08-21 05:00"
+},
+"19,7,5": {
+"ub": 81,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 05:15"
+},
+"11,6,4": {
+"ub": 33,
+"achieved": 33,
+"improved": false,
+"ts": "2026-08-21 05:27"
+},
+"13,6,4": {
+"ub": 46,
+"achieved": 45,
+"improved": true,
+"ts": "2026-08-21 05:39"
+},
+"9,7,5": {
+"ub": 21,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 05:47"
+},
+"18,7,5": {
+"ub": 72,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 06:00"
+},
+"20,7,5": {
+"ub": 89,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 06:22"
+},
+"21,7,5": {
+"ub": 98,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 06:44"
+},
+"14,6,4": {
+"ub": 52,
+"achieved": 50,
+"improved": true,
+"ts": "2026-08-21 06:57"
+},
+"8,5,3": {
+"ub": 22,
+"achieved": 22,
+"improved": false,
+"ts": "2026-08-21 07:07"
+},
+"10,8,6": {
+"ub": 22,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 07:19"
+},
+"9,5,3": {
+"ub": 27,
+"achieved": 27,
+"improved": false,
+"ts": "2026-08-21 07:27"
+},
+"15,6,4": {
+"ub": 59,
+"achieved": 57,
+"improved": true,
+"ts": "2026-08-21 07:40"
+},
+"9,6,2": {
+"ub": 729,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 07:48"
+},
+"17,6,4": {
+"ub": 73,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 07:56"
+},
+"10,5,3": {
+"ub": 32,
+"achieved": 32,
+"improved": false,
+"ts": "2026-08-21 08:08"
+},
+"16,6,4": {
+"ub": 64,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 08:16"
+},
+"11,5,3": {
+"ub": 38,
+"achieved": 38,
+"improved": false,
+"ts": "2026-08-21 08:25"
+},
+"18,6,4": {
+"ub": 80,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 08:33"
+},
+"19,6,4": {
+"ub": 86,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 08:41"
+},
+"12,5,3": {
+"ub": 43,
+"achieved": 43,
+"improved": false,
+"ts": "2026-08-21 08:53"
+},
+"20,6,4": {
+"ub": 93,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 09:01"
+},
+"8,7,5": {
+"ub": 16,
+"achieved": 16,
+"improved": false,
+"ts": "2026-08-21 09:12"
+},
+"9,8,6": {
+"ub": 17,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 09:20"
+},
+"10,9,7": {
+"ub": 18,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 09:41"
+},
+"8,4,1": {
+"ub": 192,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 09:49"
+},
+"13,5,3": {
+"ub": 48,
+"achieved": 48,
+"improved": false,
+"ts": "2026-08-21 10:02"
+},
+"21,6,4": {
+"ub": 99,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 10:10"
+},
+"11,4,1": {
+"ub": 485,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 10:18"
+},
+"14,5,3": {
+"ub": 54,
+"achieved": 54,
+"improved": false,
+"ts": "2026-08-21 10:29"
+},
+"14,4,1": {
+"ub": 984,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 10:37"
+},
+"10,4,1": {
+"ub": 352,
+"achieved": 352,
+"improved": false,
+"ts": "2026-08-21 10:49"
+},
+"13,4,1": {
+"ub": 765,
+"achieved": 765,
+"improved": false,
+"ts": "2026-08-21 11:01"
+},
+"15,5,3": {
+"ub": 59,
+"achieved": 59,
+"improved": false,
+"ts": "2026-08-21 11:09"
+},
+"21,5,3": {
+"ub": 114,
+"achieved": 114,
+"improved": false,
+"ts": "2026-08-21 11:22"
+},
+"17,4,2": {
+"ub": 99,
+"achieved": 99,
+"improved": false,
+"ts": "2026-08-21 11:30"
+},
+"18,4,2": {
+"ub": 111,
+"achieved": 111,
+"improved": false,
+"ts": "2026-08-21 11:39"
+},
+"19,4,2": {
+"ub": 123,
+"achieved": 123,
+"improved": false,
+"ts": "2026-08-21 11:51"
+},
+"8,10,4": {
+"ub": 11776,
+"achieved": null,
+"improved": false,
+"ts": "2026-08-21 12:16"
+}
+}

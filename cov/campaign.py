@@ -35,7 +35,7 @@ import sys
 import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BIN = os.path.join(HERE, 'search', 'covsearch')
+BIN = os.environ.get('COVSEARCH_BIN') or os.path.join(HERE, 'search', 'covsearch')
 RESULTS = os.path.join(HERE, 'results')
 
 sys.path.insert(0, HERE)

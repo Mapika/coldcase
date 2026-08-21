@@ -1,0 +1,14 @@
+../results/K6_8_4_M216.txt: q=6 n=8 R=4 M=216 q^n=1679616 |B_R|=51491
+mean multiplicity = 6.622
+  cnt=  1:       1231  ( 0.073%)
+  cnt=  2:       9488  ( 0.565%)
+  cnt=  3:      46066  ( 2.743%)
+  cnt=  4:     135136  ( 8.046%)
+  cnt=  5:     262122  (15.606%)
+  cnt=  6:     358399  (21.338%)
+  cnt=  7:     356680  (21.236%)
+  cnt=  8:     264221  (15.731%)
+  cnt=  9:     150358  ( 8.952%)
+  cnt= 10:      66020  ( 3.931%)
+|U|  =         0   list-based ENTERING side profitable iff |U|*n < 109375  -> n|U| = 0 : YES
+|U1| =      1231   list-based LEAVING  side profitable iff |U1|*n < 43750  -> n|U1| = 9848 : YES

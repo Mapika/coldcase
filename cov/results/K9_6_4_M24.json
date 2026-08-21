@@ -1,0 +1,22 @@
+{
+ "q": 9,
+ "n": 6,
+ "R": 4,
+ "M": 24,
+ "date": "2026-08-21",
+ "method": "covsearch tabu/greedy local search, 240s x 40 workers",
+ "code_file": "K9_6_4_M24.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 18,
+  "ub": 24,
+  "lb_key": "k",
+  "ub_key": "q"
+ },
+ "beats_keri_upper_bound": false,
+ "matches_keri_upper_bound": true
+}
