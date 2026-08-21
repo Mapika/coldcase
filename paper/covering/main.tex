@@ -16,11 +16,11 @@
 \title{New upper and lower bounds on covering codes $K_q(n,R)$\\ for alphabets of size $5\le q\le 21$}
 \author{Mark Marosi\thanks{Department of Measurement and Information
 Systems, Budapest University of Technology and Economics (BME), Budapest,
-Hungary. email: marosi@mit.bme.hu. The search software, the verification
-protocol, the constructions, and this manuscript were produced by the AI
-system Claude (Anthropic), operating autonomously on a single NVIDIA GH200
-node; the author's contributions were the initiating idea, methodological
-guidance, and the computational resources.}}
+Hungary. email: marosi@mit.bme.hu. This work was carried out in
+collaboration with the AI system Claude (Anthropic): the author conceived
+and directed the research programme, and Claude produced the software, the
+mathematical elaboration, the computations, and this manuscript. See the
+Acknowledgments for a precise division of contributions.}}
 \date{August 2026}
 
 \begin{document}
@@ -639,12 +639,18 @@ and verification source code, together with the merged bounds table, is
 available at \url{https://github.com/Mapika/coldcase}.
 
 \subsection*{Acknowledgments}
-This work is AI-assisted in the strong sense: the discovery and
-verification pipeline was designed, implemented, and operated autonomously
-by Claude (Anthropic), which should be regarded as the primary contributor
-to the results. The human author's contributions were the initiating idea
---- applying modern large-scale search hardware to record tables frozen in
-the 2000s --- methodological guidance, and the computational resources.
+This work is AI-assisted in the strong sense: the search software, the
+verification protocol, the constructions, the certificates, and this
+manuscript were designed, implemented, and operated autonomously by Claude
+(Anthropic), which should be regarded as the primary contributor to the
+results. The author's contributions were the conception and the continued
+direction of the research programme: the initiating idea of attacking
+record tables frozen since the 2000s with modern large-scale search; the
+choice to pursue certified lower bounds alongside constructive upper
+bounds; the direction to reformulate the search in dense, branchless form
+suited to accelerator hardware, which led to the transform-based engine of
+Section~\ref{sec:gpu}; the proposal of the competitive solver-selection
+methodology of Section~\ref{sec:arena}; and the computational resources.
 
 \begin{thebibliography}{9}
 \bibitem{CHLL} G.~Cohen, I.~Honkala, S.~Litsyn, A.~Lobstein,
