@@ -43,15 +43,24 @@ for r in lbs:
     shutil.copy(f"cov/lb/certs_all/{r['cert']}", 'paper/covering/anc/')
 print(f"anc/: {len(recs)} codes, {len(lbs)} certificates")
 EOF
-cp cov/verify_cov.py cov/lb/certify.py "$ANC/"
+cp cov/verify_cov.py cov/verify_independent.py cov/lb/certify.py "$ANC/"
 cat > "$ANC/README.txt" <<'EOF'
 Ancillary files for "New upper and lower bounds on covering codes K_q(n,R)
-for alphabets of size five to fifteen".
+for alphabets of size 5 <= q <= 21".
 
 K{q}_{n}_{R}_M{M}.txt   -- explicit code achieving K_q(n,R) <= M, one codeword
                            per line, digits 0-9 then a-z for q > 10.
-  Verify:   python3 verify_cov.py K6_8_4_M166.txt 6 8 4
+  Verify:   python3 verify_cov.py -q 6 -n 8 -R 4 K6_8_4_M166.txt
             (dependency-free; numpy accelerates if present)
+  A second, code-disjoint verifier is included: verify_independent.py
+  (dilation + min-distance scan).
+  Resource needs for the largest records (measured, CPU only), using
+  verify_independent.py --method dilate:
+    K_9(10,5)  (q^n = 3.5e9): ~3.5 GB RAM, ~5 minutes
+    K_10(10,5) (q^n = 1e10):  ~10 GB RAM,  ~20 minutes
+  All other codes verify in seconds. Above q^n ~ 1e9 prefer the dilation
+  method; verify_cov.py --method numpy also completes but needs more
+  memory at the largest sizes.
 
 cert_q{q}_n{n}_R{R}.json -- exact rational dual certificate proving the
                             lower bound of Table 2 for that cell.
@@ -62,8 +71,10 @@ EOF
 
 cd paper/covering
 pdflatex -interaction=nonstopmode main.tex >/dev/null
+bibtex main >/dev/null
 pdflatex -interaction=nonstopmode main.tex >/dev/null
-tar czf arxiv_v2_submission.tar.gz main.tex tables_generated.tex appendix_code.tex anc/
+pdflatex -interaction=nonstopmode main.tex >/dev/null
+tar czf arxiv_v2_submission.tar.gz main.tex refs.bib main.bbl tables_generated.tex appendix_code.tex fig_slack.pdf fig_family82.pdf anc/
 echo "== $(pdfinfo main.pdf | grep Pages) =="
 echo "wrote paper/covering/arxiv_v2_submission.tar.gz"
 tar tzf arxiv_v2_submission.tar.gz | head -30
