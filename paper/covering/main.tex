@@ -29,7 +29,7 @@ Acknowledgments for a precise division of contributions.}}
 \begin{abstract}
 Let $K_q(n,R)$ denote the minimum cardinality of a $q$-ary code of length
 $n$ with covering radius $R$. We improve the known bounds on $K_q(n,R)$ in
-$81$ cases. On the upper-bound side we give $23$ improved bounds for
+$82$ cases. On the upper-bound side we give $24$ improved bounds for
 $5\le q\le 15$, obtained by two complementary search methods: an engineered
 focused local search seeded with structural constructions, and a
 large-neighbourhood search driven by exact full-space coverage transforms
@@ -80,7 +80,7 @@ systematic search of the literature (arXiv, DBLP, OpenAlex, Lobstein's
 covering-code bibliography, and the publication lists of the authors active
 in the area) found none.
 
-This paper improves both sides of the tables in that range: $23$ upper
+This paper improves both sides of the tables in that range: $24$ upper
 bounds for $5\le q\le 15$ (Table~\ref{tab:ub}) and $58$ lower bounds for
 $6\le q\le 21$ (Table~\ref{tab:lb}).
 
@@ -544,6 +544,15 @@ primitives --- the other half of each round --- remain HBM-resident.}
 \label{tab:hc}
 \end{table}
 
+The configuration of the last row produced the twenty-fourth bound of
+Table~\ref{tab:ub}: on $\Kq{10}{10}{5}$, exact greedy construction followed
+by the large-neighbourhood descent reached $\Kq{10}{10}{5}\le 5799$ against
+the previous bound $7106$ (a direct sum), a reduction of $18.4\%$, within
+six hours of a single node --- to our knowledge the first covering-code
+bound established by exhaustive-evaluation search over a space of $10^{10}$
+words. The code was verified by the full protocol of
+Section~\ref{sec:verify}.
+
 \subsection{Kernel-level optimizations}\label{sec:gpu:kernels}
 
 Two kernel changes, ported from an experimental sibling engine after
@@ -761,9 +770,9 @@ covering over a coordinate split; (iii) a min-distance scan over all $q^n$
 words, which also reports the exact covering radius; (iv) $R$-fold
 neighbourhood dilation of the code's indicator array, which computes no
 distances at all. A fifth, independently written dilation verifier
-re-confirmed all $23$ codes from the published files immediately before
+re-confirmed all $24$ codes from the published files immediately before
 this version was prepared; the largest check covers
-$9^{10}=3.49\cdot 10^{9}$ words. The distinct-codeword count of every file
+$10^{10}$ words. The distinct-codeword count of every file
 is checked against the claimed $M$.
 
 \emph{Lower bounds.} Every certificate was re-validated by the exact

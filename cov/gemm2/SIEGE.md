@@ -342,3 +342,13 @@ Open items, exact state:
   notch-budget 1800, 8h, log logs/queue_k10105_hc.log.
 - `08-22 19:59` K10(10,5): gate submissions only below M=7106 (Keri ub=7106, best recorded=None)
 - `08-22 19:59` K10(10,5): exact-greedy build from scratch
+- `08-23 01:36` K10(10,5): cover established at M=5799
+- `08-23 02:22` K10(10,5): notch M=5735 FAILED (best uncov=541, step=64, budget=1800s)
+- `08-23 02:23` K10(10,5) M=5799: VERIFIED+RECORDED
+- `08-22 20:47` **K10(10,5) M=5799 VERIFIED+RECORDED** (Keri ub 7106,
+  -18.4%) — first host-coherent record, first 1e10-word cell record.
+  Scratch exact-greedy build (~25 min incl. 260 GB cell init), gate =
+  record_gate/campaign.record/verify_cov numpy re-read from disk.
+  verify_independent dilate launched (niced, setsid, log in scratchpad
+  vi_k10105_5799.log). Descent continues (first notch -64 failed at
+  best uncov=541; ladder stepping down).

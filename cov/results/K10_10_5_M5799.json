@@ -1,0 +1,22 @@
+{
+ "q": 10,
+ "n": 10,
+ "R": 5,
+ "M": 5799,
+ "date": "2026-08-23",
+ "method": "gpuchain transform-engine LNS (exact distance-count transforms, GH200)",
+ "code_file": "K10_10_5_M5799.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": null,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 632,
+  "ub": 7106,
+  "lb_key": "y",
+  "ub_key": "f"
+ },
+ "beats_keri_upper_bound": true,
+ "matches_keri_upper_bound": false
+}
