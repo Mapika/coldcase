@@ -2,10 +2,10 @@
  "q": 8,
  "n": 10,
  "R": 6,
- "M": 341,
+ "M": 339,
  "date": "2026-08-22",
  "method": "covsearch tabu/greedy local search, 1200s x 21 workers",
- "code_file": "K8_10_6_M341.txt",
+ "code_file": "K8_10_6_M339.txt",
  "verified": {
   "verify_cov_pure_uncovered": null,
   "verify_cov_numpy_uncovered": 0,

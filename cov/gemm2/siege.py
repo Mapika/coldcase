@@ -59,40 +59,65 @@ def best_recorded(q, n, R):
 
 
 class Recorder:
-    """Fire-and-track background record_gate.py verifications."""
+    """Fire-and-track background record_gate.py verifications.
+
+    Never blocks the descent: at most MAXRUN gates run concurrently; excess
+    candidates wait in a small queue where SUPERSEDED entries (a larger M
+    while a smaller cover is already queued) are dropped — they were never
+    claimed as records, and the verified trail keeps every M that matters.
+    (On 1e10 cells one verification is ~an hour; the old <=2-running
+    blocking loop would have stalled the siege behind the verifiers.)"""
+
+    MAXRUN = 3
+    MAXWAIT = 2
 
     def __init__(self, q, n, R):
         self.q, self.n, self.R = q, n, R
         self.procs = []          # (M, path, Popen)
+        self.waiting = []        # (M, path) FIFO
         self.done = []           # (M, ok)
 
     def submit(self, M, src_path):
         dst = os.path.join(SCRATCH, f"cand_K{self.q}_{self.n}_{self.R}_M{M}.txt")
         shutil.copy(src_path, dst)
-        p = subprocess.Popen(
-            [sys.executable, os.path.join(HERE, "record_gate.py"),
-             str(self.q), str(self.n), str(self.R), str(M), dst],
-            stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
-        self.procs.append((M, dst, p))
-        # bound concurrent verifier load (<= 2 running)
-        while sum(1 for (_, _, pp) in self.procs if pp.poll() is None) > 2:
-            time.sleep(5)
+        self.waiting.append((M, dst))
         self.reap()
 
+    def _pump(self):
+        while len(self.waiting) > self.MAXWAIT + 1:
+            drop = self.waiting.pop(0)      # superseded by a smaller cover
+            log_md(f"K{self.q}({self.n},{self.R}) M={drop[0]}: gate submission "
+                   f"superseded (never claimed); file kept at {drop[1]}")
+        while self.waiting and \
+                sum(1 for (_, _, p) in self.procs if p.poll() is None) < \
+                self.MAXRUN:
+            M, dst = self.waiting.pop(0)
+            p = subprocess.Popen(
+                [sys.executable, os.path.join(HERE, "record_gate.py"),
+                 str(self.q), str(self.n), str(self.R), str(M), dst],
+                stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+            self.procs.append((M, dst, p))
+
     def reap(self, wait=False):
-        rest = []
-        for (M, dst, p) in self.procs:
-            if p.poll() is None and not wait:
-                rest.append((M, dst, p))
-                continue
-            out, _ = p.communicate()
-            ok = p.returncode == 0
-            self.done.append((M, ok))
-            tag = "VERIFIED+RECORDED" if ok else "REJECTED BY GATE"
-            log_md(f"K{self.q}({self.n},{self.R}) M={M}: {tag}")
-            if not ok:
-                log_md(f"  gate output tail: {out.strip().splitlines()[-3:]}")
-        self.procs = rest
+        while True:
+            rest = []
+            for (M, dst, p) in self.procs:
+                if p.poll() is None and not wait:
+                    rest.append((M, dst, p))
+                    continue
+                out, _ = p.communicate()
+                ok = p.returncode == 0
+                self.done.append((M, ok))
+                tag = "VERIFIED+RECORDED" if ok else "REJECTED BY GATE"
+                log_md(f"K{self.q}({self.n},{self.R}) M={M}: {tag}")
+                if not ok:
+                    log_md(f"  gate output tail: "
+                           f"{out.strip().splitlines()[-3:]}")
+            self.procs = rest
+            self._pump()
+            if not wait or (not self.procs and not self.waiting):
+                break
+            time.sleep(5)
 
 
 def keri_ub(q, n, R):
@@ -105,7 +130,8 @@ def keri_ub(q, n, R):
 
 
 def descend(q, n, R, hours, scratch_build, floor, seed, notch_budget,
-            seed_file=None, step0=4, step_cap=1024):
+            seed_file=None, step0=4, step_cap=1024, ruin_extra=0,
+            kmin=8, kmax=None):
     t_end = time.time() + hours * 3600
     outp = os.path.join(SCRATCH, f"live_K{q}_{n}_{R}.txt")
     rec = Recorder(q, n, R)
@@ -150,12 +176,15 @@ def descend(q, n, R, hours, scratch_build, floor, seed, notch_budget,
         while time.time() < t_end and M > floor and fails_at_1 < 3:
             target = M - step
             t0 = time.time()
-            e.ruin(len(e.code) - target, "low")
+            # ruin past the deficit so the first repair has real slots to
+            # re-optimize, instead of being forced into pure swaps
+            e.ruin(len(e.code) - target + ruin_extra,
+                   "cluster" if ruin_extra else "low")
             budget = min(notch_budget * (2 ** min(fails_at_1, 2)),
                          t_end - time.time() - 30)
             if budget < 20:
                 break
-            unc = e.lns(target, round_budget_s=budget)
+            unc = e.lns(target, round_budget_s=budget, kmin=kmin, kmax=kmax)
             if unc == 0 and e.verify_solved_on_device() == 0:
                 e.peel()
                 if e.verify_solved_on_device() != 0:
@@ -205,11 +234,15 @@ def main():
     ap.add_argument("--notch-budget", type=float, default=300.0)
     ap.add_argument("--seed-file")
     ap.add_argument("--step0", type=int, default=4)
+    ap.add_argument("--ruin-extra", type=int, default=0)
+    ap.add_argument("--kmin", type=int, default=8)
+    ap.add_argument("--kmax", type=int)
     a = ap.parse_args()
     os.makedirs(SCRATCH, exist_ok=True)
     os.nice(5)
     descend(a.q, a.n, a.R, a.hours, a.scratch, a.floor, a.seed,
-            a.notch_budget, seed_file=a.seed_file, step0=a.step0)
+            a.notch_budget, seed_file=a.seed_file, step0=a.step0,
+            ruin_extra=a.ruin_extra, kmin=a.kmin, kmax=a.kmax)
 
 
 if __name__ == "__main__":

@@ -104,9 +104,9 @@
   "n": 10,
   "R": 5,
   "keri": 1225,
-  "ours": 981,
+  "ours": 980,
   "previous_ours": null,
-  "code_file": "K7_10_5_M981.txt",
+  "code_file": "K7_10_5_M980.txt",
   "produced_by": "gpuchain transform-engine LNS (exact distance-count transfor"
  },
  {
@@ -117,7 +117,7 @@
   "ours": 19,
   "previous_ours": null,
   "code_file": "K8_6_4_M19.txt",
-  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+  "produced_by": "covsearch tabu/greedy local search, 1200s x 40 workers"
  },
  {
   "q": 8,
@@ -134,19 +134,19 @@
   "n": 8,
   "R": 5,
   "keri": 90,
-  "ours": 85,
+  "ours": 79,
   "previous_ours": null,
-  "code_file": "K8_8_5_M85.txt",
-  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+  "code_file": "K8_8_5_M79.txt",
+  "produced_by": "covsearch tabu/greedy local search, 1200s x 40 workers"
  },
  {
   "q": 8,
   "n": 10,
   "R": 5,
   "keri": 2461,
-  "ours": 1884,
+  "ours": 1883,
   "previous_ours": null,
-  "code_file": "K8_10_5_M1884.txt",
+  "code_file": "K8_10_5_M1883.txt",
   "produced_by": "gpuchain transform-engine LNS (exact distance-count transfor"
  },
  {
@@ -154,10 +154,10 @@
   "n": 10,
   "R": 6,
   "keri": 342,
-  "ours": 341,
+  "ours": 335,
   "previous_ours": null,
-  "code_file": "K8_10_6_M341.txt",
-  "produced_by": "covsearch tabu/greedy local search, 600s x 21 workers"
+  "code_file": "K8_10_6_M335.txt",
+  "produced_by": "covsearch tabu/greedy local search, 1200s x 21 workers"
  },
  {
   "q": 9,
@@ -197,7 +197,7 @@
   "ours": 39,
   "previous_ours": null,
   "code_file": "K12_6_4_M39.txt",
-  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+  "produced_by": "covsearch tabu/greedy local search, 1200s x 40 workers"
  },
  {
   "q": 13,
@@ -207,7 +207,7 @@
   "ours": 45,
   "previous_ours": null,
   "code_file": "K13_6_4_M45.txt",
-  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+  "produced_by": "covsearch tabu/greedy local search, 1200s x 40 workers"
  },
  {
   "q": 14,
@@ -217,7 +217,7 @@
   "ours": 50,
   "previous_ours": null,
   "code_file": "K14_6_4_M50.txt",
-  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+  "produced_by": "covsearch tabu/greedy local search, 1200s x 40 workers"
  },
  {
   "q": 15,
@@ -227,6 +227,6 @@
   "ours": 57,
   "previous_ours": null,
   "code_file": "K15_6_4_M57.txt",
-  "produced_by": "covsearch tabu/greedy local search, 240s x 40 workers"
+  "produced_by": "covsearch tabu/greedy local search, 1200s x 40 workers"
  }
 ]

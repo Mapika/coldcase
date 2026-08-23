@@ -3,8 +3,8 @@
  "n": 6,
  "R": 4,
  "M": 57,
- "date": "2026-08-21",
- "method": "covsearch tabu/greedy local search, 240s x 40 workers",
+ "date": "2026-08-23",
+ "method": "covsearch tabu/greedy local search, 1200s x 40 workers",
  "code_file": "K15_6_4_M57.txt",
  "verified": {
   "verify_cov_pure_uncovered": 0,

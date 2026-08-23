@@ -1,0 +1,173 @@
+% section_gpu_hc_draft.tex — DRAFT for coordinator integration; do not
+% compile standalone.  Extends Section "Upper bounds II" (sec:gpu) of
+% main.tex with the host-coherent memory work, the kernel-level
+% optimizations, and the delimitation results.  Uses macros of main.tex
+% (\Kq, \Zq).  All numbers are final idle-GPU paired measurements
+% (2026-08-22, logs: cov/gemm2/logs/phase1_paired.log, SIEGE.md).
+% NUMBERS COMPLETE — ready for v2 integration.
+
+\subsection{Host-coherent memory: past the accelerator-memory
+wall}\label{sec:gpu:hc}
+
+The transform engine of Section~\ref{sec:gpu} stores $R+1$ layer arrays of
+$32$-bit counters and one $16$-bit multiplicity array, $4(R{+}1)+2$ bytes
+per word of $\Zq^n$. With every array resident in the $96$\,GB of GPU
+memory (HBM), the largest searchable cells have $q^n\approx 3.5\cdot 10^9$
+--- which is precisely where K\'eri's tables keep several of their loosest
+entries: $\Kq{10}{10}{5}$ ($q^n=10^{10}$, upper bound $7106$ against a
+sphere-covering bound of $612$) and its neighbours sit one order of
+magnitude beyond the wall.
+
+The machine used here (NVIDIA GH200) pairs the GPU with $480$\,GB of
+CPU-attached LPDDR memory behind a cache-coherent interconnect: a GPU
+thread can dereference any CPU pointer, with native atomics, at
+interconnect rather than PCIe cost. We exploit this by \emph{placing each
+array independently}. The layer arrays, touched only by the streaming axis
+passes of Proposition~\ref{prop:dct}, move to LPDDR; the multiplicity
+array $\mathrm{cnt}$, hammered by the random-access ball walks of the
+incremental updates and candidate evaluations, stays in HBM. For
+$\Kq{10}{10}{5}$ this is $240$\,GB of LPDDR and $21$\,GB of HBM; the whole
+of K\'eri's $q\le 10$ tables becomes memory-feasible on one node.
+
+Two implementation findings matter for reproduction. First, allocating
+the LPDDR arrays with the unified-memory allocator and a
+preferred-location hint is a factor $\sim\!30$ slower than plain
+\texttt{malloc} accessed through the coherent page tables: the fault-based
+migration machinery is pure overhead for arrays that will never fit in
+HBM. Second, and less obviously, plain \texttt{malloc} is not stable
+either: under the default kernel policy the GPU's access counters
+\emph{migrate} GPU-hot pages into HBM, which silently converts a
+``host-memory'' benchmark into an HBM one --- until the working set
+exceeds HBM, at which point the engine thrashes ($86$\,GB of layers
+filled HBM to $96.8/97.9$\,GB and stalled a $22$-second transform past a
+ten-minute timeout). Binding the allocations to the CPU NUMA node
+(\texttt{mbind}/\texttt{MPOL\_BIND}) forbids the migration and makes the
+placement deterministic. All numbers below use the pinned configuration;
+outputs were verified bit-identical across all placements.
+
+Table~\ref{tab:hc} gives the measured cost of one full coverage transform
+(the unit of work of every search round) across placements, on an
+otherwise idle GH200.
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+cell & $q^n$ & arrays & placement & transform \\
+\midrule
+$\Kq{8}{10}{4}$ & $1.1\cdot 10^9$ & $24$\,GB & HBM & $0.143$\,s \\
+$\Kq{8}{10}{4}$ & $1.1\cdot 10^9$ & $24$\,GB & LPDDR (pinned) & $3.4$\,s \\
+$\Kq{8}{10}{4}$ & $1.1\cdot 10^9$ & $24$\,GB & LPDDR (managed) & $8.7$\,s \\
+$\Kq{9}{10}{5}$ & $3.5\cdot 10^9$ & $91$\,GB & LPDDR (pinned) & $22$--$26$\,s \\
+$\Kq{10}{10}{5}$ & $10^{10}$ & $260$\,GB & LPDDR (pinned) & $73$--$110$\,s \\
+\bottomrule
+\end{tabular}
+\caption{One exact coverage transform by array placement (idle GH200;
+LPDDR rows keep the multiplicity array in HBM). The LPDDR penalty of
+$\sim\!24\times$ buys an order of magnitude of problem size; at tens of
+seconds per transform the large-neighbourhood search still executes its
+remove-and-rebuild rounds at a viable rate, because the ball-walk
+primitives --- the other half of each round --- remain HBM-resident.}
+\label{tab:hc}
+\end{table}
+
+\subsection{Kernel-level optimizations}\label{sec:gpu:kernels}
+
+Two kernel changes, ported from an experimental sibling engine after
+profiling showed the ball-walk kernels compute-bound on per-word
+radix arithmetic and launch-limited on small batches, compound across
+every search:
+
+\emph{Launch geometry.} The original engine walked one codeword's ball
+with a single thread block; a single placement on a $\Kq{10}{10}{5}$-sized
+ball ($1.6\cdot 10^7$ words) used $0.4\%$ of the GPU. Splitting each walk
+over up to $8192$ blocks makes single-word updates --- the innermost
+operation of the exact lazy-greedy rebuild --- $30\times$ faster on
+$\Kq{8}{9}{4}$ ($0.80\to 0.027$\,ms) and $37\times$ faster on
+$\Kq{8}{10}{4}$ ($1.34\to 0.036$\,ms), and batched candidate evaluations
+($64$ at a time) $3.7$--$4.3\times$ faster; a complete exact-greedy cover
+construction on $\Kq{8}{9}{4}$ drops from $40.4$ to $28.7$\,s
+($1.4\times$ end to end, identical cover size). The change is pure
+scheduling; the arithmetic is untouched.
+
+\emph{Precomputed ball-offset tables.} Ball walks are driven by a table of
+packed coordinate-shift patterns; each visited word costs one table load
+and at most $R$ shared-memory adds, with no division or modulo in the hot
+loop. An alternative table format (position mask plus per-position offset
+nibbles, walked entirely in registers) was ported and paired-benchmarked;
+it performs within measurement noise of the packed-byte format on all
+cells tried ($0.027/0.036$\,ms single-word updates on both formats), and
+the engine retains both behind a switch.
+
+A third transplanted idea --- tagging each word's last coverer during the
+mark pass so that per-codeword losses fall out of one linear scan
+(``owner trick''), replacing one full transform --- is reported for
+completeness as a \emph{negative} result in this engine: the transform
+computes all losses in $17$\,ms against the owner pass's $28$\,ms on
+$\Kq{8}{9}{4}$, and $145$ against $669$\,ms on $\Kq{8}{10}{4}$, because
+the mark pass must re-walk every codeword's ball ($M\cdot|B_R|$ atomics)
+where the transform streams $O(nRq^n)$ words. The owner pass wins only
+where $M\cdot|B_R|\ll nRq^n$, a regime our record cells do not enter.
+It remains available for the sparse-solution problems of
+Section~\ref{sec:gpu:framework}.
+
+\subsection{What dense local search cannot do: private-uniform
+incumbents}\label{sec:gpu:rigid}
+
+The engine's failures delimit the method as sharply as its records. The
+K\'eri upper bound $\Kq{8}{10}{4}\le 11776$ is a direct sum
+$23\times 512$: a $\Kq{8}{4}{2}$-code of size $23$ summed with a
+$\Kq{8}{6}{2}$-code of size $512$. Product structure makes the incumbent
+\emph{private-uniform}: every codeword privately covers $\approx 9800$
+words, an order of magnitude above the sphere-packing average, so the
+deletion of any $k$ codewords instantly owes $\sim 9800k$ words that a
+same-size rebuild must repay exactly. In a dedicated eight-hour siege
+with deficit-aware ruins (removing up to $512$ codewords beyond the
+notch target so that the rebuild optimizes over genuine slack, $2794$
+rounds, $1.17\cdot 10^6$ exact-greedy placements), the full notch ladder
+failed: at deficits $32/16/8/4/2$ the best residuals after $40$-minute
+budgets were $827296$, $88959$, $327344$, $410006$ and $402717$ uncovered
+words, and at deficit \emph{one} --- a single codeword below the
+incumbent --- three attempts with budgets escalating to $2.6$ hours ended
+at best $77229$ uncovered.
+The same holds for $\Kq{9}{10}{4}=27\times 729$. We conclude that
+word-level ruin-and-recreate, however exact its evaluations, cannot
+un-knit a product construction whose loss landscape is flat and high
+everywhere; progress on these cells requires moves in the factor spaces
+(replacing the $\Kq{8}{4}{2}$ factor of size $23$ by one of size $22$,
+if it exists, would give $\Kq{8}{10}{4}\le 11264$ outright) or seeds
+with genuine slack. By contrast, the loose high-redundancy incumbents
+of the same tables (ratio to the sphere-covering bound above
+$\approx 8$) fall to the exact greedy constructor alone
+(Section~\ref{sec:gpu}); the boundary between the two regimes is the
+practical content of this subsection.
+
+\subsection{A problem-agnostic core}\label{sec:gpu:framework}
+
+Nothing in the engine below the transform is specific to covering codes.
+The state core (dense fields over a product space
+$\prod_j \mathbb{Z}_{m_j}$ with per-array HBM/LPDDR placement, exact
+incremental updates and gathers over precomputed support tables,
+reductions and extraction) and the search core (exact lazy greedy,
+ruin-and-recreate, verification discipline) interact with the problem
+only through a four-entry oracle: from an indicator field, produce the
+coverage multiplicity field; from the uncovered set, the exact gain
+field; from the singly-covered set, the exact loss field; and walk one
+solution element's support set. A problem plugs in by supplying
+\begin{itemize}
+\item the axis sizes $m_1,\dots,m_n$ of its product space;
+\item a separable per-axis transform pass computing ``number of
+  $S$-elements whose neighbourhood covers $x$'' for all $x$ at once;
+\item a host-built table enumerating one element's support set as
+  coordinate shifts.
+\end{itemize}
+The $q$-ary Hamming transform of Proposition~\ref{prop:dct} (in mixed-radix
+generality) is plugin one. As an existence proof of the seams, a second
+plugin --- dominating sets on torus grids under Chebyshev (king-move)
+balls, whose transform is a circular window sum with a \emph{single}
+layer --- was implemented in an afternoon, validated exhaustively against
+brute force, and driven by the unchanged search core to a $9$-vertex
+dominating set of the $9\times 9$ king torus, matching the known optimum
+$\lceil 9/3\rceil^2$. A systematic record hunt over torus domination
+tables, and the framework itself, are deferred to follow-up work; we
+flag here only that the memory model of Section~\ref{sec:gpu:hc} and the
+exactness discipline transfer unchanged.

@@ -95,8 +95,9 @@ class Engine:
     """LNS covering-code engine for one cell, resident on the GPU."""
 
     def __init__(self, q, n, R, seed=1, out=None, log=print,
-                 deadline=None):
+                 deadline=None, problem="hamming", axes=None):
         self.q, self.n, self.R = q, n, R
+        self.problem, self.axes = problem, axes
         self.rng = np.random.default_rng(seed * 1000003 + 12345)
         self.out = out
         self.log = log
@@ -115,7 +116,8 @@ class Engine:
 
     # ------------------------------------------------ lifecycle / guard
     def _open(self):
-        self.eng = DCT(self.q, self.n, self.R)
+        self.eng = DCT(self.q, self.n, self.R, problem=self.problem,
+                       axes=self.axes)
 
     def close(self):
         if self.eng:

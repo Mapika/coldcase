@@ -1,21 +1,21 @@
 {
- "q": 12,
- "n": 6,
- "R": 4,
- "M": 39,
+ "q": 8,
+ "n": 8,
+ "R": 5,
+ "M": 82,
  "date": "2026-08-22",
  "method": "covsearch tabu/greedy local search, 1200s x 40 workers",
- "code_file": "K12_6_4_M39.txt",
+ "code_file": "K8_8_5_M82.txt",
  "verified": {
   "verify_cov_pure_uncovered": 0,
   "verify_cov_numpy_uncovered": 0,
   "duplicates_in_file": 0
  },
  "keri_2011": {
-  "lb": 30,
-  "ub": 41,
-  "lb_key": "k",
-  "ub_key": "q"
+  "lb": 29,
+  "ub": 90,
+  "lb_key": "m",
+  "ub_key": "z"
  },
  "beats_keri_upper_bound": true,
  "matches_keri_upper_bound": false
