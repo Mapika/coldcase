@@ -74,10 +74,10 @@
   "n": 10,
   "R": 5,
   "keri": 615,
-  "ours": 486,
+  "ours": 484,
   "previous_ours": 610,
-  "code_file": "K6_10_5_M486.txt",
-  "produced_by": "cov/engine/covengine"
+  "code_file": "K6_10_5_M484.txt",
+  "produced_by": "covsearch tabu/greedy local search, 3600s x 20 workers"
  },
  {
   "q": 7,
@@ -104,10 +104,10 @@
   "n": 9,
   "R": 5,
   "keri": 323,
-  "ours": 316,
+  "ours": 240,
   "previous_ours": null,
-  "code_file": "K7_9_5_M316.txt",
-  "produced_by": "monotonicity K_q(n+1,R+1) <= K_q(n,R): coordinate extension "
+  "code_file": "K7_9_5_M240.txt",
+  "produced_by": "covsearch tabu/greedy local search, 3600s x 20 workers"
  },
  {
   "q": 7,
@@ -164,10 +164,10 @@
   "n": 10,
   "R": 6,
   "keri": 342,
-  "ours": 335,
+  "ours": 324,
   "previous_ours": null,
-  "code_file": "K8_10_6_M335.txt",
-  "produced_by": "covsearch tabu/greedy local search, 1200s x 21 workers"
+  "code_file": "K8_10_6_M324.txt",
+  "produced_by": "covsearch tabu/greedy local search, 3600s x 20 workers"
  },
  {
   "q": 9,
@@ -207,6 +207,16 @@
   "ours": 5799,
   "previous_ours": null,
   "code_file": "K10_10_5_M5799.txt",
+  "produced_by": "gpuchain transform-engine LNS (exact distance-count transfor"
+ },
+ {
+  "q": 10,
+  "n": 10,
+  "R": 6,
+  "keri": 826,
+  "ours": 802,
+  "previous_ours": null,
+  "code_file": "K10_10_6_M802.txt",
   "produced_by": "gpuchain transform-engine LNS (exact distance-count transfor"
  },
  {

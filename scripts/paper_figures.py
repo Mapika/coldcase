@@ -19,7 +19,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 
 # cells produced by the transform engine (Section 5); the rest are Section 4
-GPU_CELLS = {(7,10,5), (8,10,5), (9,9,5), (9,10,5), (10,9,5), (10,10,5)}
+GPU_CELLS = {(7,10,5), (8,10,5), (9,9,5), (9,10,5), (10,9,5), (10,10,5),
+             (10,10,6)}
 
 def ball(q, n, R):
     return sum(math.comb(n, i) * (q - 1) ** i for i in range(R + 1))

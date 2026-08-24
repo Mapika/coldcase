@@ -1,0 +1,22 @@
+{
+ "q": 6,
+ "n": 10,
+ "R": 5,
+ "M": 485,
+ "date": "2026-08-23",
+ "method": "covsearch tabu/greedy local search, 3600s x 20 workers",
+ "code_file": "K6_10_5_M485.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": 0,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 83,
+  "ub": 615,
+  "lb_key": "m",
+  "ub_key": "f"
+ },
+ "beats_keri_upper_bound": true,
+ "matches_keri_upper_bound": false
+}

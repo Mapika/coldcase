@@ -1,0 +1,22 @@
+{
+ "q": 8,
+ "n": 10,
+ "R": 6,
+ "M": 328,
+ "date": "2026-08-23",
+ "method": "covsearch tabu/greedy local search, 3600s x 20 workers",
+ "code_file": "K8_10_6_M328.txt",
+ "verified": {
+  "verify_cov_pure_uncovered": null,
+  "verify_cov_numpy_uncovered": 0,
+  "duplicates_in_file": 0
+ },
+ "keri_2011": {
+  "lb": 58,
+  "ub": 342,
+  "lb_key": "m",
+  "ub_key": "n"
+ },
+ "beats_keri_upper_bound": true,
+ "matches_keri_upper_bound": false
+}

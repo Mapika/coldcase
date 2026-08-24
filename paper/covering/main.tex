@@ -34,17 +34,17 @@ local search, large-neighbourhood search, GPU computing}
 \begin{abstract}
 Let $K_q(n,R)$ denote the minimum cardinality of a $q$-ary code of length
 $n$ with covering radius $R$. We improve the known bounds on $K_q(n,R)$ in
-$83$ cases ($82$ distinct cells). On the upper-bound side we give $25$
-improved bounds for $5\le q\le 15$ --- twenty-four found by search and one
-propagated by monotonicity --- using two complementary methods: an
+$84$ cases ($83$ distinct cells). On the upper-bound side we give $26$
+improved bounds for $5\le q\le 15$, each an explicit code found by direct
+search, using two complementary methods: an
 engineered
 focused local search seeded with structural constructions, and a
 large-neighbourhood search driven by exact full-space coverage transforms
 that evaluates every candidate codeword position simultaneously. These are,
 to our knowledge, the first improvements to any upper bound on $K_q(n,R)$
 with $q\ge 5$ since the 2011 revision of K\'eri's tables; several bounds
-decrease by more than $20\%$, e.g.\ $\Kq{6}{8}{4}\le 166$ (previously
-$216$) and $\Kq{8}{10}{5}\le 1883$ (previously $2461$). On the lower-bound
+decrease by more than $20\%$, e.g.\ $\Kq{7}{9}{5}\le 240$ (previously
+$323$) and $\Kq{8}{10}{5}\le 1883$ (previously $2461$). On the lower-bound
 side we give $58$ improved bounds for $6\le q\le 21$, obtained from the
 semidefinite programming hierarchy of Gijswijt and Polak, whose published
 results cover $q\le 5$, by combining an exact-arithmetic reimplementation
@@ -98,10 +98,9 @@ the authors active in the area, performed in August 2026) found none.
 This paper improves both sides of the tables in that range. Our
 contributions are the following.
 \begin{enumerate}
-\item \emph{New upper bounds.} Twenty-five improved upper bounds for
-$5\le q\le 15$ (Table~\ref{tab:ub}), each an explicit code ---
-twenty-four found by direct search and one propagated from another by
-monotonicity. The searches use two complementary methods: an engineered
+\item \emph{New upper bounds.} Twenty-six improved upper bounds for
+$5\le q\le 15$ (Table~\ref{tab:ub}), each an explicit code found by
+direct search. The searches use two complementary methods: an engineered
 focused local search seeded with structural constructions
 (Section~\ref{sec:method}), effective for $q^n\lesssim 10^8$, and a
 large-neighbourhood search driven by exact full-space coverage transforms
@@ -198,14 +197,13 @@ $\Kq{10}{10}{2}\ge 2699348$, previously $2676660$. No cell whose incumbent
 is due to Haas, Halupczok and Schlage-Puchta~\cite{HHSP2009}
 (key \texttt{m}) is improved;
 Section~\ref{sec:lb:limits} quantifies this limitation.
-\item One further upper bound is obtained by propagating a new bound
-through the rules of Section~\ref{sec:prelim} rather than by direct
-search: the new $\Kq{7}{8}{4}\le 316$ gives $\Kq{7}{9}{5}\le 316$
-(previously $323$) by monotonicity, realized as an explicit code by
-appending a fixed coordinate; the code was verified like every other. We
-checked that the closure of all new bounds under the propagation rules
-yields no further improvement beyond the observation of
-Remark~\ref{rem:keri17}.
+\item Propagation interacts with search: monotonicity carries the new
+$\Kq{7}{8}{4}\le 316$ to $\Kq{7}{9}{5}\le 316$ (previously $323$), and
+direct search in that cell, seeded with the propagated code, then
+cascaded to the tabulated $\Kq{7}{9}{5}\le 240$ --- the largest relative
+improvement of Table~\ref{tab:ub}. We checked that the closure of all new
+bounds under the propagation rules yields no further improvement beyond
+the observation of Remark~\ref{rem:keri17}.
 \end{enumerate}
 
 \begin{table}[t]
@@ -221,8 +219,7 @@ producing method: L $=$ the local search of Section~\ref{sec:method},
 T $=$ the transform engine of Section~\ref{sec:gpu}, M $=$ monotonicity
 propagation of another new bound. Percentages are rounded to one decimal.
 A ${}^{\downarrow}$ marks bounds whose descent had not stalled when this
-version was prepared (on the propagated row, that a direct attack below
-$M$ has not yet been made); all other searched bounds resisted a dedicated
+version was prepared; all other bounds resisted a dedicated
 attack at $M-1$ at the final budget.}
 \label{tab:ub}
 \end{table}
@@ -259,7 +256,7 @@ ancillary certificates.}
 {\small (b)}
 \end{minipage}
 \caption{(a) Upper bounds: improvement against the slack of the previous
-bound over the sphere-covering bound, for the $25$ cells of
+bound over the sphere-covering bound, for the $26$ cells of
 Table~\ref{tab:ub}. Loose bounds inherited from general constructions tend
 to fall the furthest (the association is moderate, Spearman
 $\rho\approx 0.5$). Squares mark the cells settled by the transform engine of
@@ -423,10 +420,10 @@ composition is set by measured thresholds on $q^n$ and the redundancy
 $q^n/(M|B_R|)$; a finishing pass re-reads the final code from disk, removes
 duplicates, and recomputes coverage by direct ball marking.
 
-All record codes of Table~\ref{tab:ub} marked L (eighteen of the
-twenty-five) were produced by this engine on $64$ CPU cores, with per-cell
-effort between seconds and a few core-days; the six cells marked T are the
-subject of Section~\ref{sec:gpu}.
+All record codes of Table~\ref{tab:ub} marked L (nineteen of the
+twenty-six) were produced by this engine on $64$ CPU cores, with per-cell
+effort between seconds and a few core-days; the seven cells marked T are
+the subject of Section~\ref{sec:gpu}.
 
 \section{Upper bounds II: search by exact full-space
 transforms}\label{sec:gpu}
@@ -542,14 +539,16 @@ feasible on one node. The measured costs, and the memory-placement
 details required to reproduce them, are collected in
 Appendix~\ref{app:impl:gpu}.
 
-This configuration produced the record on the largest cell attempted: on
+This configuration produced the records on the two largest cells of the
+tables: on
 $\Kq{10}{10}{5}$, exact greedy construction followed
 by the large-neighbourhood descent reached $\Kq{10}{10}{5}\le 5799$ against
 the previous bound $7106$ (a direct sum), a reduction of $18.4\%$, within
 six hours of a single node --- to our knowledge the first covering-code
 bound established by exhaustive-evaluation search over a space of $10^{10}$
-words. The code was verified by the full protocol of
-Section~\ref{sec:verify}.
+words --- and a second run at radius $6$ gave
+$\Kq{10}{10}{6}\le 802$ against the previous bound $826$. Both codes were
+verified by the full protocol of Section~\ref{sec:verify}.
 
 \subsection{Limits: private-uniform incumbents}\label{sec:gpu:rigid}
 
@@ -576,7 +575,9 @@ $\Kq{8}{4}{2}$ factor of size $23$ by one of size $22$, if it exists,
 would give $\Kq{8}{10}{4}\le 11264$ outright) or seeds with genuine slack. (The factor-space move was attempted: six independent
 four-hour searches for a $\Kq{8}{4}{2}$-code of size $22$ --- the open
 K\'eri gap is $22$--$23$ --- all stalled at exactly $36$ uncovered words
-of the $4096$; the cell remains open.)
+of the $4096$, and SAT solvers (with and without lex-leader symmetry
+breaking, eight hours each) as well as integer programming (six hours)
+also left the cell undecided; it remains open.)
 By contrast, the loose high-redundancy incumbents of the same tables
 (ratio to the sphere-covering bound above ${\approx}8$) fall to the exact
 greedy constructor alone; the boundary between the two regimes is the
@@ -615,7 +616,9 @@ We reimplemented the reduced program with the entire model generation in
 exact integer arithmetic and validated the implementation four ways:
 (a) a self-test that substitutes explicit verified covering codes into the
 model and checks every constraint in exact rational arithmetic, with
-objective exactly $|C|^3$; (b) a coefficient-level comparison against the
+objective exactly $|C|^3$ --- a battery covering every length
+$2\le n\le 10$, using record codes of Table~\ref{tab:ub} for
+$6\le n\le 10$; (b) a coefficient-level comparison against the
 authors' published code, matching every generated coefficient over six
 $(q,n,R)$ cells spanning $3\le q\le 7$; (c) reproduction of the published
 values: of $49$ published table values recomputed, $44$ agree to display
@@ -754,7 +757,7 @@ words, which also reports the exact covering radius; (iv) $R$-fold
 neighbourhood dilation of the code's indicator array, which computes no
 distances at all. A fifth dilation check, written independently of the
 verifiers and included in the repository's build script, re-confirmed all
-$25$ codes from the published files immediately before
+$26$ codes from the published files immediately before
 this version was prepared; the largest check covers
 $10^{10}$ words. The distinct-codeword count of every file
 is checked against the claimed $M$. (Re-verifying the largest records is
@@ -1003,6 +1006,52 @@ pass re-walks every codeword's ball ($M\cdot|B_R|$ atomic operations)
 where the transform streams $O(nRq^n)$ words; it wins only where
 $M\cdot|B_R|\ll nRq^n$, a regime the record cells do not enter.
 
+\subsection{External baselines}\label{app:impl:baseline}
+
+Two baselines delimit what the engineering of
+Sections~\ref{sec:method}--\ref{sec:gpu} adds beyond compute.
+
+\emph{Set-covering ILP.} The plain integer program (one binary variable
+and one covering constraint per word of $\Zq^n$) has
+$q^n\cdot|B_R|$ nonzeros. Among the improved cells with $q^n\le 10^8$
+only $\Kq{6}{7}{3}$ is buildable in the machine's $480$\,GB of memory
+(nnz $1.4\cdot 10^9$, ${\sim}17$\,GB); the remaining $n=6$ cells need
+$137$\,GB--$7.2$\,TB for the matrix alone. On $\Kq{6}{7}{3}$, HiGHS
+(8~threads, one hour per run, no warm start) produced neither a feasible
+cover nor a nonvacuous dual bound, in any of three modes (minimization,
+feasibility at the K\'eri bound minus one, feasibility at our record
+$227$).
+
+\emph{Plain tabu search.} A deliberately plain tabu configuration of the
+same code base, paired against the production engine at $8$ CPU-hours per
+cell with identical seeds and windows:
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+cell (target $M$) & K\'eri & plain tabu & production engine \\
+\midrule
+$\Kq{8}{6}{4}$ (19) & 20 & solved & solved \\
+$\Kq{12}{6}{4}$ (40, 39) & 41 & solved, solved & solved, solved \\
+$\Kq{13}{6}{4}$ (45) & 46 & solved & solved \\
+$\Kq{14}{6}{4}$ (51, 50) & 52 & solved, solved & solved, solved \\
+$\Kq{15}{6}{4}$ (58, 57) & 59 & solved, \textbf{failed} & solved, solved \\
+$\Kq{6}{7}{3}$ (245, 227) & 246 & solved, \textbf{failed} & solved, \textbf{failed} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The reading is honest in both directions: the small $n=6$ improvements
+are reachable by a plain method given equal budget --- their novelty is
+attributable to renewed attention and compute rather than to our
+machinery --- while separation appears at the $\Kq{15}{6}{4}$ record and
+at $\Kq{6}{7}{3}$, whose record $227$ was reached by neither baseline nor
+engine from scratch at this budget (it came from the seeded descending
+campaign of Section~\ref{sec:search}). The large-cell records of
+Section~\ref{sec:gpu} are beyond both baselines: the ILP is unbuildable
+and pointwise search fails as measured in
+Appendix~\ref{app:impl:gpu}.
+
 \section{The certified program and the meaning of a
 certificate}\label{app:sdp}
 
@@ -1078,8 +1127,10 @@ that data from~\cite{GijswijtPolak} is the assumed part of the trusted
 base, validated as described in Section~\ref{sec:lb}.
 
 \section{The code proving $\Kq{6}{8}{4}\le 166$}\label{app:code}
-The largest relative single improvement among the converged cells
-($216\to 166$) is printed for self-containedness; each row lists codewords
+The improvement $216\to 166$ is printed for self-containedness (the
+largest relative improvement whose code fits on a page; the larger
+relative improvements $\Kq{7}{9}{5}\le 240$ and $\Kq{8}{10}{5}\le 1883$
+run to thousands of digits); each row lists codewords
 of $\mathbb{Z}_6^8$, and the machine-readable version is the ancillary file
 \texttt{K6\_8\_4\_M166.txt}.
 

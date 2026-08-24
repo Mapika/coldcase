@@ -34,7 +34,9 @@ WALLED = {(6,8,4), (6,9,5), (6,9,4), (7,8,4), (6,7,3), (6,8,3), (5,11,5), (8,8,4
           (7,9,4), (6,10,4),  # 2026-08-21: two consecutive 3000s x 12-core failures each
           (7,10,5), (8,10,5), (9,9,5), (10,9,5),  # GPU: 3 single-step fails at 800-1600s each
           (9,10,5),  # 2026-08-22: 3 single-step fails at 1600/3200/6400s (best uncov 2)
-          (8,6,4), (12,6,4), (13,6,4), (14,6,4), (15,6,4)}  # 2026-08-23: two consecutive 3600s x 40-worker fails at M-1
+          (8,6,4), (12,6,4), (13,6,4), (14,6,4), (15,6,4),  # 2026-08-23: two consecutive 3600s x 40-worker fails at M-1
+          (6,10,5), (8,8,5), (7,9,5),   # 2026-08-23/24: two consecutive 3600s x 20-worker fails at M-1
+          (10,10,5)}  # 2026-08-24: 3 single-step fails at 1800/3600/5217s (best uncov 3/4/1)
 
 
 def sphere_lb(q, n, R):
@@ -54,7 +56,8 @@ def main():
 
     # producing method per cell: T = transform engine (Sec. 5), M = monotonicity
     # propagation of another new bound, L = engineered local search (Sec. 4).
-    GPU_CELLS = {(7,10,5), (8,10,5), (9,9,5), (9,10,5), (10,9,5), (10,10,5)}
+    GPU_CELLS = {(7,10,5), (8,10,5), (9,9,5), (9,10,5), (10,9,5), (10,10,5),
+                 (10,10,6)}
     ub_lines = []
     used_keys = []
     for r in sorted(recs, key=lambda r: (r["q"], r["n"], r["R"])):
