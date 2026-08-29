@@ -25,6 +25,9 @@ jobs:
       - name: Install numerical LP tools
         run: |
           python3 -m pip install --quiet numpy scipy
+      - name: Inspect congruence-normalized N00 spectrum
+        run: |
+          python3 research/q82_n00_spectrum.py
       - name: Search sparse dual supports
         run: |
           python3 research/q82_sparse_dual.py
