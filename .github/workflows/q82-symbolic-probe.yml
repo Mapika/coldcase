@@ -19,6 +19,9 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+      - name: Check combinatorial excess theorem
+        run: |
+          python3 research/q82_excess_check.py
       - name: Run exact symbolic probe
         run: |
           python3 research/q82_symbolic_probe.py
