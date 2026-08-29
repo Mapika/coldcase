@@ -1,6 +1,7 @@
 # A combinatorial infinite-family lower bound for `K_q(8,2)`
 
-**Status:** proof draft, algebra checked; literature-novelty check still required.
+**Status:** proof draft; all algebraic and finite checks pass.  Literature-novelty
+check against Chen--Honkala (1990), especially their Theorem 4, is still required.
 
 Let `C subset Z_q^8` have covering radius 2 and size `M`. Put
 
@@ -11,40 +12,42 @@ Let `C subset Z_q^8` have covering radius 2 and size `M`. Put
 - `e(x) = m(x)-1 >= 0`,
 - `E = sum_x e(x) = MV-q^8`.
 
-The main local lemma below gives a direct excess argument, independent of the
-SDP.
+The key point is a local excess lemma whose lower bound grows with q.  The
+proof is direct and does not use the SDP.
 
 ## Theorem
 
-For every integer `q >= 6`,
+For every integer `q >= 6`, with `s=q-1`,
 
 ```
-K_q(8,2) >= ceil( q^8 (V+18) / (V^2 + 9V + 9V1) ).
+K_q(8,2) >= ceil( q^8 (V+2s) / (V^2 + s(V+V1)) ).
 ```
 
 Equivalently,
 
 ```
 K_q(8,2) >= ceil(
- q^8 (28q^2 - 48q + 39)
- / (784q^4 - 2688q^3 + 3732q^2 - 2376q + 567)
+ q^8 (28q^2 - 46q + 19)
+ / (784q^4 - 2660q^3 + 3412q^2 - 1962q + 427)
 ).
 ```
 
-Relative to the sphere-covering bound this is
+Relative to the sphere-covering bound this is exactly
 
 ```
-K_q(8,2) >= (q^8/V) * (1 + 9(V-V1)/(V^2+9V+9V1)),
+K_q(8,2) >= (q^8/V) *
+  (1 + 28(q-1)^3 / (V^2 + (q-1)(V+V1))).
 ```
 
-so
+Thus, as `q -> infinity`,
 
 ```
-K_q(8,2) >= (q^8/V) * (1 + 9/(28q^2) + O(q^-3)).
+K_q(8,2) >= (q^8/V) * (1 + 1/(28q) + O(q^-2)).
 ```
 
-A slightly stronger parity statement follows from the proof: the local
-constant 9 can be replaced by 12 when q is odd.
+This is materially stronger asymptotically than the first constant-excess
+bound found during the SDP probe (`L_2 >= 9`, which only gives an `O(q^-2)`
+relative correction).
 
 ## 1. A local excess lemma
 
@@ -63,20 +66,18 @@ A_0(x)=A_1(x)=0,  A_2(x)=1.
 
 ### Lemma
 
-If `q >= 6` and `x` is a unique boundary point, then
+If `q >= 6`, `s=q-1`, and `x` is a unique boundary point, then
 
 ```
-L_2(x) >= 9.
+L_2(x) >= s.
 ```
-
-If q is odd, in fact `L_2(x) >= 12`.
 
 ### Proof
 
-Set `s=q-1` and move `x` to zero by an isometry. Let `c` be the unique
-codeword at distance 2 from x.
+Move `x` to zero by an isometry and let `c` be its unique codeword at
+distance 2.
 
-The needed ball-intersection numbers are
+The required ball-intersection numbers are
 
 ```
 |B_2(z) cap B_2(x)| = q^2+12q-12 = s^2+14s+1,   d(x,z)=2,
@@ -85,52 +86,61 @@ The needed ball-intersection numbers are
                      = 0,                        d(x,z)>=5.
 ```
 
-Hence
+Consequently
 
 ```
 L_2 = 6s A_3 + 6 A_4 - 27s^2 + 6s.                 (1)
 ```
 
-Similarly, using
+Similarly,
 
 ```
 |B_2(z) cap B_1(x)| = 2q-1 = 2s+1,   d(x,z)=2,
                      = 3,             d(x,z)=3,
 ```
 
-we get
+so
 
 ```
 L_1 = 3(A_3-2s).                                      (2)
 ```
 
-In particular `A_3 >= 2s`. Also, from (1),
+In particular there is an integer `h >= 0` such that
 
 ```
-L_2 == 0 (mod 6)  if q is odd,
-L_2 == 3 (mod 6)  if q is even.                       (3)
+A_3 = 2s+h,   L_1=3h.                                 (3)
 ```
 
-We now rule out every value below 9 (and also 6 in the odd case).
+Assume for a contradiction that
+
+```
+L_2 <= s-1.
+```
 
 Let
 
 ```
-h = A_3-2s = L_1/3,
 T = C cap S_3(x),
 B = |T| = 2s+h,
-t = L_2-L_1.
+t = L_2-L_1 = L_2-3h.
 ```
 
-Thus `t` is the excess on the weight-2 shell `S_2(x)`.
-
-Let `R` be the six coordinates outside `supp(c)`. For each `i in R`, at
-least `s` words of T contain coordinate i: c covers no singleton word on such
-a coordinate, and all s singleton symbols there must be covered by T. If
-`d_i` is the number of supports of T containing coordinate i, then
+The number `t` is exactly the excess on the weight-2 shell `S_2(x)`.  Since
+`t >= 0`,
 
 ```
-d_i >= s  for all i in R.                             (4)
+0 <= 3h <= L_2 <= s-1.                                (4)
+```
+
+Let `R` be the six coordinates outside `supp(c)`.  For every `i in R`, all
+`s` singleton words supported on coordinate i must be covered by words of T:
+`c` is at distance 3 from them, and the assumptions `A_0=A_1=0`, `A_2=1`
+leave no other codeword of weight at most 2.  A weight-3 word covers such a
+singleton only when it contains coordinate i with the same nonzero symbol.
+Hence, if `d_i` is the number of supports of T containing coordinate i,
+
+```
+d_i >= s  for each of the six coordinates in R.       (5)
 ```
 
 For `y in S_2(x)` define
@@ -140,195 +150,173 @@ r_y = |{b in T : d(b,y) <= 2}|,
 W = sum_{y in S_2(x)} binom(r_y,2).
 ```
 
-Since `r_y <= m(y)`, we have `r_y-1 <= e(y)` whenever `r_y>0`. Therefore,
-for fixed total shell excess t, convexity gives
+Since `r_y <= m(y)`, whenever `r_y>0` we have `r_y-1 <= e(y)`.
+The sum of `e(y)` over `S_2(x)` is t.  Convexity therefore gives
 
 ```
-W <= binom(t+1,2).                                     (5)
+W <= binom(t+1,2).                                     (6)
 ```
 
-For the reverse estimate, consider two words `b,b' in T`. If their supports
-intersect in `u` coordinates, then they have at least
+For the reverse estimate, take two words `b,b' in T`.  If their supports
+intersect in `u` coordinates, they have at least
 
 ```
 2 binom(u,2)
 ```
 
-common radius-2 neighbours of weight 2. Indeed, for every two common support
-coordinates, if the two words agree in one of them choose that common symbol;
-otherwise choose the symbol of b in one coordinate and the symbol of b' in
-the other. Interchanging the choices gives two common weight-2 neighbours.
-Consequently
+common radius-2 neighbours of weight 2.  For every two common support
+coordinates there are at least two valid symbol assignments: if the words
+differ, use the two crossed assignments; if they agree in both coordinates,
+use the common assignment and change one of the two symbols (possible since
+`q>=3`).  Different support pairs give different weight-2 words.  Hence
 
 ```
 W >= 2 sum_{b<b'} binom(|supp(b) cap supp(b')|,2)
-  >= 2( sum_i binom(d_i,2) - binom(B,2) ).             (6)
+  >= 2( sum_i binom(d_i,2) - binom(B,2) ).             (7)
 ```
 
-The last inequality uses `2 binom(u,2) >= 2(u-1)` and
-`sum_{b<b'} |supp(b) cap supp(b')| = sum_i binom(d_i,2)`.
-We may use all eight coordinate degrees in (6); (4) supplies lower bounds on
-six of them.
-
-#### q even
-
-Here s is odd and at least 5. By (3), the only possible value below 9 is
-`L_2=3`. Since `0 <= L_1 <= L_2` and L1 is a multiple of 3, there are two
-cases.
-
-- `h=0`: then `B=2s`, `t=3`, and the six coordinates of R already account
-  for all `3B=6s` support incidences. Thus their degrees are exactly s and
-  the other two degrees are zero. From (6),
-
-  ```
-  W >= 2(6 binom(s,2)-binom(2s,2)) = 2s(s-2) >= 30,
-  ```
-
-  while (5) gives `W <= binom(4,2)=6`, a contradiction.
-
-- `h=1`: then `B=2s+1` and `t=0`. There are `6s+3` support incidences.
-  Subject to the six lower bounds `d_i>=s`, the convex sum
-  `sum_i binom(d_i,2)` is minimized by degrees
-
-  ```
-  s,s,s,s,s,s,2,1,
-  ```
-
-  so it is at least `6 binom(s,2)+1`. Hence
-
-  ```
-  W >= 2(6 binom(s,2)+1-binom(2s+1,2))
-    = 2(s^2-4s+1) > 0
-  ```
-
-  for `s>=5`, whereas `t=0` makes (5) give W=0. Contradiction.
-
-Thus `L_2>=9` for even q.
-
-#### q odd
-
-Here s is even and at least 6. By (3), values below 12 are 0 and 6.
-
-If `L_2=0`, then h=0 and t=0. Equation (6) gives
+The last inequality uses `binom(u,2) >= u-1` and
 
 ```
-W >= 2s(s-2)>0,
+sum_{b<b'} |supp(b) cap supp(b')| = sum_i binom(d_i,2).
 ```
 
-contradicting (5).
+There are `3B=6s+3h` support incidences in T.  By (4), `3h<s`.
+Subject to the six lower bounds in (5), the convex sum
+`sum_i binom(d_i,2)` is therefore minimized by keeping those six degrees at s
+and distributing the remaining `3h` incidences as evenly as possible over the
+two coordinates of `supp(c)`.  Put
 
-Now suppose `L_2=6`. Since `L_1=3h`, we have `h in {0,1,2}`.
+```
+a=floor(3h/2),  b=ceil(3h/2).
+```
 
-- `h=0`: `B=2s`, `t=6`, and (6) gives
-  `W>=2s(s-2)>=48`, while (5) gives `W<=binom(7,2)=21`.
+Then
 
-- `h=1`: `B=2s+1`, `t=3`. Using just the six degree lower bounds in (4),
+```
+sum_i binom(d_i,2)
+ >= 6 binom(s,2) + binom(a,2)+binom(b,2)
+ >= 6 binom(s,2) + (9h^2-6h)/4.                       (8)
+```
 
-  ```
-  W >= 2(6 binom(s,2)-binom(2s+1,2))
-    = 2s(s-4) >= 24,
-  ```
+Combining (7) and (8), while (4) gives
+`t <= s-1-3h`, yields
 
-  while (5) gives `W<=6`.
+```
+W >= 2(6 binom(s,2) + (9h^2-6h)/4 - binom(2s+h,2)),
+W <= binom(t+1,2) <= binom(s-3h,2).                   (9)
+```
 
-- `h=2`: `B=2s+2`, `t=0`. There are `6s+6` support incidences. The convex
-  degree sum is minimized by
+The difference between the lower and upper expressions in (9) is at least
 
-  ```
-  s,s,s,s,s,s,3,3,
-  ```
+```
+(3s^2 - 7s - 2h^2 - 2hs - 7h)/2.                     (10)
+```
 
-  and is at least `6 binom(s,2)+6`. Thus
+Finally `h <= s/3`, so
 
-  ```
-  W >= 2(6 binom(s,2)+6-binom(2s+2,2))
-    = 2(s-1)(s-5) > 0,
-  ```
+```
+2h^2+2hs+7h <= 8s^2/9 + 7s/3.
+```
 
-  contradicting W=0.
+The numerator in (10) is therefore at least
 
-Hence `L_2>=12` for odd q. This proves the lemma. □
+```
+s(19s-84)/9,
+```
+
+which is strictly positive for `s>=5`, i.e. `q>=6`.  This contradicts (9).
+Thus `L_2(x) >= s`. □
 
 ## 2. Global double count
 
-Let X be the set of unique boundary points. Since every point is covered,
+Let X be the set of unique boundary points.  Every point with multiplicity at
+least two contributes at least one unit to E, so at least `q^8-E` points are
+covered exactly once.  Among these uniquely covered points, at most `M V1`
+have their unique covering codeword at distance 0 or 1.  Hence
 
 ```
-E = sum_x (m(x)-1).
+|X| >= q^8 - E - M V1.                                (11)
 ```
 
-At most E points have multiplicity at least two, so at least `q^8-E` points
-are covered exactly once. Among points covered exactly once, at most `M V1`
-have their unique covering codeword at distance 0 or 1. Therefore
+Every excess unit is counted in exactly V radius-2 balls, so
 
 ```
-|X| >= q^8 - E - M V1.                                (7)
+sum_x L_2(x) = V E.                                    (12)
 ```
 
-On the other hand, every excess unit is counted in exactly V radius-2 balls:
+The local lemma gives `L_2(x)>=s` on X.  Therefore
 
 ```
-sum_x L_2(x) = V E.                                    (8)
+V E >= s |X| >= s(q^8-E-MV1).                         (13)
 ```
 
-By the local lemma, `L_2(x)>=9` for x in X. Combining (7) and (8),
+Substituting `E=MV-q^8` gives
 
 ```
-V E >= 9 |X| >= 9(q^8-E-MV1).                          (9)
-```
-
-Since `E=MV-q^8`, (9) becomes
-
-```
-V(MV-q^8) >= 9(2q^8-M(V+V1)),
+V(MV-q^8) >= s(2q^8-M(V+V1)),
 ```
 
 and hence
 
 ```
-M (V^2+9V+9V1) >= q^8(V+18).
+M [V^2+s(V+V1)] >= q^8(V+2s).
 ```
 
-This is the claimed bound. □
-
-For odd q, replacing 9 by the local constant 12 gives the sharper bound
-
-```
-K_q(8,2) >= ceil( q^8(V+24)/(V^2+12V+12V1) ).
-```
+This is the theorem. □
 
 ## 3. Numerical consequences for the rejected-paper range
 
-The uniform theorem already beats every previous lower bound in the complete
-family `6 <= q <= 21`:
+The single closed-form theorem improves every previous lower bound in the
+complete family `6 <= q <= 21`:
 
 | q | previous LB | theorem LB | certified SDP LB |
 |---:|---:|---:|---:|
-| 6 | 2276 | 2293 | 2367 |
-| 7 | 5457 | 5498 | 5631 |
-| 8 | 11766 | 11812 | 12033 |
-| 9 | 23184 | 23289 | 23642 |
+| 6 | 2276 | 2282 | 2367 |
+| 7 | 5457 | 5484 | 5631 |
+| 8 | 11766 | 11796 | 12033 |
+| 9 | 23184 | 23277 | 23642 |
 | 10 | 42772 | 42876 | 43423 |
-| 11 | 74415 | 74630 | 75448 |
-| 12 | 123772 | 123976 | 125156 |
-| 13 | 197563 | 197981 | 199633 |
-| 14 | 305294 | 305659 | 307909 |
-| 15 | 457584 | 458297 | 461294 |
-| 16 | 669207 | 669813 | 673723 |
-| 17 | 955978 | 957133 | 962145 |
-| 18 | 1339650 | 1340601 | 1346931 |
-| 19 | 1842639 | 1844404 | 1852296 |
-| 20 | 2495614 | 2497038 | 2506759 |
-| 21 | 3329193 | 3331782 | 3343629 |
+| 11 | 74415 | 74655 | 75448 |
+| 12 | 123772 | 124045 | 125156 |
+| 13 | 197563 | 198121 | 199633 |
+| 14 | 305294 | 305905 | 307909 |
+| 15 | 457584 | 458696 | 461294 |
+| 16 | 669207 | 670424 | 673723 |
+| 17 | 955978 | 958031 | 962145 |
+| 18 | 1339650 | 1341877 | 1346931 |
+| 19 | 1842639 | 1846170 | 1852296 |
+| 20 | 2495614 | 2499426 | 2506759 |
+| 21 | 3329193 | 3334952 | 3343629 |
 
-For odd q the parity-refined constant 12 gives still stronger values.
+The SDP remains stronger throughout this finite range, but the theorem now
+provides a genuine q-parametric mathematical result rather than a collection
+of numerical cells.
 
-## 4. Checks still needed before claiming novelty
+## 4. Stronger local constants are available
 
-1. Compare the closed form against Chen--Honkala (1990), van Wee's q-ary
-   excess bounds, and the formulas summarized in Chapter 6 of *Covering Codes*.
-2. Have the local pair-overlap argument independently re-read line by line.
-3. Add a small enumerator that verifies the radius-2/radius-1 intersection
-   numbers and the two-common-weight-2-neighbours claim for generic q symbols.
-4. Only after (1) should this be called a new theorem rather than a derived
-   theorem candidate.
+The argument above deliberately uses the clean threshold `L_2>=q-1`.  Keeping
+the exact congruence of (1) modulo 6 and the exact integer inequality (9)
+gives larger local constants.  For q=6,...,21 the first local values not ruled
+out by this pair-overlap argument are
+
+```
+9,12,15,18,21,18,21,24,27,30,33,30,33,36,39,42.
+```
+
+Using those constants in (13) gives stronger finite bounds, still below the
+certified SDP values.  They are not used in the theorem because `q-1` gives a
+much cleaner closed form and already supplies an asymptotic improvement of
+order `1/q` over the sphere density.
+
+## 5. Checks still needed before claiming novelty
+
+1. Compare the closed form against Chen--Honkala (1990), especially their
+   radius-two excess result [their Theorem 4].  The 1995 survey explicitly says
+   that theorem is omitted there because its notation is too long.
+2. Compare against the nonbinary lower-bound formulas in Chapter 6 of
+   *Covering Codes* (1997) and the later Bhandari--Durairajan/Bhandari et al.
+   lower bounds.
+3. Have the pair-overlap proof independently re-read line by line.
+4. Only after the literature comparison should this be called a new theorem
+   rather than a theorem candidate.
