@@ -4,7 +4,12 @@ on:
   push:
     branches: ["research/symbolic-q82"]
     paths:
-      - "research/q82_symbolic_probe.py"
+      - "research/**"
+      - ".github/workflows/q82-symbolic-probe.yml"
+  pull_request:
+    branches: ["master"]
+    paths:
+      - "research/**"
       - ".github/workflows/q82-symbolic-probe.yml"
   workflow_dispatch:
 
