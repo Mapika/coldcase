@@ -22,3 +22,9 @@ jobs:
       - name: Run exact symbolic probe
         run: |
           python3 research/q82_symbolic_probe.py
+      - name: Install numerical LP tools
+        run: |
+          python3 -m pip install --quiet numpy scipy
+      - name: Search sparse dual supports
+        run: |
+          python3 research/q82_sparse_dual.py
