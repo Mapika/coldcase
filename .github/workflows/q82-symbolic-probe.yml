@@ -28,3 +28,6 @@ jobs:
       - name: Search sparse dual supports
         run: |
           python3 research/q82_sparse_dual.py
+      - name: Test exact transfer of sparse rays
+        run: |
+          python3 research/q82_transfer_ray.py
